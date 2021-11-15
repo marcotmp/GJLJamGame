@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Test_Connect" ID="{48093B00-5260-4E34-B8CC-EEB6398B1C78}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
