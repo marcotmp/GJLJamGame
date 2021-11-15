@@ -9,12 +9,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private InputActionAsset inputActionAsset;
 
-    private InputAction move;
-    private InputAction jump;
-    private InputAction action;
-
     [SerializeField] private JumpHandler jumpHandler;
     [SerializeField] private BoxDetector groundDetector;
+    [SerializeField] private PlayerSelector playerSelector;
+
+    [SerializeField] private GameObject selectorIcon;
+
 
     [Header("Speed")]
     [SerializeField] private float horizontalSpeed;
@@ -23,8 +23,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float upForce = 30;
     [SerializeField] private float gravityScale = 10;
     [SerializeField] private float fallingGravityScale = 20;
+
     [SerializeField] private string moveId = "Move";
 
+    private InputAction move;
+    private InputAction jump;
+    private InputAction action;
 
     private Vector2 dpadDir;
     //[SerializeField] private bool isJumping = false;
@@ -32,11 +36,10 @@ public class PlayerController : MonoBehaviour
 
     private bool facingRight = false;
 
+    private bool isActive = true;
 
-    private void Start()
+    private void Awake()
     {
-        jumpHandler.rigidbody = rigidbody;
-
         var actionMap = inputActionAsset.FindActionMap("Gameplay");
         move = actionMap.FindAction(moveId);
         jump = actionMap.FindAction("Jump");
@@ -44,27 +47,27 @@ public class PlayerController : MonoBehaviour
 
         actionMap.Enable();
 
-        //move.started += OnActionMove;
-        move.performed += OnActionMove;
-        move.canceled += OnActionMove;
+        playerSelector.Add(this);
+    }
 
-        jump.started += OnActionJumpStarted;
-        jump.canceled += OnActionJumpCancelled;
+    private void Start()
+    {
+        jumpHandler.rigidbody = rigidbody;
 
-        action.performed += OnActionAction;
+
+
+        EnableControls();        
     }
 
     private void OnDestroy()
     {
-        move.performed -= OnActionMove;
-        move.canceled -= OnActionMove;
-        jump.started -= OnActionJumpStarted;
-        jump.canceled -= OnActionJumpCancelled;
-        action.performed -= OnActionAction;
+        DisableControls();
     }
 
     private void FixedUpdate()
     {
+        if (!isActive) return;
+
         // move vertically
         jumpHandler.Update();
 
@@ -85,6 +88,46 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public void Deactivate()
+    {
+        Debug.Log($"{name} -> Deactivate");
+        // hide selection icon
+        selectorIcon.SetActive(false);
+        // deactivate controller
+        //DisableControls();
+        isActive = false;
+    }
+
+    public void Activate()
+    {
+        Debug.Log($"{name} -> Activate");
+        // show selection icon
+        selectorIcon.SetActive(true);
+        // activate controller
+        //EnableControls();
+        isActive = true;
+
+    }
+
+    private void EnableControls()
+    {
+        move.performed += OnActionMove;
+        move.canceled += OnActionMove;
+        jump.started += OnActionJumpStarted;
+        jump.canceled += OnActionJumpCancelled;
+        action.performed += OnActionAction;
+    }
+
+    private void DisableControls()
+    {
+        move.performed -= OnActionMove;
+        move.canceled -= OnActionMove;
+        jump.started -= OnActionJumpStarted;
+        jump.canceled -= OnActionJumpCancelled;
+        action.performed -= OnActionAction;
+    }
+
 
     private void OnActionMove(CallbackContext c)
     {

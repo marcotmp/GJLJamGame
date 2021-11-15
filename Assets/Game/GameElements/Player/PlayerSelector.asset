@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d427be5ebb08d4499c0f560493dc46, type: 3}
+  m_Name: PlayerSelector
+  m_EditorClassIdentifier: 
+  changePlayerAction:
+    m_Name: Change Player
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f3eac4bd-54d1-4432-a5cc-a94621571e9b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e27674f1-728b-4562-a36f-abea1ac75f98
+      m_Path: <Keyboard>/z
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Change Player
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 14ee24ac-6e05-4b09-b6b4-2f0755b7202f
+      m_Path: <Keyboard>/k
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Change Player
+      m_Flags: 0
