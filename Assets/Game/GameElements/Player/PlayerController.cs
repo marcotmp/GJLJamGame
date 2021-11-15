@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float upForce = 30;
     [SerializeField] private float gravityScale = 10;
     [SerializeField] private float fallingGravityScale = 20;
+    [SerializeField] private string moveId = "Move";
 
 
     private Vector2 dpadDir;
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
         jumpHandler.rigidbody = rigidbody;
 
         var actionMap = inputActionAsset.FindActionMap("Gameplay");
-        move = actionMap.FindAction("Move");
+        move = actionMap.FindAction(moveId);
         jump = actionMap.FindAction("Jump");
         action = actionMap.FindAction("Action");
 
@@ -108,7 +109,7 @@ public class PlayerController : MonoBehaviour
         if (jumpHandler.isJumping == false && isOnGround)
         {
             jumpHandler.StartJump();
-            StartCoroutine(JumpSqueeze(0.5f, 1.2f, 0.1f));
+            //StartCoroutine(JumpSqueeze(0.5f, 1.2f, 0.1f));
         }
     }
 
