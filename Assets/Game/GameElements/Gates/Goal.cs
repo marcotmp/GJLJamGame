@@ -8,4 +8,9 @@ public class Goal : MonoBehaviour
     {
         Debug.Log("Level Win!");
     }
+
+    public void GoalActivated()
+    {
+        gameObject.SetActive(true);
+    }
 }
