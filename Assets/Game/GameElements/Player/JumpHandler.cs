@@ -19,6 +19,7 @@ public class JumpHandler
         rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0);
         rigidbody.gravityScale = gravityScale;
         rigidbody.AddForce(Vector2.up * upForce, ForceMode2D.Impulse);
+        isJumping = true;
     }
 
     // called when player release the jump button
