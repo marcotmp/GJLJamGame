@@ -9,13 +9,11 @@ public class PlayerSelector : ScriptableObject
 {
     [SerializeField] private InputAction changePlayerAction;
 
-    private List<PlayerController> playerList;
+    private List<IPlayer> playerList;
     private int index = 0;
 
     public void OnEnable()
     {
-        Debug.Log("OnEnable");
-
         playerList.Clear();
         index = 0;
 
@@ -31,9 +29,8 @@ public class PlayerSelector : ScriptableObject
         changePlayerAction.Disable();
     }
 
-    public void Add(PlayerController player)
+    public void Add(IPlayer player)
     {
-        Debug.Log($"{player.name} -> {playerList.Count}");
         if (playerList.Count > 0)
             player.Deactivate();
         else
@@ -44,12 +41,7 @@ public class PlayerSelector : ScriptableObject
 
     private void OnChangePlayer(CallbackContext cc)
     {
-        Debug.Log("OnChangePlayer");
-        playerList[index].Deactivate();
-        //index++;
-        //if (index > playerList.Count)
-        //    index = 0;
-
+        playerList[index].Deactivate();        
         index = (++index) % playerList.Count;
         playerList[index].Activate();
     }
