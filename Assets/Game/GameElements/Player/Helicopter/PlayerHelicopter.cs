@@ -9,6 +9,7 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
     public InputAction move;
     public PlayerSelector playerSelector;
     public BoxDetector groundDetector;
+    public BoxDetector playerDetector;
     public GameObject selectorIcon;
     public Animator anim;
     [HideInInspector] public Rigidbody2D rb;
