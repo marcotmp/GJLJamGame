@@ -43,7 +43,7 @@ sysinfo.txt
 
 .vs/
 Recordings/
-*.wav
+.wav
 *.aseprite*
 
 ## ---------------- ##
