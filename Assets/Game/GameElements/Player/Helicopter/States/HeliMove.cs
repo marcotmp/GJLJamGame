@@ -24,6 +24,7 @@ public class HeliMove : HeliState
     public override void Enter()
     {
         playerHelicopter.move.performed += SetMovementInput;
+        playerHelicopter.grab.performed += SetGrabInput;
 
         playerHelicopter.anim.SetBool("Move", true);
         motion = playerHelicopter.rb.velocity;
@@ -66,5 +67,13 @@ public class HeliMove : HeliState
         moveDirection.y = inputDirection.y;
 
         Vector2.ClampMagnitude(moveDirection, 1);
+    }
+
+    void SetGrabInput(CallbackContext ctx)
+    {
+        if (playerHelicopter.ObjectInHand())
+            playerHelicopter.Release();
+        else
+            playerHelicopter.Grab();
     }
 }

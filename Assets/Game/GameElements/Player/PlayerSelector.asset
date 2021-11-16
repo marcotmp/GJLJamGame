@@ -36,3 +36,19 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Change Player
       m_Flags: 0
+    - m_Name: 
+      m_Id: 0242dd4c-a54d-475b-8a3d-5ebaa0f9daaa
+      m_Path: <Gamepad>/rightShoulder
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Change Player
+      m_Flags: 0
+    - m_Name: 
+      m_Id: a9908420-efdf-43af-84e7-587f8ffe99bc
+      m_Path: <Gamepad>/leftShoulder
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Change Player
+      m_Flags: 0

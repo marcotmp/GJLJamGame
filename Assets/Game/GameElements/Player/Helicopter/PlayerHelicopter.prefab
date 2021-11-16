@@ -34,6 +34,7 @@ Transform:
   - {fileID: 7858557641648627662}
   - {fileID: 3256212838992140642}
   - {fileID: 6666979492129105812}
+  - {fileID: 2180730705230867754}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58,10 +59,20 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
+  grab:
+    m_Name: Grab
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d6746720-2f8b-4c26-a824-04c4a5183917
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
   playerSelector: {fileID: 11400000, guid: 55d5c2f0979b4b146af989ce849b6507, type: 2}
   groundDetector: {fileID: 5250709562717242291}
+  playerDetector: {fileID: 2316849591848463455}
   selectorIcon: {fileID: 4097952639382266396}
   anim: {fileID: 2532970540440308080}
+  handPosition: {fileID: 2180730705230867754}
   rb: {fileID: 0}
 --- !u!50 &2532970540284952789
 Rigidbody2D:
@@ -254,6 +265,36 @@ MonoBehaviour:
   offset: {x: 0, y: 0}
   debug: 0
   debugAll: 0
+--- !u!1 &3955927205362854006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2180730705230867754}
+  m_Layer: 0
+  m_Name: HandPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2180730705230867754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3955927205362854006}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2532970540284952791}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2532970539943771357
 PrefabInstance:
   m_ObjectHideFlags: 0
