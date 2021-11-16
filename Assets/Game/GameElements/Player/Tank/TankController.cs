@@ -3,17 +3,16 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
-public class PlayerController : MonoBehaviour, IPlayer
+public class TankController : MonoBehaviour, IPlayer
 {
     [SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private InputActionAsset inputActionAsset;
-
     [SerializeField] private JumpHandler jumpHandler;
     [SerializeField] private BoxDetector groundDetector;
     [SerializeField] private PlayerSelector playerSelector;
-
     [SerializeField] private GameObject selectorIcon;
+    [SerializeField] private PlayerCannon cannon;
 
 
     [Header("Speed")]
@@ -24,11 +23,9 @@ public class PlayerController : MonoBehaviour, IPlayer
     [SerializeField] private float gravityScale = 10;
     [SerializeField] private float fallingGravityScale = 20;
 
-    [SerializeField] private string moveId = "Move";
-
     private InputAction move;
     private InputAction jump;
-    private InputAction action;
+    private InputAction shoot;
 
     private Vector2 dpadDir;
     //[SerializeField] private bool isJumping = false;
@@ -41,9 +38,9 @@ public class PlayerController : MonoBehaviour, IPlayer
     private void Awake()
     {
         var actionMap = inputActionAsset.FindActionMap("Gameplay");
-        move = actionMap.FindAction(moveId);
+        move = actionMap.FindAction("Move");
         jump = actionMap.FindAction("Jump");
-        //action = actionMap.FindAction("Shoot");
+        shoot = actionMap.FindAction("Shoot");
 
         actionMap.Enable();
 
@@ -116,7 +113,7 @@ public class PlayerController : MonoBehaviour, IPlayer
         move.canceled += OnActionMove;
         jump.started += OnActionJumpStarted;
         jump.canceled += OnActionJumpCancelled;
-        //action.performed += OnActionAction;
+        shoot.performed += OnShootAction;
     }
 
     private void DisableControls()
@@ -125,7 +122,7 @@ public class PlayerController : MonoBehaviour, IPlayer
         move.canceled -= OnActionMove;
         jump.started -= OnActionJumpStarted;
         jump.canceled -= OnActionJumpCancelled;
-        //action.performed -= OnActionAction;
+        shoot.performed -= OnShootAction;
     }
 
 
@@ -161,9 +158,10 @@ public class PlayerController : MonoBehaviour, IPlayer
         jumpHandler.CancelJumpImpulse();
     }
 
-    private void OnActionAction(CallbackContext c)
+    private void OnShootAction(CallbackContext c)
     {
-
+        // Shoot bullet
+        cannon.Shoot();
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
