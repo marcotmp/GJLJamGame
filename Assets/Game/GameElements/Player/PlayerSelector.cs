@@ -14,13 +14,12 @@ public class PlayerSelector : ScriptableObject
 
     public void OnEnable()
     {
-        playerList.Clear();
+        playerList = new List<IPlayer>();
         index = 0;
 
         // Activate 
         changePlayerAction.Enable();
         changePlayerAction.performed += OnChangePlayer;
-
     }
 
     private void OnDisable()
