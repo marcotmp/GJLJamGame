@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IPlayer
 {
     [SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private SpriteRenderer sprite;
