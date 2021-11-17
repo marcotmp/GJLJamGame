@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6615938242767593530}
   - component: {fileID: 6615938242767593529}
+  - component: {fileID: 6646793518000366625}
   - component: {fileID: -3244119414455754025}
   - component: {fileID: 4874620101730950574}
-  - component: {fileID: 1178140358269277868}
   - component: {fileID: 779099181003045167}
   m_Layer: 6
   m_Name: Player
@@ -89,6 +89,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6646793518000366625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615938242767593528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6882824018057e4f97ecb748298f268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: -3244119414455754025}
+  sprite: {fileID: 6615938242767593529}
+  inputActionAsset: {fileID: -944628639613478452, guid: c09bf5e377e326546a497ee9afe38edb, type: 3}
+  groundDetector: {fileID: 6044869809114001846}
+  vehicleDetector: {fileID: 6155808039981204044}
+  selectorIcon: {fileID: 3855982109871635630}
+  horizontalSpeed: 0
+  maxSpeed: 3
+  jumpImpulse: 10
+  acceleration: 20
+  decceleration: 15
+  gravity: 20
+  gravityScale: 8
+  moveId: Move
+  moveState:
+    player: {fileID: 0}
+  jumpState:
+    player: {fileID: 0}
+    groundDetector: {fileID: 6044869809114001846}
+  mountedState:
+    player: {fileID: 0}
+  mountingState:
+    player: {fileID: 0}
+  move:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  jump:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
 --- !u!50 &-3244119414455754025
 Rigidbody2D:
   serializedVersion: 4
@@ -104,7 +155,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 0813580f0d7a22a48b67239b44080895, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -126,59 +177,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.01, y: 1.21}
   m_Direction: 0
---- !u!114 &1178140358269277868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6615938242767593528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6882824018057e4f97ecb748298f268, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody: {fileID: -3244119414455754025}
-  sprite: {fileID: 6615938242767593529}
-  inputActionAsset: {fileID: -944628639613478452, guid: c09bf5e377e326546a497ee9afe38edb, type: 3}
-  jumpHandler:
-    upForce: 30
-    gravityScale: 10
-    fallingGravityScale: 20
-  groundDetector: {fileID: 6044869809114001846}
-  vehicleDetector: {fileID: 6155808039981204044}
-  playerSelector: {fileID: 11400000, guid: 55d5c2f0979b4b146af989ce849b6507, type: 2}
-  selectorIcon: {fileID: 3855982109871635630}
-  horizontalSpeed: 10
-  upForce: 30
-  gravityScale: 10
-  fallingGravityScale: 20
-  moveId: Move
-  moveState:
-    player: {fileID: 0}
-  jumpState:
-    player: {fileID: 0}
-    groundDetector: {fileID: 0}
-  mountedState:
-    player: {fileID: 0}
-  mountingState:
-    player: {fileID: 0}
-  move:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-  jump:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
 --- !u!61 &779099181003045167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -192,7 +190,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3532421}
+  m_Offset: {x: 0, y: -0.31042093}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -203,7 +201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.78755796}
+  m_Size: {x: 0.9, y: 0.7019156}
   m_EdgeRadius: 0
 --- !u!1001 &3349273166282842735
 PrefabInstance:

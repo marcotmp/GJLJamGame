@@ -14,7 +14,7 @@ public class PlayerJumpState : PlayerState
         player.move.performed += OnActionMove;
         player.move.canceled += OnActionMove;
 
-        player.jump.performed += OnActionJumpStarted;
+        // player.jump.performed += OnActionJumpStarted;
         player.jump.canceled += OnActionJumpCancelled;
 
     }
@@ -25,7 +25,7 @@ public class PlayerJumpState : PlayerState
         player.move.performed -= OnActionMove;
         player.move.canceled -= OnActionMove;
 
-        player.jump.performed -= OnActionJumpStarted;
+        // player.jump.performed -= OnActionJumpStarted;
         player.jump.canceled -= OnActionJumpCancelled;
 
     }
@@ -35,12 +35,13 @@ public class PlayerJumpState : PlayerState
         //Debug.Log("PlayerMoveState.FixedUpdate");
         base.FixedUpdate();
 
-        // move horizontally
-        player.ProcessMove();
-
-        // if moving down
         if (player.IsOnGround)
             fsm.ChangeState<PlayerMoveState>();
+        // move horizontally
+        else
+            player.ProcessMove();
+
+        // if moving down
         //else
 
     }
@@ -51,18 +52,9 @@ public class PlayerJumpState : PlayerState
         player.Move(c.ReadValue<Vector2>());
     }
 
-
-
-    private void OnActionJumpStarted(CallbackContext c)
-    {
-        Debug.Log("PlayerJumpState Jump Started");
-        //player.StartJump();
-        //fsm.ChangeState<PlayerJumpState>();
-    }
-
     private void OnActionJumpCancelled(CallbackContext c)
     {
-
+        player.CancelJump();
     }
 }
 

@@ -9,11 +9,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private InputActionAsset inputActionAsset;
 
-    [SerializeField] private JumpHandler jumpHandler;
+    // [SerializeField] private JumpHandler jumpHandler;
     [SerializeField] private BoxDetector groundDetector;
     [SerializeField] private BoxDetector vehicleDetector;
 
-    [SerializeField] private PlayerSelector playerSelector;
+    // [SerializeField] private PlayerSelector playerSelector;
 
     [SerializeField] private GameObject selectorIcon;
 
@@ -22,9 +22,19 @@ public class PlayerController : MonoBehaviour
     public float horizontalSpeed;
 
     [Header("Testing")]
-    [SerializeField] private float upForce = 30;
-    [SerializeField] private float gravityScale = 10;
-    [SerializeField] private float fallingGravityScale = 20;
+    // [SerializeField] private float upForce = 30;
+    // [SerializeField] private float gravityScale = 10;
+    // [SerializeField] private float fallingGravityScale = 20;
+
+    [SerializeField] private float maxSpeed = 3f;
+    [SerializeField] private float jumpImpulse = 10f;
+    [SerializeField] private float acceleration = 20f;
+    [SerializeField] private float decceleration = 15f;
+    [SerializeField] private float gravityUp = 30f;
+    [SerializeField] private float gravityDown = 20f;
+    [SerializeField] private float gravityScale = 8f;
+
+    private Vector2 motion = Vector2.zero;
 
     [SerializeField] private string moveId = "Move";
 
@@ -72,81 +82,104 @@ public class PlayerController : MonoBehaviour
         fsm.ChangeState(moveState);
     }
 
-    private void Start()
-    {
-        jumpHandler.rigidbody = rigidbody;
+    // private void Start()
+    // {
+    //     jumpHandler.rigidbody = rigidbody;
 
-        //EnableControls();
-    }
+    //     //EnableControls();
+    // }
 
-    private void OnDestroy()
-    {
-        //DisableControls();
-    }
+    // private void OnDestroy()
+    // {
+    //     //DisableControls();
+    // }
 
     private void FixedUpdate()
     {
         fsm.FixedUpdate();
     }
 
-    private void A()
-    { 
-        // move vertically
-        jumpHandler.Update();
+    // private void A()
+    // { 
+    //     // move vertically
+    //     jumpHandler.Update();
 
-        // move horizontally
-        rigidbody.velocity = new Vector2(horizontalSpeed * dpadDir.x, rigidbody.velocity.y);
+    //     // move horizontally
+    //     rigidbody.velocity = new Vector2(horizontalSpeed * dpadDir.x, rigidbody.velocity.y);
 
-        // if moving down
-        if (rigidbody.velocity.y <= 0)
-        {
-            var wasOnGround = isOnGround;
-            isOnGround = groundDetector.CheckCollision();
+    //     // if moving down
+    //     if (rigidbody.velocity.y <= 0)
+    //     {
+    //         var wasOnGround = isOnGround;
+    //         isOnGround = groundDetector.CheckCollision();
 
-            if (isOnGround)
-            {
-                //if (!wasOnGround)
-                //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
-                jumpHandler.CancelJump();
-            }
-        }
+    //         if (isOnGround)
+    //         {
+    //             //if (!wasOnGround)
+    //             //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
+    //             jumpHandler.CancelJump();
+    //         }
+    //     }
 
-        if (vehicleDetector.CheckCollision() && (!selectorIcon.activeSelf))
-            selectorIcon.SetActive(true);
-        else if (!vehicleDetector.CheckCollision() && (selectorIcon.activeSelf))
-            selectorIcon.SetActive(false);
-    }
+    //     if (vehicleDetector.CheckCollision() && (!selectorIcon.activeSelf))
+    //         selectorIcon.SetActive(true);
+    //     else if (!vehicleDetector.CheckCollision() && (selectorIcon.activeSelf))
+    //         selectorIcon.SetActive(false);
+    // }
 
     public void ProcessMove()
     {
+        if (dpadDir.x != 0)
+        {
+            motion.x += dpadDir.x * acceleration * Time.deltaTime;
+            motion.x = Mathf.Clamp(motion.x, -maxSpeed, maxSpeed);
+        }
+        else
+        {
+            motion.x = Mathf.MoveTowards(motion.x, 0, decceleration * Time.deltaTime);
+        }
+
+        if (!isOnGround)
+        {
+            if (motion.y > 0) motion.y -= gravityUp * Time.deltaTime;
+            else motion.y -= gravityDown * Time.deltaTime;
+            motion.y = Mathf.Max(motion.y, -gravityScale);
+        }
+
+        bool wasOnGround = isOnGround;
+        isOnGround = groundDetector.CheckCollision();
+        if (!wasOnGround && isOnGround) motion.y = 0;
+
+        rigidbody.velocity = motion;
+
         // move vertically
-        jumpHandler.Update();
+        // jumpHandler.Update();
 
         // move horizontally
-        var vel = rigidbody.velocity;
-        vel.x = horizontalSpeed * dpadDir.x;
-        rigidbody.velocity = vel;
+        // var vel = rigidbody.velocity;
+        // vel.x = horizontalSpeed * dpadDir.x;
+        // rigidbody.velocity = vel;
 
-        if (rigidbody.velocity.y <= 0)
-        {
-            var wasOnGround = isOnGround;
-            isOnGround = groundDetector.CheckCollision();
+        // if (rigidbody.velocity.y <= 0)
+        // {
+        //     var wasOnGround = isOnGround;
+        //     isOnGround = groundDetector.CheckCollision();
 
-            Debug.Log($"rigidbody {rigidbody.velocity}");
+        //     Debug.Log($"rigidbody {rigidbody.velocity}");
 
-            if (isOnGround)
-            {
-                //if (!wasOnGround)
-                //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
-                jumpHandler.CancelJump();
-            }
-        }
+        //     if (isOnGround)
+        //     {
+        //         //if (!wasOnGround)
+        //         //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
+        //         jumpHandler.CancelJump();
+        //     }
+        // }
     }
 
-    public bool IsFalling()
-    {
-        return rigidbody.velocity.y < -0.1f;
-    }
+    // public bool IsFalling()
+    // {
+    //     return rigidbody.velocity.y < -0.1f;
+    // }
 
     public bool IsOnGround => isOnGround;
 
@@ -197,12 +230,13 @@ public class PlayerController : MonoBehaviour
     //}
 
     public void StartJump()
-    { 
-        if (jumpHandler.isJumping == false && isOnGround)
-        {
-            jumpHandler.StartJump();
-            //StartCoroutine(JumpSqueeze(0.5f, 1.2f, 0.1f));
-        }
+    {
+        motion.y = jumpImpulse;
+        // if (jumpHandler.isJumping == false && isOnGround)
+        // {
+        //     jumpHandler.StartJump();
+        //     //StartCoroutine(JumpSqueeze(0.5f, 1.2f, 0.1f));
+        // }
     }
 
 
@@ -213,7 +247,8 @@ public class PlayerController : MonoBehaviour
 
     public void CancelJump()
     {
-        jumpHandler.CancelJumpImpulse();
+        // jumpHandler.CancelJumpImpulse();
+        if (motion.y > 0) motion.y = 0;
     }
 
     private void OnActionAction(CallbackContext c)

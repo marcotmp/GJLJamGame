@@ -12,7 +12,7 @@ public class PlayerMoveState : PlayerState
         player.move.performed += OnActionMove;
         player.move.canceled += OnActionMove;
         player.jump.performed += OnActionJumpStarted;
-        player.jump.canceled += OnActionJumpCancelled;
+        // player.jump.canceled += OnActionJumpCancelled;
     }
 
     public override void Exit()
@@ -22,7 +22,7 @@ public class PlayerMoveState : PlayerState
         player.move.performed -= OnActionMove;
         player.move.canceled -= OnActionMove;
         player.jump.performed -= OnActionJumpStarted;
-        player.jump.canceled -= OnActionJumpCancelled;
+        // player.jump.canceled -= OnActionJumpCancelled;
     }
 
     public override void FixedUpdate()
@@ -30,12 +30,12 @@ public class PlayerMoveState : PlayerState
         //Debug.Log("PlayerMoveState.FixedUpdate");
         base.FixedUpdate();
 
-        // move horizontally
-        player.ProcessMove();
-
-        // if moving down
         if (!player.IsOnGround)
             fsm.ChangeState<PlayerJumpState>();
+        else
+            player.ProcessMove();
+
+        // if moving down
 
         //else
     }
@@ -54,9 +54,8 @@ public class PlayerMoveState : PlayerState
         fsm.ChangeState<PlayerJumpState>();
     }
 
-    private void OnActionJumpCancelled(CallbackContext c)
-    {
-        player.CancelJump();
-    }
-
+    // private void OnActionJumpCancelled(CallbackContext c)
+    // {
+    //     player.CancelJump();
+    // }
 }
