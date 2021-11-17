@@ -16,6 +16,7 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
     public Animator anim;
 
     [SerializeField] private Transform handPosition;
+    [SerializeField] public Joint2D joint;
 
     [HideInInspector] public Rigidbody2D rb;
     private FiniteStateMachine fsm;
@@ -81,8 +82,6 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
 
     public void Grab()
     {
-        Debug.Log("Grab");
-
         if (playerDetector.CheckCollisionAll())
         {
             objectGrabbed = GetObjectToGrab();
@@ -90,8 +89,10 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
             if (objectGrabbed)
             {
                 objectGrabbed.transform.position = handPosition.position;
-                objectGrabbed.transform.parent = transform;
+                //objectGrabbed.transform.parent = transform;
             }
+
+            joint.enabled = true;
         }
     }
 
@@ -105,8 +106,8 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
         //objectGrabbed?.Release();
         if (objectGrabbed)
         {
-            objectGrabbed.transform.parent = null;
             objectGrabbed = null;
+            joint.enabled = false;
         }
     }
 }
