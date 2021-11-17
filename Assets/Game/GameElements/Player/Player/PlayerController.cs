@@ -163,7 +163,6 @@ public class PlayerController : MonoBehaviour
         // jumpHandler.Update();
 
         // move horizontally
-<<<<<<< .merge_file_a14008
         // var vel = rigidbody.velocity;
         // vel.x = horizontalSpeed * dpadDir.x;
         // rigidbody.velocity = vel;
@@ -182,26 +181,6 @@ public class PlayerController : MonoBehaviour
         //         jumpHandler.CancelJump();
         //     }
         // }
-=======
-        var vel = rigidbody.velocity;
-        vel.x = horizontalSpeed * dpadDir.x;
-        rigidbody.velocity = vel;
-
-        if (rigidbody.velocity.y <= 0)
-        {
-            var wasOnGround = isOnGround;
-            isOnGround = groundDetector.CheckCollision();
-
-            //Debug.Log($"rigidbody {rigidbody.velocity}");
-
-            if (isOnGround)
-            {
-                //if (!wasOnGround)
-                //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
-                jumpHandler.CancelJump();
-            }
-        }
->>>>>>> .merge_file_a13868
     }
 
     // public bool IsFalling()
