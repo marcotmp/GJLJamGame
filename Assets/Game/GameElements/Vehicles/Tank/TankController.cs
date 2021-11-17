@@ -41,8 +41,6 @@ public class TankController : MonoBehaviour, IVehicle
         shoot = actionMap.FindAction("Shoot");
 
         actionMap.Enable();
-
-        playerSelector.Add(this);
     }
 
     private void Start()
@@ -89,7 +87,7 @@ public class TankController : MonoBehaviour, IVehicle
         rigidbody.mass = 0.1f;
     }
 
-    public void Activate()
+    public void MountPlayer(PlayerController player)
     {
         //Debug.Log($"{name} -> Activate");
         // show selection icon

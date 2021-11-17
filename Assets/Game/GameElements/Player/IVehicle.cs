@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IVehicle
 {
-    void Activate();
+    void MountPlayer(PlayerController player);
     void Deactivate();
 }

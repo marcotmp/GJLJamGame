@@ -179,6 +179,14 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
+  action:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
 --- !u!61 &779099181003045167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -289,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1015156108283731991, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.589
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 1015156108283731991, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}
       propertyPath: m_LocalPosition.z

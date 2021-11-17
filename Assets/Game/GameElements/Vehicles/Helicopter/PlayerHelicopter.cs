@@ -48,7 +48,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         fsm.FixedUpdate();
     }
 
-    public void Activate()
+    public void MountPlayer(PlayerController player)
     {
         actionMap.Enable();
         selectorIcon.SetActive(true);

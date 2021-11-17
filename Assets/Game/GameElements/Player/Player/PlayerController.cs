@@ -35,9 +35,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerMountingState mountingState;
 
 
+    [Header("events")]
+    [SerializeField]
+    private PlayerMountedEvent playerMountedEvent;
+
+
     [HideInInspector] public InputAction move;
     [HideInInspector] public InputAction jump;
-    //[HideInInspector] public InputAction action;
+    [HideInInspector] public InputAction action;
 
     private Vector2 dpadDir;
     //[SerializeField] private bool isJumping = false;
@@ -54,7 +59,9 @@ public class PlayerController : MonoBehaviour
         var actionMap = inputActionAsset.FindActionMap("Gameplay");
         move = actionMap.FindAction(moveId);
         jump = actionMap.FindAction("Jump");
-        //action = actionMap.FindAction("Shoot");
+        action = actionMap.FindAction("Shoot");
+        action.performed += OnMountAction;
+
 
         actionMap.Enable();
 
@@ -132,7 +139,7 @@ public class PlayerController : MonoBehaviour
             var wasOnGround = isOnGround;
             isOnGround = groundDetector.CheckCollision();
 
-            Debug.Log($"rigidbody {rigidbody.velocity}");
+            //Debug.Log($"rigidbody {rigidbody.velocity}");
 
             if (isOnGround)
             {
@@ -216,9 +223,29 @@ public class PlayerController : MonoBehaviour
         jumpHandler.CancelJumpImpulse();
     }
 
-    private void OnActionAction(CallbackContext c)
+    private bool isMounted = false;
+    private void OnMountAction(CallbackContext c)
     {
+        if (isMounted)
+        {
+            Unmount();
+        }
+        else if (vehicleDetector.CheckCollision())
+        {
+            var obj = vehicleDetector.raycastHit2D;
+            var vehicle = obj.collider.GetComponent<IVehicle>();
 
+            // mount player on the vehicle;
+            vehicle.MountPlayer(this);
+            gameObject.SetActive(false);
+            isMounted = true;
+            playerMountedEvent.Raise(obj.collider.gameObject);
+        }
+    }
+
+    public void Unmount()
+    {
+        isMounted = false;
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
