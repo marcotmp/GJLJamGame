@@ -112,7 +112,8 @@ MonoBehaviour:
   jumpImpulse: 10
   acceleration: 20
   decceleration: 15
-  gravity: 20
+  gravityUp: 30
+  gravityDown: 20
   gravityScale: 8
   moveId: Move
   moveState:
@@ -124,6 +125,7 @@ MonoBehaviour:
     player: {fileID: 0}
   mountingState:
     player: {fileID: 0}
+  playerMountedEvent: {fileID: 11400000, guid: 4771be06cea7f954fb69566f3643c85b, type: 2}
   move:
     m_Name: 
     m_Type: 0
@@ -133,6 +135,14 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
   jump:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  action:
     m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
