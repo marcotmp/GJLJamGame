@@ -11,6 +11,6 @@ public class HeliActivate : HeliState
 
     public override void Enter()
     {
-        fsm.ChangeState(typeof(HeliMove));
+        fsm.ChangeState<HeliMove>();
     }
 }

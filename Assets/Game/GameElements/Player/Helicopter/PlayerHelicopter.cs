@@ -21,10 +21,11 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
     [HideInInspector] public Rigidbody2D rb;
     private FiniteStateMachine fsm;
     private GameObject objectGrabbed;
+    private InputActionMap actionMap;
 
     private void Awake() 
     {
-        var actionMap = playerInput.FindActionMap("HelicopterControls");
+        actionMap = playerInput.FindActionMap("HelicopterControls");
         move = actionMap.FindAction("Move");
         grab = actionMap.FindAction("Grab");
         actionMap.Enable();
@@ -50,16 +51,14 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
 
     public void Activate()
     {
-        Debug.Log($"{name} -> Activate");
-
+        actionMap.Enable();
         selectorIcon.SetActive(true);
         fsm.ChangeState(typeof(HeliActivate));
     }
 
     public void Deactivate()
     {
-        Debug.Log($"{name} -> Deactivate");
-        
+        actionMap.Disable();
         selectorIcon.SetActive(false);
         fsm.ChangeState(typeof(HeliDeactivate));
     }
