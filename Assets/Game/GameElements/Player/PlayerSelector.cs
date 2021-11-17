@@ -41,7 +41,7 @@ public class PlayerSelector : ScriptableObject
     private void OnChangePlayer(CallbackContext cc)
     {
         playerList[index].Deactivate();        
-        index = (++index) % playerList.Count;
+        index = ++index % playerList.Count;
         playerList[index].Activate();
     }
 }
