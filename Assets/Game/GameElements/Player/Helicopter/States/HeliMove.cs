@@ -56,7 +56,8 @@ public class HeliMove : HeliState
     public override void Exit()
     {
         playerHelicopter.move.performed -= SetMovementInput;
-        
+        playerHelicopter.grab.performed -= SetGrabInput;
+
         playerHelicopter.anim.SetBool("Move", false);
     }
 
@@ -71,6 +72,7 @@ public class HeliMove : HeliState
 
     void SetGrabInput(CallbackContext ctx)
     {
+        Debug.Log("SetGrabInput");
         if (playerHelicopter.ObjectInHand())
             playerHelicopter.Release();
         else

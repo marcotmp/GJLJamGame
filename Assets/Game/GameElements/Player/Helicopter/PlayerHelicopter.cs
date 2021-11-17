@@ -7,8 +7,8 @@ using UnityEngine.InputSystem;
 public class PlayerHelicopter : MonoBehaviour, IPlayer
 {
     public InputActionAsset playerInput;
-    public InputAction move;
-    public InputAction grab;
+    [HideInInspector] public InputAction move;
+    [HideInInspector] public InputAction grab;
     public PlayerSelector playerSelector;
     public BoxDetector groundDetector;
     public BoxDetector playerDetector;
@@ -80,17 +80,21 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
 
     public void Grab()
     {
+        Debug.Log("Grab");
+
         if (playerDetector.CheckCollisionAll())
         {
             objectGrabbed = GetObjectToGrab();
             //objectGrabbed?.Grab();
             if (objectGrabbed)
             {
-                objectGrabbed.transform.position = handPosition.position;
-                //objectGrabbed.transform.parent = transform;
+                //objectGrabbed.transform.position = handPosition.position;
+                // attach joint to other
+                joint.enabled = true;
+                joint.connectedBody = objectGrabbed.GetComponent<Rigidbody2D>();
             }
 
-            joint.enabled = true;
+            
         }
     }
 
