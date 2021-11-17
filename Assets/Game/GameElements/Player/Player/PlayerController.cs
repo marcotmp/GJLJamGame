@@ -45,9 +45,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerMountingState mountingState;
 
 
+    [Header("events")]
+    [SerializeField]
+    private PlayerMountedEvent playerMountedEvent;
+
+
     [HideInInspector] public InputAction move;
     [HideInInspector] public InputAction jump;
-    //[HideInInspector] public InputAction action;
+    [HideInInspector] public InputAction action;
 
     private Vector2 dpadDir;
     //[SerializeField] private bool isJumping = false;
@@ -64,7 +69,9 @@ public class PlayerController : MonoBehaviour
         var actionMap = inputActionAsset.FindActionMap("Gameplay");
         move = actionMap.FindAction(moveId);
         jump = actionMap.FindAction("Jump");
-        //action = actionMap.FindAction("Shoot");
+        action = actionMap.FindAction("Shoot");
+        action.performed += OnMountAction;
+
 
         actionMap.Enable();
 
@@ -156,6 +163,7 @@ public class PlayerController : MonoBehaviour
         // jumpHandler.Update();
 
         // move horizontally
+<<<<<<< .merge_file_a14008
         // var vel = rigidbody.velocity;
         // vel.x = horizontalSpeed * dpadDir.x;
         // rigidbody.velocity = vel;
@@ -174,6 +182,26 @@ public class PlayerController : MonoBehaviour
         //         jumpHandler.CancelJump();
         //     }
         // }
+=======
+        var vel = rigidbody.velocity;
+        vel.x = horizontalSpeed * dpadDir.x;
+        rigidbody.velocity = vel;
+
+        if (rigidbody.velocity.y <= 0)
+        {
+            var wasOnGround = isOnGround;
+            isOnGround = groundDetector.CheckCollision();
+
+            //Debug.Log($"rigidbody {rigidbody.velocity}");
+
+            if (isOnGround)
+            {
+                //if (!wasOnGround)
+                //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
+                jumpHandler.CancelJump();
+            }
+        }
+>>>>>>> .merge_file_a13868
     }
 
     // public bool IsFalling()
@@ -251,9 +279,29 @@ public class PlayerController : MonoBehaviour
         if (motion.y > 0) motion.y = 0;
     }
 
-    private void OnActionAction(CallbackContext c)
+    private bool isMounted = false;
+    private void OnMountAction(CallbackContext c)
     {
+        if (isMounted)
+        {
+            Unmount();
+        }
+        else if (vehicleDetector.CheckCollision())
+        {
+            var obj = vehicleDetector.raycastHit2D;
+            var vehicle = obj.collider.GetComponent<IVehicle>();
 
+            // mount player on the vehicle;
+            vehicle.MountPlayer(this);
+            gameObject.SetActive(false);
+            isMounted = true;
+            playerMountedEvent.Raise(obj.collider.gameObject);
+        }
+    }
+
+    public void Unmount()
+    {
+        isMounted = false;
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)

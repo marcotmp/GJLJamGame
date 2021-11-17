@@ -30,10 +30,10 @@ public class PlayerSelector : ScriptableObject
 
     public void Add(IVehicle player)
     {
-        if (playerList.Count > 0)
-            player.Deactivate();
-        else
-            player.Activate();
+        //if (playerList.Count > 0)
+        //    player.Deactivate();
+        //else
+        //    player.MountPlayer();
 
         playerList.Add(player);
     }
@@ -42,6 +42,6 @@ public class PlayerSelector : ScriptableObject
     {
         playerList[index].Deactivate();        
         index = ++index % playerList.Count;
-        playerList[index].Activate();
+        //playerList[index].MountPlayer();
     }
 }
