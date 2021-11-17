@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IPlayer
+[System.Serializable]
+public class PlayerMountingState : PlayerState
 {
-    void Activate();
-    void Deactivate();
 }

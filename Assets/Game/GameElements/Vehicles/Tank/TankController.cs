@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
-public class TankController : MonoBehaviour, IPlayer
+public class TankController : MonoBehaviour, IVehicle
 {
     [SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private SpriteRenderer sprite;
@@ -91,7 +91,7 @@ public class TankController : MonoBehaviour, IPlayer
 
     public void Activate()
     {
-        Debug.Log($"{name} -> Activate");
+        //Debug.Log($"{name} -> Activate");
         // show selection icon
         selectorIcon.SetActive(true);
         // activate controller
@@ -103,8 +103,8 @@ public class TankController : MonoBehaviour, IPlayer
     {
         move.performed += OnActionMove;
         move.canceled += OnActionMove;
-        jump.started += OnActionJumpStarted;
-        jump.canceled += OnActionJumpCancelled;
+        //jump.started += OnActionJumpStarted;
+        //jump.canceled += OnActionJumpCancelled;
         shoot.performed += OnShootAction;
     }
 
@@ -112,8 +112,8 @@ public class TankController : MonoBehaviour, IPlayer
     {
         move.performed -= OnActionMove;
         move.canceled -= OnActionMove;
-        jump.started -= OnActionJumpStarted;
-        jump.canceled -= OnActionJumpCancelled;
+        //jump.started -= OnActionJumpStarted;
+        //jump.canceled -= OnActionJumpCancelled;
         shoot.performed -= OnShootAction;
     }
 
@@ -153,10 +153,12 @@ public class TankController : MonoBehaviour, IPlayer
     private void OnShootAction(CallbackContext c)
     {
         // toogle shooting
-        if(!cannon.IsAutoShooting)
-            cannon.StartAutoShoot();
-        else
-            cannon.StopShoot();
+        //if(!cannon.IsAutoShooting)
+        //    cannon.StartAutoShoot();
+        //else
+        //    cannon.StopShoot();
+        cannon.Shoot();
+
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)

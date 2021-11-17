@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
-public class PlayerController : MonoBehaviour, IPlayer
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private SpriteRenderer sprite;
@@ -11,13 +11,15 @@ public class PlayerController : MonoBehaviour, IPlayer
 
     [SerializeField] private JumpHandler jumpHandler;
     [SerializeField] private BoxDetector groundDetector;
+    [SerializeField] private BoxDetector vehicleDetector;
+
     [SerializeField] private PlayerSelector playerSelector;
 
     [SerializeField] private GameObject selectorIcon;
 
 
     [Header("Speed")]
-    [SerializeField] private float horizontalSpeed;
+    public float horizontalSpeed;
 
     [Header("Testing")]
     [SerializeField] private float upForce = 30;
@@ -26,9 +28,16 @@ public class PlayerController : MonoBehaviour, IPlayer
 
     [SerializeField] private string moveId = "Move";
 
-    private InputAction move;
-    private InputAction jump;
-    private InputAction action;
+    [Header("States")]
+    [SerializeField] private PlayerMoveState moveState;
+    [SerializeField] private PlayerJumpState jumpState;
+    [SerializeField] private PlayerMountedState mountedState;
+    [SerializeField] private PlayerMountingState mountingState;
+
+
+    [HideInInspector] public InputAction move;
+    [HideInInspector] public InputAction jump;
+    //[HideInInspector] public InputAction action;
 
     private Vector2 dpadDir;
     //[SerializeField] private bool isJumping = false;
@@ -37,6 +46,8 @@ public class PlayerController : MonoBehaviour, IPlayer
     private bool facingRight = false;
 
     private bool isActive = false;
+
+    private FiniteStateMachine fsm;
 
     private void Awake()
     {
@@ -47,21 +58,39 @@ public class PlayerController : MonoBehaviour, IPlayer
 
         actionMap.Enable();
 
-        playerSelector.Add(this);
+        // States
+        fsm = new FiniteStateMachine();
+        moveState.player = this;
+        jumpState.player = this;
+        mountingState.player = this;
+        mountedState.player = this;
+        fsm.AddState(moveState);
+        fsm.AddState(jumpState);
+        fsm.AddState(mountingState);
+        fsm.AddState(mountedState);
+
+        fsm.ChangeState(moveState);
     }
 
     private void Start()
     {
         jumpHandler.rigidbody = rigidbody;
+
+        //EnableControls();
     }
 
     private void OnDestroy()
     {
-        DisableControls();
+        //DisableControls();
     }
 
     private void FixedUpdate()
     {
+        fsm.FixedUpdate();
+    }
+
+    private void A()
+    { 
         // move vertically
         jumpHandler.Update();
 
@@ -81,55 +110,73 @@ public class PlayerController : MonoBehaviour, IPlayer
                 jumpHandler.CancelJump();
             }
         }
+
+        if (vehicleDetector.CheckCollision() && (!selectorIcon.activeSelf))
+            selectorIcon.SetActive(true);
+        else if (!vehicleDetector.CheckCollision() && (selectorIcon.activeSelf))
+            selectorIcon.SetActive(false);
     }
 
-    public void Deactivate()
+    public void ProcessMove()
     {
-        Debug.Log($"{name} -> Deactivate");
-        // hide selection icon
-        selectorIcon.SetActive(false);
-        // deactivate controller
-        DisableControls();
-        rigidbody.mass = 0.1f;
+        // move vertically
+        jumpHandler.Update();
+
+        // move horizontally
+        var vel = rigidbody.velocity;
+        vel.x = horizontalSpeed * dpadDir.x;
+        rigidbody.velocity = vel;
+
+        if (rigidbody.velocity.y <= 0)
+        {
+            var wasOnGround = isOnGround;
+            isOnGround = groundDetector.CheckCollision();
+
+            Debug.Log($"rigidbody {rigidbody.velocity}");
+
+            if (isOnGround)
+            {
+                //if (!wasOnGround)
+                //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
+                jumpHandler.CancelJump();
+            }
+        }
     }
 
-    public void Activate()
+    public bool IsFalling()
     {
-        Debug.Log($"{name} -> Activate");
-        // show selection icon
-        selectorIcon.SetActive(true);
-        // activate controller
-        EnableControls();
-        rigidbody.mass = 1f;
+        return rigidbody.velocity.y < -0.1f;
     }
 
-    private void EnableControls()
+    public bool IsOnGround => isOnGround;
+
+    //private void EnableControls()
+    //{
+    //    if (isActive) return;
+    //    Debug.Log("EnableControls");
+    //    //move.performed += OnActionMove;
+    //    //move.canceled += OnActionMove;
+    //    //jump.started += OnActionJumpStarted;
+    //    //jump.canceled += OnActionJumpCancelled;
+    //    isActive = true;
+    //}
+
+    //private void DisableControls()
+    //{
+    //    if (!isActive) return;
+    //    Debug.Log("DisableControls");
+    //    //move.performed -= OnActionMove;
+    //    //move.canceled -= OnActionMove;
+    //    //jump.started -= OnActionJumpStarted;
+    //    //jump.canceled -= OnActionJumpCancelled;
+    //    isActive = false;
+    //}
+
+
+    public void Move(Vector2 dir)
     {
-        if (isActive) return;
-        Debug.Log("EnableControls");
-        move.performed += OnActionMove;
-        move.canceled += OnActionMove;
-        jump.started += OnActionJumpStarted;
-        jump.canceled += OnActionJumpCancelled;
-        isActive = true;
-    }
-
-    private void DisableControls()
-    {
-        if (!isActive) return;
-        Debug.Log("DisableControls");
-        move.performed -= OnActionMove;
-        move.canceled -= OnActionMove;
-        jump.started -= OnActionJumpStarted;
-        jump.canceled -= OnActionJumpCancelled;
-        isActive = false;
-    }
-
-
-    private void OnActionMove(CallbackContext c)
-    {
-        dpadDir = c.ReadValue<Vector2>();
-
+        dpadDir = dir;
+        
         if (dpadDir.x > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -144,9 +191,13 @@ public class PlayerController : MonoBehaviour, IPlayer
         //JunpFromObject();
     }
 
-    private void OnActionJumpStarted(CallbackContext c)
-    {
-        Debug.Log($"OnActionJumpStarted {name} {c.phase}");
+    //private void OnActionJumpStarted(CallbackContext c)
+    //{
+    //    Debug.Log($"OnActionJumpStarted {name} {c.phase}");
+    //}
+
+    public void StartJump()
+    { 
         if (jumpHandler.isJumping == false && isOnGround)
         {
             jumpHandler.StartJump();
@@ -154,7 +205,13 @@ public class PlayerController : MonoBehaviour, IPlayer
         }
     }
 
-    private void OnActionJumpCancelled(CallbackContext c)
+
+    //private void OnActionJumpCancelled(CallbackContext c)
+    //{
+    //    CancelJump();
+    //}
+
+    public void CancelJump()
     {
         jumpHandler.CancelJumpImpulse();
     }

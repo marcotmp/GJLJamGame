@@ -15,8 +15,8 @@ TagManager:
   - Ground
   - Interactable
   - PlayerBullet
-  - 
-  - 
+  - Vehicle
+  - VehicleTrigger
   - 
   - 
   - 

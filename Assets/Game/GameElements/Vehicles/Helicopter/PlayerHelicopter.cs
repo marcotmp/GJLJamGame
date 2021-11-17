@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerHelicopter : MonoBehaviour, IPlayer
+public class PlayerHelicopter : MonoBehaviour, IVehicle
 {
     public InputActionAsset playerInput;
     [HideInInspector] public InputAction move;

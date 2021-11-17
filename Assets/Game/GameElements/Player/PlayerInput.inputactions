@@ -250,6 +250,17 @@
                 },
                 {
                     "name": "",
+                    "id": "db83dcfe-2f0c-4546-b82a-14070a3d0a27",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeCharacter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e6358847-46c0-41b0-b071-e71e34db50d5",
                     "path": "<Keyboard>/j",
                     "interactions": "",
