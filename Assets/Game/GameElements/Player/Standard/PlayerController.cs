@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour, IPlayer
 
     private bool facingRight = false;
 
-    private bool isActive = true;
+    private bool isActive = false;
 
     private void Awake()
     {
@@ -53,8 +53,6 @@ public class PlayerController : MonoBehaviour, IPlayer
     private void Start()
     {
         jumpHandler.rigidbody = rigidbody;
-
-        //EnableControls();        
     }
 
     private void OnDestroy()
@@ -92,6 +90,7 @@ public class PlayerController : MonoBehaviour, IPlayer
         selectorIcon.SetActive(false);
         // deactivate controller
         DisableControls();
+        rigidbody.mass = 0.1f;
     }
 
     public void Activate()
@@ -101,6 +100,7 @@ public class PlayerController : MonoBehaviour, IPlayer
         selectorIcon.SetActive(true);
         // activate controller
         EnableControls();
+        rigidbody.mass = 1f;
     }
 
     private void EnableControls()

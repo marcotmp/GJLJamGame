@@ -85,7 +85,8 @@ public class TankController : MonoBehaviour, IPlayer
         // hide selection icon
         selectorIcon.SetActive(false);
         // deactivate controller
-        DisableControls();        
+        DisableControls();
+        rigidbody.mass = 0.1f;
     }
 
     public void Activate()
@@ -95,6 +96,7 @@ public class TankController : MonoBehaviour, IPlayer
         selectorIcon.SetActive(true);
         // activate controller
         EnableControls();
+        rigidbody.mass = 1f;
     }
 
     private void EnableControls()

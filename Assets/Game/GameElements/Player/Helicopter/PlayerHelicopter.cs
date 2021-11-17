@@ -53,6 +53,7 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
         actionMap.Enable();
         selectorIcon.SetActive(true);
         fsm.ChangeState(typeof(HeliActivate));
+        rb.mass = 1f;
     }
 
     public void Deactivate()
@@ -60,6 +61,7 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
         actionMap.Disable();
         selectorIcon.SetActive(false);
         fsm.ChangeState(typeof(HeliDeactivate));
+        rb.mass = 0.1f;
     }
 
 
@@ -71,7 +73,7 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
             Debug.Log($"Finding Objects to grab {rh.collider.name}");
             if (rh.collider.gameObject != this.gameObject)
             {
-                return rh.collider.gameObject;//.GetComponent<IPlayer>();
+                return rh.collider.gameObject;//.GetComponent<IDraggable>();
             }
         }
 
