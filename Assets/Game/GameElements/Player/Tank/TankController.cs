@@ -33,8 +33,6 @@ public class TankController : MonoBehaviour, IPlayer
 
     private bool facingRight = false;
 
-    private bool isActive = true;
-
     private void Awake()
     {
         var actionMap = inputActionAsset.FindActionMap("Gameplay");
@@ -50,10 +48,6 @@ public class TankController : MonoBehaviour, IPlayer
     private void Start()
     {
         jumpHandler.rigidbody = rigidbody;
-
-
-
-        EnableControls();        
     }
 
     private void OnDestroy()
@@ -63,7 +57,6 @@ public class TankController : MonoBehaviour, IPlayer
 
     private void FixedUpdate()
     {
-        if (!isActive) return;
 
         // move vertically
         jumpHandler.Update();
@@ -92,8 +85,7 @@ public class TankController : MonoBehaviour, IPlayer
         // hide selection icon
         selectorIcon.SetActive(false);
         // deactivate controller
-        //DisableControls();
-        isActive = false;
+        DisableControls();        
     }
 
     public void Activate()
@@ -102,9 +94,7 @@ public class TankController : MonoBehaviour, IPlayer
         // show selection icon
         selectorIcon.SetActive(true);
         // activate controller
-        //EnableControls();
-        isActive = true;
-
+        EnableControls();
     }
 
     private void EnableControls()
@@ -160,8 +150,11 @@ public class TankController : MonoBehaviour, IPlayer
 
     private void OnShootAction(CallbackContext c)
     {
-        // Shoot bullet
-        cannon.Shoot();
+        // toogle shooting
+        if(!cannon.IsAutoShooting)
+            cannon.StartAutoShoot();
+        else
+            cannon.StopShoot();
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)

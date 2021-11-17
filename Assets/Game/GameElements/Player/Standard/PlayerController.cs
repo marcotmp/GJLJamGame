@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour, IPlayer
     {
         jumpHandler.rigidbody = rigidbody;
 
-        EnableControls();        
+        //EnableControls();        
     }
 
     private void OnDestroy()

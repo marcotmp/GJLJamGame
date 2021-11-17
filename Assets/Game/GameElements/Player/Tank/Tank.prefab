@@ -308,6 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2852816520091437159, guid: c540cdb5a53f2234c952edc41e2fae99, type: 3}
   exit: {fileID: 6120631329319633419}
+  delay: 0.3
 --- !u!1 &6120631329319633418
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   activeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   inactiveColor: {r: 1, g: 0, b: 0, a: 1}
   size: {x: 0.9, y: 0.2}

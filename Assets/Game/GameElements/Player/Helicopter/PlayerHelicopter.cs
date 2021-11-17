@@ -32,7 +32,6 @@ public class PlayerHelicopter : MonoBehaviour, IPlayer
         rb = GetComponent<Rigidbody2D>();
 
         fsm = new FiniteStateMachine();
-        
         fsm.AddState(new HeliActivate(this));
         fsm.AddState(new HeliMove(this));
         fsm.AddState(new HeliDeactivate(this));
