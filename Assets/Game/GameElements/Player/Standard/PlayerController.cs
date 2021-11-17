@@ -54,8 +54,6 @@ public class PlayerController : MonoBehaviour, IPlayer
     {
         jumpHandler.rigidbody = rigidbody;
 
-
-
         EnableControls();        
     }
 
@@ -66,8 +64,6 @@ public class PlayerController : MonoBehaviour, IPlayer
 
     private void FixedUpdate()
     {
-        if (!isActive) return;
-
         // move vertically
         jumpHandler.Update();
 
@@ -95,8 +91,7 @@ public class PlayerController : MonoBehaviour, IPlayer
         // hide selection icon
         selectorIcon.SetActive(false);
         // deactivate controller
-        //DisableControls();
-        isActive = false;
+        DisableControls();
     }
 
     public void Activate()
@@ -105,27 +100,29 @@ public class PlayerController : MonoBehaviour, IPlayer
         // show selection icon
         selectorIcon.SetActive(true);
         // activate controller
-        //EnableControls();
-        isActive = true;
-
+        EnableControls();
     }
 
     private void EnableControls()
     {
+        if (isActive) return;
+        Debug.Log("EnableControls");
         move.performed += OnActionMove;
         move.canceled += OnActionMove;
         jump.started += OnActionJumpStarted;
         jump.canceled += OnActionJumpCancelled;
-        //action.performed += OnActionAction;
+        isActive = true;
     }
 
     private void DisableControls()
     {
+        if (!isActive) return;
+        Debug.Log("DisableControls");
         move.performed -= OnActionMove;
         move.canceled -= OnActionMove;
         jump.started -= OnActionJumpStarted;
         jump.canceled -= OnActionJumpCancelled;
-        //action.performed -= OnActionAction;
+        isActive = false;
     }
 
 
@@ -149,6 +146,7 @@ public class PlayerController : MonoBehaviour, IPlayer
 
     private void OnActionJumpStarted(CallbackContext c)
     {
+        Debug.Log($"OnActionJumpStarted {name} {c.phase}");
         if (jumpHandler.isJumping == false && isOnGround)
         {
             jumpHandler.StartJump();
