@@ -109,12 +109,12 @@ MonoBehaviour:
   selectorIcon: {fileID: 3855982109871635630}
   horizontalSpeed: 0
   maxSpeed: 5
-  jumpImpulse: 7
+  jumpImpulse: 8
   acceleration: 25
   decceleration: 30
-  gravityUp: 30
-  gravityDown: 20
-  gravityScale: 8
+  gravityUp: 35
+  gravityDown: 25
+  gravityScale: 18
   moveId: Move
   moveState:
     player: {fileID: 0}
