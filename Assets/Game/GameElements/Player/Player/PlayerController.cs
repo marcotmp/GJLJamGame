@@ -87,19 +87,19 @@ public class PlayerController : MonoBehaviour
     {
         fsm.FixedUpdate();
 
-        ToggleSign();
+        //ToggleSign();
     }
 
-    private void ToggleSign()
-    { 
-        // toggle sign
-        var vehicleDetector = this.vehicleDetector.CheckCollision();
+    //private void ToggleSign()
+    //{ 
+    //    // toggle sign
+    //    var vehicleDetector = this.vehicleDetector.CheckCollision();
         
-        if (vehicleDetector)
-            selectorIcon.SetActive(true);
-        else if (!vehicleDetector && selectorIcon.activeSelf)
-            selectorIcon.SetActive(false);
-    }
+    //    if (vehicleDetector)
+    //        selectorIcon.SetActive(true);
+    //    else if (!vehicleDetector && selectorIcon.activeSelf)
+    //        selectorIcon.SetActive(false);
+    //}
 
     public void ProcessMove()
     {
