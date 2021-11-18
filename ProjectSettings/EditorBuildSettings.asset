@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/LevelProgression/Test2.unity
     guid: 8ac93e6eee5399c4a850521f5dff8cea
+  - enabled: 1
+    path: Assets/Game/Scenes/MainMenu/MainMenu.unity
+    guid: 43dfbf2af8b3c3a4794072b025781012
   m_configObjects: {}
