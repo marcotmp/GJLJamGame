@@ -9,6 +9,46 @@
 							<ObjectRef Name="System" ID="{9DD85669-FC57-4B6E-A6AF-2E58E9C6A72B}" WorkUnitID="{5CA24F62-2D74-4408-87F9-FFE6B1F17924}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="2D" ID="{FCCF05C3-F1CB-4FBF-8E6A-15B6CCAD62C4}">
+							<ChildrenList>
+								<Bus Name="Music" ID="{418D2BBD-EF97-49E8-8243-2BF6EF0C2174}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Player" ID="{D6B739CB-E3F9-4281-9699-4C932CBBAAB3}">
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="3D" ID="{F775D4A7-570D-4CC7-A084-CCC4FA7358D8}">
+							<ChildrenList>
+								<Bus Name="Ambience" ID="{16C92C55-41D7-42A2-8CA5-951F160A084C}">
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Objects" ID="{E9D1C035-B118-4612-9418-A72C107058F4}">
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<AuxBus Name="Verb" ID="{37D75D82-32D9-4674-99C0-E57E9D00D529}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{90B6C219-A347-4362-8B14-A75702AB4064}" ShortID="931490803" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</AuxBus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

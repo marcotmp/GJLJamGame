@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{58EC6B52-350F-46A5-BC86-D14BBBF54A95}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{58EC6B52-350F-46A5-BC86-D14BBBF54A95}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{58EC6B52-350F-46A5-BC86-D14BBBF54A95}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Player_Tank_SoundTest" ID="{077175F9-D170-4175-A239-6376B7B64DB4}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="play_Tank_GetIn" ID="{AB252B75-7371-4346-9921-286511154C58}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_Shot" ID="{327740FC-5ED2-4575-AD0F-CEB7B3A1AFAD}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_MoveStart" ID="{755B5317-524B-482B-A926-4F0E65AC3904}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_ShotExplosion" ID="{05F6FC60-0FEB-4D3A-9EDE-CFF25D120830}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_MoveStop" ID="{002924B7-6067-45CB-94F5-263BABC425FE}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_GetOut" ID="{3C183D52-1796-482F-BA74-1953A74AE76E}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
