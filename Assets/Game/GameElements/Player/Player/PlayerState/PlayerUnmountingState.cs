@@ -15,16 +15,12 @@ public class PlayerUnmountingState : PlayerState
         // change to move state
         waitCoroutine = Wait();
         player.StartCoroutine(waitCoroutine);
-
-        player.action.canceled += OnActionUnmountEnded;
     }
 
     public override void Exit()
     {
         base.Exit();
         player.StopCoroutine(waitCoroutine);
-
-        player.action.canceled -= OnActionUnmountEnded;
     }
 
     private IEnumerator Wait()
@@ -32,10 +28,5 @@ public class PlayerUnmountingState : PlayerState
         yield return new WaitForSeconds(delay);
         fsm.ChangeState<PlayerMoveState>();
         player.Unmount();
-    }
-
-    void OnActionUnmountEnded(CallbackContext c)
-    {
-        fsm.ChangeState<PlayerMountedState>();
     }
 }
