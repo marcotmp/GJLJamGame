@@ -51,6 +51,7 @@ MonoBehaviour:
   transition: {fileID: 11400000, guid: 3e14c47e1df9c4144ae76263a6aaaa0f, type: 2}
   winEventChannel: {fileID: 11400000, guid: efdae9485f5951d4aad8c643f09d20ab, type: 2}
   delay: 0
+  levelProgression: {fileID: 11400000, guid: 3344946f78134a64195d5d1fb63031cd, type: 2}
 --- !u!61 &8053536237104109634
 BoxCollider2D:
   m_ObjectHideFlags: 0
