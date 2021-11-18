@@ -59,6 +59,7 @@ public class HeliMove : HeliState
         playerHelicopter.grab.performed -= SetGrabInput;
 
         playerHelicopter.anim.SetBool("Move", false);
+        moveDirection = Vector2.zero;
     }
 
     void SetMovementInput(CallbackContext ctx)

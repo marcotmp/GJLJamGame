@@ -50,14 +50,14 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
 
     public void MountPlayer(PlayerController player)
     {
-        actionMap.Enable();
+        //actionMap.Enable();
         selectorIcon.SetActive(true);
         fsm.ChangeState(typeof(HeliActivate));
     }
 
     public void Deactivate()
     {
-        actionMap.Disable();
+        //actionMap.Disable();
         selectorIcon.SetActive(false);
         fsm.ChangeState(typeof(HeliDeactivate));
     }
@@ -111,5 +111,10 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
             objectGrabbed = null;
             joint.enabled = false;
         }
+    }
+
+    public void UnmountPlayer()
+    {
+        Deactivate();
     }
 }

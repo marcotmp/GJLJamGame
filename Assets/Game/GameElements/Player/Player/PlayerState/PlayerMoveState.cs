@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using static UnityEngine.InputSystem.InputAction;
 
@@ -6,11 +7,13 @@ public class PlayerMoveState : PlayerState
 {
     public override void Enter()
     {
-        //Debug.Log("PlayerMoveState.Enter");
+        Debug.Log("PlayerMoveState.Enter");
+        
         base.Enter();
         player.move.performed += OnActionMove;
         player.move.canceled += OnActionMove;
         player.jump.performed += OnActionJumpStarted;
+        player.action.performed += OnActionMountStarted;
     }
 
     public override void Exit()
@@ -19,6 +22,7 @@ public class PlayerMoveState : PlayerState
         player.move.performed -= OnActionMove;
         player.move.canceled -= OnActionMove;
         player.jump.performed -= OnActionJumpStarted;
+        player.action.performed -= OnActionMountStarted;
     }
 
     public override void FixedUpdate()
@@ -47,5 +51,15 @@ public class PlayerMoveState : PlayerState
         Debug.Log("PlayerMoveState.OnActionJumpStarted");
         player.StartJump();
         fsm.ChangeState<PlayerJumpState>();
+    }
+
+    private void OnActionMountStarted(CallbackContext c)
+    {
+        Debug.Log($"{c.phase}");
+        
+        if(player.IsCollidingVehicle())
+        {
+            fsm.ChangeState<PlayerMountingState>();
+        }
     }
 }

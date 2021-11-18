@@ -52,23 +52,27 @@ public class PlayerController : MonoBehaviour
 
     private FiniteStateMachine fsm;
 
+    IVehicle vehicle;
+
     private void Awake()
     {
         actionMap = inputActionAsset.FindActionMap("Gameplay");
         move = actionMap.FindAction(moveId);
         jump = actionMap.FindAction("Jump");
         action = actionMap.FindAction("ChangeCharacter");
-        action.performed += OnMountAction;
+        // action.performed += OnMountAction;
 
         actionMap.Enable();
 
         // States
         fsm = new FiniteStateMachine();
+
         moveState.player = this;
         jumpState.player = this;
         mountingState.player = this;
         mountedState.player = this;
         unmountedState.player = this;
+
         fsm.AddState(moveState);
         fsm.AddState(jumpState);
         fsm.AddState(mountingState);
@@ -78,10 +82,10 @@ public class PlayerController : MonoBehaviour
         fsm.ChangeState(moveState);
     }
 
-    private void OnDestroy()
-    {
-        action.started -= OnMountAction;
-    }
+    // private void OnDestroy()
+    // {
+    //     action.started -= OnMountAction;
+    // }
 
     private void FixedUpdate()
     {
@@ -128,6 +132,26 @@ public class PlayerController : MonoBehaviour
         rigidbody.velocity = motion;
     }
 
+    public void ProcessStop()
+    {
+        if (isOnGround) motion.x = Mathf.MoveTowards(motion.x, 0, decceleration * Time.deltaTime);
+        
+        motion.x = Mathf.Clamp(motion.x, -maxSpeed, maxSpeed);
+
+        if (!isOnGround)
+        {
+            if (motion.y > 0) motion.y -= gravityUp * Time.deltaTime;
+            else motion.y -= gravityDown * Time.deltaTime;
+            motion.y = Mathf.Max(motion.y, -gravityScale);
+        }
+
+        bool wasOnGround = isOnGround;
+        isOnGround = groundDetector.CheckCollision();
+        if (!wasOnGround && isOnGround) motion.y = 0;
+
+        rigidbody.velocity = motion;
+    }
+
     public bool IsOnGround => isOnGround;
 
     public void Move(Vector2 dir)
@@ -156,31 +180,53 @@ public class PlayerController : MonoBehaviour
         if (motion.y > 0) motion.y = 0;
     }
 
-    private bool isMounted = false;
-    private void OnMountAction(CallbackContext c)
-    {
-        Debug.Log($"{c.phase}");
-        
+    // private bool isMounted = false;
+
+    public void MountAction()
+    {   
         if (vehicleDetector.CheckCollision())
         {
             var obj = vehicleDetector.raycastHit2D;
-            var vehicle = obj.collider.GetComponent<IVehicle>();
+            vehicle = obj.collider.GetComponent<IVehicle>();
 
             // mount player on the vehicle;
             vehicle.MountPlayer(this);
-            gameObject.SetActive(false);
-            isMounted = true;
-            fsm.ChangeState<PlayerMountedState>();
+            // gameObject.SetActive(false);
+            // isMounted = true;
             playerMountedEvent.Raise(obj.collider.gameObject);
+            Deactivate();
         }
+    }
+
+    public bool IsCollidingVehicle()
+    {
+        return vehicleDetector.CheckCollision();
     }
 
     public void Unmount()
     {
-        isMounted = false;
-        gameObject.SetActive(true);
-        fsm.ChangeState<PlayerUnmountingState>();
+        // isMounted = false;
+        // gameObject.SetActive(true);
+        // fsm.ChangeState<PlayerUnmountingState>();
         playerMountedEvent.Raise(gameObject);
+        vehicle.UnmountPlayer();
+        transform.position = vehicle.transform.position;
+        vehicle = null;
+        Activate();
+    }
+
+    void Activate()
+    {
+        rigidbody.bodyType = RigidbodyType2D.Dynamic;
+        sprite.enabled = true;
+        GetComponent<BoxCollider2D>().isTrigger = false;
+    }
+
+    void Deactivate()
+    {
+        rigidbody.bodyType = RigidbodyType2D.Kinematic;
+        sprite.enabled = false;
+        GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
