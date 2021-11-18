@@ -81,7 +81,7 @@ public class TankController : MonoBehaviour, IVehicle
     {
         move.performed += OnActionMove;
         move.canceled += OnActionMove;
-        unmount.started += OnExitPlayer;
+        // unmount.started += OnExitPlayer;
         shoot.performed += OnShootAction;
     }
 
@@ -89,7 +89,7 @@ public class TankController : MonoBehaviour, IVehicle
     {
         move.performed -= OnActionMove;
         move.canceled -= OnActionMove;
-        unmount.started -= OnExitPlayer;
+        // unmount.started -= OnExitPlayer;
         shoot.performed -= OnShootAction;
     }
 
@@ -109,12 +109,18 @@ public class TankController : MonoBehaviour, IVehicle
         }
     }
 
-    private void OnExitPlayer(CallbackContext c)
+    // private void OnExitPlayer(CallbackContext c)
+    // {
+    //     // player.transform.position = transform.position;
+    //     selectorIcon.SetActive(false);
+    //     // actionMap.Disable();
+    //     // player.Unmount();
+    //     Deactivate();
+    // }
+
+    public void UnmountPlayer()
     {
-        player.transform.position = transform.position;
         selectorIcon.SetActive(false);
-        actionMap.Disable();
-        player.Unmount();
         Deactivate();
     }
 
