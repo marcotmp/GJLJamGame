@@ -9,13 +9,11 @@ public class PlayerJumpState : PlayerState
 
     public override void Enter()
     {
-        //Debug.Log("PlayerJumpState.Enter");
         base.Enter();
         player.move.performed += OnActionMove;
         player.move.canceled += OnActionMove;
 
-        // player.jump.performed += OnActionJumpStarted;
-        player.jump.canceled += OnActionJumpCancelled;
+        // player.jump.canceled += OnActionJumpCancelled;
     }
 
     public override void Exit()
@@ -24,14 +22,12 @@ public class PlayerJumpState : PlayerState
         player.move.performed -= OnActionMove;
         player.move.canceled -= OnActionMove;
 
-        // player.jump.performed -= OnActionJumpStarted;
-        player.jump.canceled -= OnActionJumpCancelled;
+        // player.jump.canceled -= OnActionJumpCancelled;
 
     }
 
     public override void FixedUpdate()
     {
-        //Debug.Log("PlayerMoveState.FixedUpdate");
         base.FixedUpdate();
 
         if (player.IsOnGround)
@@ -47,13 +43,12 @@ public class PlayerJumpState : PlayerState
 
     public void OnActionMove(CallbackContext c)
     {
-        //Debug.Log("PlayerJumpState.OnActionMove");
         player.Move(c.ReadValue<Vector2>());
     }
 
-    private void OnActionJumpCancelled(CallbackContext c)
-    {
-        player.CancelJump();
-    }
+    // private void OnActionJumpCancelled(CallbackContext c)
+    // {
+    //     player.CancelJump();
+    // }
 }
 

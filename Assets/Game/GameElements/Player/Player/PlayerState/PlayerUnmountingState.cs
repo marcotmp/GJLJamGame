@@ -10,7 +10,6 @@ public class PlayerUnmountingState : PlayerState
     private IEnumerator waitCoroutine;
     public override void Enter()
     {
-        Debug.Log("PlayerUnmountingState");
         base.Enter();
         // start coroutine / wait 1 sec
         // change to move state
@@ -31,9 +30,8 @@ public class PlayerUnmountingState : PlayerState
     private IEnumerator Wait()
     {
         yield return new WaitForSeconds(delay);
-        player.actionMap.Enable();
         fsm.ChangeState<PlayerMoveState>();
-        player.Unmount();   
+        player.Unmount();
     }
 
     void OnActionUnmountEnded(CallbackContext c)
