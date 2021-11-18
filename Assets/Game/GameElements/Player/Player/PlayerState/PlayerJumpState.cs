@@ -9,7 +9,7 @@ public class PlayerJumpState : PlayerState
 
     public override void Enter()
     {
-        Debug.Log("PlayerJumpState.Enter");
+        //Debug.Log("PlayerJumpState.Enter");
         base.Enter();
         player.move.performed += OnActionMove;
         player.move.canceled += OnActionMove;

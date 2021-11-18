@@ -6,23 +6,19 @@ public class PlayerMoveState : PlayerState
 {
     public override void Enter()
     {
-        Debug.Log("PlayerMoveState.Enter");
+        //Debug.Log("PlayerMoveState.Enter");
         base.Enter();
-        //player.RegisterMoveControl();
         player.move.performed += OnActionMove;
         player.move.canceled += OnActionMove;
         player.jump.performed += OnActionJumpStarted;
-        // player.jump.canceled += OnActionJumpCancelled;
     }
 
     public override void Exit()
     {
         base.Exit();
-        //player.UnregisterMoveControl();
         player.move.performed -= OnActionMove;
         player.move.canceled -= OnActionMove;
         player.jump.performed -= OnActionJumpStarted;
-        // player.jump.canceled -= OnActionJumpCancelled;
     }
 
     public override void FixedUpdate()
@@ -43,7 +39,6 @@ public class PlayerMoveState : PlayerState
     public void OnActionMove(CallbackContext c)
     {
         var val = c.ReadValue<Vector2>();
-        //Debug.Log($"PlayerMoveState.OnActionMove {val}");
         player.Move(val);
     }
 
@@ -53,9 +48,4 @@ public class PlayerMoveState : PlayerState
         player.StartJump();
         fsm.ChangeState<PlayerJumpState>();
     }
-
-    // private void OnActionJumpCancelled(CallbackContext c)
-    // {
-    //     player.CancelJump();
-    // }
 }

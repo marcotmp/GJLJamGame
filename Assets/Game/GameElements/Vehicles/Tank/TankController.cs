@@ -8,7 +8,6 @@ public class TankController : MonoBehaviour, IVehicle
     [SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private InputActionAsset inputActionAsset;
-    [SerializeField] private JumpHandler jumpHandler;
     [SerializeField] private BoxDetector groundDetector;
     [SerializeField] private PlayerSelector playerSelector;
     [SerializeField] private GameObject selectorIcon;
@@ -17,14 +16,9 @@ public class TankController : MonoBehaviour, IVehicle
 
     [Header("Speed")]
     [SerializeField] private float horizontalSpeed;
-
-    [Header("Testing")]
-    [SerializeField] private float upForce = 30;
-    [SerializeField] private float gravityScale = 10;
-    [SerializeField] private float fallingGravityScale = 20;
-
+    private InputActionMap actionMap;
     private InputAction move;
-    private InputAction jump;
+    private InputAction unmount;
     private InputAction shoot;
 
     private Vector2 dpadDir;
@@ -32,20 +26,18 @@ public class TankController : MonoBehaviour, IVehicle
     private bool isOnGround;
 
     private bool facingRight = false;
+    private PlayerController player;
 
     private void Awake()
     {
-        var actionMap = inputActionAsset.FindActionMap("Gameplay");
+        actionMap = inputActionAsset.FindActionMap("Gameplay");
         move = actionMap.FindAction("Move");
-        jump = actionMap.FindAction("Jump");
+        unmount = actionMap.FindAction("ChangeCharacter");
         shoot = actionMap.FindAction("Shoot");
-
-        actionMap.Enable();
     }
 
     private void Start()
     {
-        jumpHandler.rigidbody = rigidbody;
     }
 
     private void OnDestroy()
@@ -55,54 +47,41 @@ public class TankController : MonoBehaviour, IVehicle
 
     private void FixedUpdate()
     {
-
-        // move vertically
-        jumpHandler.Update();
-
         // move horizontally
         rigidbody.velocity = new Vector2(horizontalSpeed * dpadDir.x, rigidbody.velocity.y);
 
-        // if moving down
-        if (rigidbody.velocity.y <= 0)
-        {
-            var wasOnGround = isOnGround;
-            isOnGround = groundDetector.CheckCollision();
+        //// if moving down
+        //if (rigidbody.velocity.y <= 0)
+        //{
+        //    var wasOnGround = isOnGround;
+        //    isOnGround = groundDetector.CheckCollision();
 
-            if (isOnGround)
-            {
-                //if (!wasOnGround)
-                //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
-                jumpHandler.CancelJump();
-            }
-        }
+        //    if (isOnGround)
+        //    {
+        //        //if (!wasOnGround)
+        //        //    StartCoroutine(JumpSqueeze(1.25f, 0.8f, 0.05f));
+        //    }
+        //}
     }
 
     public void Deactivate()
     {
-        Debug.Log($"{name} -> Deactivate");
-        // hide selection icon
         selectorIcon.SetActive(false);
-        // deactivate controller
         DisableControls();
-        rigidbody.mass = 0.1f;
     }
 
     public void MountPlayer(PlayerController player)
     {
-        //Debug.Log($"{name} -> Activate");
-        // show selection icon
+        this.player = player;
         selectorIcon.SetActive(true);
-        // activate controller
         EnableControls();
-        rigidbody.mass = 1f;
     }
 
     private void EnableControls()
     {
         move.performed += OnActionMove;
         move.canceled += OnActionMove;
-        //jump.started += OnActionJumpStarted;
-        //jump.canceled += OnActionJumpCancelled;
+        unmount.started += OnExitPlayer;
         shoot.performed += OnShootAction;
     }
 
@@ -110,11 +89,9 @@ public class TankController : MonoBehaviour, IVehicle
     {
         move.performed -= OnActionMove;
         move.canceled -= OnActionMove;
-        //jump.started -= OnActionJumpStarted;
-        //jump.canceled -= OnActionJumpCancelled;
+        unmount.started -= OnExitPlayer;
         shoot.performed -= OnShootAction;
     }
-
 
     private void OnActionMove(CallbackContext c)
     {
@@ -130,33 +107,20 @@ public class TankController : MonoBehaviour, IVehicle
             transform.rotation = Quaternion.Euler(0, 180, 0);
             facingRight = false;
         }
-
-        //JunpFromObject();
     }
 
-    private void OnActionJumpStarted(CallbackContext c)
+    private void OnExitPlayer(CallbackContext c)
     {
-        if (jumpHandler.isJumping == false && isOnGround)
-        {
-            jumpHandler.StartJump();
-            //StartCoroutine(JumpSqueeze(0.5f, 1.2f, 0.1f));
-        }
-    }
-
-    private void OnActionJumpCancelled(CallbackContext c)
-    {
-        jumpHandler.CancelJumpImpulse();
+        player.transform.position = transform.position;
+        selectorIcon.SetActive(false);
+        actionMap.Disable();
+        player.Unmount();
+        Deactivate();
     }
 
     private void OnShootAction(CallbackContext c)
     {
-        // toogle shooting
-        //if(!cannon.IsAutoShooting)
-        //    cannon.StartAutoShoot();
-        //else
-        //    cannon.StopShoot();
         cannon.Shoot();
-
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
