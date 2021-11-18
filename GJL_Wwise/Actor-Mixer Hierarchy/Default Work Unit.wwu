@@ -5,11 +5,19 @@
 			<ChildrenList>
 				<Folder Name="Player" ID="{F7FDB80F-85B0-492E-A4DC-1BD493A7527C}" ShortID="594972445">
 					<ChildrenList>
-						<Folder Name="Helicopter" ID="{1734CEDE-67A5-40CB-9A26-298061C8E8AC}" ShortID="428292854">
+						<Folder Name="Tank" ID="{FA5B98E9-27E4-4087-8864-AD32FF37AB03}" ShortID="1047620960">
 							<ChildrenList>
-								<Folder Name="Idle" ID="{70CCD497-171E-4758-867A-E7C4C04919C2}" ShortID="779107337">
+								<ActorMixer Name="Movement" ID="{D423EA8E-4D61-4871-B363-A1C86BCE05B5}" ShortID="698525219">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="sfx_$rblock" ID="{DE1379EF-7C59-4E24-AD78-C50A6FBCD540}" ShortID="644075104">
+										<Sound Name="sfx_PlayerTank_GetOut" ID="{55936B31-0A88-4111-A5FA-7CE5560ABAF6}" ShortID="60768830">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
@@ -19,612 +27,812 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_$rblock" ID="{0260C8B6-F8EC-44AC-8317-A0B0A5C028A9}">
+												<AudioFileSource Name="sfx_PlayerTank_GetOff" ID="{AE3A14B3-80FA-440D-9596-27EE61D43407}">
 													<Language>SFX</Language>
-													<AudioFile>Player\Helicopter\Idle\sfx_$rblock.wav</AudioFile>
+													<AudioFile>Player\Tank\sfx_PlayerTank_GetOff.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="923029790"/>
+														<MediaID ID="813733210"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_$rblock" ID="{0260C8B6-F8EC-44AC-8317-A0B0A5C028A9}" Platform="Linked"/>
+												<ActiveSource Name="sfx_PlayerTank_GetOff" ID="{AE3A14B3-80FA-440D-9596-27EE61D43407}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerTank_Idle" ID="{0FD8B979-7567-4220-A238-E7A3EFA11AA9}" ShortID="1041305546">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-30</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6D88A5C4-039C-4D20-9D68-73D157D6595B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerTank_Idle" ID="{39D76D75-E16F-4057-B352-45882F3D27AA}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Tank\sfx_PlayerTank_Idle.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="520054179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerTank_Idle" ID="{39D76D75-E16F-4057-B352-45882F3D27AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="MoveStart" ID="{5466C581-1578-434B-A8CD-6D9CE68DBB25}" ShortID="613054993">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1E981362-506F-4067-8A7B-56B990889903}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_PlayerTank_MoveStart_02" ID="{2DB77F47-A5ED-4FE8-BC49-71F28C171857}" ShortID="417753244">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_MoveStart_02" ID="{FF1ECEB7-4532-4E94-ACFA-DC8767506416}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_MoveStart_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="763453536"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_MoveStart_02" ID="{FF1ECEB7-4532-4E94-ACFA-DC8767506416}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_MoveStart_01" ID="{2BD85108-4322-4FB8-A647-5BBA395B4C28}" ShortID="204691231">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_MoveStart_01" ID="{199EA966-17E5-453B-AF4A-51E5D7F7FAAB}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_MoveStart_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="490237738"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_MoveStart_01" ID="{199EA966-17E5-453B-AF4A-51E5D7F7FAAB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_MoveStart_03" ID="{305ED386-6B52-42EF-891E-24BA19CC2AA3}" ShortID="910260292">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_MoveStart_03" ID="{040D8296-73B2-45B9-9748-B30E041D803C}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_MoveStart_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="573316817"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_MoveStart_03" ID="{040D8296-73B2-45B9-9748-B30E041D803C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_MoveStart_04" ID="{E71C8826-B75F-430F-9778-534033C5BB0D}" ShortID="425714276">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_MoveStart_04" ID="{43785FEA-8461-4E35-81D3-6821001F03E9}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_MoveStart_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="605893097"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_MoveStart_04" ID="{43785FEA-8461-4E35-81D3-6821001F03E9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<Sound Name="sfx_PlayerTank_MovingLoop" ID="{229F5194-9D0F-4DC7-A056-755CCD5F7E9D}" ShortID="899015390">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{ACC0A91F-D585-40E9-ABEE-D0BEB537BD24}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerTank_MovingLoop" ID="{231C2773-F157-4C97-B1B2-2D82426F068B}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Tank\sfx_PlayerTank_MovingLoop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="255387965"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerTank_MovingLoop" ID="{231C2773-F157-4C97-B1B2-2D82426F068B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerTank_EngineStart" ID="{83183683-D062-45FD-9AC2-1E85F937B04F}" ShortID="698809855">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerTank_EngineStart" ID="{2927361A-049C-4BBF-BDB8-F719E2E6D4D1}">
+													<PropertyList>
+														<Property Name="CrossfadeShape" Type="int16" Value="2"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.73341666666667"/>
+														<Property Name="FadeOutShape" Type="int16" Value="1"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Player\Tank\sfx_PlayerTank_EngineStart.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="724895998"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerTank_EngineStart" ID="{2927361A-049C-4BBF-BDB8-F719E2E6D4D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="MoveStop" ID="{53A509C9-C423-4EB1-84AA-9C2CED8DBD49}" ShortID="398692352">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-300</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_PlayerTank_MoveStop_01" ID="{9D65B407-80C3-48E6-8F77-593295C8CAEB}" ShortID="903886373">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_MoveStop_01" ID="{9A02B94B-3E2A-4272-B84C-20AB52440929}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_MoveStop_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="536405860"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_MoveStop_01" ID="{9A02B94B-3E2A-4272-B84C-20AB52440929}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_MoveStop_02" ID="{E3FA37F3-60DE-4DEF-9426-4F96F03F4735}" ShortID="287951638">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_MoveStop_02" ID="{DEF65D4C-9E09-4783-A380-A2ADA6B47DEB}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_MoveStop_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="445659384"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_MoveStop_02" ID="{DEF65D4C-9E09-4783-A380-A2ADA6B47DEB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_MoveStop_03" ID="{BC5D5ED3-5305-46B6-85DD-52862A5BA799}" ShortID="845783589">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_MoveStop_03" ID="{6559ABD6-9959-48AD-A8E6-DF3D7772F8EF}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_MoveStop_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="574590072"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_MoveStop_03" ID="{6559ABD6-9959-48AD-A8E6-DF3D7772F8EF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_MoveStop_04" ID="{513CE2D2-CD99-4F97-AC4C-4631C4F1FA7D}" ShortID="926917063">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_MoveStop_04" ID="{F679AACD-7ED7-4C91-9CE6-34254B13CDA3}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_MoveStop_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="596215666"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_MoveStop_04" ID="{F679AACD-7ED7-4C91-9CE6-34254B13CDA3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
+								<ActorMixer Name="Weapon" ID="{2BD2C9D6-60A1-4C01-ACCB-777F5D2BFE51}" ShortID="752141902">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="ShotExplosion" ID="{3ED399A5-46E5-483B-9076-6314372BBDB7}" ShortID="705539924">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6FC42D54-39CE-4BF6-82D4-32756E9361FA}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="30"/>
+																	<Property Name="Min" Type="Real64" Value="-30"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_PlayerTank_ShotExplosion_01" ID="{7C55ED4B-126F-4046-A54F-5E504546D815}" ShortID="882159372">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_ShotExplosion_01" ID="{C9878DE2-0A73-4F45-B48D-C70AD392B57F}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_ShotExplosion_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="752266291"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_ShotExplosion_01" ID="{C9878DE2-0A73-4F45-B48D-C70AD392B57F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_ShotExplosion_02" ID="{9B1D9AED-919A-44BE-835C-8167B6B01FC7}" ShortID="139255560">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_ShotExplosion_02" ID="{33CACD1F-AFD7-4293-981C-944961321D80}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_ShotExplosion_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="874272289"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_ShotExplosion_02" ID="{33CACD1F-AFD7-4293-981C-944961321D80}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_ShotExplosion_03" ID="{AF7921FC-7BE6-4167-A5A5-FBF78BBDEA4B}" ShortID="195583545">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_ShotExplosion_03" ID="{4372E1B6-E75C-4FAD-A164-B676CECACE0E}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_ShotExplosion_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="679296252"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_ShotExplosion_03" ID="{4372E1B6-E75C-4FAD-A164-B676CECACE0E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_ShotExplosion_04" ID="{8066C85C-4274-4058-88BF-9EF2E52A56DE}" ShortID="158915614">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_ShotExplosion_04" ID="{A685E29D-B3D7-4462-9FB0-5D554FC7A3F7}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_ShotExplosion_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="626899395"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_ShotExplosion_04" ID="{A685E29D-B3D7-4462-9FB0-5D554FC7A3F7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Shot" ID="{EEB001A2-C69E-4713-845D-10420F1C2F52}" ShortID="894277567">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{31C6E7A7-EDC6-44E9-94BE-595DD97630E9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="30"/>
+																	<Property Name="Min" Type="Real64" Value="-30"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_PlayerTank_Shot_01" ID="{DD50D1A8-304B-4B5A-83E1-7B3D36B6D6D3}" ShortID="60023462">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_Shot_01" ID="{1F78D8E0-DE04-4AA2-B3C9-B24E931F020A}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_Shot_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="911416862"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_Shot_01" ID="{1F78D8E0-DE04-4AA2-B3C9-B24E931F020A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_Shot_02" ID="{6C41DEFC-9BF0-407C-ACAB-662013DE6B15}" ShortID="589390092">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_Shot_02" ID="{830D3A38-0616-421A-B156-13412B01CB20}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_Shot_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="250717664"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_Shot_02" ID="{830D3A38-0616-421A-B156-13412B01CB20}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_Shot_03" ID="{99EBB5C9-9ED5-4DD3-A066-C8A6EBCF645F}" ShortID="933729387">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_Shot_03" ID="{138247BB-5C27-4248-997F-7D81C6A7F49B}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_Shot_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="365386010"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_Shot_03" ID="{138247BB-5C27-4248-997F-7D81C6A7F49B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_PlayerTank_Shot_04" ID="{6C885544-74D2-45FB-8960-C4A66A6F8174}" ShortID="679937385">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_PlayerTank_Shot_04" ID="{61EEE285-170D-45DB-86A1-A24602FF2751}">
+															<Language>SFX</Language>
+															<AudioFile>Player\Tank\sfx_PlayerTank_Shot_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="326588327"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_PlayerTank_Shot_04" ID="{61EEE285-170D-45DB-86A1-A24602FF2751}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</ActorMixer>
+							</ChildrenList>
+						</Folder>
+						<ActorMixer Name="Helicopter" ID="{1EBC41C2-9F58-4D8C-AD00-CA8D0B0175F8}" ShortID="126628266">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Helicopter" ID="{9DA47300-053A-491E-866F-73112B1BDA82}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Folder Name="Movement" ID="{1734CEDE-67A5-40CB-9A26-298061C8E8AC}" ShortID="428292854">
+									<ChildrenList>
+										<Sound Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" ShortID="806767788">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_Idle" ID="{A5F00971-A987-4413-8FC3-8675851E824A}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_Idle.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="572711547"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_Idle" ID="{A5F00971-A987-4413-8FC3-8675851E824A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_MoveStart" ID="{33FFC206-ABA4-457D-A0B3-FB3E52CC7B60}" ShortID="800476845">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_MoveStart" ID="{F40253E5-DB18-46AF-8164-D6DF6BAB9FE7}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MoveStart.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="156946582"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_MoveStart" ID="{F40253E5-DB18-46AF-8164-D6DF6BAB9FE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_MovingLoop" ID="{44202BEB-C1D8-4A88-B25E-D900142F53D9}" ShortID="41998227">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_MovingLoop" ID="{09FE13D4-59E9-4A9A-A36D-EF3D184FA7D5}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MovingLoop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="212909863"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_MovingLoop" ID="{09FE13D4-59E9-4A9A-A36D-EF3D184FA7D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_GetOn" ID="{B73C3C11-C0E7-4186-8BBD-341AA806B1D7}" ShortID="1021564669">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_GetOn" ID="{90497F62-E800-4666-839A-8370F7D0DB30}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_GetOn.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="393191848"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_GetOn" ID="{90497F62-E800-4666-839A-8370F7D0DB30}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_MoveStop" ID="{35BC10EE-DE48-4150-9BCD-844AEA805E6B}" ShortID="939706129">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_MoveStop" ID="{0EDA2932-92A9-4FF0-8523-5E46BD51A624}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MoveStop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="214130526"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_MoveStop" ID="{0EDA2932-92A9-4FF0-8523-5E46BD51A624}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
 								</Folder>
-								<Sound Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" ShortID="806767788">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_PlayerHeli_Idle" ID="{A5F00971-A987-4413-8FC3-8675851E824A}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Helicopter\sfx_PlayerHeli_Idle.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="572711547"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_PlayerHeli_Idle" ID="{A5F00971-A987-4413-8FC3-8675851E824A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_PlayerHeli_MoveStart" ID="{33FFC206-ABA4-457D-A0B3-FB3E52CC7B60}" ShortID="800476845">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_PlayerHeli_MoveStart" ID="{F40253E5-DB18-46AF-8164-D6DF6BAB9FE7}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Helicopter\sfx_PlayerHeli_MoveStart.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="156946582"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_PlayerHeli_MoveStart" ID="{F40253E5-DB18-46AF-8164-D6DF6BAB9FE7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_PlayerHeli_MovingLoop" ID="{44202BEB-C1D8-4A88-B25E-D900142F53D9}" ShortID="41998227">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_PlayerHeli_MovingLoop" ID="{09FE13D4-59E9-4A9A-A36D-EF3D184FA7D5}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Helicopter\sfx_PlayerHeli_MovingLoop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="212909863"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_PlayerHeli_MovingLoop" ID="{09FE13D4-59E9-4A9A-A36D-EF3D184FA7D5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
-						</Folder>
-						<Folder Name="Tank" ID="{FA5B98E9-27E4-4087-8864-AD32FF37AB03}" ShortID="1047620960">
-							<ChildrenList>
-								<Sound Name="sfx_PlayerTank_Idle" ID="{0FD8B979-7567-4220-A238-E7A3EFA11AA9}" ShortID="1041305546">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-30</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{6D88A5C4-039C-4D20-9D68-73D157D6595B}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="100"/>
-															<Property Name="Min" Type="Real64" Value="-100"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_PlayerTank_Idle" ID="{39D76D75-E16F-4057-B352-45882F3D27AA}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Tank\sfx_PlayerTank_Idle.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="520054179"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_PlayerTank_Idle" ID="{39D76D75-E16F-4057-B352-45882F3D27AA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_PlayerTank_MovingLoop" ID="{229F5194-9D0F-4DC7-A056-755CCD5F7E9D}" ShortID="899015390">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{ACC0A91F-D585-40E9-ABEE-D0BEB537BD24}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_PlayerTank_MovingLoop" ID="{231C2773-F157-4C97-B1B2-2D82426F068B}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Tank\sfx_PlayerTank_MovingLoop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="255387965"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_PlayerTank_MovingLoop" ID="{231C2773-F157-4C97-B1B2-2D82426F068B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_PlayerTank_Shoot_v2" ID="{BCBC9B0F-EE67-41EC-BA50-5B811D2AD448}" ShortID="693478814">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_PlayerTank_Shoot_v2" ID="{4BDFEDEA-0569-426A-9BF9-01437EEF4610}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Tank\sfx_PlayerTank_Shoot_v2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="255111641"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_PlayerTank_Shoot_v2" ID="{4BDFEDEA-0569-426A-9BF9-01437EEF4610}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="MoveStart" ID="{5466C581-1578-434B-A8CD-6D9CE68DBB25}" ShortID="613054993">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>150</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{1E981362-506F-4067-8A7B-56B990889903}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_PlayerTank_MoveStart_02" ID="{2DB77F47-A5ED-4FE8-BC49-71F28C171857}" ShortID="417753244">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_MoveStart_02" ID="{FF1ECEB7-4532-4E94-ACFA-DC8767506416}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_MoveStart_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="763453536"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_MoveStart_02" ID="{FF1ECEB7-4532-4E94-ACFA-DC8767506416}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_MoveStart_01" ID="{2BD85108-4322-4FB8-A647-5BBA395B4C28}" ShortID="204691231">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_MoveStart_01" ID="{199EA966-17E5-453B-AF4A-51E5D7F7FAAB}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_MoveStart_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="490237738"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_MoveStart_01" ID="{199EA966-17E5-453B-AF4A-51E5D7F7FAAB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_MoveStart_03" ID="{305ED386-6B52-42EF-891E-24BA19CC2AA3}" ShortID="910260292">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_MoveStart_03" ID="{040D8296-73B2-45B9-9748-B30E041D803C}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_MoveStart_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="573316817"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_MoveStart_03" ID="{040D8296-73B2-45B9-9748-B30E041D803C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_MoveStart_04" ID="{E71C8826-B75F-430F-9778-534033C5BB0D}" ShortID="425714276">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_MoveStart_04" ID="{43785FEA-8461-4E35-81D3-6821001F03E9}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_MoveStart_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="605893097"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_MoveStart_04" ID="{43785FEA-8461-4E35-81D3-6821001F03E9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<Sound Name="sfx_PlayerTank_EngineStart" ID="{83183683-D062-45FD-9AC2-1E85F937B04F}" ShortID="698809855">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_PlayerTank_EngineStart" ID="{2927361A-049C-4BBF-BDB8-F719E2E6D4D1}">
-											<PropertyList>
-												<Property Name="CrossfadeShape" Type="int16" Value="2"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.73341666666667"/>
-												<Property Name="FadeOutShape" Type="int16" Value="1"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Player\Tank\sfx_PlayerTank_EngineStart.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="724895998"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_PlayerTank_EngineStart" ID="{2927361A-049C-4BBF-BDB8-F719E2E6D4D1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="MoveStop" ID="{53A509C9-C423-4EB1-84AA-9C2CED8DBD49}" ShortID="398692352">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-300</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_PlayerTank_MoveStop_01" ID="{9D65B407-80C3-48E6-8F77-593295C8CAEB}" ShortID="903886373">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_MoveStop_01" ID="{9A02B94B-3E2A-4272-B84C-20AB52440929}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_MoveStop_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="536405860"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_MoveStop_01" ID="{9A02B94B-3E2A-4272-B84C-20AB52440929}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_MoveStop_02" ID="{E3FA37F3-60DE-4DEF-9426-4F96F03F4735}" ShortID="287951638">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_MoveStop_02" ID="{DEF65D4C-9E09-4783-A380-A2ADA6B47DEB}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_MoveStop_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="445659384"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_MoveStop_02" ID="{DEF65D4C-9E09-4783-A380-A2ADA6B47DEB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_MoveStop_03" ID="{BC5D5ED3-5305-46B6-85DD-52862A5BA799}" ShortID="845783589">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_MoveStop_03" ID="{6559ABD6-9959-48AD-A8E6-DF3D7772F8EF}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_MoveStop_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="574590072"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_MoveStop_03" ID="{6559ABD6-9959-48AD-A8E6-DF3D7772F8EF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_MoveStop_04" ID="{513CE2D2-CD99-4F97-AC4C-4631C4F1FA7D}" ShortID="926917063">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_MoveStop_04" ID="{F679AACD-7ED7-4C91-9CE6-34254B13CDA3}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_MoveStop_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="596215666"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_MoveStop_04" ID="{F679AACD-7ED7-4C91-9CE6-34254B13CDA3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<Sound Name="sfx_PlayerTank_GetOut" ID="{55936B31-0A88-4111-A5FA-7CE5560ABAF6}" ShortID="60768830">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_PlayerTank_GetOff" ID="{AE3A14B3-80FA-440D-9596-27EE61D43407}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Tank\sfx_PlayerTank_GetOff.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="813733210"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_PlayerTank_GetOff" ID="{AE3A14B3-80FA-440D-9596-27EE61D43407}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="ShotExplosion" ID="{3ED399A5-46E5-483B-9076-6314372BBDB7}" ShortID="705539924">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{6FC42D54-39CE-4BF6-82D4-32756E9361FA}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="30"/>
-															<Property Name="Min" Type="Real64" Value="-30"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_PlayerTank_ShotExplosion_01" ID="{7C55ED4B-126F-4046-A54F-5E504546D815}" ShortID="882159372">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_ShotExplosion_01" ID="{C9878DE2-0A73-4F45-B48D-C70AD392B57F}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_ShotExplosion_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="752266291"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_ShotExplosion_01" ID="{C9878DE2-0A73-4F45-B48D-C70AD392B57F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_ShotExplosion_02" ID="{9B1D9AED-919A-44BE-835C-8167B6B01FC7}" ShortID="139255560">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_ShotExplosion_02" ID="{33CACD1F-AFD7-4293-981C-944961321D80}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_ShotExplosion_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="874272289"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_ShotExplosion_02" ID="{33CACD1F-AFD7-4293-981C-944961321D80}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_ShotExplosion_03" ID="{AF7921FC-7BE6-4167-A5A5-FBF78BBDEA4B}" ShortID="195583545">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_ShotExplosion_03" ID="{4372E1B6-E75C-4FAD-A164-B676CECACE0E}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_ShotExplosion_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="679296252"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_ShotExplosion_03" ID="{4372E1B6-E75C-4FAD-A164-B676CECACE0E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_PlayerTank_ShotExplosion_04" ID="{8066C85C-4274-4058-88BF-9EF2E52A56DE}" ShortID="158915614">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerTank_ShotExplosion_04" ID="{A685E29D-B3D7-4462-9FB0-5D554FC7A3F7}">
-													<Language>SFX</Language>
-													<AudioFile>Player\Tank\sfx_PlayerTank_ShotExplosion_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="626899395"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerTank_ShotExplosion_04" ID="{A685E29D-B3D7-4462-9FB0-5D554FC7A3F7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</Folder>
+							<ObjectLists/>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

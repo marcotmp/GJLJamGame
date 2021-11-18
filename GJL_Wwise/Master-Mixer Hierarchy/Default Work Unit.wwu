@@ -29,6 +29,27 @@
 								<Bus Name="Objects" ID="{E9D1C035-B118-4612-9418-A72C107058F4}">
 									<ObjectLists/>
 								</Bus>
+								<Bus Name="Vehicles" ID="{B6C47084-7ACE-4AD7-B76B-48188460ACF7}">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}">
+											<ObjectLists/>
+										</Bus>
+										<Bus Name="Helicopter" ID="{9DA47300-053A-491E-866F-73112B1BDA82}">
+											<ObjectLists/>
+										</Bus>
+										<Bus Name="Mecha" ID="{1A7DDCC9-85CD-4974-9C48-A1E275059DF6}">
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
+									<ObjectLists/>
+								</Bus>
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>

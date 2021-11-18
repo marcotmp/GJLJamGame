@@ -104,6 +104,18 @@
 						</Event>
 						<Event Name="play_Tank_GetOut" ID="{3C183D52-1796-482F-BA74-1953A74AE76E}">
 							<ChildrenList>
+								<Action Name="" ID="{202C3C09-AF1B-4AB3-8269-79AFA9BAFFBA}" ShortID="250044122">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerTank_MovingLoop" ID="{229F5194-9D0F-4DC7-A056-755CCD5F7E9D}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{768C4616-7CC4-4B71-ABDA-73BF2650327D}" ShortID="895977652">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
@@ -141,7 +153,110 @@
 								<Action Name="" ID="{6A6219FA-E715-4D55-A62A-104E8023C094}" ShortID="952212787">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_PlayerTank_Shoot_v2" ID="{BCBC9B0F-EE67-41EC-BA50-5B811D2AD448}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+											<ObjectRef Name="Shot" ID="{EEB001A2-C69E-4713-845D-10420F1C2F52}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Helicopter" ID="{99DEA500-1A0E-4A60-8D6C-43F83602D6E3}" ShortID="483132527">
+					<ChildrenList>
+						<Event Name="play_Heli_GetIn" ID="{C124DF64-A0FB-4975-8DE4-47FA54F53FAD}">
+							<ChildrenList>
+								<Action Name="" ID="{3348B094-1A60-4B0B-8598-AC36FE1DD276}" ShortID="702033858">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_GetOn" ID="{B73C3C11-C0E7-4186-8BBD-341AA806B1D7}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{85B22C22-F289-4221-9A58-D5E226E61235}" ShortID="517002354">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="0"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_Heli_MoveStop" ID="{67E84DC1-A695-419A-B7F7-312665D6631B}">
+							<ChildrenList>
+								<Action Name="" ID="{BA88300D-E4C9-45FB-A149-A105E6E4596F}" ShortID="434340435">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.73"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_MovingLoop" ID="{44202BEB-C1D8-4A88-B25E-D900142F53D9}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CE8DCA1B-DED4-4275-ACC0-655CB050BAFE}" ShortID="35233522">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_MoveStop" ID="{35BC10EE-DE48-4150-9BCD-844AEA805E6B}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E4BDA91D-2D37-49C7-BF00-5FD5651B9415}" ShortID="912239965">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2.25"/>
+										<Property Name="FadeInCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_Heli_MoveStart" ID="{08BE5077-1384-41ED-BFBB-262140F2B0C2}">
+							<ChildrenList>
+								<Action Name="" ID="{8551C36C-19DE-45BF-B755-576DE53349DA}" ShortID="953114434">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9DB049C3-B1B6-40F0-A355-0EDB992B1607}" ShortID="547889165">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_MoveStart" ID="{33FFC206-ABA4-457D-A0B3-FB3E52CC7B60}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9A383FB8-FD77-4F35-A1CC-9C26AB7A110A}" ShortID="770881600">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="2.25"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_MovingLoop" ID="{44202BEB-C1D8-4A88-B25E-D900142F53D9}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -34,6 +34,25 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Player_Heli_SoundTest" ID="{C1ECC345-40D1-4C8D-BA58-5EA9ACFA2A91}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="play_Heli_GetIn" ID="{C124DF64-A0FB-4975-8DE4-47FA54F53FAD}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Heli_MoveStart" ID="{08BE5077-1384-41ED-BFBB-262140F2B0C2}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Heli_MoveStop" ID="{67E84DC1-A695-419A-B7F7-312665D6631B}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>
