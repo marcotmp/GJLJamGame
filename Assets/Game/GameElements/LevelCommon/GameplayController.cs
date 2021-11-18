@@ -17,6 +17,7 @@ public class GameplayController : MonoBehaviour
     {
         actionMap = inputActionAsset.FindActionMap("Gameplay");
         reset = actionMap.FindAction("Reset");
+        reset = actionMap.FindAction("Reset");
 
         reset.Enable();
 
@@ -25,7 +26,7 @@ public class GameplayController : MonoBehaviour
 
     void OnDestroy()
     {
-        reset.performed += OnReset;
+        reset.performed -= OnReset;
     }
 
     private void OnReset(CallbackContext ctx)
