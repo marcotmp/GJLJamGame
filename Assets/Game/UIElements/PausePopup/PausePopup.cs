@@ -43,13 +43,13 @@ public class PausePopup : MonoBehaviour
 
     public void Button_OnRestart()
     {
-        Hide();
+        //Hide();
         onRestart?.Invoke();
     }
 
     public void Button_OnBackToMenu()
     {
-        Hide();
+        //Hide();
         onBackToMenu?.Invoke();
     }
 

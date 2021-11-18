@@ -9,7 +9,7 @@ public class GameplayController : MonoBehaviour
     [SerializeField] private InputActionAsset inputActionAsset;
     [SerializeField] private SceneTransitionerChannel sceneTransition;
     [SerializeField] private SceneReference menuScene;
-    //[SerializeField] private PausePopup pausePopup;
+    [SerializeField] private PausePopup pausePopup;
     [SerializeField] private ConfirmationPopup confirmationPopup;
 
     private InputActionMap actionMap;
@@ -42,25 +42,26 @@ public class GameplayController : MonoBehaviour
 
     private void Input_OnPause(CallbackContext ctx)
     {
-        confirmationPopup.Show();
-        confirmationPopup.onAccept = OnBackToMenu;
-        confirmationPopup.onCancel = () => pause.Enable();
+        //confirmationPopup.Show();
+        //confirmationPopup.onAccept = OnBackToMenu;
+        //confirmationPopup.onCancel = () => pause.Enable();
         pause.Disable();
         //if (!pausePopup.IsOpen)
         {
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
             // reset game
 
-            //pausePopup.Show();
-            //pausePopup.onContinue = OnContinue;
-            //pausePopup.onRestart = OnRestart;
-            //pausePopup.onBackToMenu = OnBackToMenu;
+            pausePopup.Show();
+            pausePopup.onContinue = OnContinue;
+            pausePopup.onRestart = OnRestart;
+            pausePopup.onBackToMenu = OnBackToMenu;
         }
     }
 
     private void OnContinue()
     {
         Time.timeScale = 1;
+        pause.Enable();
     }
 
     private void OnRestart()
