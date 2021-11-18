@@ -907,12 +907,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 11400000, guid: 3e14c47e1df9c4144ae76263a6aaaa0f, type: 2}
   firstLevel:
-    sceneAsset: {fileID: 102900000, guid: 6a7a3db7af5b4b94fa9b451fa7158159, type: 3}
-    scenePath: Assets/Game/GameElements/Vehicles/Tank/TankPlayground.unity
+    sceneAsset: {fileID: 102900000, guid: 7c88db97cdbb8de4ea449bcba66f759a, type: 3}
+    scenePath: Assets/Game/LevelProgression/Test1.unity
   confirmationPopup: {fileID: 2099285000}
   continueButton: {fileID: 364800617}
   newGameButton: {fileID: 1991204014}
   playButton: {fileID: 526850141}
+  levelProgression: {fileID: 11400000, guid: 3344946f78134a64195d5d1fb63031cd, type: 2}
 --- !u!4 &1839566211
 Transform:
   m_ObjectHideFlags: 0
