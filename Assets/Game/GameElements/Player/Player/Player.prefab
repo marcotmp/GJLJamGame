@@ -125,7 +125,16 @@ MonoBehaviour:
     player: {fileID: 0}
   mountingState:
     player: {fileID: 0}
+  unmountedState:
+    player: {fileID: 0}
+    delay: 0.3
   playerMountedEvent: {fileID: 11400000, guid: 4771be06cea7f954fb69566f3643c85b, type: 2}
+  actionMap:
+    m_Name: 
+    m_Id: 
+    m_Asset: {fileID: 0}
+    m_Actions: []
+    m_Bindings: []
   move:
     m_Name: 
     m_Type: 0

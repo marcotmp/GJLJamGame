@@ -53,7 +53,6 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         actionMap.Enable();
         selectorIcon.SetActive(true);
         fsm.ChangeState(typeof(HeliActivate));
-        rb.mass = 1f;
     }
 
     public void Deactivate()
@@ -61,7 +60,6 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         actionMap.Disable();
         selectorIcon.SetActive(false);
         fsm.ChangeState(typeof(HeliDeactivate));
-        rb.mass = 0.1f;
     }
 
 

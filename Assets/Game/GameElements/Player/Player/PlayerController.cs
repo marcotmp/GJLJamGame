@@ -180,6 +180,7 @@ public class PlayerController : MonoBehaviour
         isMounted = false;
         gameObject.SetActive(true);
         fsm.ChangeState<PlayerUnmountingState>();
+        playerMountedEvent.Raise(gameObject);
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
