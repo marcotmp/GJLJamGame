@@ -16,7 +16,6 @@ public class PlayerJumpState : PlayerState
 
         // player.jump.performed += OnActionJumpStarted;
         player.jump.canceled += OnActionJumpCancelled;
-
     }
 
     public override void Exit()

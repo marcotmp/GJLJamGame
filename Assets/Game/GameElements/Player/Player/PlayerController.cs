@@ -139,12 +139,13 @@ public class PlayerController : MonoBehaviour
         if (dpadDir.x != 0)
         {
             motion.x += dpadDir.x * acceleration * Time.deltaTime;
-            motion.x = Mathf.Clamp(motion.x, -maxSpeed, maxSpeed);
         }
         else
         {
-            motion.x = Mathf.MoveTowards(motion.x, 0, decceleration * Time.deltaTime);
+            if (isOnGround) motion.x = Mathf.MoveTowards(motion.x, 0, decceleration * Time.deltaTime);
         }
+        
+        motion.x = Mathf.Clamp(motion.x, -maxSpeed, maxSpeed);
 
         if (!isOnGround)
         {

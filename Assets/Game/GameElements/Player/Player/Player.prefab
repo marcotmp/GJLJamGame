@@ -108,10 +108,10 @@ MonoBehaviour:
   vehicleDetector: {fileID: 6155808039981204044}
   selectorIcon: {fileID: 3855982109871635630}
   horizontalSpeed: 0
-  maxSpeed: 3
-  jumpImpulse: 10
-  acceleration: 20
-  decceleration: 15
+  maxSpeed: 5
+  jumpImpulse: 7
+  acceleration: 25
+  decceleration: 30
   gravityUp: 30
   gravityDown: 20
   gravityScale: 8
