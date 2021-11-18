@@ -17,7 +17,6 @@ public class PlayerMountingState : PlayerState
 
     public override void Enter()
     {
-        Debug.Log("PlayerMountingState");
         base.Enter();
         waitCoroutine = Wait();
         player.StartCoroutine(waitCoroutine);
@@ -41,7 +40,12 @@ public class PlayerMountingState : PlayerState
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(delay);
-        if (player.IsCollidingVehicle()) fsm.ChangeState<PlayerMountedState>();
-        else fsm.ChangeState<PlayerMoveState>();
+        if (player.IsCollidingVehicle())
+        {
+            player.MountAction();
+            fsm.ChangeState<PlayerMountedState>();
+        }
+        else 
+            fsm.ChangeState<PlayerMoveState>();
     }
 }

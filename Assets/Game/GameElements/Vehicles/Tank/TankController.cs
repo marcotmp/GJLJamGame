@@ -9,7 +9,7 @@ public class TankController : MonoBehaviour, IVehicle
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private InputActionAsset inputActionAsset;
     [SerializeField] private BoxDetector groundDetector;
-    [SerializeField] private PlayerSelector playerSelector;
+    // [SerializeField] private PlayerSelector playerSelector;
     [SerializeField] private GameObject selectorIcon;
     [SerializeField] private PlayerCannon cannon;
 
@@ -72,6 +72,8 @@ public class TankController : MonoBehaviour, IVehicle
 
     public void MountPlayer(PlayerController player)
     {
+        Debug.Log("Tank Mount Player");
+
         this.player = player;
         selectorIcon.SetActive(true);
         EnableControls();
@@ -120,6 +122,7 @@ public class TankController : MonoBehaviour, IVehicle
 
     public void UnmountPlayer()
     {
+        Debug.Log("Tank Unmount Player");
         selectorIcon.SetActive(false);
         Deactivate();
     }

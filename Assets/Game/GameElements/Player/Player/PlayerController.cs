@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     private PlayerMountedEvent playerMountedEvent;
     [HideInInspector] public InputActionMap actionMap;
     [HideInInspector] public InputAction move;
-    [HideInInspector] public InputAction jump;
+    // [HideInInspector] public InputAction jump;
     [HideInInspector] public InputAction action;
 
     private Vector2 dpadDir;
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
     private bool facingRight = false;
 
-    private bool isActive = false;
+    // private bool isActive = false;
 
     private FiniteStateMachine fsm;
 
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     {
         actionMap = inputActionAsset.FindActionMap("Gameplay");
         move = actionMap.FindAction(moveId);
-        jump = actionMap.FindAction("Jump");
+        // jump = actionMap.FindAction("Jump");
         action = actionMap.FindAction("ChangeCharacter");
         // action.performed += OnMountAction;
 
@@ -170,15 +170,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void StartJump()
-    {
-        motion.y = jumpImpulse;
-    }
+    // public void StartJump()
+    // {
+    //     motion.y = jumpImpulse;
+    // }
 
-    public void CancelJump()
-    {
-        if (motion.y > 0) motion.y = 0;
-    }
+    // public void CancelJump()
+    // {
+    //     if (motion.y > 0) motion.y = 0;
+    // }
 
     // private bool isMounted = false;
 
@@ -229,23 +229,23 @@ public class PlayerController : MonoBehaviour
         GetComponent<BoxCollider2D>().isTrigger = true;
     }
 
-    IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
-    {
-        Vector3 originalSize = Vector3.one;
-        Vector3 newSize = new Vector3(xSqueeze, ySqueeze, originalSize.z);
-        float t = 0f;
-        while (t <= 1.0)
-        {
-            t += Time.deltaTime / seconds;
-            sprite.transform.localScale = Vector3.Lerp(originalSize, newSize, t);
-            yield return null;
-        }
-        t = 0f;
-        while (t <= 1.0)
-        {
-            t += Time.deltaTime / seconds;
-            sprite.transform.localScale = Vector3.Lerp(newSize, originalSize, t);
-            yield return null;
-        }
-    }
+    // IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)
+    // {
+    //     Vector3 originalSize = Vector3.one;
+    //     Vector3 newSize = new Vector3(xSqueeze, ySqueeze, originalSize.z);
+    //     float t = 0f;
+    //     while (t <= 1.0)
+    //     {
+    //         t += Time.deltaTime / seconds;
+    //         sprite.transform.localScale = Vector3.Lerp(originalSize, newSize, t);
+    //         yield return null;
+    //     }
+    //     t = 0f;
+    //     while (t <= 1.0)
+    //     {
+    //         t += Time.deltaTime / seconds;
+    //         sprite.transform.localScale = Vector3.Lerp(newSize, originalSize, t);
+    //         yield return null;
+    //     }
+    // }
 }

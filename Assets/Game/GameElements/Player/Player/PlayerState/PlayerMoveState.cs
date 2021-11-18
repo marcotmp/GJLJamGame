@@ -7,12 +7,10 @@ public class PlayerMoveState : PlayerState
 {
     public override void Enter()
     {
-        Debug.Log("PlayerMoveState.Enter");
-        
         base.Enter();
         player.move.performed += OnActionMove;
         player.move.canceled += OnActionMove;
-        player.jump.performed += OnActionJumpStarted;
+        // player.jump.performed += OnActionJumpStarted;
         player.action.performed += OnActionMountStarted;
     }
 
@@ -21,7 +19,7 @@ public class PlayerMoveState : PlayerState
         base.Exit();
         player.move.performed -= OnActionMove;
         player.move.canceled -= OnActionMove;
-        player.jump.performed -= OnActionJumpStarted;
+        // player.jump.performed -= OnActionJumpStarted;
         player.action.performed -= OnActionMountStarted;
     }
 
@@ -46,12 +44,12 @@ public class PlayerMoveState : PlayerState
         player.Move(val);
     }
 
-    private void OnActionJumpStarted(CallbackContext c)
-    {
-        Debug.Log("PlayerMoveState.OnActionJumpStarted");
-        player.StartJump();
-        fsm.ChangeState<PlayerJumpState>();
-    }
+    // private void OnActionJumpStarted(CallbackContext c)
+    // {
+    //     Debug.Log("PlayerMoveState.OnActionJumpStarted");
+    //     player.StartJump();
+    //     fsm.ChangeState<PlayerJumpState>();
+    // }
 
     private void OnActionMountStarted(CallbackContext c)
     {

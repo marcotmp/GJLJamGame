@@ -9,9 +9,9 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     public InputActionAsset playerInput;
     [HideInInspector] public InputAction move;
     [HideInInspector] public InputAction grab;
-    public PlayerSelector playerSelector;
+    // public PlayerSelector playerSelector;
     public BoxDetector groundDetector;
-    public BoxDetector playerDetector;
+    public BoxDetector itemDetector;
     public GameObject selectorIcon;
     public Animator anim;
 
@@ -36,7 +36,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         fsm.AddState(new HeliMove(this));
         fsm.AddState(new HeliDeactivate(this));
 
-        playerSelector.Add(this);
+        // playerSelector.Add(this);
     }
 
     private void Start() {
@@ -58,6 +58,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     public void Deactivate()
     {
         //actionMap.Disable();
+        Debug.Log("Deactivating Heli");
         selectorIcon.SetActive(false);
         fsm.ChangeState(typeof(HeliDeactivate));
     }
@@ -65,7 +66,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
 
     private GameObject GetObjectToGrab()
     {
-        var playersFound = playerDetector.raycastHit2DAll;
+        var playersFound = itemDetector.raycastHit2DAll;
         foreach (var rh in playersFound)
         {
             Debug.Log($"Finding Objects to grab {rh.collider.name}");
@@ -82,7 +83,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     {
         Debug.Log("Grab");
 
-        if (playerDetector.CheckCollisionAll())
+        if (itemDetector.CheckCollisionAll())
         {
             objectGrabbed = GetObjectToGrab();
             //objectGrabbed?.Grab();
