@@ -20,8 +20,9 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
 
     [HideInInspector] public Rigidbody2D rb;
     private FiniteStateMachine fsm;
-    private GameObject objectGrabbed;
+    private IGrabbable objectGrabbed;
     private InputActionMap actionMap;
+    public float grabOffset = 1.2f;
 
     private void Awake() 
     {
@@ -63,16 +64,20 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         fsm.ChangeState(typeof(HeliDeactivate));
     }
 
+    public void UnmountPlayer()
+    {
+        Deactivate();
+    }
 
-    private GameObject GetObjectToGrab()
+    private IGrabbable GetObjectToGrab()
     {
         var playersFound = itemDetector.raycastHit2DAll;
         foreach (var rh in playersFound)
         {
             Debug.Log($"Finding Objects to grab {rh.collider.name}");
             if (rh.collider.gameObject != this.gameObject)
-            {
-                return rh.collider.gameObject;//.GetComponent<IDraggable>();
+            {                
+                return rh.collider.gameObject.GetComponent<IGrabbable>();
             }
         }
 
@@ -87,12 +92,13 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         {
             objectGrabbed = GetObjectToGrab();
             //objectGrabbed?.Grab();
-            if (objectGrabbed)
+            if (objectGrabbed != null)
             {
                 //objectGrabbed.transform.position = handPosition.position;
                 // attach joint to other
                 joint.enabled = true;
-                joint.connectedBody = objectGrabbed.GetComponent<Rigidbody2D>();
+                joint.connectedBody = objectGrabbed.gameObject.GetComponent<Rigidbody2D>();
+                groundDetector.transform.position += Vector3.down * grabOffset;
             }
 
             
@@ -107,15 +113,11 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     public void Release()
     {
         //objectGrabbed?.Release();
-        if (objectGrabbed)
+        if (objectGrabbed != null)
         {
             objectGrabbed = null;
             joint.enabled = false;
+            groundDetector.transform.position += Vector3.up * grabOffset;
         }
-    }
-
-    public void UnmountPlayer()
-    {
-        Deactivate();
     }
 }

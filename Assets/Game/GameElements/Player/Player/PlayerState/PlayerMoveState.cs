@@ -8,8 +8,8 @@ public class PlayerMoveState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.move.performed += OnActionMove;
-        player.move.canceled += OnActionMove;
+        // player.move.performed += OnActionMove;
+        // player.move.canceled += OnActionMove;
         // player.jump.performed += OnActionJumpStarted;
         player.action.performed += OnActionMountStarted;
     }
@@ -17,8 +17,8 @@ public class PlayerMoveState : PlayerState
     public override void Exit()
     {
         base.Exit();
-        player.move.performed -= OnActionMove;
-        player.move.canceled -= OnActionMove;
+        // player.move.performed -= OnActionMove;
+        // player.move.canceled -= OnActionMove;
         // player.jump.performed -= OnActionJumpStarted;
         player.action.performed -= OnActionMountStarted;
     }
@@ -38,11 +38,11 @@ public class PlayerMoveState : PlayerState
         //else
     }
 
-    public void OnActionMove(CallbackContext c)
-    {
-        var val = c.ReadValue<Vector2>();
-        player.Move(val);
-    }
+    // public void OnActionMove(CallbackContext c)
+    // {
+    //     var val = c.ReadValue<Vector2>();
+    //     player.Move(val);
+    // }
 
     // private void OnActionJumpStarted(CallbackContext c)
     // {

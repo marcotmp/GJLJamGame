@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
         // jump = actionMap.FindAction("Jump");
         action = actionMap.FindAction("ChangeCharacter");
         // action.performed += OnMountAction;
+        move.performed += Move;
 
         actionMap.Enable();
 
@@ -154,9 +155,9 @@ public class PlayerController : MonoBehaviour
 
     public bool IsOnGround => isOnGround;
 
-    public void Move(Vector2 dir)
+    public void Move(CallbackContext ctx)
     {
-        dpadDir = dir;
+        dpadDir = ctx.ReadValue<Vector2>();
         
         if (dpadDir.x > 0)
         {
