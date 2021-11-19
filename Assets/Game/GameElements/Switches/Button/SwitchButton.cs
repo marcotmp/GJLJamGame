@@ -8,6 +8,7 @@ public class SwitchButton : MonoBehaviour
     [SerializeField] private Animator animator;
     public UnityEvent onEnabled;
     public UnityEvent onDisabled;
+    public bool IsActivated { get; private set; }
 
 
     [Header("Debug")]
@@ -17,7 +18,7 @@ public class SwitchButton : MonoBehaviour
     {
         if (numberOfVisits == 0)
         {
-            // when this object is pressed, anim press
+            IsActivated = true;
             animator.SetBool("pressed", true);
             onEnabled?.Invoke();
         }
@@ -29,6 +30,7 @@ public class SwitchButton : MonoBehaviour
         numberOfVisits--;
         if (numberOfVisits == 0)
         {
+            IsActivated = true;
             animator.SetBool("pressed", false);
             onDisabled?.Invoke();
         }

@@ -121,10 +121,10 @@ MonoBehaviour:
     legs: {fileID: 0}
   deactivateState:
     legs: {fileID: 0}
-  maxSpeed: 3
+  maxSpeed: 5
   jumpImpulse: 10
-  acceleration: 20
-  decceleration: 15
+  acceleration: 50
+  decceleration: 50
   gravityUp: 30
   gravityDown: 20
   gravityScale: 8

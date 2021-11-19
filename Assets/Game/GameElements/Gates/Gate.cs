@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Gate : MonoBehaviour
@@ -10,6 +11,7 @@ public class Gate : MonoBehaviour
 
     // TODO: rename to just Open
     // Use past tense only on events
+    [Obsolete]
     public void GateOpened()
     {
         Open();

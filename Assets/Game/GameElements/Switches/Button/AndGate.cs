@@ -6,30 +6,31 @@ public class AndGate : MonoBehaviour
     public UnityEvent onEnabled;
     public UnityEvent onDisabled;
 
-    public bool output { get; private set; }
-    public bool inputA = false;
-    public bool inputB = false;
+    public SwitchButton[] switchButtons;
+    
+    private bool lastState = false;
+    private bool isEnabled = false;
 
-    public void SetInputA(bool value)
+    private void Update()
     {
-        inputA = value;
-        Evaluate();
+        lastState = isEnabled;
+        isEnabled = Evaluate();
+        if (isEnabled != lastState)
+        {
+            if (isEnabled)
+                onEnabled?.Invoke();
+            else
+                onDisabled?.Invoke();
+        }
     }
 
-    public void SetInputB(bool value)
+    private bool Evaluate()
     {
-        inputB = value;
-        Evaluate();
-    }
+        foreach (var sb in switchButtons)
+        {
+            if (!sb.IsActivated) return false;
+        }
 
-    private void Evaluate()
-    {
-        output = inputA && inputB;
-
-        Debug.Log($"Evaluate {output}");
-        if (output)
-            onEnabled?.Invoke();
-        else
-            onDisabled?.Invoke();
+        return true;
     }
 }
