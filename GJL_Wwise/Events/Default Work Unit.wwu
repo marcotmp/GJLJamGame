@@ -101,41 +101,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="play_Tank_GetOut" ID="{3C183D52-1796-482F-BA74-1953A74AE76E}">
-							<ChildrenList>
-								<Action Name="" ID="{202C3C09-AF1B-4AB3-8269-79AFA9BAFFBA}" ShortID="250044122">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_PlayerTank_MovingLoop" ID="{229F5194-9D0F-4DC7-A056-755CCD5F7E9D}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{768C4616-7CC4-4B71-ABDA-73BF2650327D}" ShortID="895977652">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_PlayerTank_Idle" ID="{0FD8B979-7567-4220-A238-E7A3EFA11AA9}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{7D902BA2-479D-4BD9-A512-669C4E26BF33}" ShortID="391234001">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_PlayerTank_GetOut" ID="{55936B31-0A88-4111-A5FA-7CE5560ABAF6}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="play_Tank_ShotExplosion" ID="{05F6FC60-0FEB-4D3A-9EDE-CFF25D120830}">
 							<ChildrenList>
 								<Action Name="" ID="{6496709E-312A-480A-8366-FB0634EC41EA}" ShortID="888171961">
@@ -337,6 +302,41 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Landing" ID="{BAB94E0A-0D26-44DC-B9DA-24D8A56560D7}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_Tank_GetOut" ID="{3C183D52-1796-482F-BA74-1953A74AE76E}">
+							<ChildrenList>
+								<Action Name="" ID="{202C3C09-AF1B-4AB3-8269-79AFA9BAFFBA}" ShortID="250044122">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerTank_MovingLoop" ID="{229F5194-9D0F-4DC7-A056-755CCD5F7E9D}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{768C4616-7CC4-4B71-ABDA-73BF2650327D}" ShortID="895977652">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerTank_Idle" ID="{0FD8B979-7567-4220-A238-E7A3EFA11AA9}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7D902BA2-479D-4BD9-A512-669C4E26BF33}" ShortID="391234001">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerTank_GetOut" ID="{55936B31-0A88-4111-A5FA-7CE5560ABAF6}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
