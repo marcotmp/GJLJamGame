@@ -14,6 +14,7 @@ public class PlayerJumpState : PlayerState
         // player.move.canceled += OnActionMove;
 
         // player.jump.canceled += OnActionJumpCancelled;
+        player.action.performed += OnActionMountStarted;
     }
 
     public override void Exit()
@@ -23,7 +24,7 @@ public class PlayerJumpState : PlayerState
         // player.move.canceled -= OnActionMove;
 
         // player.jump.canceled -= OnActionJumpCancelled;
-
+        player.action.performed += OnActionMountStarted;
     }
 
     public override void FixedUpdate()
@@ -39,6 +40,16 @@ public class PlayerJumpState : PlayerState
         // if moving down
         //else
 
+    }
+
+    private void OnActionMountStarted(CallbackContext c)
+    {
+        Debug.Log($"{c.phase}");
+        
+        if(player.IsCollidingVehicle())
+        {
+            fsm.ChangeState<PlayerMountingState>();
+        }
     }
 
     // public void OnActionMove(CallbackContext c)
