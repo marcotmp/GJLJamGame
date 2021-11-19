@@ -3,7 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Test_Connect" ID="{48093B00-5260-4E34-B8CC-EEB6398B1C78}"/>
 				<Event Name="playFootstep" ID="{A73176EE-467E-4FC6-BDF4-5D579C59DB75}"/>
 				<Folder Name="Tank" ID="{61BE7413-6A7C-4C68-A5E2-0C81A88C3139}" ShortID="981478644">
 					<ChildrenList>
@@ -213,8 +212,8 @@
 								<Action Name="" ID="{E4BDA91D-2D37-49C7-BF00-5FD5651B9415}" ShortID="912239965">
 									<PropertyList>
 										<Property Name="Delay" Type="Real64" Value="2.25"/>
-										<Property Name="FadeInCurve" Type="int16" Value="8"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.9"/>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -262,8 +261,41 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="play_Heli_GrabObj" ID="{419C6595-2DAD-405F-9C58-374315C9E625}">
+							<ChildrenList>
+								<Action Name="" ID="{D2645258-85B3-40A9-B88E-55689F2727DB}" ShortID="700354897">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GrabObject" ID="{563573B0-CE65-4991-B2E5-F0B9E5585E08}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_Heli_ReleaseObj" ID="{35BACF55-AA04-4FBB-8D4A-F35B5F8B20E6}">
+							<ChildrenList>
+								<Action Name="" ID="{051DC96D-E0D6-4675-AA1B-EA4793A6E5FE}" ShortID="1024429935">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ReleaseObject" ID="{7C5565D9-C731-42E3-81A8-6C8AAA841BFE}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="play_Ambience" ID="{EA12673D-8F44-4CB5-B6DA-CED305A025C4}">
+					<ChildrenList>
+						<Action Name="" ID="{914C12E0-BE35-4642-AF3F-B7D81028C3B5}" ShortID="35001997">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stereo Noise" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

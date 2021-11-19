@@ -5,7 +5,366 @@
 			<ChildrenList>
 				<Folder Name="Player" ID="{F7FDB80F-85B0-492E-A4DC-1BD493A7527C}" ShortID="594972445">
 					<ChildrenList>
-						<Folder Name="Tank" ID="{FA5B98E9-27E4-4087-8864-AD32FF37AB03}" ShortID="1047620960">
+						<ActorMixer Name="Helicopter" ID="{1EBC41C2-9F58-4D8C-AD00-CA8D0B0175F8}" ShortID="126628266">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Helicopter" ID="{9DA47300-053A-491E-866F-73112B1BDA82}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Folder Name="Movement" ID="{1734CEDE-67A5-40CB-9A26-298061C8E8AC}" ShortID="428292854">
+									<ChildrenList>
+										<Sound Name="sfx_PlayerHeli_MoveStart" ID="{33FFC206-ABA4-457D-A0B3-FB3E52CC7B60}" ShortID="800476845">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_MoveStart" ID="{F40253E5-DB18-46AF-8164-D6DF6BAB9FE7}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MoveStart.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="156946582"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_MoveStart" ID="{F40253E5-DB18-46AF-8164-D6DF6BAB9FE7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_MovingLoop" ID="{44202BEB-C1D8-4A88-B25E-D900142F53D9}" ShortID="41998227">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_MovingLoop" ID="{09FE13D4-59E9-4A9A-A36D-EF3D184FA7D5}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MovingLoop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="212909863"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_MovingLoop" ID="{09FE13D4-59E9-4A9A-A36D-EF3D184FA7D5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_MoveStop" ID="{35BC10EE-DE48-4150-9BCD-844AEA805E6B}" ShortID="939706129">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_MoveStop" ID="{0EDA2932-92A9-4FF0-8523-5E46BD51A624}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MoveStop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="214130526"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_MoveStop" ID="{0EDA2932-92A9-4FF0-8523-5E46BD51A624}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_GetOn" ID="{B73C3C11-C0E7-4186-8BBD-341AA806B1D7}" ShortID="1021564669">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Helicopter" ID="{9DA47300-053A-491E-866F-73112B1BDA82}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_GetOn" ID="{90497F62-E800-4666-839A-8370F7D0DB30}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_GetOn.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="393191848"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_GetOn" ID="{90497F62-E800-4666-839A-8370F7D0DB30}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" ShortID="806767788">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Helicopter" ID="{9DA47300-053A-491E-866F-73112B1BDA82}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_Idle" ID="{A5F00971-A987-4413-8FC3-8675851E824A}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_Idle.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="572711547"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_Idle" ID="{A5F00971-A987-4413-8FC3-8675851E824A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<RandomSequenceContainer Name="GrabObject" ID="{563573B0-CE65-4991-B2E5-F0B9E5585E08}" ShortID="228846113">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_PlayerHeli_GrabObj_01" ID="{419561BD-E224-46B9-B6DF-0CC20153046B}" ShortID="65548504">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_GrabObj_01" ID="{DF358D3D-64B8-441E-9B08-5D3E51488C14}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_GrabObj_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="741515843"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_GrabObj_01" ID="{DF358D3D-64B8-441E-9B08-5D3E51488C14}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_GrabObj_02" ID="{5ABABEAE-C701-4796-9AAD-443CB13BF38B}" ShortID="749834257">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_GrabObj_02" ID="{4198693B-751C-4D07-B533-3CF3BB068969}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_GrabObj_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="869221285"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_GrabObj_02" ID="{4198693B-751C-4D07-B533-3CF3BB068969}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_GrabObj_03" ID="{15CFC770-1D3D-4707-A759-0C773571908D}" ShortID="94950117">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_GrabObj_03" ID="{76C573DB-B5ED-4254-9284-B2BB30DB90E9}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_GrabObj_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="514882816"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_GrabObj_03" ID="{76C573DB-B5ED-4254-9284-B2BB30DB90E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ReleaseObject" ID="{7C5565D9-C731-42E3-81A8-6C8AAA841BFE}" ShortID="686717947">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_PlayerHeli_ReleaseObj_01" ID="{6C923008-D37B-454A-ACFE-62813E1AE6F0}" ShortID="1033070790">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_ReleaseObj_01" ID="{1BF29FCE-1014-47BC-9C13-23F0B529DD49}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="595283166"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_ReleaseObj_01" ID="{1BF29FCE-1014-47BC-9C13-23F0B529DD49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_ReleaseObj_02" ID="{4A01F388-561C-48D0-9117-FE9F5918BB95}" ShortID="107012243">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_ReleaseObj_02" ID="{8084243F-7AA1-493A-9F06-52966EA30A3A}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="163690339"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_ReleaseObj_02" ID="{8084243F-7AA1-493A-9F06-52966EA30A3A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerHeli_ReleaseObj_03" ID="{2EA4E205-25ED-465C-BCA2-5A9E3009E933}" ShortID="642422442">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerHeli_ReleaseObj_03" ID="{02961560-0017-448F-BFFF-511EFE8D71EC}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="43493368"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerHeli_ReleaseObj_03" ID="{02961560-0017-448F-BFFF-511EFE8D71EC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Tank" ID="{4020EACC-6E77-469A-8D1B-D81CF688DD39}" ShortID="157343958">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<ActorMixer Name="Movement" ID="{D423EA8E-4D61-4871-B363-A1C86BCE05B5}" ShortID="698525219">
 									<ReferenceList>
@@ -647,14 +1006,22 @@
 									<ObjectLists/>
 								</ActorMixer>
 							</ChildrenList>
-						</Folder>
-						<ActorMixer Name="Helicopter" ID="{1EBC41C2-9F58-4D8C-AD00-CA8D0B0175F8}" ShortID="126628266">
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Mecha" ID="{D67F1AE2-FAAF-4CED-81DF-3B57BF70390E}" ShortID="301699894">
 							<PropertyList>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{78C9CEC0-6CC4-4BA1-9FB4-5E74D49727F7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -662,22 +1029,21 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Helicopter" ID="{9DA47300-053A-491E-866F-73112B1BDA82}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Folder Name="Movement" ID="{1734CEDE-67A5-40CB-9A26-298061C8E8AC}" ShortID="428292854">
+								<RandomSequenceContainer Name="Jump" ID="{AC20AF14-6E2B-40D1-A63B-E32F2C9A5DBD}" ShortID="862922192">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" ShortID="806767788">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<Sound Name="sfx_PlayerStandard_Jump_01" ID="{6AE3384D-1CCE-486A-85D9-5030533A0832}" ShortID="168960981">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
@@ -687,28 +1053,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerHeli_Idle" ID="{A5F00971-A987-4413-8FC3-8675851E824A}">
+												<AudioFileSource Name="sfx_PlayerStandard_Jump_01" ID="{F5F8B761-F679-4EAF-BD1C-E71A70E36118}">
 													<Language>SFX</Language>
-													<AudioFile>Player\Helicopter\sfx_PlayerHeli_Idle.wav</AudioFile>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Jump_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="572711547"/>
+														<MediaID ID="1048648187"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerHeli_Idle" ID="{A5F00971-A987-4413-8FC3-8675851E824A}" Platform="Linked"/>
+												<ActiveSource Name="sfx_PlayerStandard_Jump_01" ID="{F5F8B761-F679-4EAF-BD1C-E71A70E36118}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_PlayerHeli_MoveStart" ID="{33FFC206-ABA4-457D-A0B3-FB3E52CC7B60}" ShortID="800476845">
-											<PropertyList>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<Sound Name="sfx_PlayerStandard_Jump_02" ID="{1B2C4195-3464-4DE5-9CE9-2BDE7490DCA4}" ShortID="320587002">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
@@ -718,32 +1076,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerHeli_MoveStart" ID="{F40253E5-DB18-46AF-8164-D6DF6BAB9FE7}">
+												<AudioFileSource Name="sfx_PlayerStandard_Jump_02" ID="{83BE83E4-AADE-4661-AE8A-68BF9A6CFA2C}">
 													<Language>SFX</Language>
-													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MoveStart.wav</AudioFile>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Jump_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="156946582"/>
+														<MediaID ID="530404575"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerHeli_MoveStart" ID="{F40253E5-DB18-46AF-8164-D6DF6BAB9FE7}" Platform="Linked"/>
+												<ActiveSource Name="sfx_PlayerStandard_Jump_02" ID="{83BE83E4-AADE-4661-AE8A-68BF9A6CFA2C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_PlayerHeli_MovingLoop" ID="{44202BEB-C1D8-4A88-B25E-D900142F53D9}" ShortID="41998227">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-											</PropertyList>
+										<Sound Name="sfx_PlayerStandard_Jump_03" ID="{CD4D4DB4-3C69-42D2-ABA7-C01369C1FC45}" ShortID="133474186">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
@@ -753,28 +1099,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerHeli_MovingLoop" ID="{09FE13D4-59E9-4A9A-A36D-EF3D184FA7D5}">
+												<AudioFileSource Name="sfx_PlayerStandard_Jump_03" ID="{D724405F-43C2-424F-AD04-E174626CEA68}">
 													<Language>SFX</Language>
-													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MovingLoop.wav</AudioFile>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Jump_03.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="212909863"/>
+														<MediaID ID="258376170"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerHeli_MovingLoop" ID="{09FE13D4-59E9-4A9A-A36D-EF3D184FA7D5}" Platform="Linked"/>
+												<ActiveSource Name="sfx_PlayerStandard_Jump_03" ID="{D724405F-43C2-424F-AD04-E174626CEA68}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_PlayerHeli_GetOn" ID="{B73C3C11-C0E7-4186-8BBD-341AA806B1D7}" ShortID="1021564669">
-											<PropertyList>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<Sound Name="sfx_PlayerStandard_Jump_04" ID="{B34B776D-33C1-4DD9-B637-54001453C24F}" ShortID="1010896970">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
@@ -784,28 +1122,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerHeli_GetOn" ID="{90497F62-E800-4666-839A-8370F7D0DB30}">
+												<AudioFileSource Name="sfx_PlayerStandard_Jump_04" ID="{225BCF4C-0F77-46CB-84BA-8E96A4C0FF52}">
 													<Language>SFX</Language>
-													<AudioFile>Player\Helicopter\sfx_PlayerHeli_GetOn.wav</AudioFile>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Jump_04.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="393191848"/>
+														<MediaID ID="982864765"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerHeli_GetOn" ID="{90497F62-E800-4666-839A-8370F7D0DB30}" Platform="Linked"/>
+												<ActiveSource Name="sfx_PlayerStandard_Jump_04" ID="{225BCF4C-0F77-46CB-84BA-8E96A4C0FF52}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_PlayerHeli_MoveStop" ID="{35BC10EE-DE48-4150-9BCD-844AEA805E6B}" ShortID="939706129">
-											<PropertyList>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<Sound Name="sfx_PlayerStandard_Jump_05" ID="{09EF58F7-13B2-40D4-9B3A-B04CCFDF404C}" ShortID="272444728">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
@@ -815,26 +1145,699 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_PlayerHeli_MoveStop" ID="{0EDA2932-92A9-4FF0-8523-5E46BD51A624}">
+												<AudioFileSource Name="sfx_PlayerStandard_Jump_05" ID="{D663F336-2B77-4549-9281-F408366B3D30}">
 													<Language>SFX</Language>
-													<AudioFile>Player\Helicopter\sfx_PlayerHeli_MoveStop.wav</AudioFile>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Jump_05.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="214130526"/>
+														<MediaID ID="1065181657"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_PlayerHeli_MoveStop" ID="{0EDA2932-92A9-4FF0-8523-5E46BD51A624}" Platform="Linked"/>
+												<ActiveSource Name="sfx_PlayerStandard_Jump_05" ID="{D663F336-2B77-4549-9281-F408366B3D30}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</Folder>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Fstep" ID="{51C0C815-8F01-479D-938C-E4CA392FE065}" ShortID="40904436">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_PlayerMecha_Fstep_01" ID="{39A9DF50-ED28-4E60-8B23-C1F07B5528DE}" ShortID="192873953">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerMecha_Fstep_01" ID="{7D553471-39E3-40DD-AE5C-D7DA538997DE}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Mecha\sfx_PlayerMecha_Fstep_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="820845243"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerMecha_Fstep_01" ID="{7D553471-39E3-40DD-AE5C-D7DA538997DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerMecha_Fstep_02" ID="{BE195371-5EC7-41C5-B648-B958F5AC31A8}" ShortID="544023448">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerMecha_Fstep_02" ID="{0B7A4A4B-9B1E-4910-B5D9-C929F03F8B13}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Mecha\sfx_PlayerMecha_Fstep_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="760093289"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerMecha_Fstep_02" ID="{0B7A4A4B-9B1E-4910-B5D9-C929F03F8B13}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerMecha_Fstep_03" ID="{53BEC2F0-6DC8-478D-A1BD-E61A9C30C1E9}" ShortID="688307414">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerMecha_Fstep_03" ID="{74A2A01C-2E5F-47D7-91F0-061CDA3F1EED}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Mecha\sfx_PlayerMecha_Fstep_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="267697277"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerMecha_Fstep_03" ID="{74A2A01C-2E5F-47D7-91F0-061CDA3F1EED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerMecha_Fstep_04" ID="{B81CD7CE-F194-4CDA-987C-40A3057F801F}" ShortID="39363480">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerMecha_Fstep_04" ID="{AF70BE94-1EF1-4455-8097-6C6AA472135F}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Mecha\sfx_PlayerMecha_Fstep_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="663371379"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerMecha_Fstep_04" ID="{AF70BE94-1EF1-4455-8097-6C6AA472135F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Landing" ID="{BAB94E0A-0D26-44DC-B9DA-24D8A56560D7}" ShortID="504501789">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_PlayerStandard_Landing_01" ID="{ECAD7E13-24AD-44C1-BE3F-9917F4221BF5}" ShortID="753764712">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerStandard_Landing_01" ID="{B70AC544-7F93-4EB4-8E92-7AAD670AA26E}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Landing_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="981527382"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerStandard_Landing_01" ID="{B70AC544-7F93-4EB4-8E92-7AAD670AA26E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerStandard_Landing_02" ID="{51A60C3F-FF28-4B05-BE8B-C9227FE7AB9F}" ShortID="1046837248">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerStandard_Landing_02" ID="{A38981D7-3D3C-4775-9972-EBB008D04845}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Landing_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="359968010"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerStandard_Landing_02" ID="{A38981D7-3D3C-4775-9972-EBB008D04845}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerStandard_Landing_03" ID="{ECEBFE84-7D11-4F05-89B2-3191857F8256}" ShortID="899023190">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerStandard_Landing_03" ID="{74334951-9CC1-4692-BE91-641461CED072}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Landing_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="701470162"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerStandard_Landing_03" ID="{74334951-9CC1-4692-BE91-641461CED072}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_PlayerStandard_Landing_04" ID="{03C932A0-12A9-4742-8E82-139FC4EFD297}" ShortID="693160440">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_PlayerStandard_Landing_04" ID="{A7E47BEA-149E-44DB-902A-ABBDCD66F3DC}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Mecha\sfx_PlayerStandard_Landing_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="910074444"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_PlayerStandard_Landing_04" ID="{A7E47BEA-149E-44DB-902A-ABBDCD66F3DC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="UI" ID="{88D72EEE-36C6-4B36-9A9D-78A99E05278C}" ShortID="748640081">
+					<ChildrenList>
+						<ActorMixer Name="Button" ID="{8F11D770-130D-44EA-A05B-95F4D8C0883F}" ShortID="989392406">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+				<ActorMixer Name="Ambience" ID="{402746D3-DA7F-4457-8C53-57497552653C}" ShortID="493764366">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Stereo Noise" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" ShortID="379978241">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Parametric EQ (Custom)" ID="{26DCAC6F-979A-40EC-ACCB-09345780B282}" ShortID="7191030" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+												<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+												<Property Name="FrequencyBand1" Type="Real32" Value="361">
+													<RTPCList>
+														<RTPC Name="" ID="{D1443BCE-58F9-4325-8546-E7904349B46D}" ShortID="437362152">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorLfo Name="Modulator LFO (Custom)" ID="{395554FD-A389-4DC1-8F21-7BE34B145245}" ShortID="935222682">
+																			<PropertyList>
+																				<Property Name="LfoAttack" Type="Real64" Value="5.05"/>
+																				<Property Name="LfoDepth" Type="Real64">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{C1E41CB2-D6E4-4172-B898-879E8833F047}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Min" Type="Real64" Value="-50"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="LfoFrequency" Type="Real64">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{22FBDBE7-AA7B-4283-B52A-858E007515FC}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="20"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="LfoInitialPhase" Type="Real64" Value="180"/>
+																				<Property Name="LfoSmoothing" Type="Real64" Value="52"/>
+																				<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																			</PropertyList>
+																		</ModulatorLfo>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{BA62BBF1-F4E7-42A4-BF63-8A05011CA13E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>71.71582</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>588.91617</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="FrequencyBand3" Type="Real32" Value="1502">
+													<RTPCList>
+														<RTPC Name="" ID="{449CF3FC-FB4B-4742-B794-653DB8A912B7}" ShortID="40270536">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorLfo Name="Modulator LFO (Custom)" ID="{5837D499-7038-48AA-8987-CE3E8656E7B4}" ShortID="299921341">
+																			<PropertyList>
+																				<Property Name="LfoAttack" Type="Real64" Value="4.74"/>
+																				<Property Name="LfoDepth" Type="Real64" Value="26.3"/>
+																				<Property Name="LfoFrequency" Type="Real64" Value="1.18"/>
+																				<Property Name="LfoSmoothing" Type="Real64" Value="51"/>
+																				<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																				<Property Name="ModulatorScope" Type="int32" Value="2"/>
+																			</PropertyList>
+																		</ModulatorLfo>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A2FD36B9-DA98-497B-B5A7-2114E7F17F7A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>819.08592</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>10673.39847</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{09EF9BEF-FA49-4AB9-882B-7E19A2E21D5A}" ShortID="742045898">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorLfo Name="Modulator LFO (Custom)" ID="{FB211FC6-A379-429C-AFE5-629BA6060135}" ShortID="377419255">
+																			<PropertyList>
+																				<Property Name="LfoAttack" Type="Real64" Value="2.84">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{AA905DF9-5B92-41C7-A354-7EBBA408C50E}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="3"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="LfoDepth" Type="Real64" Value="9.5">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{965C4344-90D0-4BBB-A826-C228C820F29D}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="20"/>
+																									<Property Name="Min" Type="Real64" Value="-4"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="LfoFrequency" Type="Real64">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{D3A00F2C-4C33-4DBF-90E4-6CD1B527F698}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="30"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="LfoInitialPhase" Type="Real64" Value="53"/>
+																				<Property Name="LfoSmoothing" Type="Real64" Value="50"/>
+																				<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																			</PropertyList>
+																		</ModulatorLfo>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{0C0F4C2F-B75E-4F96-9A38-98E6006D077B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6.29027</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+									<ObjectRef Name="_500ms_Per_Hour" ID="{9CE2F0FB-CE0B-4CC7-A699-E30528959D0E}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2">
+									<Custom CreatedFrom="{4CCC0D23-78CD-4B09-A62B-D3CB5E071A2F}">
+										<Effect Name="Aliasing (Custom)" ID="{4AE2BD3B-FB9B-45D6-9C2C-7A646BBAC240}" ShortID="225192973" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+											<PropertyList>
+												<Property Name="ModDepth" Type="Real32" Value="10">
+													<RTPCList>
+														<RTPC Name="" ID="{B649EDCD-9E34-4945-B35B-FDB757E18CB4}" ShortID="334247795">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorLfo Name="Modulator LFO (Custom)" ID="{200822AC-400E-43F7-8742-E6200978A046}" ShortID="718203490">
+																			<PropertyList>
+																				<Property Name="LfoDepth" Type="Real64" Value="29.5"/>
+																				<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																			</PropertyList>
+																		</ModulatorLfo>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AA3B3B95-9CBC-4408-B22B-5B9C22DD0784}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>8.02139</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ModFrequency" Type="Real32" Value="0.34">
+													<RTPCList>
+														<RTPC Name="" ID="{8B012971-FAD6-4B5F-BC60-0790EFB1612A}" ShortID="869373395">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorLfo Name="Modulator LFO (Custom)" ID="{BD84F760-1B43-4DF4-8AB8-1269E78A0785}" ShortID="1042788020">
+																			<PropertyList>
+																				<Property Name="LfoAttack" Type="Real64" Value="1.79"/>
+																				<Property Name="LfoDepth" Type="Real64" Value="10.5"/>
+																				<Property Name="LfoFrequency" Type="Real64">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{06B4D1CC-720F-4C67-9574-4408FF66F4F0}"/>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="LfoWaveform" Type="int32" Value="5"/>
+																			</PropertyList>
+																		</ModulatorLfo>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{62739DA9-C010-4773-AEDE-57C7EE292F8D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="5"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.02</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.02678</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="ModPWM" Type="Real32" Value="0"/>
+												<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
+												<Property Name="ModSmoothing" Type="Real32" Value="100"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Noise2" ID="{AAC0EDBB-3555-4231-91EA-D0A90E2C9313}" ShortID="509258108">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{DAC51FC9-3F27-4D8F-AFE6-62D7CE5E9C62}" ShortID="309684195" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="NoiseLevel" Type="Real32" Value="-7"/>
+												<Property Name="NoiseShape" Type="int32" Value="1"/>
+												<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+												<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{AF8D8B19-227F-45CB-A9F2-0B98829E7C4E}" ShortID="155299891">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{901761E9-8853-42BC-BFCD-C96B377672B7}" ShortID="94423895">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B4FAC69F-6CD2-4D77-AC7C-5CAF2769248C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{10A3CC32-4865-42BE-ADE7-79D8B28DBE34}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="90"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{DAC51FC9-3F27-4D8F-AFE6-62D7CE5E9C62}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Noise1" ID="{416D2654-5ECF-4426-8944-304FAE65B7DD}" ShortID="410155887">
+									<PropertyList>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Synth One" ID="{99AC3B88-78D8-4086-BC3B-5CC10DC21034}" ShortID="351795614" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<PropertyList>
+												<Property Name="NoiseLevel" Type="Real32" Value="-7"/>
+												<Property Name="NoiseShape" Type="int32" Value="1"/>
+												<Property Name="Osc1Level" Type="Real32" Value="-96"/>
+												<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+												<Property Name="OutputLevel" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{45FA6320-549B-410E-89EB-2ED93F0ABCDE}" ShortID="272615425">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{6A1A3394-1AEC-4330-BA97-F5DD5E30A029}" ShortID="996277035">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E0CAE8DB-9CE5-44E1-8413-D33DC773FA2A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{4B72990E-D0C3-4D37-AD08-FA413FFDC6F7}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-90"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Synth One" ID="{99AC3B88-78D8-4086-BC3B-5CC10DC21034}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

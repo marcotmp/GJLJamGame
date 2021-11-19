@@ -18,6 +18,9 @@
 								<Bus Name="Player" ID="{D6B739CB-E3F9-4281-9699-4C932CBBAAB3}">
 									<ObjectLists/>
 								</Bus>
+								<Bus Name="UI" ID="{FBD2CE88-35BA-4ED9-8D3F-6F4B0CDA7E86}">
+									<ObjectLists/>
+								</Bus>
 							</ChildrenList>
 							<ObjectLists/>
 						</Bus>
