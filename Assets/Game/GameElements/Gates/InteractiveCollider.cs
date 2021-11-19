@@ -11,6 +11,7 @@ public class InteractiveCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
+        Debug.Log("InteractiveCollider.Trigger");
         this.other = other.gameObject;
         OnTriggerEntered2D?.Invoke();
     }

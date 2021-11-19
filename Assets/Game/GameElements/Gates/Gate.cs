@@ -20,6 +20,7 @@ public class Gate : MonoBehaviour
     // Do open animation
     public void Open()
     {
+        Debug.Log("Gate.Open");
         anim?.SetBool("Open", true);
     }
 

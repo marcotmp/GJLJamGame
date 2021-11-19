@@ -8,7 +8,8 @@ public class AttachToPlatform : MonoBehaviour
 
     private Vector3 oldPosition;
     // uncomment this code to get the conveyor behaviour
-    //public Vector3 conveyorDelta;
+    public bool isConveyor = false;
+    public Vector3 conveyorDelta;
 
     private void Start()
     {
@@ -19,13 +20,23 @@ public class AttachToPlatform : MonoBehaviour
     {
         if (passenger)
         {
-            var delta = transform.position - oldPosition;
-            if (rb)
-                rb.position += (Vector2)delta;
-            else
-                passenger.transform.position += delta;
 
-            //passenger.transform.position += + conveyorDelta;
+            if (isConveyor)
+            {
+                var delta = transform.position - oldPosition;
+                if (rb)
+                    rb.position += (Vector2)conveyorDelta * Time.deltaTime;
+                else
+                    passenger.transform.position += conveyorDelta * Time.deltaTime;
+            }
+            else
+            {
+                var delta = transform.position - oldPosition;
+                if (rb)
+                    rb.position += (Vector2)delta;
+                else
+                    passenger.transform.position += delta;
+            }
         }
 
         oldPosition = transform.position;
