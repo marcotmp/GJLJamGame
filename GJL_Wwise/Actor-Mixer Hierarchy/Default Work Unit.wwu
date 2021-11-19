@@ -1378,7 +1378,7 @@
 				</Folder>
 				<Folder Name="UI" ID="{88D72EEE-36C6-4B36-9A9D-78A99E05278C}" ShortID="748640081">
 					<ChildrenList>
-						<ActorMixer Name="Button" ID="{8F11D770-130D-44EA-A05B-95F4D8C0883F}" ShortID="989392406">
+						<RandomSequenceContainer Name="Button" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" ShortID="870419213">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
@@ -1387,8 +1387,68 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_UI_Button_01" ID="{2F50F9FF-C108-4569-B074-2CDB6EF66A7A}" ShortID="964462033">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_UI_Button_01" ID="{1461971D-4D6D-4C11-9FEB-8130C9E6958F}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.925510296242775"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.672379275048169"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.00593087668593"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI\sfx_UI_Button_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="323515511"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_UI_Button_01" ID="{1461971D-4D6D-4C11-9FEB-8130C9E6958F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_UI_Button_02" ID="{262235DE-2100-430D-84AD-EDD1CB18E80D}" ShortID="106386853">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_UI_Button_02" ID="{F203FBAD-1084-475D-898F-F61EE743A1B0}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.901779263005781"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.680289619460501"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.01384122109827"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI\sfx_UI_Button_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="466903571"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_UI_Button_02" ID="{F203FBAD-1084-475D-898F-F61EE743A1B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 							<ObjectLists/>
-						</ActorMixer>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<ActorMixer Name="Ambience" ID="{402746D3-DA7F-4457-8C53-57497552653C}" ShortID="493764366">
