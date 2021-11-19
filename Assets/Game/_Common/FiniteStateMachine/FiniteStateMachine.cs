@@ -70,6 +70,11 @@ public class FiniteStateMachine
         currentStateId = state.GetType();
     }
 
+    public void ChangeState<t>()
+    {
+        ChangeState(typeof(t));
+    }
+
     public Type GetStateID()
     {
         return currentStateId;
