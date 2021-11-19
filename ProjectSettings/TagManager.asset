@@ -16,7 +16,7 @@ TagManager:
   - Interactable
   - PlayerBullet
   - Vehicle
-  - PlayerTrigger
+  - VehicleTrigger
   - Grabbable
   - 
   - 
