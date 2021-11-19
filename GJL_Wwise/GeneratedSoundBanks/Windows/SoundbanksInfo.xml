@@ -11,7 +11,268 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1029380517">
+		<SoundBank Id="782826392" Language="SFX" Hash="4228852329">
+			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
+			<ShortName>Default</ShortName>
+			<Path>Default.bnk</Path>
+			<IncludedEvents>
+				<Event Id="278617630" Name="play_Ambience" ObjectPath="\Events\Default Work Unit\play_Ambience" DurationType="Unknown"/>
+				<Event Id="2099555730" Name="play_Button" ObjectPath="\Events\Default Work Unit\play_Button" DurationType="OneShot" DurationMin="2.333552" DurationMax="2.333552">
+					<IncludedMemoryFiles>
+						<File Id="323515511" Language="SFX">
+							<ShortName>UI\sfx_UI_Button_01.wav</ShortName>
+							<Path>SFX\UI\sfx_UI_Button_01_60EC7841.wem</Path>
+						</File>
+						<File Id="466903571" Language="SFX">
+							<ShortName>UI\sfx_UI_Button_02.wav</ShortName>
+							<Path>SFX\UI\sfx_UI_Button_02_7D3983B6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2767646498" Name="play_Heli_GetIn" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GetIn" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="393191848" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GetOn.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GetOn_10C4C929.wem</Path>
+						</File>
+						<File Id="572711547" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_Idle.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_Idle_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3903374634" Name="play_Heli_GrabObj" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GrabObj" DurationType="OneShot" DurationMin="0.434792" DurationMax="0.472052">
+					<IncludedMemoryFiles>
+						<File Id="514882816" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_03.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_03_10C4C929.wem</Path>
+						</File>
+						<File Id="741515843" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_01.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_01_10C4C929.wem</Path>
+						</File>
+						<File Id="869221285" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_02.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1104479366" Name="play_Heli_MoveStart" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_MoveStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="156946582" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_MoveStart.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MoveStart_10C4C929.wem</Path>
+						</File>
+						<File Id="212909863" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_MovingLoop.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MovingLoop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2227320646" Name="play_Heli_MoveStop" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_MoveStop" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="214130526" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_MoveStop.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MoveStop_10C4C929.wem</Path>
+						</File>
+						<File Id="572711547" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_Idle.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_Idle_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3266534423" Name="play_Heli_ReleaseObj" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_ReleaseObj" DurationType="OneShot" DurationMin="0.968344" DurationMax="0.996437">
+					<IncludedMemoryFiles>
+						<File Id="43493368" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03_10C4C929.wem</Path>
+						</File>
+						<File Id="163690339" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02_10C4C929.wem</Path>
+						</File>
+						<File Id="595283166" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1799877522" Name="play_MechaFstep" ObjectPath="\Events\Default Work Unit\Mecha\play_MechaFstep" DurationType="OneShot" DurationMin="0.401601" DurationMax="0.416220">
+					<IncludedMemoryFiles>
+						<File Id="267697277" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_03.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_03_10C4C929.wem</Path>
+						</File>
+						<File Id="663371379" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_04.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_04_10C4C929.wem</Path>
+						</File>
+						<File Id="760093289" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_02.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_02_10C4C929.wem</Path>
+						</File>
+						<File Id="820845243" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_01.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1487318966" Name="play_MechaJump" ObjectPath="\Events\Default Work Unit\Mecha\play_MechaJump" DurationType="OneShot" DurationMin="0.720866" DurationMax="0.747189">
+					<IncludedMemoryFiles>
+						<File Id="258376170" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_03.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_03_10C4C929.wem</Path>
+						</File>
+						<File Id="530404575" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_02.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_02_10C4C929.wem</Path>
+						</File>
+						<File Id="982864765" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_04.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_04_10C4C929.wem</Path>
+						</File>
+						<File Id="1048648187" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_01.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1065181657" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_05.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3850056961" Name="play_MechaLand" ObjectPath="\Events\Default Work Unit\Mecha\play_MechaLand" DurationType="OneShot" DurationMin="0.465315" DurationMax="0.630936">
+					<IncludedMemoryFiles>
+						<File Id="359968010" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_02.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_02_10C4C929.wem</Path>
+						</File>
+						<File Id="701470162" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_03.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_03_10C4C929.wem</Path>
+						</File>
+						<File Id="910074444" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_04.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_04_10C4C929.wem</Path>
+						</File>
+						<File Id="981527382" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_01.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="125457442" Name="play_Tank_GetIn" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_GetIn" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="520054179" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Idle.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Idle_D79FB2B7.wem</Path>
+						</File>
+						<File Id="724895998" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_EngineStart.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_EngineStart_8AE24F59.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4069393885" Name="play_Tank_GetOut" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_GetOut" DurationType="OneShot" DurationMin="2.101271" DurationMax="2.101271">
+					<IncludedMemoryFiles>
+						<File Id="813733210" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_GetOff.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_GetOff_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2120857990" Name="play_Tank_MoveStart" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_MoveStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="255387965" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MovingLoop.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MovingLoop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="490237738" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_01.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_01_10C4C929.wem</Path>
+						</File>
+						<File Id="573316817" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_03.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_03_10C4C929.wem</Path>
+						</File>
+						<File Id="605893097" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_04.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_04_10C4C929.wem</Path>
+						</File>
+						<File Id="763453536" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_02.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4276080198" Name="play_Tank_MoveStop" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_MoveStop" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="445659384" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_02.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_02_10C4C929.wem</Path>
+						</File>
+						<File Id="520054179" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Idle.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Idle_D79FB2B7.wem</Path>
+						</File>
+						<File Id="536405860" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_01.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_01_10C4C929.wem</Path>
+						</File>
+						<File Id="574590072" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_03.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_03_10C4C929.wem</Path>
+						</File>
+						<File Id="596215666" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_04.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="542072273" Name="play_Tank_Shot" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_Shot" DurationType="OneShot" DurationMin="1.292409" DurationMax="1.598620">
+					<IncludedMemoryFiles>
+						<File Id="250717664" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Shot_02.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_02_10C4C929.wem</Path>
+						</File>
+						<File Id="326588327" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Shot_04.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_04_10C4C929.wem</Path>
+						</File>
+						<File Id="365386010" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Shot_03.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_03_10C4C929.wem</Path>
+						</File>
+						<File Id="911416862" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Shot_01.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2904441870" Name="play_Tank_ShotExplosion" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_ShotExplosion" DurationType="OneShot" DurationMin="1.923902" DurationMax="2.145293">
+					<IncludedMemoryFiles>
+						<File Id="626899395" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_04.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_04_10C4C929.wem</Path>
+						</File>
+						<File Id="679296252" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_03.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_03_10C4C929.wem</Path>
+						</File>
+						<File Id="752266291" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_01.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_01_10C4C929.wem</Path>
+						</File>
+						<File Id="874272289" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_02.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1712852617" Name="playFootstep" ObjectPath="\Events\Default Work Unit\playFootstep" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1687860731">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

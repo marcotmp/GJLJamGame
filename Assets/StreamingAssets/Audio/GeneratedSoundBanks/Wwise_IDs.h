@@ -11,6 +11,33 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PLAY_BUTTON = 2099555730U;
+        static const AkUniqueID PLAY_HELI_GETIN = 2767646498U;
+        static const AkUniqueID PLAY_HELI_GRABOBJ = 3903374634U;
+        static const AkUniqueID PLAY_HELI_MOVESTART = 1104479366U;
+        static const AkUniqueID PLAY_HELI_MOVESTOP = 2227320646U;
+        static const AkUniqueID PLAY_HELI_RELEASEOBJ = 3266534423U;
+        static const AkUniqueID PLAY_MECHAFSTEP = 1799877522U;
+        static const AkUniqueID PLAY_MECHAJUMP = 1487318966U;
+        static const AkUniqueID PLAY_MECHALAND = 3850056961U;
+        static const AkUniqueID PLAY_TANK_GETIN = 125457442U;
+        static const AkUniqueID PLAY_TANK_GETOUT = 4069393885U;
+        static const AkUniqueID PLAY_TANK_MOVESTART = 2120857990U;
+        static const AkUniqueID PLAY_TANK_MOVESTOP = 4276080198U;
+        static const AkUniqueID PLAY_TANK_SHOT = 542072273U;
+        static const AkUniqueID PLAY_TANK_SHOTEXPLOSION = 2904441870U;
+        static const AkUniqueID PLAYFOOTSTEP = 1712852617U;
+    } // namespace EVENTS
+
+    namespace BANKS
+    {
+        static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID DEFAULT = 782826392U;
+    } // namespace BANKS
+
     namespace BUSSES
     {
         static const AkUniqueID _2D = 527871411U;
