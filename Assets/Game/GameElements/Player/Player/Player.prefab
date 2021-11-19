@@ -125,6 +125,7 @@ MonoBehaviour:
     player: {fileID: 0}
   mountingState:
     player: {fileID: 0}
+    delay: 0.5
   unmountedState:
     player: {fileID: 0}
     delay: 0.3
@@ -136,14 +137,6 @@ MonoBehaviour:
     m_Actions: []
     m_Bindings: []
   move:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-  jump:
     m_Name: 
     m_Type: 0
     m_ExpectedControlType: 
@@ -347,6 +340,10 @@ PrefabInstance:
     - target: {fileID: 7780161655922670278, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}
       propertyPath: size.x
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780161655922670278, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 4224
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}

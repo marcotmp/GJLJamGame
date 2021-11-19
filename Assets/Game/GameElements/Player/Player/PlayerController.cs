@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
         // Remove any listener on the current state
         // This is used to fix a bug when changing levels the move event is connected after the object is destroyed
         fsm.GetCurrentState().Exit();
+        move.performed -= Move;
     }
 
     private void FixedUpdate()
