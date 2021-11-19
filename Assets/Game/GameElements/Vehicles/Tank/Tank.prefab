@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1681805170112799829}
   - component: {fileID: 6791203183183003860}
   - component: {fileID: 1089960191393159616}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 1}
+  m_Size: {x: 1.3, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1089960191393159616
 MonoBehaviour:
@@ -169,7 +169,6 @@ MonoBehaviour:
   sprite: {fileID: 1089960191393159618}
   inputActionAsset: {fileID: -944628639613478452, guid: c09bf5e377e326546a497ee9afe38edb, type: 3}
   groundDetector: {fileID: 509866442278225997}
-  playerSelector: {fileID: 11400000, guid: 55d5c2f0979b4b146af989ce849b6507, type: 2}
   selectorIcon: {fileID: 7022214144245040469}
   cannon: {fileID: 6120631329058158994}
   horizontalSpeed: 5
@@ -240,7 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6120631328534281527}
   - component: {fileID: 6120631328534281524}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: CannonSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6120631329058158989}
   - component: {fileID: 6120631329058158994}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6120631329319633419}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371808926923571421}
   - component: {fileID: 2776224127913647734}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SelectedIndication
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7132936583540478620}
   - component: {fileID: 509866442278225997}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
