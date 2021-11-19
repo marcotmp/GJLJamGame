@@ -3,7 +3,6 @@ using UnityEngine.Events;
 
 public class AndGate : MonoBehaviour
 {
-    public UnityEvent<bool> onValueChange;
     public UnityEvent onEnabled;
     public UnityEvent onDisabled;
 
@@ -28,7 +27,6 @@ public class AndGate : MonoBehaviour
         output = inputA && inputB;
 
         Debug.Log($"Evaluate {output}");
-        onValueChange.Invoke(output);
         if (output)
             onEnabled?.Invoke();
         else

@@ -12,6 +12,18 @@ public class Gate : MonoBehaviour
     // Use past tense only on events
     public void GateOpened()
     {
-        anim?.SetTrigger("Activate");
+        Open();
+    }
+
+    // Do open animation
+    public void Open()
+    {
+        anim?.SetBool("Open", true);
+    }
+
+    // Do close animation
+    public void Close()
+    {
+        anim?.SetBool("Open", false);
     }
 }

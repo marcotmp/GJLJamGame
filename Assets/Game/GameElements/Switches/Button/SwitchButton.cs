@@ -6,7 +6,9 @@ using UnityEngine.Events;
 public class SwitchButton : MonoBehaviour
 {
     [SerializeField] private Animator animator;
-    public UnityEvent<bool> onSet;
+    public UnityEvent onEnabled;
+    public UnityEvent onDisabled;
+
 
     [Header("Debug")]
     [SerializeField] private int numberOfVisits = 0;
@@ -17,7 +19,7 @@ public class SwitchButton : MonoBehaviour
         {
             // when this object is pressed, anim press
             animator.SetBool("pressed", true);
-            onSet?.Invoke(true);
+            onEnabled?.Invoke();
         }
         numberOfVisits++;
     }
@@ -28,7 +30,7 @@ public class SwitchButton : MonoBehaviour
         if (numberOfVisits == 0)
         {
             animator.SetBool("pressed", false);
-            onSet?.Invoke(false);
+            onDisabled?.Invoke();
         }
     }
 }
