@@ -13,6 +13,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private Button newGameButton;
     [SerializeField] private Button playButton;
     [SerializeField] private LevelProgression levelProgression;
+    [SerializeField] private ForceUIFocus focus;
 
     private void Start()
     {
@@ -24,11 +25,15 @@ public class MainMenuController : MonoBehaviour
             continueButton.gameObject.SetActive(false);
             newGameButton.gameObject.SetActive(false);
             playButton.gameObject.SetActive(true);
+            playButton.Select();
+            focus.SetDefaultButton(playButton);
         }
         else
         {
             // show continue
             continueButton.gameObject.SetActive(true);
+            continueButton.Select();
+            focus.SetDefaultButton(continueButton);
             newGameButton.gameObject.SetActive(true);
             playButton.gameObject.SetActive(false);
         }
@@ -57,5 +62,4 @@ public class MainMenuController : MonoBehaviour
         levelProgression.Clear();
         transition.LoadScene(firstLevel);
     }
-
 }
