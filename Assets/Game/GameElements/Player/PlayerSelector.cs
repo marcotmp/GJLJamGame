@@ -9,12 +9,12 @@ public class PlayerSelector : ScriptableObject
 {
     [SerializeField] private InputAction changePlayerAction;
 
-    private List<IPlayer> playerList;
+    private List<IVehicle> playerList;
     private int index = 0;
 
     public void OnEnable()
     {
-        playerList = new List<IPlayer>();
+        playerList = new List<IVehicle>();
         index = 0;
 
         // Activate 
@@ -28,12 +28,12 @@ public class PlayerSelector : ScriptableObject
         changePlayerAction.Disable();
     }
 
-    public void Add(IPlayer player)
+    public void Add(IVehicle player)
     {
-        if (playerList.Count > 0)
-            player.Deactivate();
-        else
-            player.Activate();
+        //if (playerList.Count > 0)
+        //    player.Deactivate();
+        //else
+        //    player.MountPlayer();
 
         playerList.Add(player);
     }
@@ -41,7 +41,7 @@ public class PlayerSelector : ScriptableObject
     private void OnChangePlayer(CallbackContext cc)
     {
         playerList[index].Deactivate();        
-        index = (++index) % playerList.Count;
-        playerList[index].Activate();
+        index = ++index % playerList.Count;
+        //playerList[index].MountPlayer();
     }
 }

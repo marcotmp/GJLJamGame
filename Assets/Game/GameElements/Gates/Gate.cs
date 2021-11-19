@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Gate : MonoBehaviour
@@ -10,8 +9,24 @@ public class Gate : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    // TODO: rename to just Open
+    // Use past tense only on events
+    [Obsolete]
     public void GateOpened()
     {
-        anim.SetTrigger("Activate");
+        Open();
+    }
+
+    // Do open animation
+    public void Open()
+    {
+        Debug.Log("Gate.Open");
+        anim?.SetBool("Open", true);
+    }
+
+    // Do close animation
+    public void Close()
+    {
+        anim?.SetBool("Open", false);
     }
 }
