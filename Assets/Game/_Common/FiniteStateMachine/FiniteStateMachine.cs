@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FiniteStateMachine
 {
-    private IState currentState;
+    private IState currentState; 
 
     private Dictionary<Type, IState> states;
     //private Dictionary<string, State> statesNames; // allow for reusable states
