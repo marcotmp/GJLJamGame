@@ -7,6 +7,7 @@ public class LegsController : MonoBehaviour, IVehicle
 {
     public BoxDetector groundDetector;
     public GameObject selectorIcon;
+    //public InteractionSign interactionSign;
 
     public InputActionAsset playerInput;
     [HideInInspector] public InputActionMap actionMap;

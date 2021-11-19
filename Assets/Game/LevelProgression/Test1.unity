@@ -178,10 +178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal
       objectReference: {fileID: 0}
-    - target: {fileID: 3347724619817389805, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 3347724619817389807, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
       propertyPath: nextScene.scenePath
       value: Assets/Game/LevelProgression/Test2.unity
@@ -3366,22 +3362,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.04129
-      objectReference: {fileID: 0}
-    - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.4567056
-      objectReference: {fileID: 0}
-    - target: {fileID: 25049513443985029, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.04129
-      objectReference: {fileID: 0}
-    - target: {fileID: 25049513443985029, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.4567056
-      objectReference: {fileID: 0}
     - target: {fileID: 25049513443985034, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_Follow
       value: 

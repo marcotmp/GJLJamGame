@@ -83,10 +83,12 @@ public class PlayerController : MonoBehaviour
         fsm.ChangeState(moveState);
     }
 
-    // private void OnDestroy()
-    // {
-    //     action.started -= OnMountAction;
-    // }
+    private void OnDestroy()
+    {
+        // Remove any listener on the current state
+        // This is used to fix a bug when changing levels the move event is connected after the object is destroyed
+        fsm.GetCurrentState().Exit();
+    }
 
     private void FixedUpdate()
     {
@@ -220,14 +222,18 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody.bodyType = RigidbodyType2D.Dynamic;
         sprite.enabled = true;
-        GetComponent<BoxCollider2D>().isTrigger = false;
+        //GetComponent<BoxCollider2D>().isTrigger = false;
+        GetComponent<BoxCollider2D>().enabled = true;
+
     }
 
     void Deactivate()
     {
         rigidbody.bodyType = RigidbodyType2D.Kinematic;
         sprite.enabled = false;
-        GetComponent<BoxCollider2D>().isTrigger = true;
+        //GetComponent<BoxCollider2D>().isTrigger = true;
+        GetComponent<BoxCollider2D>().enabled = false;
+
     }
 
     // IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)

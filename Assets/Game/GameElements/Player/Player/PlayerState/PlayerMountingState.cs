@@ -20,32 +20,18 @@ public class PlayerMountingState : PlayerState
         base.Enter();
         waitCoroutine = Wait();
         player.StartCoroutine(waitCoroutine);
-
-        player.action.canceled += OnActionMountEnded;
     }
 
     public override void Exit()
     {
         base.Exit();
         player.StopCoroutine(waitCoroutine);
-
-        player.action.canceled -= OnActionMountEnded;
-    }
-
-    void OnActionMountEnded(CallbackContext c)
-    {
-        fsm.ChangeState<PlayerMoveState>();
     }
 
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(delay);
-        if (player.IsCollidingVehicle())
-        {
-            player.MountAction();
-            fsm.ChangeState<PlayerMountedState>();
-        }
-        else 
-            fsm.ChangeState<PlayerMoveState>();
+        player.MountAction();
+        fsm.ChangeState<PlayerMountedState>();
     }
 }

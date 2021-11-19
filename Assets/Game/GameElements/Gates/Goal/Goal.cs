@@ -2,6 +2,7 @@ using JohannesMP;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
@@ -9,13 +10,15 @@ public class Goal : MonoBehaviour
     [SerializeField] public SceneTransitionerChannel transition;
     [SerializeField] public WinEventChannel winEventChannel;
     [SerializeField] public float delay = 1;
+    [SerializeField] public LevelProgression levelProgression;
 
     public void GoalReached()
     {
         Debug.Log("Level Win!");
 
         // save that you completed current level
-        // levelStorage.WinLevel();
+        var path = SceneManager.GetActiveScene().path;
+        levelProgression.OpenLevel(nextScene);
 
         // stop the player and trigger win animation
         winEventChannel.Raise();
@@ -31,7 +34,6 @@ public class Goal : MonoBehaviour
     private IEnumerator WinSequence()
     {
         yield return new WaitForSeconds(delay);
-
         transition.LoadScene(nextScene);
     }
 

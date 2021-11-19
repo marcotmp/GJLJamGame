@@ -886,6 +886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1839566211}
   - component: {fileID: 1839566210}
+  - component: {fileID: 1839566212}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -907,12 +908,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 11400000, guid: 3e14c47e1df9c4144ae76263a6aaaa0f, type: 2}
   firstLevel:
-    sceneAsset: {fileID: 102900000, guid: 6a7a3db7af5b4b94fa9b451fa7158159, type: 3}
-    scenePath: Assets/Game/GameElements/Vehicles/Tank/TankPlayground.unity
+    sceneAsset: {fileID: 102900000, guid: 7c88db97cdbb8de4ea449bcba66f759a, type: 3}
+    scenePath: Assets/Game/LevelProgression/Test1.unity
   confirmationPopup: {fileID: 2099285000}
   continueButton: {fileID: 364800617}
   newGameButton: {fileID: 1991204014}
   playButton: {fileID: 526850141}
+  levelProgression: {fileID: 11400000, guid: 3344946f78134a64195d5d1fb63031cd, type: 2}
+  focus: {fileID: 1839566212}
 --- !u!4 &1839566211
 Transform:
   m_ObjectHideFlags: 0
@@ -927,6 +930,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1839566212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839566209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 568ccd4d7affd1242b2c734c5e903eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultButton: {fileID: 526850141}
 --- !u!1 &1845818081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 1991204012}
+  m_FirstSelected: {fileID: 526850140}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1887883055

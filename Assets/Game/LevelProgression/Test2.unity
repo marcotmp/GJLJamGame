@@ -3195,29 +3195,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1717318507}
     m_Modifications:
-    - target: {fileID: 779099181003045167, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: m_Size.y
-      value: 0.70474386
-      objectReference: {fileID: 0}
-    - target: {fileID: 779099181003045167, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.31183505
-      objectReference: {fileID: 0}
-    - target: {fileID: 1178140358269277868, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: playerMountedEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 4771be06cea7f954fb69566f3643c85b, type: 2}
     - target: {fileID: 6615938242767593528, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6615938242767593528, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6615938242767593529, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6615938242767593530, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
       propertyPath: m_RootOrder
@@ -3263,26 +3243,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6646793518000366625, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: gravityUp
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646793518000366625, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: gravityDown
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646793518000366625, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: jumpImpulse
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646793518000366625, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: gravityScale
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 6646793518000366625, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
-      propertyPath: playerMountedEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 4771be06cea7f954fb69566f3643c85b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
 --- !u!1 &1717318506
