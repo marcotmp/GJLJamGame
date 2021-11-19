@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EC9F793C-E67B-46F2-B493-B462235147CD}" SchemaVersion="103">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{EC9F793C-E67B-46F2-B493-B462235147CD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EC9F793C-E67B-46F2-B493-B462235147CD}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Tank" ID="{CC74A4CF-D5F1-45EF-AD9B-53A2097EE237}">
+					<ObjectList>
+						<ObjectRef Name="sfx_PlayerTank_GetIn" ID="{83183683-D062-45FD-9AC2-1E85F937B04F}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="sfx_PlayerTank_GetOut" ID="{55936B31-0A88-4111-A5FA-7CE5560ABAF6}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="sfx_PlayerTank_Idle" ID="{0FD8B979-7567-4220-A238-E7A3EFA11AA9}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="MoveStart" ID="{5466C581-1578-434B-A8CD-6D9CE68DBB25}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="MoveStop" ID="{53A509C9-C423-4EB1-84AA-9C2CED8DBD49}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="sfx_PlayerTank_MovingLoop" ID="{229F5194-9D0F-4DC7-A056-755CCD5F7E9D}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="Shot" ID="{EEB001A2-C69E-4713-845D-10420F1C2F52}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="ShotExplosion" ID="{3ED399A5-46E5-483B-9076-6314372BBDB7}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="NoiseAmbience" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+					</ObjectList>
+				</MixingSession>
+				<MixingSession Name="Helicopter" ID="{93EA6BC6-52FC-468B-8FF3-B7081ECFC4AC}">
+					<ObjectList>
+						<ObjectRef Name="sfx_PlayerHeli_GetOn" ID="{B73C3C11-C0E7-4186-8BBD-341AA806B1D7}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="sfx_PlayerHeli_MoveStart" ID="{33FFC206-ABA4-457D-A0B3-FB3E52CC7B60}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="sfx_PlayerHeli_MoveStop" ID="{35BC10EE-DE48-4150-9BCD-844AEA805E6B}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="sfx_PlayerHeli_MovingLoop" ID="{44202BEB-C1D8-4A88-B25E-D900142F53D9}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="GrabObject" ID="{563573B0-CE65-4991-B2E5-F0B9E5585E08}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="ReleaseObject" ID="{7C5565D9-C731-42E3-81A8-6C8AAA841BFE}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+					</ObjectList>
+				</MixingSession>
+				<MixingSession Name="Mecha" ID="{14486E5B-31E4-46A6-B803-A2A81954E32D}">
+					<ObjectList>
+						<ObjectRef Name="Fstep" ID="{51C0C815-8F01-479D-938C-E4CA392FE065}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="Jump" ID="{AC20AF14-6E2B-40D1-A63B-E32F2C9A5DBD}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+						<ObjectRef Name="Landing" ID="{BAB94E0A-0D26-44DC-B9DA-24D8A56560D7}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

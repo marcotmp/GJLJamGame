@@ -27,6 +27,18 @@
 						<Bus Name="3D" ID="{F775D4A7-570D-4CC7-A084-CCC4FA7358D8}">
 							<ChildrenList>
 								<Bus Name="Ambience" ID="{16C92C55-41D7-42A2-8CA5-951F160A084C}">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-42</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Verb" ID="{37D75D82-32D9-4674-99C0-E57E9D00D529}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
 									<ObjectLists/>
 								</Bus>
 								<Bus Name="Objects" ID="{E9D1C035-B118-4612-9418-A72C107058F4}">
@@ -39,7 +51,17 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-25</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Verb" ID="{37D75D82-32D9-4674-99C0-E57E9D00D529}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
 										<Bus Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}">
 											<ObjectLists/>
@@ -59,15 +81,29 @@
 						<AuxBus Name="Verb" ID="{37D75D82-32D9-4674-99C0-E57E9D00D529}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BypassEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Wwise_RoomVerb_(Custom)" ID="{90B6C219-A347-4362-8B14-A75702AB4064}" ShortID="931490803" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+									<Custom CreatedFrom="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}">
+										<Effect Name="Large_Bright_Chamber1 (Custom)" ID="{3FB8EE06-688B-49F9-BEE7-CE86EFE2C903}" ShortID="914334261" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<PropertyList>
+												<Property Name="HFRatio" Type="Real32" Value="1"/>
+												<Property Name="NumberOfDelays" Type="int32" Value="16"/>
+												<Property Name="PreDelay" Type="Real32" Value="0.3"/>
+												<Property Name="ReverbTime" Type="Real32" Value="2.5"/>
+												<Property Name="WetLevel" Type="Real32" Value="-30"/>
+											</PropertyList>
+										</Effect>
 									</Custom>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 							<ObjectLists/>
