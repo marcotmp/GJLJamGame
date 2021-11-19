@@ -30,7 +30,7 @@ public class SwitchButton : MonoBehaviour
         numberOfVisits--;
         if (numberOfVisits == 0)
         {
-            IsActivated = true;
+            IsActivated = false;
             animator.SetBool("pressed", false);
             onDisabled?.Invoke();
         }

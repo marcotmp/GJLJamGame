@@ -221,14 +221,18 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody.bodyType = RigidbodyType2D.Dynamic;
         sprite.enabled = true;
-        GetComponent<BoxCollider2D>().isTrigger = false;
+        //GetComponent<BoxCollider2D>().isTrigger = false;
+        GetComponent<BoxCollider2D>().enabled = true;
+
     }
 
     void Deactivate()
     {
         rigidbody.bodyType = RigidbodyType2D.Kinematic;
         sprite.enabled = false;
-        GetComponent<BoxCollider2D>().isTrigger = true;
+        //GetComponent<BoxCollider2D>().isTrigger = true;
+        GetComponent<BoxCollider2D>().enabled = false;
+
     }
 
     // IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)

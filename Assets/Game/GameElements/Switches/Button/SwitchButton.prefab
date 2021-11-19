@@ -46,6 +46,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2659881142593151254}
+  onEnabled:
+    m_PersistentCalls:
+      m_Calls: []
+  onDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+  numberOfVisits: 0
 --- !u!61 &1811882665935237943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70,7 +77,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.40540385}
+  m_Size: {x: 0.8007438, y: 0.40540385}
   m_EdgeRadius: 0
 --- !u!1 &6798422183372550525
 GameObject:
