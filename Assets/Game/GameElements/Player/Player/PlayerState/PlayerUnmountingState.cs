@@ -26,7 +26,9 @@ public class PlayerUnmountingState : PlayerState
     private IEnumerator Wait()
     {
         yield return new WaitForSeconds(delay);
-        fsm.ChangeState<PlayerMoveState>();
+        
         player.Unmount();
+        player.Activate();
+        fsm.ChangeState<PlayerMoveState>();
     }
 }

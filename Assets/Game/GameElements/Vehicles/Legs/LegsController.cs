@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class LegsController : MonoBehaviour, IVehicle
+public class LegsController : MonoBehaviour, IVehicle, IGrabbable
 {
     public BoxDetector groundDetector;
     public GameObject selectorIcon;
@@ -25,6 +25,7 @@ public class LegsController : MonoBehaviour, IVehicle
     [SerializeField] private LegsMove moveState;
     [SerializeField] private LegsAir airState;
     [SerializeField] private LegsDeactivate deactivateState;
+    [SerializeField] private LegsDeactivate grabbedState;
 
     [SerializeField] private float maxSpeed = 3f;
     [SerializeField] private float jumpImpulse = 10f;
@@ -52,11 +53,13 @@ public class LegsController : MonoBehaviour, IVehicle
         moveState.legs = this;
         airState.legs = this;
         deactivateState.legs = this;
+        grabbedState.legs = this;
 
         fsm.AddState(activateState);
         fsm.AddState(moveState);
         fsm.AddState(airState);
         fsm.AddState(deactivateState);
+        fsm.AddState(grabbedState);
 
         fsm.ChangeState(deactivateState);
     }
@@ -64,6 +67,11 @@ public class LegsController : MonoBehaviour, IVehicle
     private void FixedUpdate() 
     {
         fsm.FixedUpdate();    
+    }
+
+    private void OnDestroy()
+    {
+        fsm.GetCurrentState().Exit();
     }
 
     public void ProcessMove()
@@ -92,6 +100,25 @@ public class LegsController : MonoBehaviour, IVehicle
 
         rb.velocity = motion;
     }
+
+    // bool DetectObjectInGround()
+    // {
+    //     if (groundDetector.CheckCollisionAll())
+    //     {
+    //         var itemFound = groundDetector.raycastHit2DAll;
+    //         Debug.Log(itemFound);
+            
+    //         for (int i = 0; i < itemFound.Length; i++)
+    //         {
+    //             if (itemFound[i].collider.gameObject != this.gameObject)
+    //             {
+    //                 return true;
+    //             }
+    //         }
+    //     }
+
+    //     return false;
+    // }
 
     public void ProcessStop()
     {
@@ -155,5 +182,20 @@ public class LegsController : MonoBehaviour, IVehicle
     public void UnmountPlayer()
     {
         Deactivate();
+    }
+
+    public Vector3 GetGrabOffset()
+    {
+        return groundDetector.transform.position;
+    }
+
+    public void Grab()
+    {
+        fsm.ChangeState<LegsGrabbed>();
+    }
+
+    public void Release()
+    {
+        fsm.ChangeState<LegsDeactivate>();
     }
 }

@@ -32,6 +32,9 @@ public class AttachToPlatform : MonoBehaviour
             else
             {
                 var delta = transform.position - oldPosition;
+                //if (pc)
+                //    pc.yDelta = delta.y;
+
                 if (rb)
                     rb.position += (Vector2)delta;
                 else

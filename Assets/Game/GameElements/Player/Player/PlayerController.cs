@@ -102,12 +102,14 @@ public class PlayerController : MonoBehaviour
     //{ 
     //    // toggle sign
     //    var vehicleDetector = this.vehicleDetector.CheckCollision();
-        
+
     //    if (vehicleDetector)
     //        selectorIcon.SetActive(true);
     //    else if (!vehicleDetector && selectorIcon.activeSelf)
     //        selectorIcon.SetActive(false);
     //}
+
+    public float yDelta = 0;
 
     public void ProcessMove()
     {
@@ -128,6 +130,8 @@ public class PlayerController : MonoBehaviour
             else motion.y -= gravityDown * Time.deltaTime;
             motion.y = Mathf.Max(motion.y, -gravityScale);
         }
+
+        motion.y += yDelta;
 
         bool wasOnGround = isOnGround;
         isOnGround = groundDetector.CheckCollision();
@@ -212,20 +216,20 @@ public class PlayerController : MonoBehaviour
         // isMounted = false;
         // gameObject.SetActive(true);
         // fsm.ChangeState<PlayerUnmountingState>();
+        Debug.Log("Player unmounting!");
         playerMountedEvent.Raise(gameObject);
         vehicle.UnmountPlayer();
         transform.position = vehicle.transform.position;
         vehicle = null;
-        Activate();
     }
 
-    void Activate()
+    public void Activate()
     {
         rigidbody.bodyType = RigidbodyType2D.Dynamic;
         sprite.enabled = true;
         //GetComponent<BoxCollider2D>().isTrigger = false;
         GetComponent<BoxCollider2D>().enabled = true;
-
+        vehicleDetector.GetComponent<BoxDetector>().enabled = true;
     }
 
     void Deactivate()
@@ -234,7 +238,7 @@ public class PlayerController : MonoBehaviour
         sprite.enabled = false;
         //GetComponent<BoxCollider2D>().isTrigger = true;
         GetComponent<BoxCollider2D>().enabled = false;
-
+        vehicleDetector.GetComponent<BoxDetector>().enabled = false;
     }
 
     // IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)

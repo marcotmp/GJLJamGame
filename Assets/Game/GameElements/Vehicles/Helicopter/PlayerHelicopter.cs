@@ -6,17 +6,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerHelicopter : MonoBehaviour, IVehicle
 {
-    //Wwise events
-    [SerializeField]
-    private AK.Wwise.Event grabObject = null;
-    [SerializeField]
-    private AK.Wwise.Event releaseObject = null;
-
     public InputActionAsset playerInput;
     [HideInInspector] public InputAction move;
     [HideInInspector] public InputAction grab;
     // public PlayerSelector playerSelector;
     public BoxDetector groundDetector;
+    Vector3 groundDetectorInitialPos;
     public BoxDetector itemDetector;
     public GameObject selectorIcon;
     public Animator anim;
@@ -46,8 +41,14 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         // playerSelector.Add(this);
     }
 
+    private void OnDestroy()
+    {
+        fsm.GetCurrentState().Exit();
+    }
+
     private void Start() {
         fsm.ChangeState(typeof(HeliDeactivate));
+        groundDetectorInitialPos = groundDetector.transform.localPosition;
     }
 
     private void FixedUpdate() 
@@ -73,6 +74,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     public void UnmountPlayer()
     {
         Deactivate();
+        Release();
     }
 
     private IGrabbable GetObjectToGrab()
@@ -104,8 +106,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
                 // attach joint to other
                 joint.enabled = true;
                 joint.connectedBody = objectGrabbed.gameObject.GetComponent<Rigidbody2D>();
-                groundDetector.transform.position += Vector3.down * grabOffset;
-                grabObject.Post(gameObject);
+                groundDetector.transform.position = objectGrabbed.GetGrabOffset();
             }
 
             
@@ -124,8 +125,21 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         {
             objectGrabbed = null;
             joint.enabled = false;
-            groundDetector.transform.position += Vector3.up * grabOffset;
-            releaseObject.Post(gameObject);
+            joint.connectedBody = null;
+            groundDetector.transform.localPosition = groundDetectorInitialPos;
         }
+    }
+
+    bool DetectObjectInGround()
+    {
+        var itemFound = groundDetector.raycastHit2DAll;
+        foreach (var rh in itemFound)
+        {
+            if (rh.collider.gameObject != this.gameObject)
+            {                
+                return true;
+            }
+        }
+        return false;
     }
 }
