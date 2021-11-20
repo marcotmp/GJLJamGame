@@ -15,6 +15,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     public BoxDetector itemDetector;
     public GameObject selectorIcon;
     public Animator anim;
+    [SerializeField] private AK.Wwise.Event grabObject = null;
 
     [SerializeField] private Transform handPosition;
     [SerializeField] public Joint2D joint;
@@ -107,6 +108,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
                 joint.enabled = true;
                 joint.connectedBody = objectGrabbed.gameObject.GetComponent<Rigidbody2D>();
                 groundDetector.transform.position = objectGrabbed.GetGrabOffset();
+                grabObject.Post(gameObject);
             }
 
             

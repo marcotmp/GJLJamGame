@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 2399628295308777574, guid: e90e76eaf873c4141a7456cff66a373e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -187,6 +187,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8d59741dceaee45901cab7ce12a538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gateEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!95 &1132822264892875044
 Animator:
   serializedVersion: 3
@@ -279,8 +283,8 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 2399628295308777574, guid: e90e76eaf873c4141a7456cff66a373e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
@@ -361,8 +365,8 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 2399628295308777574, guid: e90e76eaf873c4141a7456cff66a373e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
