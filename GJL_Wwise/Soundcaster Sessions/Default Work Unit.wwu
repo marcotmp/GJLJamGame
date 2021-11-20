@@ -214,7 +214,7 @@
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_Heli_GrabObj" ID="{419C6595-2DAD-405F-9C58-374315C9E625}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<ObjectRef Name="play_Heli_MoveStart" ID="{08BE5077-1384-41ED-BFBB-262140F2B0C2}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
@@ -234,7 +234,7 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_Heli_MoveStart" ID="{08BE5077-1384-41ED-BFBB-262140F2B0C2}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<ObjectRef Name="play_Heli_MoveStop" ID="{67E84DC1-A695-419A-B7F7-312665D6631B}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
@@ -250,7 +250,7 @@
 							<Position X="3" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_Heli_MoveStop" ID="{67E84DC1-A695-419A-B7F7-312665D6631B}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<ObjectRef Name="play_Heli_GrabObj" ID="{419C6595-2DAD-405F-9C58-374315C9E625}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="4" Y="0"/>
 						</Module>
 						<Module>

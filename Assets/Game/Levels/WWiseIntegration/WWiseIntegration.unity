@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
+      propertyPath: gateEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 5a0d41f91967f6c41bb191be533a576c, type: 2}
     - target: {fileID: 1132822264892875047, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -193,11 +197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1089960191393159617, guid: 0ac9c054ca0c9044f90cc5758d0b1fdf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.37
+      value: 7.91
       objectReference: {fileID: 0}
     - target: {fileID: 1089960191393159617, guid: 0ac9c054ca0c9044f90cc5758d0b1fdf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.88
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1089960191393159617, guid: 0ac9c054ca0c9044f90cc5758d0b1fdf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -805,19 +809,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.322294
+      value: 23.227705
       objectReference: {fileID: 0}
     - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.9252605
+      value: -6.5052605
       objectReference: {fileID: 0}
     - target: {fileID: 25049513443985029, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.322294
+      value: 23.227705
       objectReference: {fileID: 0}
     - target: {fileID: 25049513443985029, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.9252605
+      value: -6.5052605
       objectReference: {fileID: 0}
     - target: {fileID: 25049513443985034, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_Follow
@@ -901,19 +905,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 873897696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0f13e7b280035d4584406b8f2cf8379, type: 3}
+  m_Script: {fileID: 11500000, guid: 648858346d199094b93a06b278d859bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_listeners:
-    initialListenerList: []
+    initialListenerList:
+    - {fileID: 873897697}
     useDefaultListeners: 1
-  isEnvironmentAware: 0
+  isEnvironmentAware: 1
   isStaticObject: 0
   m_positionOffsetData:
     KeepMe: 0
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+  player: {fileID: 2056738333}
 --- !u!1 &876663894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4701,6 +4707,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 55bc2e44e1dc28f40b820b40bea771dc, type: 2}
     - target: {fileID: 4143977122607861890, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
+      propertyPath: switchButtonOn.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fad6f30c330fbf644a3ac33004711151, type: 2}
+    - target: {fileID: 4143977122607861890, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
+      propertyPath: switchButtonOff.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 96d98c5fc4cd2b94085a2fb4d1ebc795, type: 2}
+    - target: {fileID: 4143977122607861890, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
       propertyPath: onSet.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -4829,6 +4843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate
       objectReference: {fileID: 0}
+    - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
+      propertyPath: gateEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 5a0d41f91967f6c41bb191be533a576c, type: 2}
     - target: {fileID: 1132822264892875047, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5532,6 +5550,59 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &2056738332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2056738333}
+  - component: {fileID: 2056738334}
+  m_Layer: 6
+  m_Name: akGameObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2056738333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056738332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6615938241255363749}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2056738334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056738332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f13e7b280035d4584406b8f2cf8379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!4 &2132165271 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1751822934741297875, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
@@ -5609,6 +5680,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3992852042436666703, guid: 69468a2f2cf8f7b4cb1149c1d32f422b, type: 3}
+      propertyPath: bulletSwitch.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fad6f30c330fbf644a3ac33004711151, type: 2}
+    - target: {fileID: 3992852042436666703, guid: 69468a2f2cf8f7b4cb1149c1d32f422b, type: 3}
       propertyPath: OnSwitchActivated.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5649,6 +5724,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate
       objectReference: {fileID: 0}
+    - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
+      propertyPath: myEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
+      propertyPath: gateEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 5a0d41f91967f6c41bb191be533a576c, type: 2}
     - target: {fileID: 1132822264892875047, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5715,6 +5798,14 @@ PrefabInstance:
       propertyPath: grab.m_Name
       value: Grab
       objectReference: {fileID: 0}
+    - target: {fileID: 2532970540284952790, guid: baaf7f9d70c682b41bce6093c0d69ef9, type: 3}
+      propertyPath: grabObject.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 087bf00cde455c4448f23efd450b0c26, type: 2}
+    - target: {fileID: 2532970540284952790, guid: baaf7f9d70c682b41bce6093c0d69ef9, type: 3}
+      propertyPath: releaseObject.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ee6700a39dc878a41be1016c32837976, type: 2}
     - target: {fileID: 2532970540284952791, guid: baaf7f9d70c682b41bce6093c0d69ef9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5907,6 +5998,10 @@ PrefabInstance:
       propertyPath: nextScene.sceneAsset
       value: 
       objectReference: {fileID: 102900000, guid: 5338541c1a5dc8d4d8ed0ebdaaf44a57, type: 3}
+    - target: {fileID: 3347724619817389807, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
+      propertyPath: musicWinTrigger.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6045c617d6d86fc4b93528d5554842e2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
 --- !u!4 &3347724620929467890 stripped
@@ -5947,11 +6042,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615938242767593530, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.25
+      value: 27.3
       objectReference: {fileID: 0}
     - target: {fileID: 6615938242767593530, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15
+      value: -1.73
       objectReference: {fileID: 0}
     - target: {fileID: 6615938242767593530, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
       propertyPath: m_LocalPosition.z

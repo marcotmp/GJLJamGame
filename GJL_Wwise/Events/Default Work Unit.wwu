@@ -666,6 +666,21 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="play_Music_WinTrigger" ID="{7616C55C-3BA7-41D3-9213-D25E1B7F4E07}">
+							<ChildrenList>
+								<Action Name="" ID="{3D10C1B8-DE9E-4D97-B53F-B10FA04CF474}" ShortID="270667817">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="music_Win" ID="{7693649E-D852-4549-995D-9E2575E0ABA6}" WorkUnitID="{1BBD6886-5D33-4029-92BF-DE2F82C6AE7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="IntObjects" ID="{02175E34-9768-481C-90A4-C01646C90F54}" ShortID="56297999">

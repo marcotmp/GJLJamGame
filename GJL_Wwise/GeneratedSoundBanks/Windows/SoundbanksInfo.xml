@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="782826392" Language="SFX" Hash="1948296814">
+		<SoundBank Id="782826392" Language="SFX" Hash="2547336319">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
 			<ShortName>Default</ShortName>
 			<Path>Default.bnk</Path>
@@ -297,6 +297,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3508749844" Name="play_Music_WinTrigger" ObjectPath="\Events\Default Work Unit\Music\play_Music_WinTrigger" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
+					</ActionTrigger>
+				</Event>
 				<Event Id="3225822683" Name="play_ObjButton_Off" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjButton_Off" DurationType="OneShot" DurationMin="0.201675" DurationMax="0.225140">
 					<IncludedMemoryFiles>
 						<File Id="249040614" Language="SFX">
@@ -337,7 +342,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3062351503" Name="play_ObjGate_Open" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjGate_Open" DurationType="OneShot" DurationMin="2.165466" DurationMax="2.190628">
+				<Event Id="3062351503" Name="play_ObjGate_Open" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjGate_Open" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.165466" DurationMax="2.190628">
 					<IncludedMemoryFiles>
 						<File Id="901181080" Language="SFX">
 							<ShortName>UI\sfx_IntObj_Gate.wav</ShortName>
@@ -489,7 +494,7 @@
 				<Trigger Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1893547010">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2433687859">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

@@ -5,6 +5,12 @@ using UnityEngine.Events;
 
 public class SwitchButton : MonoBehaviour
 {
+    //Start Wwise events for SwitchButton
+    [SerializeField]
+    private AK.Wwise.Event switchButtonOn = null;
+    [SerializeField]
+    private AK.Wwise.Event switchButtonOff = null;
+    //End Wwise events
     [SerializeField] private Animator animator;
     public UnityEvent onEnabled;
     public UnityEvent onDisabled;
@@ -21,6 +27,8 @@ public class SwitchButton : MonoBehaviour
             IsActivated = true;
             animator.SetBool("pressed", true);
             onEnabled?.Invoke();
+            //Wwise switchButton on
+            switchButtonOn.Post(gameObject);
         }
         numberOfVisits++;
     }
@@ -33,6 +41,8 @@ public class SwitchButton : MonoBehaviour
             IsActivated = false;
             animator.SetBool("pressed", false);
             onDisabled?.Invoke();
+            //Wwise switchButton off
+            switchButtonOff.Post(gameObject);
         }
     }
 }

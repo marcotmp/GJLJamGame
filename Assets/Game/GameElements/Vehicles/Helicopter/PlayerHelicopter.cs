@@ -6,6 +6,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerHelicopter : MonoBehaviour, IVehicle
 {
+    //Wwise events
+    [SerializeField]
+    private AK.Wwise.Event grabObject = null;
+    [SerializeField]
+    private AK.Wwise.Event releaseObject = null;
+
     public InputActionAsset playerInput;
     [HideInInspector] public InputAction move;
     [HideInInspector] public InputAction grab;
@@ -99,6 +105,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
                 joint.enabled = true;
                 joint.connectedBody = objectGrabbed.gameObject.GetComponent<Rigidbody2D>();
                 groundDetector.transform.position += Vector3.down * grabOffset;
+                grabObject.Post(gameObject);
             }
 
             
@@ -118,6 +125,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
             objectGrabbed = null;
             joint.enabled = false;
             groundDetector.transform.position += Vector3.up * grabOffset;
+            releaseObject.Post(gameObject);
         }
     }
 }

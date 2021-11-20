@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID PLAY_LEGS_JUMP = 3986544096U;
         static const AkUniqueID PLAY_LEGS_LAND = 1119197339U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_MUSIC_WINTRIGGER = 3508749844U;
         static const AkUniqueID PLAY_OBJBUTTON_OFF = 3225822683U;
         static const AkUniqueID PLAY_OBJBUTTON_ON = 749407591U;
         static const AkUniqueID PLAY_OBJGATE_OPEN = 3062351503U;

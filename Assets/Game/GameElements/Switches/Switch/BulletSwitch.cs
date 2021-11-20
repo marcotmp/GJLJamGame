@@ -5,6 +5,10 @@ using UnityEngine.Events;
 
 public class BulletSwitch : MonoBehaviour
 {
+    // Wwise bulletSwitch event
+    [SerializeField]
+    private AK.Wwise.Event bulletSwitch = null;
+    // End Wwise code
     public UnityEvent OnSwitchActivated;
     public Animator anim;
 
@@ -19,6 +23,7 @@ public class BulletSwitch : MonoBehaviour
         if (collision.GetComponent<PlayerBullet>())
         {
             SwitchActivated();
+            bulletSwitch.Post(gameObject);
         }
     }
 }

@@ -23,6 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3400919206	play_Heli_GetOff			\Default Work Unit\Helicopter\play_Heli_GetOff	
 	3423526428	play_Legs_GetOut			\Default Work Unit\Legs\play_Legs_GetOut	
 	3483232275	play_Restart			\Default Work Unit\play_Restart	
+	3508749844	play_Music_WinTrigger			\Default Work Unit\Music\play_Music_WinTrigger	
 	3903374634	play_Heli_GrabObj			\Default Work Unit\Helicopter\play_Heli_GrabObj	
 	3986544096	play_Legs_Jump			\Default Work Unit\Legs\play_Legs_Jump	
 	4069393885	play_Tank_GetOut			\Default Work Unit\Tank\play_Tank_GetOut	

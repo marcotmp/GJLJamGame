@@ -1,8 +1,11 @@
 using System;
 using UnityEngine;
 
+
 public class Gate : MonoBehaviour
 {
+    [SerializeField]
+    private AK.Wwise.Event gateEvent = null;
     private Animator anim;
 
     private void Awake() {
@@ -22,6 +25,8 @@ public class Gate : MonoBehaviour
     {
         Debug.Log("Gate.Open");
         anim?.SetBool("Open", true);
+        gateEvent.Post(gameObject);
+
     }
 
     // Do close animation
