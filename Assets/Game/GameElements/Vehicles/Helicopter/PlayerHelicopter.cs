@@ -41,6 +41,11 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         // playerSelector.Add(this);
     }
 
+    private void OnDestroy()
+    {
+        fsm.GetCurrentState().Exit();
+    }
+
     private void Start() {
         fsm.ChangeState(typeof(HeliDeactivate));
         groundDetectorInitialPos = groundDetector.transform.localPosition;

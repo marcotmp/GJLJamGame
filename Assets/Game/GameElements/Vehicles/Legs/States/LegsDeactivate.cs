@@ -9,6 +9,7 @@ public class LegsDeactivate : LegsState
     {
        base.Enter();
        legs.rb.gravityScale = 1;
+       legs.rb.sharedMaterial.friction = 0.8f;
     }
 
     // public override void FixedUpdate()

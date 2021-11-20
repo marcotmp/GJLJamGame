@@ -102,12 +102,14 @@ public class PlayerController : MonoBehaviour
     //{ 
     //    // toggle sign
     //    var vehicleDetector = this.vehicleDetector.CheckCollision();
-        
+
     //    if (vehicleDetector)
     //        selectorIcon.SetActive(true);
     //    else if (!vehicleDetector && selectorIcon.activeSelf)
     //        selectorIcon.SetActive(false);
     //}
+
+    public float yDelta = 0;
 
     public void ProcessMove()
     {
@@ -128,6 +130,8 @@ public class PlayerController : MonoBehaviour
             else motion.y -= gravityDown * Time.deltaTime;
             motion.y = Mathf.Max(motion.y, -gravityScale);
         }
+
+        motion.y += yDelta;
 
         bool wasOnGround = isOnGround;
         isOnGround = groundDetector.CheckCollision();

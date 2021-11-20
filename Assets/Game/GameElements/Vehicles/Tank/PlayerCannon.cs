@@ -32,7 +32,7 @@ public class PlayerCannon : MonoBehaviour
 
     private IEnumerator AutoShootCoroutine()
     {
-        while(true)
+        for(;;)
         {
             Shoot();
             yield return new WaitForSeconds(delay);

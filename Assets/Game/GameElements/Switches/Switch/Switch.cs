@@ -1,19 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Switch : MonoBehaviour
 {
     public UnityEvent OnSwitchActivated;
-    private void Start()
-    {
-        Debug.Log("Switch.Start");
-    }
+    private bool isActive = false;
 
     public void Activate()
     {
-        Debug.Log("Switch.Activate");
-        OnSwitchActivated?.Invoke();
+        if (!isActive)
+        {
+            isActive = true;
+            OnSwitchActivated?.Invoke();
+        }
     }
 }

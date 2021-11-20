@@ -9,12 +9,21 @@ EditorBuildSettings:
     path: Assets/Game/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Game/Levels/LevelIdeas/Set1.unity
+    path: Assets/Game/Levels/FirstWalk.unity
     guid: 59f43e23e5297894ca80173542784cd3
   - enabled: 1
     path: Assets/Game/Levels/LevelIdeas/Set2.unity
     guid: f1b8c806cc07e434da0ac438913cf018
   - enabled: 1
-    path: Assets/Game/Levels/LevelIdeas/Set3.unity
+    path: Assets/Game/Levels/MeetTheLegs.unity
     guid: 2d7d1c99fd4b8ac4bb690a7eab77caf7
+  - enabled: 1
+    path: Assets/Game/Levels/Elevator.unity
+    guid: 5f5551680a36608479293b20905c3366
+  - enabled: 1
+    path: Assets/Game/Levels/MeetTank.unity
+    guid: 6503ea06b7df50e438fd28a100bc5405
+  - enabled: 1
+    path: Assets/Game/Levels/MeetTankAlone.unity
+    guid: 4ffefa47dee395d44926543c8a835c21
   m_configObjects: {}
