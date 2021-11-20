@@ -3507,6 +3507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4054946645411871053, guid: 7ac9aec7a79f45840ab294bd8030482a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ac9aec7a79f45840ab294bd8030482a, type: 3}
 --- !u!4 &1148911199 stripped
@@ -4129,6 +4133,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal
       objectReference: {fileID: 0}
+    - target: {fileID: 3347724619817389807, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
+      propertyPath: nextScene.scenePath
+      value: Assets/Game/GameElements/Vehicles/Helicopter/HelicopterPlayground.unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347724619817389807, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
+      propertyPath: nextScene.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 502ca160315516f438f2034604f1f3a9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
 --- !u!4 &3347724620929467890 stripped
@@ -4206,7 +4218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5121027471098954683, guid: d5589e0c83177d24cbf0ed6416c93137, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5121027471098954687, guid: d5589e0c83177d24cbf0ed6416c93137, type: 3}
       propertyPath: m_RootOrder
