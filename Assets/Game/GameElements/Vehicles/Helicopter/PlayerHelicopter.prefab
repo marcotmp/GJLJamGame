@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 5120
+    m_Bits: 4096
   activeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   inactiveColor: {r: 1, g: 0, b: 0, a: 1}
   size: {x: 0.5, y: 0.5}

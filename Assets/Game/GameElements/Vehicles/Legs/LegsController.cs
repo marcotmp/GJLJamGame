@@ -69,6 +69,11 @@ public class LegsController : MonoBehaviour, IVehicle, IGrabbable
         fsm.FixedUpdate();    
     }
 
+    private void OnDestroy()
+    {
+        fsm.GetCurrentState().Exit();
+    }
+
     public void ProcessMove()
     {
         if (dpadDir.x != 0)
