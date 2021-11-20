@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 5120
   activeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   inactiveColor: {r: 1, g: 0, b: 0, a: 1}
   size: {x: 0.5, y: 0.5}
@@ -440,7 +440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1015156108283731991, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.589
+      value: -0.654
       objectReference: {fileID: 0}
     - target: {fileID: 1015156108283731991, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}
       propertyPath: m_LocalPosition.z
@@ -480,7 +480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7780161655922670278, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}
       propertyPath: layerMask.m_Bits
-      value: 4224
+      value: 5248
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b13bc35b916671a42bf8c11e965ecd40, type: 3}

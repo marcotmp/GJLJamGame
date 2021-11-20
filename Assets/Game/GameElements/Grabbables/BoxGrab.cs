@@ -6,8 +6,18 @@ public class BoxGrab : MonoBehaviour, IGrabbable
 {
     public Transform offset;
 
-    public float GetGrabOffset()
+    public Vector3 GetGrabOffset()
     {
-        return offset.position.y * 2;
+        return offset.position;
+    }
+
+    public void Grab()
+    {
+        
+    }
+
+    public void Release()
+    {
+        
     }
 }

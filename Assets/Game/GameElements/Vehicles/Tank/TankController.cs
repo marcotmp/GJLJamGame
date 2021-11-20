@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
-public class TankController : MonoBehaviour, IVehicle
+public class TankController : MonoBehaviour, IVehicle, IGrabbable
 {
     [SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private SpriteRenderer sprite;
@@ -150,5 +150,20 @@ public class TankController : MonoBehaviour, IVehicle
             sprite.transform.localScale = Vector3.Lerp(newSize, originalSize, t);
             yield return null;
         }
+    }
+
+    public Vector3 GetGrabOffset()
+    {
+        return groundDetector.transform.position;
+    }
+
+    public void Grab()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Release()
+    {
+        throw new System.NotImplementedException();
     }
 }

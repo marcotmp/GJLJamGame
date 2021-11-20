@@ -11,6 +11,7 @@ public class HeliActivate : HeliState
 
     public override void Enter()
     {
+        playerHelicopter.rb.gravityScale = 0;
         fsm.ChangeState<HeliMove>();
     }
 }

@@ -24,7 +24,7 @@ public class PlayerJumpState : PlayerState
         // player.move.canceled -= OnActionMove;
 
         // player.jump.canceled -= OnActionJumpCancelled;
-        player.action.performed += OnActionMountStarted;
+        player.action.performed -= OnActionMountStarted;
     }
 
     public override void FixedUpdate()

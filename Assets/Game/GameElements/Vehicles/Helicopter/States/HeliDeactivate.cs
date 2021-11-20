@@ -18,20 +18,22 @@ public class HeliDeactivate : HeliState
     
     public override void Enter()
     {
-        motion = playerHelicopter.rb.velocity;
+        // motion = playerHelicopter.rb.velocity;
+        motion = Vector3.zero;
+        playerHelicopter.rb.gravityScale = 1;
     }
 
     public override void FixedUpdate() 
     {
-        motion.x = Mathf.MoveTowards(motion.x, 0, decceleration * Time.deltaTime);
+        // motion.x = Mathf.MoveTowards(motion.x, 0, decceleration * Time.deltaTime);
 
-        if (!isOnGround) motion.y -= gravity * Time.deltaTime;
-        motion.y = Mathf.Max(motion.y, -maxGravity);
+        // if (!isOnGround) motion.y -= gravity * Time.deltaTime;
+        // motion.y = Mathf.Max(motion.y, -maxGravity);
 
-        bool wasOnGround = isOnGround;
-        isOnGround = playerHelicopter.groundDetector.CheckCollision();
-        if (!wasOnGround && isOnGround) motion.y = 0;
+        // bool wasOnGround = isOnGround;
+        // isOnGround = playerHelicopter.groundDetector.CheckCollision();
+        // if (!wasOnGround && isOnGround) motion.y = 0;
 
-        playerHelicopter.rb.velocity = motion;
+        // playerHelicopter.rb.velocity = motion;
     }
 }

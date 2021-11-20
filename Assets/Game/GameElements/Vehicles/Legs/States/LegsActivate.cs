@@ -8,6 +8,7 @@ public class LegsActivate : LegsState
     public override void Enter()
     {
         base.Enter();
+        legs.rb.gravityScale = 0;
         fsm.ChangeState<LegsMove>();
     }
 }

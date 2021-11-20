@@ -4,6 +4,8 @@ using UnityEngine;
 
 public interface IGrabbable
 {
-    float GetGrabOffset();
+    Vector3 GetGrabOffset();
+    void Grab();
+    void Release();
     GameObject gameObject {get;}
 }
