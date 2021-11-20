@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b691505f9914d414ba7c217a90934848, type: 3}
+  m_Name: PlayerAudio
+  m_EditorClassIdentifier: 
+  wheelsMoveStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b46b30621e2e80948baa6ef7d09b5ae6, type: 2}
+  wheelsMoveStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cc569ee19ae689c42b35e9175d8e0442, type: 2}
+  legsGetIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  legsGetOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  legsFootstep:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 264be1b5d8542b44a9dabfc046675a9c, type: 2}
+  legsJump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e123709acf0fe324f873c29969eeb955, type: 2}
+  legsLand:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2a80dcf7f6a9377429666ef5674bb906, type: 2}
+  tankGetIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2c45c74a777d0e34d834f279722f3067, type: 2}
+  tankGetOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e9c30664f9d9d0345bdca9b5194169fe, type: 2}
+  tankMoveStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 69cbc090bb039a748995d41bfec7def6, type: 2}
+  tankMoveStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 19f5403fa1c1a9643bb72234a764e794, type: 2}
+  tankShot:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 112a00925284bc245bb255b75eff1646, type: 2}
+  tankShotExplosion:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 25dea640d8577c94fad94c680b25336f, type: 2}
+  heliGetIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cc3aedd23a933c049bab7a7d2f7c17fd, type: 2}
+  heliGetOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 347c64dc1ec9eba4a8f234515aa2b377, type: 2}
+  heliMoveStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 64de33145db4c544d87201f91472cf5a, type: 2}
+  heliMoveStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f430edef162b97a4ba0259577f52f56d, type: 2}
+  heliGrabObj:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cb19c65210411ce48bc8fd5e94ab5016, type: 2}
+  heliReleaseObj:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3b74cd4a7a79de549ab466ebb7a2f74c, type: 2}

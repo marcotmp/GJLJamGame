@@ -72,15 +72,15 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_MechaJump" ID="{2DBFF6D4-B8C2-4D4F-B677-EC942F2E17FF}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<ObjectRef Name="play_Legs_Jump" ID="{2DBFF6D4-B8C2-4D4F-B677-EC942F2E17FF}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_Ambience" ID="{EA12673D-8F44-4CB5-B6DA-CED305A025C4}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<ObjectRef Name="play_Wheels_Start" ID="{54884E6A-D3D6-48C7-A11C-E1A920BCEACA}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_Heli_GrabObj" ID="{419C6595-2DAD-405F-9C58-374315C9E625}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<ObjectRef Name="play_Heli_GetOff" ID="{170F8948-418C-45BE-A462-783FF5C5871D}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
@@ -88,8 +88,12 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_MechaFstep" ID="{5A10F783-C810-4AF9-9144-DEF4EC9E1237}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<ObjectRef Name="play_Legs_Fstep" ID="{5A10F783-C810-4AF9-9144-DEF4EC9E1237}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Wheels_Stop" ID="{B3EE8BEC-70C0-403F-ADF9-FEF0E0434D5B}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="play_Heli_MoveStart" ID="{08BE5077-1384-41ED-BFBB-262140F2B0C2}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
@@ -100,7 +104,7 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="play_MechaLand" ID="{AF070E23-486D-4983-8B55-F274FF1AB548}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<ObjectRef Name="play_Legs_Land" ID="{AF070E23-486D-4983-8B55-F274FF1AB548}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
@@ -120,12 +124,156 @@
 							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="play_Heli_GrabObj" ID="{419C6595-2DAD-405F-9C58-374315C9E625}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="play_Tank_ShotExplosion" ID="{05F6FC60-0FEB-4D3A-9EDE-CFF25D120830}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 							<Position X="5" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="play_Ambience" ID="{EA12673D-8F44-4CB5-B6DA-CED305A025C4}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="5" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="inGame" ID="{CD024A78-BF1D-4793-B175-0751F1B01AA6}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Music" ID="{A8155D4D-F3F8-49C7-957E-8E23E5880B89}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="play_Music" ID="{CC6B4994-720A-4F7F-B220-8031FAD587C6}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Ambience" ID="{EA12673D-8F44-4CB5-B6DA-CED305A025C4}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_Music" ID="{D4F53B19-D625-4BAA-BAAA-A28207E31042}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="inGame" ID="{CD024A78-BF1D-4793-B175-0751F1B01AA6}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Everything" ID="{AF0AB19A-8ED5-443A-969B-3BF6D2D4ED78}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="play_Heli_GetIn" ID="{C124DF64-A0FB-4975-8DE4-47FA54F53FAD}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Legs_GetIn" ID="{9BBD2C84-A5BD-4AB9-896A-1CFCEF69035A}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_GetIn" ID="{AB252B75-7371-4346-9921-286511154C58}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Wheels_Start" ID="{54884E6A-D3D6-48C7-A11C-E1A920BCEACA}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ObjButton_Off" ID="{DD2ACE07-5BF5-4790-809D-4D620701892B}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Ambience" ID="{EA12673D-8F44-4CB5-B6DA-CED305A025C4}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Heli_GetOff" ID="{170F8948-418C-45BE-A462-783FF5C5871D}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Legs_GetOut" ID="{12BF8C99-4F60-4AB2-BF1F-930784E51DC7}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_GetOut" ID="{3C183D52-1796-482F-BA74-1953A74AE76E}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Wheels_Stop" ID="{B3EE8BEC-70C0-403F-ADF9-FEF0E0434D5B}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ObjButton_On" ID="{F4F36CB8-627D-473C-919F-B66A11CFC8D1}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_Ambience" ID="{F2C56826-8E32-4CA0-9BE7-DD95C14AEECF}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Heli_GrabObj" ID="{419C6595-2DAD-405F-9C58-374315C9E625}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Legs_Land" ID="{AF070E23-486D-4983-8B55-F274FF1AB548}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_MoveStart" ID="{755B5317-524B-482B-A926-4F0E65AC3904}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ObjGate_Open" ID="{9170B17D-07C3-4E80-AC60-8FACBB11BF7B}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Music" ID="{CC6B4994-720A-4F7F-B220-8031FAD587C6}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Heli_MoveStart" ID="{08BE5077-1384-41ED-BFBB-262140F2B0C2}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Legs_Fstep" ID="{5A10F783-C810-4AF9-9144-DEF4EC9E1237}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_MoveStop" ID="{002924B7-6067-45CB-94F5-263BABC425FE}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_Music" ID="{D4F53B19-D625-4BAA-BAAA-A28207E31042}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Heli_MoveStop" ID="{67E84DC1-A695-419A-B7F7-312665D6631B}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Legs_Jump" ID="{2DBFF6D4-B8C2-4D4F-B677-EC942F2E17FF}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_Shot" ID="{327740FC-5ED2-4575-AD0F-CEB7B3A1AFAD}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Heli_ReleaseObj" ID="{35BACF55-AA04-4FBB-8D4A-F35B5F8B20E6}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_Tank_ShotExplosion" ID="{05F6FC60-0FEB-4D3A-9EDE-CFF25D120830}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="5" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{B7268FB0-2794-4F78-AF99-F2371474B98D}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

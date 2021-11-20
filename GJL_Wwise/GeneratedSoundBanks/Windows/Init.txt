@@ -1,3 +1,14 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	583439429	uiStatus			\Default Work Unit\UI\uiStatus	
+
+State	ID	Name	State Group			Notes
+	748895195	None	uiStatus			
+	984691642	inGame	uiStatus			
+	3374585465	inMenu	uiStatus			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	1020747545	inMenu	uiStatus	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
@@ -15,24 +26,33 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	85412153	Ambience			\Default Work Unit\Master Audio Bus\3D\Ambience	
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\2D\Ambience	
+	91106990	worldGate			\Default Work Unit\Master Audio Bus\3D\Objects\worldGate	
 	511093792	3D			\Default Work Unit\Master Audio Bus\3D	
 	527871411	2D			\Default Work Unit\Master Audio Bus\2D	
+	607152709	Wheels			\Default Work Unit\Master Audio Bus\3D\Vehicles\Wheels	
 	971393558	Vehicles			\Default Work Unit\Master Audio Bus\3D\Vehicles	
-	1069431850	Player			\Default Work Unit\Master Audio Bus\2D\Player	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\3D\Player	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\2D\UI	
 	1695690031	Objects			\Default Work Unit\Master Audio Bus\3D\Objects	
 	2167849898	Helicopter			\Default Work Unit\Master Audio Bus\3D\Vehicles\Helicopter	
 	3125191939	Mecha			\Default Work Unit\Master Audio Bus\3D\Vehicles\Mecha	
 	3206747537	Tank			\Default Work Unit\Master Audio Bus\3D\Vehicles\Tank	
+	3674236275	worldButton			\Default Work Unit\Master Audio Bus\3D\Objects\worldButton	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\2D\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1289870202	Verb_Music			\Default Work Unit\Master Audio Bus\Verb_Music	
 	3657263530	Verb			\Default Work Unit\Master Audio Bus\Verb	
 
 Effect plug-ins	ID	Name	Type				Notes
-	931490803	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	418265525	Gentle_Program_Compressor_Minus_14dB_RMS	Wwise Compressor			
+	477315216	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	914334261	Large_Bright_Chamber1 (Custom)	Wwise Matrix Reverb			
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
+	3673681183	Large_Bright_Chamber1	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
