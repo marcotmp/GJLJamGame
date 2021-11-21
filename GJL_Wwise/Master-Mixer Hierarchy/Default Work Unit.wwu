@@ -485,7 +485,7 @@
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-14</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -535,13 +535,6 @@
 											<ObjectLists/>
 										</Bus>
 									</ChildrenList>
-									<ObjectLists/>
-								</Bus>
-								<Bus Name="Player" ID="{D6B739CB-E3F9-4281-9699-4C932CBBAAB3}">
-									<PropertyList>
-										<Property Name="Color" Type="int16" Value="6"/>
-										<Property Name="OverrideColor" Type="bool" Value="True"/>
-									</PropertyList>
 									<ObjectLists/>
 								</Bus>
 							</ChildrenList>

@@ -31,6 +31,7 @@ namespace AK
         static const AkUniqueID PLAY_OBJBOX_GROUNDHIT = 2151885105U;
         static const AkUniqueID PLAY_OBJBUTTON_OFF = 3225822683U;
         static const AkUniqueID PLAY_OBJBUTTON_ON = 749407591U;
+        static const AkUniqueID PLAY_OBJELEVATOR_ON = 3990571105U;
         static const AkUniqueID PLAY_OBJGATE_OPEN = 3062351503U;
         static const AkUniqueID PLAY_RESTART = 3483232275U;
         static const AkUniqueID PLAY_TANK_GETIN = 125457442U;
@@ -44,6 +45,7 @@ namespace AK
         static const AkUniqueID PLAY_WHEELS_STOP = 2168584773U;
         static const AkUniqueID STOP_AMBIENCE = 2477713992U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
+        static const AkUniqueID STOP_OBJELEVATOR = 3161702133U;
     } // namespace EVENTS
 
     namespace STATES
@@ -84,7 +86,6 @@ namespace AK
         static const AkUniqueID MECHA = 3125191939U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID OBJECTS = 1695690031U;
-        static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID STINGERS = 2940432316U;
         static const AkUniqueID TANK = 3206747537U;
         static const AkUniqueID UI = 1551306167U;
@@ -92,6 +93,7 @@ namespace AK
         static const AkUniqueID WHEELS = 607152709U;
         static const AkUniqueID WORLDBOX = 182777598U;
         static const AkUniqueID WORLDBUTTON = 3674236275U;
+        static const AkUniqueID WORLDELEVATOR = 248423061U;
         static const AkUniqueID WORLDGATE = 91106990U;
     } // namespace BUSSES
 

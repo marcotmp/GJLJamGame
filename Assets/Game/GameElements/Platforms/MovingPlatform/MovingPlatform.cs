@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
+    [SerializeField] private PlayerAudioData playerAudio;
     [SerializeField] private Path path;
     [SerializeField] private Transform platform;
     [SerializeField] private float stopDelay = 1;
@@ -34,6 +35,7 @@ public class MovingPlatform : MonoBehaviour
     public void Activate()
     {
         fsm.ChangeState<MoveState>();
+        playerAudio.elevatorOn.Post(this.gameObject);
     }
 
     public void PickPoints()

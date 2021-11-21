@@ -19,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2904441870	play_Tank_ShotExplosion			\Default Work Unit\Tank\play_Tank_ShotExplosion	
 	2932040671	play_Music			\Default Work Unit\Music\play_Music	
 	3062351503	play_ObjGate_Open			\Default Work Unit\IntObjects\play_ObjGate_Open	
+	3161702133	stop_ObjElevator			\Default Work Unit\IntObjects\stop_ObjElevator	
 	3225822683	play_ObjButton_Off			\Default Work Unit\IntObjects\play_ObjButton_Off	
 	3266534423	play_Heli_ReleaseObj			\Default Work Unit\Helicopter\play_Heli_ReleaseObj	
 	3387000831	play_Wheels_Start			\Default Work Unit\Wheels\play_Wheels_Start	
@@ -28,6 +29,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3508749844	play_Music_WinTrigger			\Default Work Unit\Music\play_Music_WinTrigger	
 	3903374634	play_Heli_GrabObj			\Default Work Unit\Helicopter\play_Heli_GrabObj	
 	3986544096	play_Legs_Jump			\Default Work Unit\Legs\play_Legs_Jump	
+	3990571105	play_ObjElevator_On			\Default Work Unit\IntObjects\play_ObjElevator_On	
 	4069393885	play_Tank_GetOut			\Default Work Unit\Tank\play_Tank_GetOut	
 	4276080198	play_Tank_MoveStop			\Default Work Unit\Tank\play_Tank_MoveStop	
 
@@ -69,6 +71,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	100785976	sfx_Ambience_BirdCall_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_04		60460
 	103478363	xmx_Pluck1_002_Block2_D#_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_002_Block2_D#_108_3-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block2_D#_108_3-4\xmx_Pluck1_002_Block2_D#_108_3-4		3776064
 	125347833	sfx_Ambience_BirdCall_06	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_06		439532
+	130816739	sfx_IntObj_Elevator	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\InteractiveObjects\sfx_IntObj_Elevator_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Elevator\sfx_IntObj_Elevator		1339416
 	156946582	sfx_PlayerHeli_MoveStart	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_MoveStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\Movement\sfx_PlayerHeli_MoveStart		813240
 	163690339	sfx_PlayerHeli_ReleaseObj_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\ReleaseObject\sfx_PlayerHeli_ReleaseObj_02		185984
 	164231538	xmx_Pluck1_008_Block8_E_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_008_Block8_E_108_3-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block8_E_108_3-4\xmx_Pluck1_008_Block8_E_108_3-4		3136064

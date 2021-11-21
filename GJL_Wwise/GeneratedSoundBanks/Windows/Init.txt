@@ -29,11 +29,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\2D\Ambience	
 	91106990	worldGate			\Default Work Unit\Master Audio Bus\3D\Objects\worldGate	
 	182777598	worldBox			\Default Work Unit\Master Audio Bus\3D\Objects\worldBox	
+	248423061	worldElevator			\Default Work Unit\Master Audio Bus\3D\Objects\worldElevator	
 	511093792	3D			\Default Work Unit\Master Audio Bus\3D	
 	527871411	2D			\Default Work Unit\Master Audio Bus\2D	
 	607152709	Wheels			\Default Work Unit\Master Audio Bus\3D\Vehicles\Wheels	
 	971393558	Vehicles			\Default Work Unit\Master Audio Bus\3D\Vehicles	
-	1069431850	Player			\Default Work Unit\Master Audio Bus\3D\Player	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\2D\UI	
 	1695690031	Objects			\Default Work Unit\Master Audio Bus\3D\Objects	
 	2167849898	Helicopter			\Default Work Unit\Master Audio Bus\3D\Vehicles\Helicopter	

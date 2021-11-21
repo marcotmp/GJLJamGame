@@ -44,6 +44,8 @@ public class PlayerAudioData : ScriptableObject
 
     public AK.Wwise.Event elevatorOn = null;
 
+    public AK.Wwise.Event elevatorOff = null;
+
     public AK.Wwise.Event boxGroundHit = null;
 
     public AK.Wwise.Event switchButtonOff = null;
