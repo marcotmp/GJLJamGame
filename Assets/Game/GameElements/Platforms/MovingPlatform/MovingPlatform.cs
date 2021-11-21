@@ -35,7 +35,15 @@ public class MovingPlatform : MonoBehaviour
     public void Activate()
     {
         fsm.ChangeState<MoveState>();
-        playerAudio.elevatorOn.Post(this.gameObject);
+        //playerAudio.elevatorOn.Post(platform.gameObject);
+        playerAudio.elevatorOn.Post(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        // commented code because platform.gameObject is destroyed before the MovingPlatform system
+        //playerAudio.elevatorOff.Post(platform.gameObject);
+        playerAudio.elevatorOff.Post(gameObject);
     }
 
     public void PickPoints()

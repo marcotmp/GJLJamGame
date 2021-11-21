@@ -607,11 +607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.7784038
+      value: -6.832832
       objectReference: {fileID: 0}
     - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5598044
+      value: -2.8672967
       objectReference: {fileID: 0}
     - target: {fileID: 25049513443985029, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.x
@@ -632,6 +632,10 @@ PrefabInstance:
     - target: {fileID: 25049513443985034, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_Lens.OrthographicSize
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 361802877146450671, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 634391934876566603, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_RootOrder
@@ -676,6 +680,10 @@ PrefabInstance:
     - target: {fileID: 634391934876566603, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515186608925270116, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3770461028396867549, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -4811,19 +4819,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwitchButtonB (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1751822934741297884, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
---- !u!114 &1026667880 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4143977122607861890, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
-  m_PrefabInstance: {fileID: 1026667879}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db2825b77ca2ec4c9b1084e2813b6dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1026667881 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1751822934741297875, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
@@ -5504,7 +5505,6 @@ MonoBehaviour:
   switchButtons:
   - {fileID: 607731838}
   - {fileID: 1842931452}
-  - {fileID: 1026667880}
 --- !u!4 &1948334855
 Transform:
   m_ObjectHideFlags: 0
