@@ -90,6 +90,18 @@
 											</ValueList>
 										</Property>
 									</PropertyList>
+									<ChildrenList>
+										<Bus Name="MenuButton" ID="{92DEEB73-6B63-46E8-9421-6B09C7D68C02}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
 									<ObjectLists/>
 								</Bus>
 								<Bus Name="Ambience" ID="{16C92C55-41D7-42A2-8CA5-951F160A084C}">
@@ -481,6 +493,16 @@
 											</PropertyList>
 											<ObjectLists/>
 										</Bus>
+										<Bus Name="worldElevator" ID="{1AB74679-19C3-4E44-A82E-D016F7E26F73}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-14</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ObjectLists/>
+										</Bus>
 									</ChildrenList>
 									<ObjectLists/>
 								</Bus>
@@ -504,7 +526,6 @@
 											</ValueList>
 										</Property>
 									</PropertyList>
-									<ReferenceList/>
 									<ChildrenList>
 										<Bus Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}">
 											<ObjectLists/>
@@ -526,13 +547,6 @@
 											<ObjectLists/>
 										</Bus>
 									</ChildrenList>
-									<ObjectLists/>
-								</Bus>
-								<Bus Name="Player" ID="{D6B739CB-E3F9-4281-9699-4C932CBBAAB3}">
-									<PropertyList>
-										<Property Name="Color" Type="int16" Value="6"/>
-										<Property Name="OverrideColor" Type="bool" Value="True"/>
-									</PropertyList>
 									<ObjectLists/>
 								</Bus>
 							</ChildrenList>

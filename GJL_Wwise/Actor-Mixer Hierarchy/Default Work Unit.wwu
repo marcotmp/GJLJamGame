@@ -49,6 +49,11 @@
 														<Value>1</Value>
 													</ValueList>
 												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-9</Value>
@@ -128,6 +133,11 @@
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
@@ -573,6 +583,12 @@
 										</Sound>
 										<RandomSequenceContainer Name="MoveStart" ID="{5466C581-1578-434B-A8CD-6D9CE68DBB25}" ShortID="613054993">
 											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
 														<Value>150</Value>
@@ -588,6 +604,11 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -781,9 +802,20 @@
 										</Sound>
 										<RandomSequenceContainer Name="MoveStop" ID="{53A509C9-C423-4EB1-84AA-9C2CED8DBD49}" ShortID="398692352">
 											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
 														<Value>-300</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
@@ -1482,6 +1514,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_PlayerStandard_Landing_01" ID="{B70AC544-7F93-4EB4-8E92-7AAD670AA26E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00401259689922481"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0889458979328167"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Player\Mecha\sfx_PlayerStandard_Landing_01.wav</AudioFile>
 													<MediaIDList>
@@ -1505,6 +1542,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_PlayerStandard_Landing_02" ID="{A38981D7-3D3C-4775-9972-EBB008D04845}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00416077196382429"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0374469476744186"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Player\Mecha\sfx_PlayerStandard_Landing_02.wav</AudioFile>
 													<MediaIDList>
@@ -1528,6 +1570,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_PlayerStandard_Landing_03" ID="{74334951-9CC1-4692-BE91-641461CED072}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00423265234711456"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0731644191429802"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Player\Mecha\sfx_PlayerStandard_Landing_03.wav</AudioFile>
 													<MediaIDList>
@@ -1551,6 +1598,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_PlayerStandard_Landing_04" ID="{A7E47BEA-149E-44DB-902A-ABBDCD66F3DC}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00486280684754522"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0640269568260121"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Player\Mecha\sfx_PlayerStandard_Landing_04.wav</AudioFile>
 													<MediaIDList>
@@ -1799,7 +1851,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Button" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" ShortID="870419213">
+						<RandomSequenceContainer Name="MenuButton" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" ShortID="870419213">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -1814,18 +1866,13 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-13</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="UI" ID="{FBD2CE88-35BA-4ED9-8D3F-6F4B0CDA7E86}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="MenuButton" ID="{92DEEB73-6B63-46E8-9421-6B09C7D68C02}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -3633,6 +3680,36 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Elevator" ID="{3878C80D-364E-4935-83AE-5CF4EDBCBC83}" ShortID="183345793">
+							<ChildrenList>
+								<Sound Name="sfx_IntObj_Elevator" ID="{2DE7C1AF-1FD9-4FDA-8EDD-D4841780E79E}" ShortID="51616508">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="worldElevator" ID="{1AB74679-19C3-4E44-A82E-D016F7E26F73}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_IntObj_Elevator" ID="{BD612F61-ED13-44F0-9275-85EC6ED75F57}">
+											<Language>SFX</Language>
+											<AudioFile>InteractiveObjects\sfx_IntObj_Elevator.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="130816739"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_IntObj_Elevator" ID="{BD612F61-ED13-44F0-9275-85EC6ED75F57}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
