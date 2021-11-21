@@ -111,6 +111,18 @@
 											<ObjectRef Name="Verb" ID="{37D75D82-32D9-4674-99C0-E57E9D00D529}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Bus Name="BirdCalls" ID="{70D5E396-E047-47F7-B886-67AC22CE9C56}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
 									<ObjectLists/>
 								</Bus>
 							</ChildrenList>

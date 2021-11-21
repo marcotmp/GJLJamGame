@@ -2298,6 +2298,705 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
+						<RandomSequenceContainer Name="BirdCalls" ID="{FDB0491C-F8C1-4DE3-AF74-E593B9A5D490}" ShortID="888603552">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7E4957E7-B9C3-4542-98FC-E8AA2CC4B595}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="15"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3D2967C3-D986-477F-B7ED-8EAAEDBADAD8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DB5870FB-39AF-4D7A-84A7-6077CFE0800D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="BirdCalls" ID="{70D5E396-E047-47F7-B886-67AC22CE9C56}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_Ambience_BirdCall_10" ID="{5F867C89-A7F1-42EC-ACA6-8448DF6485F1}" ShortID="240529193">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{176160A8-18E6-4E60-9EDA-BD88BDB423B8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_10" ID="{018D8E91-437E-4AC6-ADC7-6E220A608151}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="90339501"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_10" ID="{018D8E91-437E-4AC6-ADC7-6E220A608151}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_01" ID="{4BCD0ADE-C76F-47AE-9F39-D8D0FEC03FF7}" ShortID="732997584">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{02ABEF4C-732F-458E-A98F-95CF3867BA46}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_01" ID="{97AA68D3-76E9-4373-9422-9E0BDDB01773}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="232610410"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_01" ID="{97AA68D3-76E9-4373-9422-9E0BDDB01773}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_13" ID="{8640CE39-0DA6-4FFC-B02F-FB7BDE97A368}" ShortID="332647343">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{61D988C3-8CBF-46AF-98F2-2C7229217ADA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_13" ID="{3A76CF23-46FA-4D1D-9897-6E46AB7F1C18}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="964611847"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_13" ID="{3A76CF23-46FA-4D1D-9897-6E46AB7F1C18}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_06" ID="{EAB1B944-30AD-49E0-A0B6-23C32F182B54}" ShortID="843707638">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2C695CE2-B321-44AA-97FB-296D2B344859}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_06" ID="{FC2C5531-B724-4C3C-998B-C6C153700194}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="125347833"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_06" ID="{FC2C5531-B724-4C3C-998B-C6C153700194}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_05" ID="{60041A40-7690-441B-A538-1754FA421A2A}" ShortID="179963058">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{EE3C1A3C-E3D2-4281-A87C-BF5ADF6C4282}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_05" ID="{CD09DAEE-BA4C-4C7B-B291-CC3BA875DC69}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="209361249"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_05" ID="{CD09DAEE-BA4C-4C7B-B291-CC3BA875DC69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_09" ID="{898B3C3A-2D07-46E4-935B-F35DBBF945A3}" ShortID="118347699">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{12B8B91A-6FE4-4A06-889E-BB350E18272B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_09" ID="{E7749453-9C4E-4895-9C34-DC217F5A857C}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="509691566"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_09" ID="{E7749453-9C4E-4895-9C34-DC217F5A857C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_03" ID="{5524B80F-1366-4445-B93C-3B397645CE27}" ShortID="832402388">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7823A0D7-669B-4FF5-8484-E186C3249090}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_03" ID="{79E47768-1FD2-4D10-B8D2-096884158DE2}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="86325805"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_03" ID="{79E47768-1FD2-4D10-B8D2-096884158DE2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_02" ID="{6364D329-E2FB-4930-8FAC-60DEC4B4332C}" ShortID="965464212">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C7728EB2-A5E3-4382-9BC0-FE12FB0815DC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_02" ID="{FF3720B7-5288-48E1-B282-5EDD6339434E}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="900027245"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_02" ID="{FF3720B7-5288-48E1-B282-5EDD6339434E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_04" ID="{17996869-0787-4E57-B505-C1E038D8599A}" ShortID="234045861">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D56D3EF7-A359-4EA5-8BD0-A44BA71DB80E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_04" ID="{A6C6E207-7B88-4DDE-812F-A17A1C77E777}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="100785976"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_04" ID="{A6C6E207-7B88-4DDE-812F-A17A1C77E777}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_12" ID="{A528214D-A902-4634-97B9-396DA28A15E6}" ShortID="884609100">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A4405FCF-6630-49C9-8E01-993CC8801E0E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_12" ID="{7094529E-114B-465D-8073-9A9946975168}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1058809833"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_12" ID="{7094529E-114B-465D-8073-9A9946975168}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_14" ID="{8DE9E3C7-96C3-418D-9904-5B6F8E5CEE9B}" ShortID="239073915">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{902866B6-D675-4451-8900-C997B4FC07C7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_14" ID="{527832EA-9B4C-4543-8D1A-B5777296D7BA}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="989835661"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_14" ID="{527832EA-9B4C-4543-8D1A-B5777296D7BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_07" ID="{5DAA2A09-3272-498C-A553-9816722DFD15}" ShortID="899795489">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4901BE5E-EBCC-4D97-B54F-DD27C488F633}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_07" ID="{61E74953-F0BA-4C18-A710-6F5AC1BC148A}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="693681760"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_07" ID="{61E74953-F0BA-4C18-A710-6F5AC1BC148A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_11" ID="{8604FD99-8128-429F-9EF2-0A27DB712AF6}" ShortID="285340807">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F3627800-02B8-443B-A732-38E5ECC8274F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_11" ID="{0233308C-6744-4C99-92FE-12549DD015EC}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_11.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="456137676"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_11" ID="{0233308C-6744-4C99-92FE-12549DD015EC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_15" ID="{5BD1218E-7A99-47FD-930D-E8C17499B6BD}" ShortID="453419029">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0BB35D45-3CC5-4A20-A52F-28A879A9E14C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_15" ID="{955F69DF-1730-4BDB-ABB6-3356F6DF3D68}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="828149298"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_15" ID="{955F69DF-1730-4BDB-ABB6-3356F6DF3D68}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_Ambience_BirdCall_08" ID="{6DC7628D-D7C6-4A36-9599-B907BE9CBB5D}" ShortID="907955661">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9C9FFC13-F1B7-44F3-936C-EAB0957C4884}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="30"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_Ambience_BirdCall_08" ID="{5B64C067-8031-4D56-8545-42BBDC1500BA}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Bird Calls\sfx_Ambience_BirdCall_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="24833817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_Ambience_BirdCall_08" ID="{5B64C067-8031-4D56-8545-42BBDC1500BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{DB186B32-0570-49CE-9598-168432EB1BB6}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="BirdCalls_Path" ID="{E73AFF1A-9E74-4ED4-B44F-150BC5B455F8}">
+											<PointList>
+												<Point>
+													<XPos>75.63452</XPos>
+													<YPos>-73.16384</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="BirdCalls_Path_01" ID="{2AD7337E-D2AA-4070-9E91-32794BFE64CE}">
+											<PointList>
+												<Point>
+													<XPos>-81.72588</XPos>
+													<YPos>73.16385</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="BirdCalls_Path_02" ID="{16BD69D7-D4A0-48F8-B1BE-EF96223C3921}">
+											<PointList>
+												<Point>
+													<XPos>-72.58883</XPos>
+													<YPos>-79.9435</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="BirdCalls_Path_03" ID="{2E4F22F8-A3D1-4135-8629-F5F6B470F32B}">
+											<PointList>
+												<Point>
+													<XPos>85.7868</XPos>
+													<YPos>75.9887</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="BirdCalls_Path_04" ID="{1456798B-F9B1-4035-9D24-7532F0DB1154}">
+											<PointList>
+												<Point>
+													<XPos>-7.1066</XPos>
+													<YPos>-88.98305</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="BirdCalls_Path_05" ID="{84536FAE-E3BB-4696-BA9A-640CDFE00B06}">
+											<PointList>
+												<Point>
+													<XPos>87.30964</XPos>
+													<YPos>-33.05085</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="BirdCalls_Path_06" ID="{B4AAEC9F-A89E-499D-BA52-232E51EDD8A7}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="13"/>
+												<Property Name="RandomY" Type="Real64" Value="9"/>
+												<Property Name="RandomZ" Type="Real64" Value="24"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-92.38579</XPos>
+													<YPos>-53.38983</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

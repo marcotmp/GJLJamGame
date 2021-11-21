@@ -747,6 +747,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{C6FB7FB9-092E-4124-90C6-5F11C5294C39}" ShortID="609867638">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BirdCalls" ID="{FDB0491C-F8C1-4DE3-AF74-E593B9A5D490}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="play_Ambience" ID="{EA12673D-8F44-4CB5-B6DA-CED305A025C4}">
@@ -759,6 +769,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="NoiseAmbience" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FB79C0AE-F8FB-4D08-A357-A4A31FD942DD}" ShortID="29062478">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="play_BirdCalls" ID="{BC3C6A52-03A6-4AAC-A855-51E3F486A91E}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -805,6 +825,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="play_BirdCalls" ID="{BC3C6A52-03A6-4AAC-A855-51E3F486A91E}">
+					<ChildrenList>
+						<Action Name="" ID="{C56BE0A2-0DA1-4A0A-92F7-8F47178E923B}" ShortID="567975049">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdCalls" ID="{FDB0491C-F8C1-4DE3-AF74-E593B9A5D490}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

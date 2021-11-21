@@ -11,12 +11,80 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="782826392" Language="SFX" Hash="122113829">
+		<SoundBank Id="782826392" Language="SFX" Hash="869364830">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
 			<ShortName>Default</ShortName>
 			<Path>Default.bnk</Path>
 			<IncludedEvents>
-				<Event Id="278617630" Name="play_Ambience" ObjectPath="\Events\Default Work Unit\Ambience\play_Ambience" DurationType="Unknown"/>
+				<Event Id="278617630" Name="play_Ambience" ObjectPath="\Events\Default Work Unit\Ambience\play_Ambience" DurationType="Unknown">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="1700644942" Name="play_BirdCalls" ObjectPath="\Events\Default Work Unit\play_BirdCalls"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="1700644942" Name="play_BirdCalls" ObjectPath="\Events\Default Work Unit\play_BirdCalls" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="24833817" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_08.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_08_10C4C929.wem</Path>
+						</File>
+						<File Id="86325805" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_03.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_03_10C4C929.wem</Path>
+						</File>
+						<File Id="90339501" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_10.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_10_10C4C929.wem</Path>
+						</File>
+						<File Id="100785976" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_04.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_04_10C4C929.wem</Path>
+						</File>
+						<File Id="125347833" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_06.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_06_10C4C929.wem</Path>
+						</File>
+						<File Id="209361249" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_05.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_05_10C4C929.wem</Path>
+						</File>
+						<File Id="232610410" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_01.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_01_10C4C929.wem</Path>
+						</File>
+						<File Id="456137676" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_11.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_11_10C4C929.wem</Path>
+						</File>
+						<File Id="509691566" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_09.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_09_10C4C929.wem</Path>
+						</File>
+						<File Id="693681760" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_07.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_07_10C4C929.wem</Path>
+						</File>
+						<File Id="828149298" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_15.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_15_10C4C929.wem</Path>
+						</File>
+						<File Id="900027245" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_02.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_02_10C4C929.wem</Path>
+						</File>
+						<File Id="964611847" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_13.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_13_10C4C929.wem</Path>
+						</File>
+						<File Id="989835661" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_14.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_14_10C4C929.wem</Path>
+						</File>
+						<File Id="1058809833" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_12.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_12_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2767646498" Name="play_Heli_GetIn" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GetIn" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="393191848" Language="SFX">
@@ -514,7 +582,7 @@
 				<Trigger Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="278184209">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2214080530">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

@@ -37,6 +37,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1551306167	UI			\Default Work Unit\Master Audio Bus\2D\UI	
 	1695690031	Objects			\Default Work Unit\Master Audio Bus\3D\Objects	
 	2167849898	Helicopter			\Default Work Unit\Master Audio Bus\3D\Vehicles\Helicopter	
+	2711646615	BirdCalls			\Default Work Unit\Master Audio Bus\2D\Ambience\BirdCalls	
 	2940432316	Stingers			\Default Work Unit\Master Audio Bus\2D\Music\Stingers	
 	3125191939	Mecha			\Default Work Unit\Master Audio Bus\3D\Vehicles\Mecha	
 	3206747537	Tank			\Default Work Unit\Master Audio Bus\3D\Vehicles\Tank	

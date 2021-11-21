@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PLAY_BIRDCALLS = 1700644942U;
         static const AkUniqueID PLAY_HELI_GETIN = 2767646498U;
         static const AkUniqueID PLAY_HELI_GETOFF = 3400919206U;
         static const AkUniqueID PLAY_HELI_GRABOBJ = 3903374634U;
@@ -77,6 +78,7 @@ namespace AK
         static const AkUniqueID _2D = 527871411U;
         static const AkUniqueID _3D = 511093792U;
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID BIRDCALLS = 2711646615U;
         static const AkUniqueID HELICOPTER = 2167849898U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MECHA = 3125191939U;
