@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad10252960f158448cbb43b47374295, type: 3}
+  m_Name: AF070E23-486D-4983-8B55-F274FF1AB548
+  m_EditorClassIdentifier: 
+  objectName: play_Legs_Land
+  id: 1119197339
+  guid: AF070E23-486D-4983-8B55-F274FF1AB548

@@ -1,7 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	43599987	play_UI_Button			\Default Work Unit\play_UI_Button	
+	43599987	play_UI_Button			\Default Work Unit\UI\play_UI_Button	
 	125457442	play_Tank_GetIn			\Default Work Unit\Tank\play_Tank_GetIn	
-	278617630	play_Ambience			\Default Work Unit\play_Ambience	
+	278617630	play_Ambience			\Default Work Unit\Ambience\play_Ambience	
 	542072273	play_Tank_Shot			\Default Work Unit\Tank\play_Tank_Shot	
 	749407591	play_ObjButton_On			\Default Work Unit\IntObjects\play_ObjButton_On	
 	1104479366	play_Heli_MoveStart			\Default Work Unit\Helicopter\play_Heli_MoveStart	
@@ -11,7 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2212303852	play_Legs_Fstep			\Default Work Unit\Legs\play_Legs_Fstep	
 	2227320646	play_Heli_MoveStop			\Default Work Unit\Helicopter\play_Heli_MoveStop	
 	2306097013	play_Legs_GetIn			\Default Work Unit\Legs\play_Legs_GetIn	
-	2477713992	stop_Ambience			\Default Work Unit\stop_Ambience	
+	2477713992	stop_Ambience			\Default Work Unit\Ambience\stop_Ambience	
 	2767646498	play_Heli_GetIn			\Default Work Unit\Helicopter\play_Heli_GetIn	
 	2837384057	stop_Music			\Default Work Unit\Music\stop_Music	
 	2904441870	play_Tank_ShotExplosion			\Default Work Unit\Tank\play_Tank_ShotExplosion	
@@ -22,7 +22,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3387000831	play_Wheels_Start			\Default Work Unit\Wheels\play_Wheels_Start	
 	3400919206	play_Heli_GetOff			\Default Work Unit\Helicopter\play_Heli_GetOff	
 	3423526428	play_Legs_GetOut			\Default Work Unit\Legs\play_Legs_GetOut	
-	3483232275	play_Restart			\Default Work Unit\play_Restart	
+	3483232275	play_Restart			\Default Work Unit\UI\play_Restart	
 	3508749844	play_Music_WinTrigger			\Default Work Unit\Music\play_Music_WinTrigger	
 	3903374634	play_Heli_GrabObj			\Default Work Unit\Helicopter\play_Heli_GrabObj	
 	3986544096	play_Legs_Jump			\Default Work Unit\Legs\play_Legs_Jump	

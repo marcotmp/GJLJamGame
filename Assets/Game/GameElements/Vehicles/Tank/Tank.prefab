@@ -171,6 +171,7 @@ MonoBehaviour:
   groundDetector: {fileID: 509866442278225997}
   selectorIcon: {fileID: 7022214144245040469}
   cannon: {fileID: 6120631329058158994}
+  playerAudio: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
   horizontalSpeed: 5
 --- !u!1 &3501537576408161364
 GameObject:

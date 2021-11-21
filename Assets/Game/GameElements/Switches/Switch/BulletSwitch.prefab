@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f6147f86901594faf77b0c6ab69220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAudio: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
   OnSwitchActivated:
     m_PersistentCalls:
       m_Calls: []

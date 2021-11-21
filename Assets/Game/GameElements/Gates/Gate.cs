@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Gate : MonoBehaviour
 {
-    [SerializeField]
-    private AK.Wwise.Event gateEvent = null;
+    [Header("Audio")]
+    [SerializeField] private PlayerAudioData playerAudio;
     private Animator anim;
 
     private void Awake() {
@@ -25,7 +25,7 @@ public class Gate : MonoBehaviour
     {
         Debug.Log("Gate.Open");
         anim?.SetBool("Open", true);
-        gateEvent.Post(gameObject);
+        playerAudio.gateOpen.Post(this.gameObject);
 
     }
 

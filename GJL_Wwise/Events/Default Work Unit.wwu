@@ -417,36 +417,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="play_Ambience" ID="{EA12673D-8F44-4CB5-B6DA-CED305A025C4}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="27"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{914C12E0-BE35-4642-AF3F-B7D81028C3B5}" ShortID="35001997">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="NoiseAmbience" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="play_UI_Button" ID="{5CFC7467-3DE4-42FA-B7BE-768923C07BBC}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="2"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{6C51F2F8-3144-40F2-B1CE-0783804BEDD3}" ShortID="885009950">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Button" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Legs" ID="{F0B24912-DDAF-4F06-A2DB-C8DE9DBFB615}" ShortID="373128234">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="6"/>
@@ -460,6 +430,20 @@
 							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{7C40285D-0370-46F2-8E01-3D010D8B0354}" ShortID="499352978">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A0245C47-49E5-4758-9376-FF107CD2D9DA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Fstep" ID="{51C0C815-8F01-479D-938C-E4CA392FE065}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
@@ -592,25 +576,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="stop_Ambience" ID="{F2C56826-8E32-4CA0-9BE7-DD95C14AEECF}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="27"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{42355C29-0ADA-4D60-B1B9-C9839B93ECE1}" ShortID="641894467">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="NoiseAmbience" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Music" ID="{5AF1D541-E0EF-41ED-B016-831A79DFA6AC}" ShortID="1000580256">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="13"/>
@@ -736,22 +701,87 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="play_Restart" ID="{D9EA1A96-5121-4928-8689-FEEB380A0F64}">
+				<Folder Name="Ambience" ID="{9D4FEE5B-E810-4F02-8BC0-65523EEC91C0}" ShortID="462160124">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{8440A471-8A97-43A5-936F-FC1AB9EB9D26}" ShortID="956806200">
+						<Event Name="stop_Ambience" ID="{F2C56826-8E32-4CA0-9BE7-DD95C14AEECF}">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="3"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
+								<Property Name="Color" Type="int16" Value="27"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList/>
-						</Action>
+							<ChildrenList>
+								<Action Name="" ID="{42355C29-0ADA-4D60-B1B9-C9839B93ECE1}" ShortID="641894467">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NoiseAmbience" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_Ambience" ID="{EA12673D-8F44-4CB5-B6DA-CED305A025C4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="27"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{914C12E0-BE35-4642-AF3F-B7D81028C3B5}" ShortID="35001997">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NoiseAmbience" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="UI" ID="{937FE247-F901-4583-89A7-42D067DF0DF0}" ShortID="646270373">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="play_Restart" ID="{D9EA1A96-5121-4928-8689-FEEB380A0F64}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{8440A471-8A97-43A5-936F-FC1AB9EB9D26}" ShortID="956806200">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_UI_Button" ID="{5CFC7467-3DE4-42FA-B7BE-768923C07BBC}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{6C51F2F8-3144-40F2-B1CE-0783804BEDD3}" ShortID="885009950">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Button" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

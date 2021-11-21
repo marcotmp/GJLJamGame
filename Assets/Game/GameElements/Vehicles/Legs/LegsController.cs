@@ -20,6 +20,9 @@ public class LegsController : MonoBehaviour, IVehicle, IGrabbable
 
     private FiniteStateMachine fsm;
 
+    [Header("Audio")]
+    [SerializeField] private PlayerAudioData playerAudio;
+
     [Header("States")]
     [SerializeField] private LegsActivate activateState;
     [SerializeField] private LegsMove moveState;
@@ -34,6 +37,7 @@ public class LegsController : MonoBehaviour, IVehicle, IGrabbable
     [SerializeField] private float gravityUp = 30f;
     [SerializeField] private float gravityDown = 20f;
     [SerializeField] private float gravityScale = 8f;
+
 
     private Vector2 motion = Vector2.zero;
     private Vector2 dpadDir;
@@ -79,6 +83,7 @@ public class LegsController : MonoBehaviour, IVehicle, IGrabbable
         if (dpadDir.x != 0)
         {
             motion.x += dpadDir.x * acceleration * Time.deltaTime;
+            playerAudio.legsFstep.Post(this.gameObject);
         }
         else
         {
@@ -159,6 +164,7 @@ public class LegsController : MonoBehaviour, IVehicle, IGrabbable
     public void StartJump()
     {
         motion.y = jumpImpulse;
+        playerAudio.legsJump.Post(this.gameObject);
     }
 
     public void CancelJump()
@@ -177,11 +183,13 @@ public class LegsController : MonoBehaviour, IVehicle, IGrabbable
     {
         selectorIcon.SetActive(true);
         fsm.ChangeState<LegsActivate>();
+        playerAudio.legsGetIn.Post(this.gameObject);
     }
 
     public void UnmountPlayer()
     {
         Deactivate();
+        playerAudio.legsGetOut.Post(this.gameObject);
     }
 
     public Vector3 GetGrabOffset()

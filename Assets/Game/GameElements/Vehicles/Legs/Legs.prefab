@@ -124,6 +124,7 @@ MonoBehaviour:
   rb: {fileID: 2921281807757566387}
   sprite: {fileID: 2921281809248707933}
   anim: {fileID: 0}
+  playerAudio: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
   activateState:
     legs: {fileID: 0}
   moveState:

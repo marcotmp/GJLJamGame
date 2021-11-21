@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: gateEvent.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 5a0d41f91967f6c41bb191be533a576c, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1132822264892875047, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -191,6 +191,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 787126657}
     m_Modifications:
+    - target: {fileID: 1089960191393159616, guid: 0ac9c054ca0c9044f90cc5758d0b1fdf, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
     - target: {fileID: 1089960191393159617, guid: 0ac9c054ca0c9044f90cc5758d0b1fdf, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -293,6 +297,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1089960191393159617, guid: 0ac9c054ca0c9044f90cc5758d0b1fdf, type: 3}
   m_PrefabInstance: {fileID: 42767205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &150235537 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 634391934876566603, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
+  m_PrefabInstance: {fileID: 873897695}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &199801437
 GameObject:
@@ -433,12 +442,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392611378}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1097592, y: -5.6120644, z: 28.51534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1881797126}
-  m_RootOrder: 2
+  m_Father: {fileID: 150235537}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &392611380
 MonoBehaviour:
@@ -813,15 +822,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.901922
+      value: -3.9019222
       objectReference: {fileID: 0}
     - target: {fileID: 25049513443985029, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.482294
+      value: -10.592294
       objectReference: {fileID: 0}
     - target: {fileID: 25049513443985029, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.2252607
+      value: -4.4952607
       objectReference: {fileID: 0}
     - target: {fileID: 25049513443985034, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_Follow
@@ -4627,12 +4636,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967942210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1097592, y: -5.6120644, z: 28.51534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1881797126}
-  m_RootOrder: 0
+  m_Father: {fileID: 150235537}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &967942212
 MonoBehaviour:
@@ -4725,11 +4734,11 @@ PrefabInstance:
     - target: {fileID: 4143977122607861890, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
       propertyPath: switchButtonOn.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: fad6f30c330fbf644a3ac33004711151, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4143977122607861890, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
       propertyPath: switchButtonOff.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 96d98c5fc4cd2b94085a2fb4d1ebc795, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4143977122607861890, guid: 0c45c47490648d74bbe6e795c7badd8b, type: 3}
       propertyPath: onSet.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -4862,7 +4871,7 @@ PrefabInstance:
     - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: gateEvent.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 5a0d41f91967f6c41bb191be533a576c, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1132822264892875047, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5389,39 +5398,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!1 &1881797125
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1881797126}
-  m_Layer: 0
-  m_Name: Wwise
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1881797126
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881797125}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13263965, y: -2.2328796, z: -1.3508155}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 967942211}
-  - {fileID: 1943430473}
-  - {fileID: 392611379}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1891474965
 GameObject:
   m_ObjectHideFlags: 0
@@ -5503,12 +5479,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943430472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1097592, y: -5.6120644, z: 28.51534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1881797126}
-  m_RootOrder: 1
+  m_Father: {fileID: 150235537}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1943430474
 MonoBehaviour:
@@ -5615,7 +5591,7 @@ MonoBehaviour:
   isEnvironmentAware: 1
   isStaticObject: 0
   m_positionOffsetData:
-    KeepMe: 0
+    KeepMe: 1
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
@@ -5696,9 +5672,13 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3992852042436666703, guid: 69468a2f2cf8f7b4cb1149c1d32f422b, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
+    - target: {fileID: 3992852042436666703, guid: 69468a2f2cf8f7b4cb1149c1d32f422b, type: 3}
       propertyPath: bulletSwitch.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: fad6f30c330fbf644a3ac33004711151, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 3992852042436666703, guid: 69468a2f2cf8f7b4cb1149c1d32f422b, type: 3}
       propertyPath: OnSwitchActivated.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -5741,13 +5721,17 @@ PrefabInstance:
       value: Gate
       objectReference: {fileID: 0}
     - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
+    - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: myEvent.WwiseObjectReference
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1132822264892875046, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: gateEvent.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 5a0d41f91967f6c41bb191be533a576c, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1132822264892875047, guid: 0e3ad062a5bf8654fa7e715aa2ba71e2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5815,9 +5799,13 @@ PrefabInstance:
       value: Grab
       objectReference: {fileID: 0}
     - target: {fileID: 2532970540284952790, guid: baaf7f9d70c682b41bce6093c0d69ef9, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
+    - target: {fileID: 2532970540284952790, guid: baaf7f9d70c682b41bce6093c0d69ef9, type: 3}
       propertyPath: releaseObject.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: ee6700a39dc878a41be1016c32837976, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 2532970540284952791, guid: baaf7f9d70c682b41bce6093c0d69ef9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5940,6 +5928,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2921281807757566390, guid: d8ab94aca91034a43bfa3d92b5e81980, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8ab94aca91034a43bfa3d92b5e81980, type: 3}
 --- !u!4 &2921281809105815857 stripped
@@ -6003,6 +5995,10 @@ PrefabInstance:
       value: Goal
       objectReference: {fileID: 0}
     - target: {fileID: 3347724619817389807, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
+      propertyPath: playerAudio
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
+    - target: {fileID: 3347724619817389807, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
       propertyPath: nextScene.scenePath
       value: Assets/Game/Levels/LevelIdeas/Idea1.unity
       objectReference: {fileID: 0}
@@ -6013,7 +6009,7 @@ PrefabInstance:
     - target: {fileID: 3347724619817389807, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
       propertyPath: musicWinTrigger.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 6045c617d6d86fc4b93528d5554842e2, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a3e657a535f74c4c8269adbff1619d1, type: 3}
 --- !u!4 &3347724620929467890 stripped
@@ -6054,11 +6050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615938242767593530, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.41
+      value: -6.52
       objectReference: {fileID: 0}
     - target: {fileID: 6615938242767593530, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.45
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 6615938242767593530, guid: 55a3f606edad9714892d758a2096bcca, type: 3}
       propertyPath: m_LocalPosition.z

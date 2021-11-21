@@ -82,6 +82,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID STINGERS = 2940432316U;
         static const AkUniqueID TANK = 3206747537U;
         static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID VEHICLES = 971393558U;

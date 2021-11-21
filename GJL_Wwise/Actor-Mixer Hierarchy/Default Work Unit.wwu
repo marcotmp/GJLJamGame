@@ -9,6 +9,7 @@
 							<PropertyList>
 								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
 								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>2</Value>
@@ -453,6 +454,7 @@
 						<ActorMixer Name="Tank" ID="{4020EACC-6E77-469A-8D1B-D81CF688DD39}" ShortID="157343958">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="8"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -1166,6 +1168,7 @@
 						<ActorMixer Name="Mecha" ID="{D67F1AE2-FAAF-4CED-81DF-3B57BF70390E}" ShortID="301699894">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="6"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -1329,6 +1332,17 @@
 								<RandomSequenceContainer Name="Fstep" ID="{51C0C815-8F01-479D-938C-E4CA392FE065}" ShortID="40904436">
 									<PropertyList>
 										<Property Name="Color" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-7</Value>
@@ -1618,6 +1632,7 @@
 						<ActorMixer Name="Wheels" ID="{CCB8D31B-CDE6-4123-A0E4-02AF62AFCF18}" ShortID="131793223">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="9"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -2543,6 +2558,7 @@
 								<Sound Name="sfx_IntObj_Gate" ID="{07B5B831-02AF-4EC1-A2B2-52728D49E5CE}" ShortID="1058516350">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>

@@ -5,10 +5,9 @@ using UnityEngine.Events;
 
 public class BulletSwitch : MonoBehaviour
 {
-    // Wwise bulletSwitch event
-    [SerializeField]
-    private AK.Wwise.Event bulletSwitch = null;
-    // End Wwise code
+    [Header("Audio")]
+    [SerializeField] private PlayerAudioData playerAudio;
+
     public UnityEvent OnSwitchActivated;
     public Animator anim;
 
@@ -16,6 +15,7 @@ public class BulletSwitch : MonoBehaviour
     {
         OnSwitchActivated?.Invoke();
         anim.SetTrigger("Activate");
+        playerAudio.switchButtonOn.Post(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,7 +23,6 @@ public class BulletSwitch : MonoBehaviour
         if (collision.GetComponent<PlayerBullet>())
         {
             SwitchActivated();
-            bulletSwitch.Post(gameObject);
         }
     }
 }

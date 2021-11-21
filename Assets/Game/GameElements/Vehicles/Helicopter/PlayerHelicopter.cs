@@ -15,7 +15,10 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     public BoxDetector itemDetector;
     public GameObject selectorIcon;
     public Animator anim;
-    [SerializeField] private AK.Wwise.Event grabObject = null;
+    //Wwise events
+    /*[SerializeField] private AK.Wwise.Event grabObject = null;
+    [SerializeField] private AK.Wwise.Event releaseObject = null;*/
+    [SerializeField] private PlayerAudioData playerAudio;
 
     [SerializeField] private Transform handPosition;
     [SerializeField] public Joint2D joint;
@@ -62,6 +65,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         //actionMap.Enable();
         selectorIcon.SetActive(true);
         fsm.ChangeState(typeof(HeliActivate));
+        playerAudio.heliGetIn.Post(this.gameObject);
     }
 
     public void Deactivate()
@@ -70,12 +74,14 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         Debug.Log("Deactivating Heli");
         selectorIcon.SetActive(false);
         fsm.ChangeState(typeof(HeliDeactivate));
+
     }
 
     public void UnmountPlayer()
     {
         Deactivate();
         Release();
+        playerAudio.heliGetOut.Post(this.gameObject);
     }
 
     private IGrabbable GetObjectToGrab()
@@ -108,7 +114,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
                 joint.enabled = true;
                 joint.connectedBody = objectGrabbed.gameObject.GetComponent<Rigidbody2D>();
                 groundDetector.transform.position = objectGrabbed.GetGrabOffset();
-                grabObject.Post(gameObject);
+                playerAudio.heliGrabObj.Post(this.gameObject);
             }
 
             
@@ -129,6 +135,7 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
             joint.enabled = false;
             joint.connectedBody = null;
             groundDetector.transform.localPosition = groundDetectorInitialPos;
+            playerAudio.heliReleaseObj.Post(this.gameObject);
         }
     }
 

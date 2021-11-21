@@ -12,79 +12,119 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b691505f9914d414ba7c217a90934848, type: 3}
   m_Name: PlayerAudio
   m_EditorClassIdentifier: 
-  wheelsMoveStart:
+  playAmbience:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b46b30621e2e80948baa6ef7d09b5ae6, type: 2}
-  wheelsMoveStop:
+    WwiseObjectReference: {fileID: 11400000, guid: b50e4032c2499fc4f9bc9253cc1e4913, type: 2}
+  stopAmbience:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cc569ee19ae689c42b35e9175d8e0442, type: 2}
-  legsGetIn:
+    WwiseObjectReference: {fileID: 11400000, guid: 6368842ce5ebeeb4292ccc2c9d3d280d, type: 2}
+  playMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  legsGetOut:
+    WwiseObjectReference: {fileID: 11400000, guid: 553702c8d2fa90148bc613f63685c0c2, type: 2}
+  stopMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  legsFootstep:
+    WwiseObjectReference: {fileID: 11400000, guid: bba74ac738c6ac8419eb5412f17e509e, type: 2}
+  musicWinTrigger:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 264be1b5d8542b44a9dabfc046675a9c, type: 2}
-  legsJump:
+    WwiseObjectReference: {fileID: 11400000, guid: 6045c617d6d86fc4b93528d5554842e2, type: 2}
+  restartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e123709acf0fe324f873c29969eeb955, type: 2}
-  legsLand:
+    WwiseObjectReference: {fileID: 11400000, guid: ddb0976948b16a74ba499640602ac0b4, type: 2}
+  menuButton:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2a80dcf7f6a9377429666ef5674bb906, type: 2}
-  tankGetIn:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2c45c74a777d0e34d834f279722f3067, type: 2}
-  tankGetOut:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e9c30664f9d9d0345bdca9b5194169fe, type: 2}
-  tankMoveStart:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 69cbc090bb039a748995d41bfec7def6, type: 2}
-  tankMoveStop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 19f5403fa1c1a9643bb72234a764e794, type: 2}
-  tankShot:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 112a00925284bc245bb255b75eff1646, type: 2}
-  tankShotExplosion:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 25dea640d8577c94fad94c680b25336f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: dab8c8c613474a947a15439c9697899c, type: 2}
   heliGetIn:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cc3aedd23a933c049bab7a7d2f7c17fd, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 0d67608351880034497f7f68fd3c2103, type: 2}
   heliGetOut:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 347c64dc1ec9eba4a8f234515aa2b377, type: 2}
-  heliMoveStart:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 64de33145db4c544d87201f91472cf5a, type: 2}
-  heliMoveStop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f430edef162b97a4ba0259577f52f56d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 975dd4abaacab564da432b8b7ec58f18, type: 2}
   heliGrabObj:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: cb19c65210411ce48bc8fd5e94ab5016, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 087bf00cde455c4448f23efd450b0c26, type: 2}
+  heliMoveStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5d1e1fb827f118048ac6fe37695eb920, type: 2}
+  heliMoveStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 424c0868c12ee1a458433855767673cb, type: 2}
   heliReleaseObj:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3b74cd4a7a79de549ab466ebb7a2f74c, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ee6700a39dc878a41be1016c32837976, type: 2}
+  switchButtonOff:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 96d98c5fc4cd2b94085a2fb4d1ebc795, type: 2}
+  switchButtonOn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fad6f30c330fbf644a3ac33004711151, type: 2}
+  gateOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5a0d41f91967f6c41bb191be533a576c, type: 2}
+  legsFstep:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3fc47b7ea6620ab428643b4e6cb108b4, type: 2}
+  legsGetIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4a7cdb5148948b54bbc1e1f1945798ef, type: 2}
+  legsGetOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ffac88633cd30bc4b86e225d1e7f3e09, type: 2}
+  legsJump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c0cbdf5953f5c7444b765196d447d56c, type: 2}
+  legsLand:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8810f690c69b7d54a8534420d7203350, type: 2}
+  tankGetIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e54e858ea415eb04abc6450fb32c332b, type: 2}
+  tankGetOut:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 083e2e2b6a4db6c40afe73c633a473be, type: 2}
+  tankMoveStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 96a19fd7b69a8004aae8257fc7e494a9, type: 2}
+  tankMoveStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 556b1df2fae99f04b84d4437b5f98e81, type: 2}
+  tankShot:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9e9cda244ba6d004caad8cf4726eab70, type: 2}
+  tankShotExplosion:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1f2fb52204163594598819149071b641, type: 2}
+  wheelsMoveStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3f4b70cfc59cb4e4b8dbbba9709134d4, type: 2}
+  wheelsMoveStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5656adaa719f18b48bd455c5879635de, type: 2}

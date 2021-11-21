@@ -13,6 +13,8 @@ public class TankController : MonoBehaviour, IVehicle, IGrabbable
     [SerializeField] private GameObject selectorIcon;
     [SerializeField] private PlayerCannon cannon;
 
+    [Header("Audio")]
+    [SerializeField] private PlayerAudioData playerAudio;
 
     [Header("Speed")]
     [SerializeField] private float horizontalSpeed;
@@ -77,6 +79,7 @@ public class TankController : MonoBehaviour, IVehicle, IGrabbable
         this.player = player;
         selectorIcon.SetActive(true);
         EnableControls();
+        playerAudio.tankGetIn.Post(this.gameObject);
     }
 
     private void EnableControls()
@@ -125,11 +128,13 @@ public class TankController : MonoBehaviour, IVehicle, IGrabbable
         Debug.Log("Tank Unmount Player");
         selectorIcon.SetActive(false);
         Deactivate();
+        playerAudio.tankGetOut.Post(this.gameObject);
     }
 
     private void OnShootAction(CallbackContext c)
     {
         cannon.Shoot();
+        playerAudio.tankShot.Post(this.gameObject);
     }
 
     IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds)

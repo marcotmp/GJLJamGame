@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
-    [SerializeField]
-    private AK.Wwise.Event musicWinTrigger = null;
+    [Header("Audio")]
+    [SerializeField] private PlayerAudioData playerAudio;
+
     [SerializeField] public SceneReference nextScene;
     [SerializeField] public SceneTransitionerChannel transition;
     [SerializeField] public WinEventChannel winEventChannel;
@@ -31,7 +32,7 @@ public class Goal : MonoBehaviour
     public void GoalActivated()
     {
         gameObject.SetActive(true);
-       // AKSoundEngine:PostEvent()
+
 
     }
 
@@ -39,7 +40,7 @@ public class Goal : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         transition.LoadScene(nextScene);
-        musicWinTrigger.Post(gameObject);
+        playerAudio.musicWinTrigger.Post(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

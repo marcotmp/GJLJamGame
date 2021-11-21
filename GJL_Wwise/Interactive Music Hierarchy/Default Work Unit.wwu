@@ -7,18 +7,15 @@
 					<ChildrenList>
 						<MusicSegment Name="xmx_stingersWin_004_Block4_D_108_3-4" ID="{A99CD5FE-A25B-465C-B6F0-57A7D8230364}" ShortID="887500321">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="108"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -58,7 +55,7 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="3694.44791666667"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1683.20610687023"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="xmx_stingersWin_004_Block4_D_108_3-4" ID="{B4CCC34B-9CCD-4A35-BD51-4304536A1539}"/>
 																		</MusicClip>
@@ -85,7 +82,7 @@
 											<MusicCue Name="Exit Cue" ID="{187F835A-F128-4260-B39E-D2FBF2A7108F}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="3694.44791666667"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -95,18 +92,15 @@
 						</MusicSegment>
 						<MusicSegment Name="xmx_stingersWin_002_Block2_D#_108_3-4" ID="{AEA97846-003A-4D76-939A-312968B340CD}" ShortID="461833766">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="108"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -173,7 +167,7 @@
 											<MusicCue Name="Exit Cue" ID="{188ABD72-FCF1-4F3C-86EF-57EA5F7B31D3}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="2000"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -183,18 +177,15 @@
 						</MusicSegment>
 						<MusicSegment Name="xmx_stingersWin_001_Block1_C_108_3-4" ID="{6B5B33B2-2AA9-4FC9-AAB1-FFF9E472E702}" ShortID="792577924">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="108"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Music" ID="{418D2BBD-EF97-49E8-8243-2BF6EF0C2174}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -261,7 +252,7 @@
 											<MusicCue Name="Exit Cue" ID="{5A596F01-1112-4FE5-BA9A-9A1E8F2C485A}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="2000"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -271,18 +262,15 @@
 						</MusicSegment>
 						<MusicSegment Name="xmx_stingersWin_007_Block7_E_108_3-4" ID="{22E4A4EE-979C-402F-AE0D-94B27736A962}" ShortID="898604342">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="108"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -322,7 +310,7 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="3694.44791666667"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="2011.45038167939"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="xmx_stingersWin_007_Block7_E_108_3-4" ID="{40610662-5263-4AD9-88CE-656F4C56DFDE}"/>
 																		</MusicClip>
@@ -349,7 +337,7 @@
 											<MusicCue Name="Exit Cue" ID="{7449F9C6-906E-4ED9-A219-C1D2C9218D25}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="3694.44791666667"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -359,18 +347,15 @@
 						</MusicSegment>
 						<MusicSegment Name="xmx_stingersWin_005_Block5_A_108_3-4" ID="{30C93176-32B5-4F70-8BE9-A90979F12F2B}" ShortID="800940587">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="108"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -410,7 +395,7 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="3694.44791666667"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1683.20610687023"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="xmx_stingersWin_005_Block5_A_108_3-4" ID="{EE69F1A1-B165-4DB7-BDFE-2DA692557D65}"/>
 																		</MusicClip>
@@ -437,7 +422,7 @@
 											<MusicCue Name="Exit Cue" ID="{F16F9C82-998F-4758-BB40-C68AD68B552A}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="3694.44791666667"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -447,18 +432,15 @@
 						</MusicSegment>
 						<MusicSegment Name="xmx_stingersWin_006_Block6_G_108_3-4" ID="{E1778BCA-EE3C-444F-A047-58921E1AA860}" ShortID="843756234">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="108"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -498,9 +480,30 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="3694.44791666667"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="2007.63358778626"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="xmx_stingersWin_006_Block6_G_108_3-4" ID="{BEDA2417-8834-461B-97EA-1FB27827DF1B}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{A6EA8CAC-6658-4EA9-9F68-CB8276D1C515}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3.69444791666667</XPos>
+																								<YPos>-0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -525,7 +528,7 @@
 											<MusicCue Name="Exit Cue" ID="{729AE882-1A8D-4809-8268-281BB1BB3F47}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="3694.44791666667"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -535,18 +538,15 @@
 						</MusicSegment>
 						<MusicSegment Name="xmx_stingersWin_008_Block8_E_108_3-4" ID="{52758E94-57F4-43C3-9C13-2DCDFD502DC2}" ShortID="448183428">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="108"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -586,7 +586,7 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="3694.44791666667"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="2007.63358778626"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="xmx_stingersWin_008_Block8_E_108_3-4" ID="{F4DEC6F7-2808-42C1-95A8-DAFF662D3C91}"/>
 																		</MusicClip>
@@ -613,7 +613,7 @@
 											<MusicCue Name="Exit Cue" ID="{4815A35A-D43E-4998-A1CD-F9D0050575D0}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="3694.44791666667"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -623,18 +623,15 @@
 						</MusicSegment>
 						<MusicSegment Name="xmx_stingersWin_003_Block3_G#_108_3-4" ID="{078E157F-9B31-493C-A079-07BD4816D2A4}" ShortID="785561254">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="108"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+									<ObjectRef Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -674,7 +671,7 @@
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="3694.44791666667"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1679.3893129771"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="xmx_stingersWin_003_Block3_G#_108_3-4" ID="{9683450B-F687-42E5-88F1-DF9462718317}"/>
 																		</MusicClip>
@@ -701,7 +698,7 @@
 											<MusicCue Name="Exit Cue" ID="{E9149F47-8EC8-4172-9957-1D5E35148D9B}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="3694.44791666667"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>

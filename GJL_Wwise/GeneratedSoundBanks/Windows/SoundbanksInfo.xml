@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="782826392" Language="SFX" Hash="2547336319">
+		<SoundBank Id="782826392" Language="SFX" Hash="3586254873">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
 			<ShortName>Default</ShortName>
 			<Path>Default.bnk</Path>
 			<IncludedEvents>
-				<Event Id="278617630" Name="play_Ambience" ObjectPath="\Events\Default Work Unit\play_Ambience" DurationType="Unknown"/>
+				<Event Id="278617630" Name="play_Ambience" ObjectPath="\Events\Default Work Unit\Ambience\play_Ambience" DurationType="Unknown"/>
 				<Event Id="2767646498" Name="play_Heli_GetIn" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GetIn" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="393191848" Language="SFX">
@@ -93,7 +93,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2212303852" Name="play_Legs_Fstep" ObjectPath="\Events\Default Work Unit\Legs\play_Legs_Fstep" DurationType="OneShot" DurationMin="0.401601" DurationMax="0.416220">
+				<Event Id="2212303852" Name="play_Legs_Fstep" ObjectPath="\Events\Default Work Unit\Legs\play_Legs_Fstep" DurationType="OneShot" DurationMin="0.901601" DurationMax="1.116220">
 					<IncludedMemoryFiles>
 						<File Id="267697277" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_03.wav</ShortName>
@@ -342,7 +342,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3062351503" Name="play_ObjGate_Open" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjGate_Open" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="2.165466" DurationMax="2.190628">
+				<Event Id="3062351503" Name="play_ObjGate_Open" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjGate_Open" DurationType="OneShot" DurationMin="2.165466" DurationMax="2.190628">
 					<IncludedMemoryFiles>
 						<File Id="901181080" Language="SFX">
 							<ShortName>UI\sfx_IntObj_Gate.wav</ShortName>
@@ -350,7 +350,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3483232275" Name="play_Restart" ObjectPath="\Events\Default Work Unit\play_Restart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3483232275" Name="play_Restart" ObjectPath="\Events\Default Work Unit\UI\play_Restart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="125457442" Name="play_Tank_GetIn" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_GetIn" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="520054179" Language="SFX">
@@ -459,7 +459,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="43599987" Name="play_UI_Button" ObjectPath="\Events\Default Work Unit\play_UI_Button" DurationType="OneShot" DurationMin="2.320111" DurationMax="2.347070">
+				<Event Id="43599987" Name="play_UI_Button" ObjectPath="\Events\Default Work Unit\UI\play_UI_Button" DurationType="OneShot" DurationMin="2.320111" DurationMax="2.347070">
 					<IncludedMemoryFiles>
 						<File Id="323515511" Language="SFX">
 							<ShortName>UI\sfx_UI_Button_01.wav</ShortName>
@@ -487,14 +487,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2477713992" Name="stop_Ambience" ObjectPath="\Events\Default Work Unit\stop_Ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2477713992" Name="stop_Ambience" ObjectPath="\Events\Default Work Unit\Ambience\stop_Ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\Music\stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<Triggers>
 				<Trigger Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2433687859">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2929854442">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
