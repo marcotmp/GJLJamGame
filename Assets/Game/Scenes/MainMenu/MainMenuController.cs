@@ -14,6 +14,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private Button playButton;
     [SerializeField] private LevelProgression levelProgression;
     [SerializeField] private ForceUIFocus focus;
+    [SerializeField] private PlayerAudioData playerAudio;
 
     private void Start()
     {
@@ -43,6 +44,7 @@ public class MainMenuController : MonoBehaviour
     {
         // continue game on last level
         transition.LoadScene(levelProgression.CurrentLevel);
+        playerAudio.menuButton.Post(gameObject);
     }
 
     public void Button_OnNewGame()
@@ -50,11 +52,13 @@ public class MainMenuController : MonoBehaviour
         // show yes / no popup
         confirmationPopup.Show();
         confirmationPopup.onAccept = OnResetGameAccepted;
+        playerAudio.menuButton.Post(gameObject);
     }
 
     public void Button_OnPlay()
     {
         transition.LoadScene(firstLevel);
+        playerAudio.menuButton.Post(gameObject);
     }
 
     private void OnResetGameAccepted()

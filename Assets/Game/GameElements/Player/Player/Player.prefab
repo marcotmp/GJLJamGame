@@ -107,6 +107,7 @@ MonoBehaviour:
   groundDetector: {fileID: 6044869809114001846}
   vehicleDetector: {fileID: 6155808039981204044}
   selectorIcon: {fileID: 3855982109871635630}
+  playerAudio: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
   horizontalSpeed: 0
   maxSpeed: 5
   jumpImpulse: 8
@@ -152,6 +153,7 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
+  yDelta: 0
 --- !u!50 &-3244119414455754025
 Rigidbody2D:
   serializedVersion: 4

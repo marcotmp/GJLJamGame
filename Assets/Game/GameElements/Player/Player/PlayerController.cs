@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private BoxDetector groundDetector;
     [SerializeField] private BoxDetector vehicleDetector;
     [SerializeField] private GameObject selectorIcon;
-    [SerializeField] public AkGameObj akGameObj;
     [SerializeField] public PlayerAudioData playerAudio;
 
     [Header("Speed")]
