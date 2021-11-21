@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
         {
             if (isOnGround) motion.x = Mathf.MoveTowards(motion.x, 0, decceleration * Time.deltaTime);
         }
-        
+
         motion.x = Mathf.Clamp(motion.x, -maxSpeed, maxSpeed);
 
         if (!isOnGround)
@@ -139,6 +139,20 @@ public class PlayerController : MonoBehaviour
         if (!wasOnGround && isOnGround) motion.y = 0;
 
         rigidbody.velocity = motion;
+
+
+        // Play Move Sounds
+        if (dpadDir.x != 0 && !isWheelsMovePlaying)
+        {
+            playerAudio.wheelsMoveStart.Post(gameObject);
+            isWheelsMovePlaying = true;
+        }
+        else if (Mathf.Approximately(dpadDir.x, 0) && isWheelsMovePlaying)
+        {
+            playerAudio.wheelsMoveStop.Post(gameObject);
+            isWheelsMovePlaying = false;
+        }
+
     }
 
     public void ProcessStop()
@@ -176,17 +190,6 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
             facingRight = false;
-        }
-
-        if (dpadDir.x != 0 && !isWheelsMovePlaying)
-        {
-            playerAudio.wheelsMoveStart.Post(gameObject);
-            isWheelsMovePlaying = true;
-        }
-        else if (Mathf.Approximately(dpadDir.x, 0) && isWheelsMovePlaying)
-        {
-            playerAudio.wheelsMoveStop.Post(gameObject);
-            isWheelsMovePlaying = false;
         }
     }
 
