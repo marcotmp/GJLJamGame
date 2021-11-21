@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb78f5a2a91025c45859d12279f4f536, type: 3}
   m_Name: LevelProgression
   m_EditorClassIdentifier: 
+  finalScene:
+    sceneAsset: {fileID: 102900000, guid: b3568c8be05a91a4890d272f3aa6389d, type: 3}
+    scenePath: Assets/Game/Scenes/Ending/Ending.unity
