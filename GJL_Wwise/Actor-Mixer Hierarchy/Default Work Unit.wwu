@@ -3635,6 +3635,36 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Elevator" ID="{3878C80D-364E-4935-83AE-5CF4EDBCBC83}" ShortID="183345793">
+							<ChildrenList>
+								<Sound Name="sfx_IntObj_Elevator" ID="{2DE7C1AF-1FD9-4FDA-8EDD-D4841780E79E}" ShortID="51616508">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="worldElevator" ID="{1AB74679-19C3-4E44-A82E-D016F7E26F73}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_IntObj_Elevator" ID="{BD612F61-ED13-44F0-9275-85EC6ED75F57}">
+											<Language>SFX</Language>
+											<AudioFile>InteractiveObjects\sfx_IntObj_Elevator.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="130816739"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_IntObj_Elevator" ID="{BD612F61-ED13-44F0-9275-85EC6ED75F57}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

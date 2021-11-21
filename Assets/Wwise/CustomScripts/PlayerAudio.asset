@@ -64,6 +64,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ee6700a39dc878a41be1016c32837976, type: 2}
+  elevatorOn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   boxGroundHit:
     idInternal: 0
     valueGuidInternal: 

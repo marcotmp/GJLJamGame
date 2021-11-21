@@ -481,6 +481,16 @@
 											</PropertyList>
 											<ObjectLists/>
 										</Bus>
+										<Bus Name="worldElevator" ID="{1AB74679-19C3-4E44-A82E-D016F7E26F73}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ObjectLists/>
+										</Bus>
 									</ChildrenList>
 									<ObjectLists/>
 								</Bus>
@@ -504,7 +514,6 @@
 											</ValueList>
 										</Property>
 									</PropertyList>
-									<ReferenceList/>
 									<ChildrenList>
 										<Bus Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}">
 											<ObjectLists/>

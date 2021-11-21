@@ -725,6 +725,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="play_ObjElevator_On" ID="{BB97152C-7B7D-481A-A1DA-4D3749C97E5C}">
+							<ChildrenList>
+								<Action Name="" ID="{A5850429-CBD3-428B-8530-03DA80AD01C7}" ShortID="370294995">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_IntObj_Elevator" ID="{2DE7C1AF-1FD9-4FDA-8EDD-D4841780E79E}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{9D4FEE5B-E810-4F02-8BC0-65523EEC91C0}" ShortID="462160124">
