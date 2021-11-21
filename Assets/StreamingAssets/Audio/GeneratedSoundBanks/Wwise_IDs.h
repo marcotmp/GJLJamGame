@@ -32,8 +32,10 @@ namespace AK
         static const AkUniqueID PLAY_OBJBUTTON_OFF = 3225822683U;
         static const AkUniqueID PLAY_OBJBUTTON_ON = 749407591U;
         static const AkUniqueID PLAY_OBJELEVATOR_ON = 3990571105U;
+        static const AkUniqueID PLAY_OBJELEVATORSTOP = 1377008667U;
         static const AkUniqueID PLAY_OBJGATE_OPEN = 3062351503U;
         static const AkUniqueID PLAY_RESTART = 3483232275U;
+        static const AkUniqueID PLAY_SFX_INTOBJ_ELEVATORSTOP = 254585821U;
         static const AkUniqueID PLAY_TANK_GETIN = 125457442U;
         static const AkUniqueID PLAY_TANK_GETOUT = 4069393885U;
         static const AkUniqueID PLAY_TANK_MOVESTART = 2120857990U;
@@ -45,7 +47,6 @@ namespace AK
         static const AkUniqueID PLAY_WHEELS_STOP = 2168584773U;
         static const AkUniqueID STOP_AMBIENCE = 2477713992U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
-        static const AkUniqueID STOP_OBJELEVATOR = 3161702133U;
     } // namespace EVENTS
 
     namespace STATES

@@ -727,9 +727,17 @@
 						</Event>
 						<Event Name="play_ObjElevator_On" ID="{BB97152C-7B7D-481A-A1DA-4D3749C97E5C}">
 							<ChildrenList>
+								<Action Name="" ID="{9BE31BCC-56A8-44B6-81AF-8E0735A8F68E}" ShortID="357214971">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_IntObj_ElevatorStart" ID="{3A420567-B174-4F39-90D9-A0BE2C53A936}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{A5850429-CBD3-428B-8530-03DA80AD01C7}" ShortID="370294995">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="FadeInCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -739,16 +747,24 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="stop_ObjElevator" ID="{EB786CE3-7A2A-44A2-B4F7-3481BBDC396D}">
+						<Event Name="play_ObjElevatorStop" ID="{EB786CE3-7A2A-44A2-B4F7-3481BBDC396D}">
 							<ChildrenList>
 								<Action Name="" ID="{12CADC8C-52BC-4C3F-9AF1-D69F8E8E7B7D}" ShortID="981600504">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_IntObj_Elevator" ID="{2DE7C1AF-1FD9-4FDA-8EDD-D4841780E79E}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{758D4A6A-F659-4D03-9BD0-C8E2EC2322F4}" ShortID="183671501">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_IntObj_ElevatorStop" ID="{F67B8310-0067-4AA7-9E89-FE8F572DB163}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -877,6 +893,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_sfx_IntObj_ElevatorStop" ID="{37C187D4-27F8-42FF-83C2-616310A3229E}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

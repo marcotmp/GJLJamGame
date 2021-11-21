@@ -276,6 +276,23 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Elevator" ID="{47FEEC5B-E33F-437B-922F-E8090D292698}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="play_ObjElevator_On" ID="{BB97152C-7B7D-481A-A1DA-4D3749C97E5C}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="play_ObjElevatorStop" ID="{EB786CE3-7A2A-44A2-B4F7-3481BBDC396D}" WorkUnitID="{1840DFA3-53F3-4948-98F0-09BFC98BD6E8}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="inGame" ID="{CD024A78-BF1D-4793-B175-0751F1B01AA6}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>
