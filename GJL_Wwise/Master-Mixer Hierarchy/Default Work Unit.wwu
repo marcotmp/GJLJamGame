@@ -138,7 +138,7 @@
 									<Custom>
 										<Attenuation Name="Attenuation (Custom)" ID="{0DA63D86-90AC-4E29-8CFF-BD772FE99EF1}" ShortID="668962194">
 											<PropertyList>
-												<Property Name="RadiusMax" Type="Real64" Value="40"/>
+												<Property Name="RadiusMax" Type="Real64" Value="30"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
@@ -154,28 +154,28 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>5</XPos>
+																	<XPos>3.75</XPos>
 																	<YPos>-6</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>10</XPos>
+																	<XPos>7.5</XPos>
 																	<YPos>-12</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>20</XPos>
+																	<XPos>15</XPos>
 																	<YPos>-18</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>30</XPos>
+																	<XPos>22.5773175</XPos>
 																	<YPos>-24</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>40</XPos>
-																	<YPos>-24</YPos>
+																	<XPos>30</XPos>
+																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>
 															</PointList>
@@ -201,7 +201,7 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>40</XPos>
+																	<XPos>30</XPos>
 																	<YPos>23</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -222,7 +222,7 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>40</XPos>
+																	<XPos>30</XPos>
 																	<YPos>25</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -243,18 +243,18 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>2.74226666666667</XPos>
+																	<XPos>2.0567</XPos>
 																	<YPos>100</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>25.05154</XPos>
+																	<XPos>18.788655</XPos>
 																	<YPos>16.56893</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>40</XPos>
+																	<XPos>30</XPos>
 																	<YPos>8.76288</YPos>
 																	<Flags>37</Flags>
 																</Point>
