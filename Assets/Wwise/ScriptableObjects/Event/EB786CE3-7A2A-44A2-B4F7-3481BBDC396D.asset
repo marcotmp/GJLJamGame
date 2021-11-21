@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad10252960f158448cbb43b47374295, type: 3}
   m_Name: EB786CE3-7A2A-44A2-B4F7-3481BBDC396D
   m_EditorClassIdentifier: 
-  objectName: stop_ObjElevator
-  id: 3161702133
+  objectName: play_ObjElevatorStop
+  id: 1377008667
   guid: EB786CE3-7A2A-44A2-B4F7-3481BBDC396D
