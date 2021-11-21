@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Levels/10-Rampa.unity
     guid: 586537fd042481649a87d30d2f56234e
+  - enabled: 1
+    path: Assets/Game/Scenes/Ending/Ending.unity
+    guid: b3568c8be05a91a4890d272f3aa6389d
   m_configObjects: {}
