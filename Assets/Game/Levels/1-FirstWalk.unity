@@ -228,6 +228,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 2444850563043837662, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: data.WwiseObjectReference
       value: 
@@ -240,6 +241,12 @@ PrefabInstance:
       propertyPath: stateMenu.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 47a096ac96ab3ee48bb5528c85842226, type: 2}
+=======
+    - target: {fileID: 873689801473604600, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 862e1008a73b6e2a9171b5f9041cf9b109ed22fa
     - target: {fileID: 8413675413460893188, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_Name
       value: LevelCommon
@@ -3732,6 +3739,7 @@ Transform:
   m_Father: {fileID: 787126657}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &42756884794285266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3797,6 +3805,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea80aef85b147854987f77adebf42199, type: 3}
+=======
+>>>>>>> 862e1008a73b6e2a9171b5f9041cf9b109ed22fa
 --- !u!1001 &3347724620929467889
 PrefabInstance:
   m_ObjectHideFlags: 0
