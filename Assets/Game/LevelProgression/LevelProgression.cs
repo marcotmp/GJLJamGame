@@ -8,11 +8,14 @@ using UnityEngine;
 public class LevelProgression : ScriptableObject
 {
     public string CurrentLevel { get; private set; }
+    public SceneReference finalScene;
 
     internal void OpenLevel(string path)
     {
-        // store level to open
-        CurrentLevel = path;
+        // only store path
+        if (path != finalScene.ScenePath)
+            // store level to open
+            CurrentLevel = path;
     }
 
     internal void Clear()

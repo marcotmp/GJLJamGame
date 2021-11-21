@@ -9,21 +9,39 @@ EditorBuildSettings:
     path: Assets/Game/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Game/Levels/FirstWalk.unity
+    path: Assets/Game/Levels/1-FirstWalk.unity
     guid: 59f43e23e5297894ca80173542784cd3
   - enabled: 1
-    path: Assets/Game/Levels/LevelIdeas/Set2.unity
+    path: 
     guid: f1b8c806cc07e434da0ac438913cf018
   - enabled: 1
-    path: Assets/Game/Levels/MeetTheLegs.unity
+    path: Assets/Game/Levels/3-MeetTheLegs.unity
     guid: 2d7d1c99fd4b8ac4bb690a7eab77caf7
   - enabled: 1
-    path: Assets/Game/Levels/Elevator.unity
+    path: Assets/Game/Levels/2-Elevator.unity
     guid: 5f5551680a36608479293b20905c3366
   - enabled: 1
-    path: Assets/Game/Levels/MeetTank.unity
+    path: Assets/Game/Levels/6-MeetTank.unity
     guid: 6503ea06b7df50e438fd28a100bc5405
   - enabled: 1
-    path: Assets/Game/Levels/MeetTankAlone.unity
+    path: Assets/Game/Levels/5-MeetTankAlone.unity
     guid: 4ffefa47dee395d44926543c8a835c21
+  - enabled: 1
+    path: Assets/Game/Levels/9-Basketball.unity
+    guid: f555cc36ce6a7b9478a8bed0abc93223
+  - enabled: 1
+    path: Assets/Game/Levels/8-HappyBox.unity
+    guid: d08a1c4a8a784bc4dbbfb429a64f7d9e
+  - enabled: 1
+    path: Assets/Game/Levels/4-ButtonsAtTheSameTime.unity
+    guid: 14e09244a21423e44b27efa0b5828bb6
+  - enabled: 1
+    path: Assets/Game/Levels/7-MeetTheHelicopter.unity
+    guid: 5cfc0b5541cf6d547a55efaa0c1cb357
+  - enabled: 1
+    path: Assets/Game/Scenes/MainMenu/MainMenu.unity
+    guid: 43dfbf2af8b3c3a4794072b025781012
+  - enabled: 1
+    path: Assets/Game/Levels/10-Rampa.unity
+    guid: 586537fd042481649a87d30d2f56234e
   m_configObjects: {}
