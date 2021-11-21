@@ -67,8 +67,16 @@ public class HeliMove : HeliState
         Vector2 inputDirection = ctx.ReadValue<Vector2>();
         moveDirection.x = inputDirection.x;
         moveDirection.y = inputDirection.y;
-
+        
         Vector2.ClampMagnitude(moveDirection, 1);
+
+        // if moving up
+        if (moveDirection.y > 0)
+            playerHelicopter.PlayMoveStart();
+
+        // if not moving up
+        if (moveDirection.y <= 0)
+            playerHelicopter.MoveStop();
     }
 
     void SetGrabInput(CallbackContext ctx)

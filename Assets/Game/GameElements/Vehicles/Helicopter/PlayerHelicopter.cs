@@ -65,7 +65,8 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
         //actionMap.Enable();
         selectorIcon.SetActive(true);
         fsm.ChangeState(typeof(HeliActivate));
-        playerAudio.heliGetIn.Post(this.gameObject);
+        PlayMountSound();
+        //player.akGameObj.transform.parent = transform;
     }
 
     public void Deactivate()
@@ -81,8 +82,38 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     {
         Deactivate();
         Release();
+        PlayUnmountSound();
+    }
+
+    public void PlayMountSound()
+    {
+        playerAudio.heliGetIn.Post(this.gameObject);
+    }
+
+    public void PlayUnmountSound()
+    {
         playerAudio.heliGetOut.Post(this.gameObject);
     }
+
+    private bool isHeliMoveStartPlaying = false;
+    public void PlayMoveStart()
+    {
+        if (!isHeliMoveStartPlaying)
+        {
+            playerAudio.heliMoveStart.Post(this.gameObject);
+            isHeliMoveStartPlaying = true;
+        }
+    }
+
+    public void MoveStop()
+    {
+        if (isHeliMoveStartPlaying)
+        {
+            playerAudio.heliMoveStop.Post(this.gameObject);
+            isHeliMoveStartPlaying = false;
+        }
+    }
+
 
     private IGrabbable GetObjectToGrab()
     {

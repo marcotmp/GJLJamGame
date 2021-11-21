@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private BoxDetector groundDetector;
     [SerializeField] private BoxDetector vehicleDetector;
     [SerializeField] private GameObject selectorIcon;
+    [SerializeField] public AkGameObj akGameObj;
+    [SerializeField] public PlayerAudioData playerAudio;
 
     [Header("Speed")]
     public float horizontalSpeed;
@@ -176,7 +178,20 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 180, 0);
             facingRight = false;
         }
+
+        if (dpadDir.x != 0 && !isWheelsMovePlaying)
+        {
+            playerAudio.wheelsMoveStart.Post(gameObject);
+            isWheelsMovePlaying = true;
+        }
+        else if (Mathf.Approximately(dpadDir.x, 0) && isWheelsMovePlaying)
+        {
+            playerAudio.wheelsMoveStop.Post(gameObject);
+            isWheelsMovePlaying = false;
+        }
     }
+
+    private bool isWheelsMovePlaying = false;
 
     // public void StartJump()
     // {

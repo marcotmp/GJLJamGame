@@ -73,12 +73,10 @@ MonoBehaviour:
   itemDetector: {fileID: 2316849591848463455}
   selectorIcon: {fileID: 4097952639382266396}
   anim: {fileID: 2532970540440308080}
-  grabObject:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 087bf00cde455c4448f23efd450b0c26, type: 2}
+  playerAudio: {fileID: 0}
   handPosition: {fileID: 2180730705230867754}
   joint: {fileID: 4056755145427658394}
+  movePlayer: {fileID: 0}
   rb: {fileID: 0}
   grabOffset: 1.05
 --- !u!50 &2532970540284952789

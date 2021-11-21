@@ -207,3 +207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {fileID: 4054946644784644786}
+  rigidbody: {fileID: 4054946645411871043}
+  maxFallSpeed: 0
+  playerAudio: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}

@@ -106,13 +106,35 @@ public class TankController : MonoBehaviour, IVehicle, IGrabbable
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
             facingRight = true;
+            PlayMoveStart();
         }
         else if (dpadDir.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
             facingRight = false;
+            MoveStop();
+        }           
+    }
+
+    private bool isMoveStartPlaying = false;
+    public void PlayMoveStart()
+    {
+        if (!isMoveStartPlaying)
+        {
+            playerAudio.tankMoveStart.Post(this.gameObject);
+            isMoveStartPlaying = true;
         }
     }
+
+    public void MoveStop()
+    {
+        if (isMoveStartPlaying)
+        {
+            playerAudio.tankMoveStop.Post(this.gameObject);
+            isMoveStartPlaying = false;
+        }
+    }
+
 
     // private void OnExitPlayer(CallbackContext c)
     // {
