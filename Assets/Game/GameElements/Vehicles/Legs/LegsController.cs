@@ -101,7 +101,12 @@ public class LegsController : MonoBehaviour, IVehicle, IGrabbable
 
         bool wasOnGround = isOnGround;
         isOnGround = groundDetector.CheckCollision();
-        if (!wasOnGround && isOnGround) motion.y = 0;
+        if (!wasOnGround && isOnGround)
+        {
+            motion.y = 0;
+            Debug.Log("Play Legs Land");
+            playerAudio.legsLand.Post(gameObject);
+        }
 
         rb.velocity = motion;
     }
@@ -140,7 +145,11 @@ public class LegsController : MonoBehaviour, IVehicle, IGrabbable
 
         bool wasOnGround = isOnGround;
         isOnGround = groundDetector.CheckCollision();
-        if (!wasOnGround && isOnGround) motion.y = 0;
+        if (!wasOnGround && isOnGround)
+        {
+            motion.y = 0;
+            playerAudio.legsLand.Post(gameObject);
+        }
 
         rb.velocity = motion;
     }
