@@ -1753,6 +1753,18 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
+						<SwitchContainer Name="MoveVehicleSwitch_Test" ID="{5A8D7B1C-8DA6-449E-855C-3740752A8CB3}" ShortID="26426111">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+							<GroupingInfo/>
+						</SwitchContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{88D72EEE-36C6-4B36-9A9D-78A99E05278C}" ShortID="748640081">
