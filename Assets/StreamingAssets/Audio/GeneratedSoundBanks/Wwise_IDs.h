@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_LEGS_LAND = 1119197339U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_MUSIC_WINTRIGGER = 3508749844U;
+        static const AkUniqueID PLAY_OBJBOX_GROUNDHIT = 2151885105U;
         static const AkUniqueID PLAY_OBJBUTTON_OFF = 3225822683U;
         static const AkUniqueID PLAY_OBJBUTTON_ON = 749407591U;
         static const AkUniqueID PLAY_OBJGATE_OPEN = 3062351503U;
@@ -87,6 +88,7 @@ namespace AK
         static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID VEHICLES = 971393558U;
         static const AkUniqueID WHEELS = 607152709U;
+        static const AkUniqueID WORLDBOX = 182777598U;
         static const AkUniqueID WORLDBUTTON = 3674236275U;
         static const AkUniqueID WORLDGATE = 91106990U;
     } // namespace BUSSES

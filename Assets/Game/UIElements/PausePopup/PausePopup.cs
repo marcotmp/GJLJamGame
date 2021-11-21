@@ -5,6 +5,11 @@ using static UnityEngine.InputSystem.InputAction;
 
 public class PausePopup : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private PlayerAudioData playerAudio;
+    [SerializeField] private AK.Wwise.State stateMenu;
+    [SerializeField] private AK.Wwise.State stateGame;
+
     [SerializeField] private ForceUIFocus forceFocus;
     [SerializeField] private InputAction cancelAction;
 
@@ -28,11 +33,15 @@ public class PausePopup : MonoBehaviour
         Debug.Log("PausePopup . Show");
         gameObject.SetActive(true);
         forceFocus.SelectDefaultButton();
+        //Wwise state to muffle sound
+        stateMenu.SetValue();
     }
 
     public void Hide()
     {
         gameObject.SetActive(false);
+        //Wwise state to unmuffle sound
+        stateGame.SetValue();
     }
 
     public void Button_OnContinue()
@@ -45,6 +54,7 @@ public class PausePopup : MonoBehaviour
     {
         //Hide();
         onRestart?.Invoke();
+        playerAudio.restartAudio.Post(this.gameObject);
     }
 
     public void Button_OnBackToMenu()

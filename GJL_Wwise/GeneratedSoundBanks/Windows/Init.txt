@@ -28,6 +28,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\2D\Ambience	
 	91106990	worldGate			\Default Work Unit\Master Audio Bus\3D\Objects\worldGate	
+	182777598	worldBox			\Default Work Unit\Master Audio Bus\3D\Objects\worldBox	
 	511093792	3D			\Default Work Unit\Master Audio Bus\3D	
 	527871411	2D			\Default Work Unit\Master Audio Bus\2D	
 	607152709	Wheels			\Default Work Unit\Master Audio Bus\3D\Vehicles\Wheels	

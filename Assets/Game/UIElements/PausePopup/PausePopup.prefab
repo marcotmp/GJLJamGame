@@ -458,6 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e58843d9e30e584faa67da7b072b418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAudio: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
   forceFocus: {fileID: 7687885547838385326}
   cancelAction:
     m_Name: Cancel

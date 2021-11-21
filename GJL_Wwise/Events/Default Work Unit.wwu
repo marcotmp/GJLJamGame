@@ -699,6 +699,29 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="play_ObjBox_GroundHit" ID="{D19DABD2-F203-45C9-939C-0DDF4DC31E3E}">
+							<ChildrenList>
+								<Action Name="" ID="{5787D2DD-5B39-4F7E-A8CE-BBD3E230D646}" ShortID="821968771">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GroundHits" ID="{5DBD8A57-80B1-49AE-992E-2325E9AEA677}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C3053E9D-B74F-456D-99F0-F50FB027FB15}" ShortID="417515979">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GroundHits" ID="{5DBD8A57-80B1-49AE-992E-2325E9AEA677}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{9D4FEE5B-E810-4F02-8BC0-65523EEC91C0}" ShortID="462160124">

@@ -64,6 +64,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ee6700a39dc878a41be1016c32837976, type: 2}
+  boxGroundHit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e43b43e56a9d58a4997b8a684e290b5f, type: 2}
   switchButtonOff:
     idInternal: 0
     valueGuidInternal: 

@@ -42,6 +42,8 @@ public class PlayerAudioData : ScriptableObject
 
     [Header("Interactive Objects")]
 
+    public AK.Wwise.Event boxGroundHit = null;
+
     public AK.Wwise.Event switchButtonOff = null;
 
     public AK.Wwise.Event switchButtonOn = null;

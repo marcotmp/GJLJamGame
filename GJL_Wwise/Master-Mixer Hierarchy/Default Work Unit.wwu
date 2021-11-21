@@ -401,6 +401,22 @@
 											</ReferenceList>
 											<ObjectLists/>
 										</Bus>
+										<Bus Name="worldBox" ID="{F1B8A603-C577-43F1-9BC2-624A016256A6}">
+											<PropertyList>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ObjectLists/>
+										</Bus>
 									</ChildrenList>
 									<ObjectLists/>
 								</Bus>
