@@ -228,6 +228,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2444850563043837662, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: b50e4032c2499fc4f9bc9253cc1e4913, type: 2}
+    - target: {fileID: 5017229676494487442, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
+      propertyPath: stateGame.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a7a17fb0731ff6f4685181c2b5d0d1fa, type: 2}
+    - target: {fileID: 5017229676494487442, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
+      propertyPath: stateMenu.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 47a096ac96ab3ee48bb5528c85842226, type: 2}
     - target: {fileID: 8413675413460893188, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_Name
       value: LevelCommon
@@ -3565,6 +3577,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &922304718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3175557917581928849, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
+  m_PrefabInstance: {fileID: 873897695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &922304722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922304718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96302a7a3fcd83142801045facfb0950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a7a17fb0731ff6f4685181c2b5d0d1fa, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &1503544742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3698,6 +3739,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 42756885725913317, guid: ea80aef85b147854987f77adebf42199, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 553702c8d2fa90148bc613f63685c0c2, type: 2}
+    - target: {fileID: 42756886342650700, guid: ea80aef85b147854987f77adebf42199, type: 3}
+      propertyPath: unloadTriggerList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 42756886381892254, guid: ea80aef85b147854987f77adebf42199, type: 3}
       propertyPath: m_Name
       value: SoundManager

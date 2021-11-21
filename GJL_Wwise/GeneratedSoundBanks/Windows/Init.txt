@@ -50,11 +50,12 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3657263530	Verb			\Default Work Unit\Master Audio Bus\Verb	
 
 Effect plug-ins	ID	Name	Type				Notes
-	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	125996156	Large_Bright_Chamber1 (Custom)	Wwise Matrix Reverb			
 	329772487	Wwise Gain (Custom)	Wwise Gain			
 	418265525	Gentle_Program_Compressor_Minus_14dB_RMS	Wwise Compressor			
 	477315216	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
-	914334261	Large_Bright_Chamber1 (Custom)	Wwise Matrix Reverb			
+	686450215	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	968013102	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 	3673681183	Large_Bright_Chamber1	Wwise Matrix Reverb			
 

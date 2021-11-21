@@ -6,7 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	749407591	play_ObjButton_On			\Default Work Unit\IntObjects\play_ObjButton_On	
 	1104479366	play_Heli_MoveStart			\Default Work Unit\Helicopter\play_Heli_MoveStart	
 	1119197339	play_Legs_Land			\Default Work Unit\Legs\play_Legs_Land	
-	1700644942	play_BirdCalls			\Default Work Unit\play_BirdCalls	
+	1700644942	play_BirdCalls			\Default Work Unit\Ambience\play_BirdCalls	
 	2120857990	play_Tank_MoveStart			\Default Work Unit\Tank\play_Tank_MoveStart	
 	2151885105	play_ObjBox_GroundHit			\Default Work Unit\IntObjects\play_ObjBox_GroundHit	
 	2168584773	play_Wheels_Stop			\Default Work Unit\Wheels\play_Wheels_Stop	

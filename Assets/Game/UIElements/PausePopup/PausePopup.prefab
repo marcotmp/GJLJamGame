@@ -459,6 +459,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAudio: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}
+  stateMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 47a096ac96ab3ee48bb5528c85842226, type: 2}
+  stateGame:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a7a17fb0731ff6f4685181c2b5d0d1fa, type: 2}
   forceFocus: {fileID: 7687885547838385326}
   cancelAction:
     m_Name: Cancel

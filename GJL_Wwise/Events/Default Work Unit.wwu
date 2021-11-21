@@ -691,6 +691,9 @@
 							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{6B3D5B9E-E068-40B4-B17C-5922DC1AA7A2}" ShortID="721724783">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.6"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_IntObj_Gate" ID="{07B5B831-02AF-4EC1-A2B2-52728D49E5CE}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
@@ -784,6 +787,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="play_BirdCalls" ID="{BC3C6A52-03A6-4AAC-A855-51E3F486A91E}">
+							<ChildrenList>
+								<Action Name="" ID="{C56BE0A2-0DA1-4A0A-92F7-8F47178E923B}" ShortID="567975049">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BirdCalls" ID="{FDB0491C-F8C1-4DE3-AF74-E593B9A5D490}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{937FE247-F901-4583-89A7-42D067DF0DF0}" ShortID="646270373">
@@ -805,6 +819,15 @@
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList/>
+									<ChildrenList>
+										<EventActionException Name="" ID="{134AE523-3C60-4775-8740-627CE0411A73}">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Level Music" ID="{26788559-94E3-4D2E-A25B-07FF0F17D57B}" WorkUnitID="{9ABA80CB-4852-4087-A99F-5439DEB4DCBE}"/>
+												</Reference>
+											</ReferenceList>
+										</EventActionException>
+									</ChildrenList>
 								</Action>
 							</ChildrenList>
 						</Event>
@@ -825,17 +848,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="play_BirdCalls" ID="{BC3C6A52-03A6-4AAC-A855-51E3F486A91E}">
-					<ChildrenList>
-						<Action Name="" ID="{C56BE0A2-0DA1-4A0A-92F7-8F47178E923B}" ShortID="567975049">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BirdCalls" ID="{FDB0491C-F8C1-4DE3-AF74-E593B9A5D490}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

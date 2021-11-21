@@ -545,6 +545,15 @@
 								<SearchCriteria Name="SwitchAssignation" ID="{D85B8F5E-DEC8-4F1A-8590-CA266F4E5FCA}" SearchOperationID="{907F121C-AF62-4291-B2E6-7C58C936571B}"/>
 							</ChildrenList>
 						</Query>
+						<Query Name="New Query" ID="{B643CCD7-245F-4EA8-9286-D7870F8C5BFF}">
+							<ChildrenList>
+								<SearchCriteria Name="RoutingUser-Defined Auxiliary Bus" ID="{786BAF0B-8F0E-4764-A667-0E51484FF4D5}" SearchOperationID="{80D92041-86AC-4172-86CD-982022AED950}">
+									<PropertyList>
+										<Property Name="OutputBus" Type="string" Value="{37D75D82-32D9-4674-99C0-E57E9D00D529}"/>
+									</PropertyList>
+								</SearchCriteria>
+							</ChildrenList>
+						</Query>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Master-Mixer Hierarchy" ID="{F23408F1-FA3E-4006-A7B4-2288E6885FC7}" ShortID="654516827">

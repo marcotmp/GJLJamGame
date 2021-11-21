@@ -17,9 +17,15 @@
 						</Reference>
 						<Reference Name="Effect1">
 							<Custom>
-								<Effect Name="Wwise Gain (Custom)" ID="{79515A39-F19E-400D-A839-1A6A94CA2EFE}" ShortID="329772487" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+								<Effect Name="Wwise Gain (Custom)" ID="{79515A39-F19E-400D-A839-1A6A94CA2EFE}" ShortID="329772487" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect2">
+							<Custom>
+								<Effect Name="Wwise Parametric EQ (Custom)" ID="{66FE3DB2-4706-4CDB-9CBC-8D07A9985B6F}" ShortID="968013102" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
-										<Property Name="FullBandGain" Type="Real32" Value="7.5"/>
+										<Property Name="GainBand1" Type="Real32" Value="1.5"/>
+										<Property Name="GainBand3" Type="Real32" Value="1"/>
 									</PropertyList>
 								</Effect>
 							</Custom>
@@ -131,15 +137,22 @@
 						<Bus Name="3D" ID="{F775D4A7-570D-4CC7-A084-CCC4FA7358D8}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom>
 										<Attenuation Name="Attenuation (Custom)" ID="{0DA63D86-90AC-4E29-8CFF-BD772FE99EF1}" ShortID="668962194">
-											<PropertyList>
-												<Property Name="RadiusMax" Type="Real64" Value="30"/>
-											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -154,27 +167,27 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>3.75</XPos>
+																	<XPos>12.5</XPos>
 																	<YPos>-6</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>7.5</XPos>
+																	<XPos>24.871125</XPos>
 																	<YPos>-12</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>15</XPos>
+																	<XPos>50</XPos>
 																	<YPos>-18</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>22.5773175</XPos>
+																	<XPos>75.257725</XPos>
 																	<YPos>-24</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>30</XPos>
+																	<XPos>100</XPos>
 																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -201,8 +214,13 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>30</XPos>
-																	<YPos>23</YPos>
+																	<XPos>9.92268</XPos>
+																	<YPos>14</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>26</YPos>
 																	<Flags>37</Flags>
 																</Point>
 															</PointList>
@@ -222,7 +240,12 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>30</XPos>
+																	<XPos>10.05155</XPos>
+																	<YPos>4</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
 																	<YPos>25</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -239,23 +262,22 @@
 															<PointList>
 																<Point>
 																	<XPos>0</XPos>
-																	<YPos>100</YPos>
+																	<YPos>10</YPos>
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>2.0567</XPos>
-																	<YPos>100</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Log2</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>18.788655</XPos>
-																	<YPos>16.56893</YPos>
+																	<XPos>5</XPos>
+																	<YPos>10</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>30</XPos>
-																	<YPos>8.76288</YPos>
+																	<XPos>10.18039</XPos>
+																	<YPos>17.12139</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>34.17724</YPos>
 																	<Flags>37</Flags>
 																</Point>
 															</PointList>
@@ -268,6 +290,9 @@
 											</CurveUsageInfoList>
 										</Attenuation>
 									</Custom>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Verb" ID="{37D75D82-32D9-4674-99C0-E57E9D00D529}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -347,6 +372,17 @@
 														<Value>-3</Value>
 													</ValueList>
 												</Property>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-5</Value>
@@ -358,6 +394,22 @@
 										<Bus Name="worldGate" ID="{2F990160-2D6C-4BF7-97FF-56274F6128A7}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -415,15 +467,15 @@
 										</Bus>
 										<Bus Name="worldBox" ID="{F1B8A603-C577-43F1-9BC2-624A016256A6}">
 											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -452,11 +504,7 @@
 											</ValueList>
 										</Property>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="Verb" ID="{37D75D82-32D9-4674-99C0-E57E9D00D529}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
 									<ChildrenList>
 										<Bus Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}">
 											<ObjectLists/>
@@ -468,6 +516,13 @@
 											<ObjectLists/>
 										</Bus>
 										<Bus Name="Wheels" ID="{05A6DEEC-4883-402A-84D0-7B212AD7DCEB}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ObjectLists/>
 										</Bus>
 									</ChildrenList>
@@ -486,11 +541,6 @@
 						<AuxBus Name="Verb" ID="{37D75D82-32D9-4674-99C0-E57E9D00D529}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="BypassEffect1" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Color" Type="int16" Value="23"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -498,19 +548,29 @@
 							<ReferenceList>
 								<Reference Name="Effect0">
 									<Custom CreatedFrom="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}">
-										<Effect Name="Large_Bright_Chamber1 (Custom)" ID="{3FB8EE06-688B-49F9-BEE7-CE86EFE2C903}" ShortID="914334261" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+										<Effect Name="Large_Bright_Chamber1 (Custom)" ID="{96CCCCDB-29F3-4AC9-9D14-2464D3126C73}" ShortID="125996156" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 											<PropertyList>
+												<Property Name="DelayLengthsMode" Type="int32" Value="1"/>
 												<Property Name="HFRatio" Type="Real32" Value="1"/>
 												<Property Name="NumberOfDelays" Type="int32" Value="16"/>
-												<Property Name="PreDelay" Type="Real32" Value="0.3"/>
-												<Property Name="ReverbTime" Type="Real32" Value="2.5"/>
+												<Property Name="PreDelay" Type="Real32" Value="0.15"/>
+												<Property Name="ReverbTime" Type="Real32" Value="1"/>
 												<Property Name="WetLevel" Type="Real32" Value="-30"/>
 											</PropertyList>
 										</Effect>
 									</Custom>
 								</Reference>
-								<Reference Name="Effect1" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								<Reference Name="Effect1">
+									<Custom>
+										<Effect Name="Wwise Parametric EQ (Custom)" ID="{474C3D8E-B5C7-4A52-AD8C-EA938778F739}" ShortID="686450215" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="763"/>
+												<Property Name="FrequencyBand3" Type="Real32" Value="7388"/>
+												<Property Name="GainBand1" Type="Real32" Value="-3"/>
+												<Property Name="GainBand3" Type="Real32" Value="-4"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 							</ReferenceList>
 							<ObjectLists/>
