@@ -84,6 +84,7 @@ namespace AK
         static const AkUniqueID HELICOPTER = 2167849898U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MECHA = 3125191939U;
+        static const AkUniqueID MENUBUTTON = 2192397196U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID STINGERS = 2940432316U;

@@ -869,7 +869,7 @@
 								<Action Name="" ID="{6C51F2F8-3144-40F2-B1CE-0783804BEDD3}" ShortID="885009950">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Button" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+											<ObjectRef Name="MenuButton" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
