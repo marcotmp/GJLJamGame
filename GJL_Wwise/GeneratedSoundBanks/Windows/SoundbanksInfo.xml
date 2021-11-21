@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="782826392" Language="SFX" Hash="2996431816">
+		<SoundBank Id="782826392" Language="SFX" Hash="3290429887">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
 			<ShortName>Default</ShortName>
 			<Path>Default.bnk</Path>
@@ -436,6 +436,18 @@
 							<ShortName>InteractiveObjects\sfx_IntObj_Elevator.wav</ShortName>
 							<Path>SFX\InteractiveObjects\sfx_IntObj_Elevator_D79FB2B7.wem</Path>
 						</File>
+						<File Id="828711625" Language="SFX">
+							<ShortName>InteractiveObjects\sfx_IntObj_ElevatorStart.wav</ShortName>
+							<Path>SFX\InteractiveObjects\sfx_IntObj_ElevatorStart_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1377008667" Name="play_ObjElevatorStop" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjElevatorStop" DurationType="OneShot" DurationMin="0.795156" DurationMax="0.795156">
+					<IncludedMemoryFiles>
+						<File Id="913880952" Language="SFX">
+							<ShortName>InteractiveObjects\sfx_IntObj_ElevatorOff.wav</ShortName>
+							<Path>SFX\InteractiveObjects\sfx_IntObj_ElevatorOff_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3062351503" Name="play_ObjGate_Open" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjGate_Open" DurationType="OneShot" DurationMin="2.765466" DurationMax="2.790627">
@@ -447,6 +459,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3483232275" Name="play_Restart" ObjectPath="\Events\Default Work Unit\UI\play_Restart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="254585821" Name="Play_sfx_IntObj_ElevatorStop" ObjectPath="\Events\Default Work Unit\Play_sfx_IntObj_ElevatorStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="125457442" Name="play_Tank_GetIn" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_GetIn" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="520054179" Language="SFX">
@@ -585,7 +598,6 @@
 				</Event>
 				<Event Id="2477713992" Name="stop_Ambience" ObjectPath="\Events\Default Work Unit\Ambience\stop_Ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\Music\stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3161702133" Name="stop_ObjElevator" ObjectPath="\Events\Default Work Unit\IntObjects\stop_ObjElevator" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<Triggers>
 				<Trigger Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
