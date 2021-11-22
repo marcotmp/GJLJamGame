@@ -1,3 +1,4 @@
+using MarcoTMP;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ public class MovingPlatform : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PickPoints();
+        PickPoints();        
 
         fsm = new FiniteStateMachine();
         // fsm = new FiniteStateMachine<MovingPlatformBaseState>();
@@ -34,22 +35,22 @@ public class MovingPlatform : MonoBehaviour
 
     public void Activate()
     {
-        fsm.ChangeState<MoveState>();
+        fsm.ChangeState(typeof(MoveState));
         //playerAudio.elevatorOn.Post(platform.gameObject);
-        //playerAudio.elevatorOn.Post(gameObject);
+        playerAudio.elevatorOn.Post(gameObject);        
     }
 
     private void OnDestroy()
     {
         // commented code because platform.gameObject is destroyed before the MovingPlatform system
         //playerAudio.elevatorOff.Post(platform.gameObject);
-        //playerAudio.elevatorOff.Post(gameObject);
+        playerAudio.elevatorOff.Post(gameObject);
     }
 
     public void PickPoints()
     {
-        currentPoint = path.points[0];
-        nextPoint = path.points[nextPointIndex];
+        currentPoint = path.Points[0];
+        nextPoint = path.Points[nextPointIndex];
     }
 
     // Update is called once per frame
@@ -74,12 +75,12 @@ public class MovingPlatform : MonoBehaviour
     { 
         // pick next point
         nextPointIndex++;
-        if (nextPointIndex > path.points.Count - 1)
+        if (nextPointIndex > path.Points.Count - 1)
         {
             nextPointIndex = 0;
         }
         currentPoint = nextPoint;
-        nextPoint = path.points[nextPointIndex];
+        nextPoint = path.Points[nextPointIndex];
     }
 
     internal bool ReachDestination()
@@ -102,12 +103,15 @@ public class MoveState : MovingPlatformBaseState
     public override void Enter()
     {
         base.Enter();
+        DebugConsole.Log("MoveState.Enter");
+
         Debug.Log(movingPlatform.nextPointIndex);
     }
 
     public override void Update()
     {
         base.Update();
+        DebugConsole.Log("MoveState.Update");
         movingPlatform.Move();
         if (movingPlatform.ReachDestination())
             fsm.ChangeState<WaitState>();

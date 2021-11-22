@@ -1,3 +1,4 @@
+using MarcoTMP;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,6 +25,7 @@ public class Switch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        DebugConsole.Log("Switch.OnTriggerEnter2D");
         Activate();
     }
 }

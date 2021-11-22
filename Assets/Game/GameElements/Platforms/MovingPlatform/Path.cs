@@ -5,14 +5,12 @@ using UnityEngine;
 
 public class Path : MonoBehaviour
 {
-    public List<Transform> points;
-
-#if UNITY_EDITOR
+    [SerializeField] private List<Transform> points;
+    public List<Transform> Points => points;
     void OnEnable()
     {
         GetPoints();
     }
-#endif
 
     private void GetPoints()
     {
