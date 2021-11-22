@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="782826392" Language="SFX" Hash="3290429887">
+		<SoundBank Id="782826392" Language="SFX" Hash="4275956145">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
 			<ShortName>Default</ShortName>
 			<Path>Default.bnk</Path>
@@ -97,7 +97,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3400919206" Name="play_Heli_GetOff" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GetOff" DurationType="OneShot" DurationMin="3.391623" DurationMax="3.431032">
+				<Event Id="3400919206" Name="play_Heli_GetOff" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GetOff" DurationType="OneShot" DurationMin="3.295070" DurationMax="3.531569">
 					<IncludedMemoryFiles>
 						<File Id="862130600" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_GetOff.wav</ShortName>
@@ -225,19 +225,19 @@
 					<IncludedMemoryFiles>
 						<File Id="359968010" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_02.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_02_5CB5C603.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_02_31889445.wem</Path>
 						</File>
 						<File Id="701470162" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_03.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_03_413F2309.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_03_A775ED41.wem</Path>
 						</File>
 						<File Id="910074444" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_04.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_04_2C4791E8.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_04_82BA0BCE.wem</Path>
 						</File>
 						<File Id="981527382" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_01.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_01_C7A7F09C.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_01_4C4CD4BE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -603,7 +603,7 @@
 				<Trigger Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2140279743">
+		<SoundBank Id="1355168291" Language="SFX" Hash="247423495">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

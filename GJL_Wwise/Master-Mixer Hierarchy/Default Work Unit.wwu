@@ -479,15 +479,15 @@
 										</Bus>
 										<Bus Name="worldBox" ID="{F1B8A603-C577-43F1-9BC2-624A016256A6}">
 											<PropertyList>
-												<Property Name="BusVolume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

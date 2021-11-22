@@ -15,10 +15,9 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<Action Name="" ID="{A7C01B85-5865-4B0A-ABD5-9AF69EF65D6C}" ShortID="400901827">
+								<Action Name="" ID="{5E78405C-BC12-4788-9436-957FBDDC4F0B}" ShortID="810082677">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="34"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -93,12 +92,9 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<Action Name="" ID="{6288DAE5-D9CC-4478-B5B2-BD1EFB149B9A}" ShortID="429727562">
+								<Action Name="" ID="{ACCBD70C-8EF9-435E-9273-AA979CBC00D3}" ShortID="892340882">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="Delay" Type="Real64" Value="0.4"/>
-										<Property Name="FadeInCurve" Type="int16" Value="6"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="ActionType" Type="int16" Value="34"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -316,6 +312,18 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
+								<Action Name="" ID="{9723A7CE-AAAF-41BF-924E-89AAC27751A0}" ShortID="762780258">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_GetOn" ID="{B73C3C11-C0E7-4186-8BBD-341AA806B1D7}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{8551C36C-19DE-45BF-B755-576DE53349DA}" ShortID="953114434">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
@@ -397,12 +405,47 @@
 							<ChildrenList>
 								<Action Name="" ID="{5A525F57-4E96-4001-BED7-6CE806345D22}" ShortID="97938145">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="34"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_PlayerHeli_Idle" ID="{36AB204B-84EC-41E2-A8CD-6CF4D030FDEB}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B6C05086-7A6D-4F0A-B65A-BBADDA0F13B2}" ShortID="319995224">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="34"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_MovingLoop" ID="{44202BEB-C1D8-4A88-B25E-D900142F53D9}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9287913B-6AD8-446F-A676-932DCE476E38}" ShortID="689093542">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_MoveStart" ID="{33FFC206-ABA4-457D-A0B3-FB3E52CC7B60}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E7AEB0A9-7DB7-4C6D-A2FE-B8981769E0E2}" ShortID="1060291623">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_PlayerHeli_MoveStop" ID="{35BC10EE-DE48-4150-9BCD-844AEA805E6B}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
