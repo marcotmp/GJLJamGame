@@ -19,7 +19,7 @@ public class Switch : MonoBehaviour
             animator.SetTrigger("Activate");
             isActive = true;
             OnSwitchActivated?.Invoke();
-            //playerAudio.switchButtonOn.Post(this.gameObject);
+            playerAudio.switchButtonOn.Post(this.gameObject);
         }
     }
 

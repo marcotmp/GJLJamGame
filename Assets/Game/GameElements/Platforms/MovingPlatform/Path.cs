@@ -7,6 +7,7 @@ public class Path : MonoBehaviour
 {
     [SerializeField] private List<Transform> points;
     public List<Transform> Points => points;
+
     void OnEnable()
     {
         GetPoints();
