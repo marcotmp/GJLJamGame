@@ -123,6 +123,50 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{67853C70-E602-482A-B8E6-D831609B5431}" ShortID="400564217">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{306126F5-3DE0-4D3F-89A5-0D1FF2A3E168}" ShortID="279286816">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{57E0844A-71CC-44E2-BEDC-51611B624489}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>79</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.23126</XPos>
+																		<YPos>48</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.86023</XPos>
+																		<YPos>2</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>-2</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -142,6 +186,50 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{42A86DF5-A6B4-43BA-B1CE-3B6C899453A1}" ShortID="559790449">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{B74E8096-4D36-4FB3-945B-CA14017052CA}" ShortID="933430496">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{08FE18AC-4FCC-48F5-9D81-B365E830EDBF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-212</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.75476</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.75349</XPos>
+																		<YPos>100</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>140</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
@@ -153,6 +241,55 @@
 													<ValueList>
 														<Value>-7</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{F559518C-A4D2-4B45-95A1-DC726238457D}" ShortID="678971408">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{60DD8494-53C9-479C-9F29-1D304577FA6B}" ShortID="534977885">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{D723A64C-1C68-4BA5-8DE0-8E6A546565BC}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-12.3907</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.15883</XPos>
+																		<YPos>-6.16577</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.24142</XPos>
+																		<YPos>0.09189</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.24242</XPos>
+																		<YPos>0.091889619349414</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -323,6 +460,52 @@
 													</ModifierList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{BDEFADAF-BAC5-4E9F-A6B1-2E3E4E1FF856}" ShortID="937410310">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{8061C730-6395-455B-9ECA-375921B4475E}" ShortID="902924639">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{1873C165-333C-4645-931E-D41C08DADA72}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-1</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.2427</XPos>
+																		<YPos>7</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.86023</XPos>
+																		<YPos>12</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>23</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>2</Value>
@@ -340,6 +523,50 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{ED8E9D58-EDD3-4E4D-A48B-51597444147C}" ShortID="557164364">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{2E173993-8742-43AC-BAB9-A74DC5701D1F}" ShortID="541278615">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E6BA33BA-7BA6-4157-A1BB-7D8963141B76}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>170</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.75476</XPos>
+																		<YPos>50</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.75349</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>-49</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
@@ -350,6 +577,60 @@
 													<ValueList>
 														<Value>-10</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{2CC0C91D-0723-4201-9B1C-82582F975BC1}" ShortID="133539948">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{56E26344-38BE-4177-8AB5-BE7FA5D41CCA}" ShortID="804850581">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{1509EF2C-73FD-4273-A56A-02BF2894BFEF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.02236</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.01144</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.0190597204574333</XPos>
+																		<YPos>-0.050798289028805</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.15883</XPos>
+																		<YPos>-0.90982</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.26148</XPos>
+																		<YPos>-1.57952</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>-2.41916</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -654,7 +935,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -688,6 +969,52 @@
 													</ValueList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{DA8B0876-D167-42E3-9E7C-46607E76941C}" ShortID="853147791">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{269DF64F-B605-4297-BD66-EFA500683DF8}" ShortID="580520569">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{71D6B65A-15D2-4AE9-A9AF-D17A48505605}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-1</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.2427</XPos>
+																		<YPos>7</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.86023</XPos>
+																		<YPos>12</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>23</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
@@ -708,6 +1035,50 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{D1148FD0-584C-42FB-B550-5F17A5EE4E39}" ShortID="570973464">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{0A3013BF-1705-4084-89D6-0BEA4F9ABFED}" ShortID="284410216">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{0CFE6F20-E67C-4615-8DBC-9266F5060CE2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>170</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.75476</XPos>
+																		<YPos>50</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.75349</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>-150</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
@@ -718,6 +1089,50 @@
 													<ValueList>
 														<Value>-13</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{5D10D19A-909C-45BF-A759-90F226641AFA}" ShortID="785767699">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{B490F44D-0AD1-4570-A6BF-6CC0AD78A54A}" ShortID="531839910">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A58D62C9-5F5D-4C1E-9775-969C226F4A75}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>1</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.15883</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.26148</XPos>
+																		<YPos>-1</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -882,6 +1297,52 @@
 										</RandomSequenceContainer>
 										<Sound Name="sfx_PlayerTank_MovingLoop" ID="{229F5194-9D0F-4DC7-A056-755CCD5F7E9D}" ShortID="899015390">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{C33AF34A-2721-4412-80F3-952341270E79}" ShortID="291938228">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{03DC28DC-0D37-492C-B89D-E809F668F57B}" ShortID="674535">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{97707275-7ABD-48BD-8BA3-DE32A7BEE41A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>79</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.23126</XPos>
+																		<YPos>48</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.86023</XPos>
+																		<YPos>2</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>-2</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
@@ -900,6 +1361,50 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
+													<RTPCList>
+														<RTPC Name="" ID="{33DBB623-FE1F-4CEA-9AAF-86779563D8FD}" ShortID="588179959">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{CA65E9DE-3B13-437E-B3DE-5EA1E00A4A17}" ShortID="865588387">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{7CE8A19F-66DF-4139-ABA7-FA2908874FC5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-25</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.75476</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.75349</XPos>
+																		<YPos>25</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>50</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
@@ -910,6 +1415,55 @@
 													<ValueList>
 														<Value>-13</Value>
 													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{576220CB-90D8-4AD7-B904-F4E5D0379351}" ShortID="937372552">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorTime Name="Modulator Time (Custom)" ID="{E1E22582-2915-4D93-8BF3-FB9A668CAE49}" ShortID="813771037">
+																			<PropertyList>
+																				<Property Name="EnvelopeStopPlayback" Type="bool" Value="False"/>
+																				<Property Name="TimeModDuration" Type="Real64" Value="3"/>
+																				<Property Name="TimeModPlaybackRate" Type="Real64" Value="1.65"/>
+																			</PropertyList>
+																		</ModulatorTime>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{1E7A5395-1C84-4C1A-BA23-652DA5826C4F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.15883</XPos>
+																		<YPos>-3</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.24142</XPos>
+																		<YPos>0.0918900000000349</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.24242</XPos>
+																		<YPos>0.0918896193494163</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -938,7 +1492,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1127,7 +1681,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1252,7 +1806,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1399,7 +1953,7 @@
 										<Property Name="Color" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1669,7 +2223,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1801,7 +2355,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1831,7 +2385,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3413,11 +3967,6 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>

@@ -45,6 +45,20 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	94423895	Modulator Envelope (Custom)				
 	996277035	Modulator Envelope (Custom)				
 
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	674535	Modulator Time (Custom)				
+	279286816	Modulator Time (Custom)				
+	284410216	Modulator Time (Custom)				
+	531839910	Modulator Time (Custom)				
+	534977885	Modulator Time (Custom)				
+	541278615	Modulator Time (Custom)				
+	580520569	Modulator Time (Custom)				
+	804850581	Modulator Time (Custom)				
+	813771037	Modulator Time (Custom)				
+	865588387	Modulator Time (Custom)				
+	902924639	Modulator Time (Custom)				
+	933430496	Modulator Time (Custom)				
+
 Trigger	ID	Name			Wwise Object Path	Notes
 	2682680661	music_Win			\Default Work Unit\music_Win	
 
