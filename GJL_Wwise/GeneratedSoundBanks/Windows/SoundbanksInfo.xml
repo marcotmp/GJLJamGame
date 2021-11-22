@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="782826392" Language="SFX" Hash="1065090330">
+		<SoundBank Id="782826392" Language="SFX" Hash="1658520223">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
 			<ShortName>Default</ShortName>
 			<Path>Default.bnk</Path>
@@ -25,63 +25,63 @@
 					<IncludedMemoryFiles>
 						<File Id="24833817" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_08.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_08_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_08_D8C07C79.wem</Path>
 						</File>
 						<File Id="86325805" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_03.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_03_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="90339501" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_10.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_10_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_10_D8C07C79.wem</Path>
 						</File>
 						<File Id="100785976" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_04.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_04_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_04_D8C07C79.wem</Path>
 						</File>
 						<File Id="125347833" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_06.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_06_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_06_D8C07C79.wem</Path>
 						</File>
 						<File Id="209361249" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_05.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_05_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_05_D8C07C79.wem</Path>
 						</File>
 						<File Id="232610410" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_01.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_01_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_01_D8C07C79.wem</Path>
 						</File>
 						<File Id="456137676" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_11.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_11_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_11_D8C07C79.wem</Path>
 						</File>
 						<File Id="509691566" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_09.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_09_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_09_D8C07C79.wem</Path>
 						</File>
 						<File Id="693681760" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_07.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_07_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_07_D8C07C79.wem</Path>
 						</File>
 						<File Id="828149298" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_15.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_15_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_15_D8C07C79.wem</Path>
 						</File>
 						<File Id="900027245" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_02.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_02_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_02_D8C07C79.wem</Path>
 						</File>
 						<File Id="964611847" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_13.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_13_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_13_D8C07C79.wem</Path>
 						</File>
 						<File Id="989835661" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_14.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_14_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_14_D8C07C79.wem</Path>
 						</File>
 						<File Id="1058809833" Language="SFX">
 							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_12.wav</ShortName>
-							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_12_10C4C929.wem</Path>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_12_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -89,11 +89,11 @@
 					<IncludedMemoryFiles>
 						<File Id="393191848" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_GetOn.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GetOn_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GetOn_D8C07C79.wem</Path>
 						</File>
 						<File Id="572711547" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_Idle.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_Idle_D79FB2B7.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_Idle_0762CC47.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -101,7 +101,7 @@
 					<IncludedMemoryFiles>
 						<File Id="862130600" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_GetOff.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GetOff_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GetOff_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -109,15 +109,15 @@
 					<IncludedMemoryFiles>
 						<File Id="514882816" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_03.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_03_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="741515843" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_01.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_01_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_01_D8C07C79.wem</Path>
 						</File>
 						<File Id="869221285" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_02.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_02_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_02_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -125,11 +125,11 @@
 					<IncludedMemoryFiles>
 						<File Id="156946582" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_MoveStart.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MoveStart_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MoveStart_D8C07C79.wem</Path>
 						</File>
 						<File Id="212909863" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_MovingLoop.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MovingLoop_D79FB2B7.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MovingLoop_0762CC47.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -137,11 +137,11 @@
 					<IncludedMemoryFiles>
 						<File Id="214130526" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_MoveStop.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MoveStop_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MoveStop_D8C07C79.wem</Path>
 						</File>
 						<File Id="572711547" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_Idle.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_Idle_D79FB2B7.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_Idle_0762CC47.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -149,15 +149,15 @@
 					<IncludedMemoryFiles>
 						<File Id="43493368" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="163690339" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02_D8C07C79.wem</Path>
 						</File>
 						<File Id="595283166" Language="SFX">
 							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01.wav</ShortName>
-							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01_10C4C929.wem</Path>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -165,19 +165,19 @@
 					<IncludedMemoryFiles>
 						<File Id="267697277" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_03.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_03_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="663371379" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_04.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_04_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_04_D8C07C79.wem</Path>
 						</File>
 						<File Id="760093289" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_02.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_02_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_02_D8C07C79.wem</Path>
 						</File>
 						<File Id="820845243" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_01.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_01_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_01_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -185,7 +185,7 @@
 					<IncludedMemoryFiles>
 						<File Id="989223042" Language="SFX">
 							<ShortName>Player\Mecha\sfx_Mecha_GetOn.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_Mecha_GetOn_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_Mecha_GetOn_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -193,7 +193,7 @@
 					<IncludedMemoryFiles>
 						<File Id="657877968" Language="SFX">
 							<ShortName>Player\Mecha\sfx_Mecha_GetOut.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_Mecha_GetOut_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_Mecha_GetOut_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -201,23 +201,23 @@
 					<IncludedMemoryFiles>
 						<File Id="258376170" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_03.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_03_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="530404575" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_02.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_02_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_02_D8C07C79.wem</Path>
 						</File>
 						<File Id="982864765" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_04.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_04_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_04_D8C07C79.wem</Path>
 						</File>
 						<File Id="1048648187" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_01.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_01_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_01_D8C07C79.wem</Path>
 						</File>
 						<File Id="1065181657" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_05.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_05_10C4C929.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_05_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -225,19 +225,19 @@
 					<IncludedMemoryFiles>
 						<File Id="359968010" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_02.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_02_31889445.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_02_1F9992B5.wem</Path>
 						</File>
 						<File Id="701470162" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_03.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_03_A775ED41.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_03_9A55E2B1.wem</Path>
 						</File>
 						<File Id="910074444" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_04.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_04_82BA0BCE.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_04_611ACDFE.wem</Path>
 						</File>
 						<File Id="981527382" Language="SFX">
 							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_01.wav</ShortName>
-							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_01_4C4CD4BE.wem</Path>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_01_AB66D32E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -245,123 +245,123 @@
 					<IncludedMemoryFiles>
 						<File Id="20589267" Language="SFX">
 							<ShortName>Music\xmx_stingersWin_006_Block6_G_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_stingersWin_006_Block6_G_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_stingersWin_006_Block6_G_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="51583163" Language="SFX">
 							<ShortName>Music\xmx_stingersWin_001_Block1_C_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_stingersWin_001_Block1_C_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_stingersWin_001_Block1_C_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="65900392" Language="SFX">
 							<ShortName>Music\Pluck2\xmx_Pluck2_002_Block2_D#_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck2\xmx_Pluck2_002_Block2_D#_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_002_Block2_D#_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="89918659" Language="SFX">
 							<ShortName>Music\Pluck2\xmx_Pluck2_007_Block7_E_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck2\xmx_Pluck2_007_Block7_E_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_007_Block7_E_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="90575949" Language="SFX">
 							<ShortName>Music\xmx_Sweet_002_Block2_D#_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_Sweet_002_Block2_D#_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_Sweet_002_Block2_D#_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="97949215" Language="SFX">
 							<ShortName>Music\xmx_stingersWin_007_Block7_E_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_stingersWin_007_Block7_E_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_stingersWin_007_Block7_E_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="103478363" Language="SFX">
 							<ShortName>Music\Pluck1\xmx_Pluck1_002_Block2_D#_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck1\xmx_Pluck1_002_Block2_D#_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_002_Block2_D#_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="164231538" Language="SFX">
 							<ShortName>Music\Pluck1\xmx_Pluck1_008_Block8_E_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck1\xmx_Pluck1_008_Block8_E_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_008_Block8_E_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="206534364" Language="SFX">
 							<ShortName>Music\xmx_Sweet_003_Block4_D_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_Sweet_003_Block4_D_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_Sweet_003_Block4_D_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="219079756" Language="SFX">
 							<ShortName>Music\xmx_stingersWin_003_Block3_G#_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_stingersWin_003_Block3_G#_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_stingersWin_003_Block3_G#_108_3-4_0762CC47.wem</Path>
 						</File>
 						<File Id="338881002" Language="SFX">
 							<ShortName>Music\Pluck2\xmx_Pluck2_006_Block6_G_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck2\xmx_Pluck2_006_Block6_G_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_006_Block6_G_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="351911994" Language="SFX">
 							<ShortName>Music\xmx_stingersWin_005_Block5_A_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_stingersWin_005_Block5_A_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_stingersWin_005_Block5_A_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="360986520" Language="SFX">
 							<ShortName>Music\xmx_Sweet_006_Block8_E_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_Sweet_006_Block8_E_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_Sweet_006_Block8_E_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="377045295" Language="SFX">
 							<ShortName>Music\xmx_Sweet_005_Block6_G_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_Sweet_005_Block6_G_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_Sweet_005_Block6_G_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="416652566" Language="SFX">
 							<ShortName>Music\xmx_Sweet_004_Block5_A_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_Sweet_004_Block5_A_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_Sweet_004_Block5_A_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="452707776" Language="SFX">
 							<ShortName>Music\Pluck2\xmx_Pluck2_008_Block8_E_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck2\xmx_Pluck2_008_Block8_E_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_008_Block8_E_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="494392079" Language="SFX">
 							<ShortName>Music\xmx_stingersWin_008_Block8_E_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_stingersWin_008_Block8_E_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_stingersWin_008_Block8_E_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="497458690" Language="SFX">
 							<ShortName>Music\Pluck2\xmx_Pluck2_004_Block4_D_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck2\xmx_Pluck2_004_Block4_D_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_004_Block4_D_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="541323340" Language="SFX">
 							<ShortName>Music\Pluck1\xmx_Pluck1_007_Block7_E_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck1\xmx_Pluck1_007_Block7_E_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_007_Block7_E_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="592913777" Language="SFX">
 							<ShortName>Music\Pluck1\xmx_Pluck1_004_Block4_D_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck1\xmx_Pluck1_004_Block4_D_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_004_Block4_D_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="608534734" Language="SFX">
 							<ShortName>Music\Pluck2\xmx_Pluck2_001_Block1_C_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck2\xmx_Pluck2_001_Block1_C_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_001_Block1_C_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="631946729" Language="SFX">
 							<ShortName>Music\Pluck1\xmx_Pluck1_001_Block1_C_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck1\xmx_Pluck1_001_Block1_C_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_001_Block1_C_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="688867148" Language="SFX">
 							<ShortName>Music\xmx_Sweet_001_Block1_C_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_Sweet_001_Block1_C_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_Sweet_001_Block1_C_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="697613191" Language="SFX">
 							<ShortName>Music\Pluck2\xmx_Pluck2_005_Block5_A_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck2\xmx_Pluck2_005_Block5_A_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_005_Block5_A_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="790748657" Language="SFX">
 							<ShortName>Music\Pluck1\xmx_Pluck1_006_Block6_G_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck1\xmx_Pluck1_006_Block6_G_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_006_Block6_G_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="825458355" Language="SFX">
 							<ShortName>Music\Pluck1\xmx_Pluck1_003_Block3_G#_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck1\xmx_Pluck1_003_Block3_G#_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_003_Block3_G#_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="971130199" Language="SFX">
 							<ShortName>Music\xmx_stingersWin_004_Block4_D_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_stingersWin_004_Block4_D_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_stingersWin_004_Block4_D_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="999757944" Language="SFX">
 							<ShortName>Music\Pluck2\xmx_Pluck2_003_Block3_G#_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck2\xmx_Pluck2_003_Block3_G#_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_003_Block3_G#_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="1001952129" Language="SFX">
 							<ShortName>Music\Pluck1\xmx_Pluck1_005_Block5_A_108_3-4.wav</ShortName>
-							<Path>SFX\Music\Pluck1\xmx_Pluck1_005_Block5_A_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_005_Block5_A_108_3-4_073B4D0C.wem</Path>
 						</File>
 						<File Id="1036054205" Language="SFX">
 							<ShortName>Music\xmx_stingersWin_002_Block2_D#_108_3-4.wav</ShortName>
-							<Path>SFX\Music\xmx_stingersWin_002_Block2_D#_108_3-4_D79FB2B7.wem</Path>
+							<Path>SFX\Music\xmx_stingersWin_002_Block2_D#_108_3-4_073B4D0C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -374,19 +374,19 @@
 					<IncludedMemoryFiles>
 						<File Id="168881918" Language="SFX">
 							<ShortName>UI\sfx_Box_HitGround_04.wav</ShortName>
-							<Path>SFX\UI\sfx_Box_HitGround_04_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_Box_HitGround_04_D8C07C79.wem</Path>
 						</File>
 						<File Id="502701934" Language="SFX">
 							<ShortName>UI\sfx_Box_HitGround_01.wav</ShortName>
-							<Path>SFX\UI\sfx_Box_HitGround_01_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_Box_HitGround_01_D8C07C79.wem</Path>
 						</File>
 						<File Id="562103943" Language="SFX">
 							<ShortName>UI\sfx_Box_HitGround_02.wav</ShortName>
-							<Path>SFX\UI\sfx_Box_HitGround_02_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_Box_HitGround_02_D8C07C79.wem</Path>
 						</File>
 						<File Id="773198581" Language="SFX">
 							<ShortName>UI\sfx_Box_HitGround_03.wav</ShortName>
-							<Path>SFX\UI\sfx_Box_HitGround_03_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_Box_HitGround_03_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -394,19 +394,19 @@
 					<IncludedMemoryFiles>
 						<File Id="249040614" Language="SFX">
 							<ShortName>UI\sfx_IntObj_Button_Off_01.wav</ShortName>
-							<Path>SFX\UI\sfx_IntObj_Button_Off_01_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_IntObj_Button_Off_01_D8C07C79.wem</Path>
 						</File>
 						<File Id="649333679" Language="SFX">
 							<ShortName>UI\sfx_IntObj_Button_Off_02.wav</ShortName>
-							<Path>SFX\UI\sfx_IntObj_Button_Off_02_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_IntObj_Button_Off_02_D8C07C79.wem</Path>
 						</File>
 						<File Id="710978446" Language="SFX">
 							<ShortName>UI\sfx_IntObj_Button_Off_03.wav</ShortName>
-							<Path>SFX\UI\sfx_IntObj_Button_Off_03_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_IntObj_Button_Off_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="765895684" Language="SFX">
 							<ShortName>UI\sfx_IntObj_Button_Off_04.wav</ShortName>
-							<Path>SFX\UI\sfx_IntObj_Button_Off_04_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_IntObj_Button_Off_04_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -434,7 +434,7 @@
 					<IncludedMemoryFiles>
 						<File Id="130816739" Language="SFX">
 							<ShortName>InteractiveObjects\sfx_IntObj_Elevator.wav</ShortName>
-							<Path>SFX\InteractiveObjects\sfx_IntObj_Elevator_D79FB2B7.wem</Path>
+							<Path>SFX\InteractiveObjects\sfx_IntObj_Elevator_0762CC47.wem</Path>
 						</File>
 						<File Id="828711625" Language="SFX">
 							<ShortName>InteractiveObjects\sfx_IntObj_ElevatorStart.wav</ShortName>
@@ -454,7 +454,7 @@
 					<IncludedMemoryFiles>
 						<File Id="901181080" Language="SFX">
 							<ShortName>UI\sfx_IntObj_Gate.wav</ShortName>
-							<Path>SFX\UI\sfx_IntObj_Gate_10C4C929.wem</Path>
+							<Path>SFX\UI\sfx_IntObj_Gate_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -464,11 +464,11 @@
 					<IncludedMemoryFiles>
 						<File Id="520054179" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_Idle.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_Idle_D79FB2B7.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Idle_0762CC47.wem</Path>
 						</File>
 						<File Id="724895998" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_EngineStart.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_EngineStart_8AE24F59.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_EngineStart_2E29B169.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -476,7 +476,7 @@
 					<IncludedMemoryFiles>
 						<File Id="813733210" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_GetOff.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_GetOff_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_GetOff_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -484,23 +484,23 @@
 					<IncludedMemoryFiles>
 						<File Id="255387965" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MovingLoop.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MovingLoop_D79FB2B7.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MovingLoop_0762CC47.wem</Path>
 						</File>
 						<File Id="490237738" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_01.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_01_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_01_D8C07C79.wem</Path>
 						</File>
 						<File Id="573316817" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_03.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_03_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="605893097" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_04.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_04_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_04_D8C07C79.wem</Path>
 						</File>
 						<File Id="763453536" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_02.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_02_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_02_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -508,23 +508,23 @@
 					<IncludedMemoryFiles>
 						<File Id="445659384" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_02.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_02_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_02_D8C07C79.wem</Path>
 						</File>
 						<File Id="520054179" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_Idle.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_Idle_D79FB2B7.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Idle_0762CC47.wem</Path>
 						</File>
 						<File Id="536405860" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_01.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_01_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_01_D8C07C79.wem</Path>
 						</File>
 						<File Id="574590072" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_03.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_03_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="596215666" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_04.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_04_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_04_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -532,19 +532,19 @@
 					<IncludedMemoryFiles>
 						<File Id="250717664" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_Shot_02.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_02_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_02_D8C07C79.wem</Path>
 						</File>
 						<File Id="326588327" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_Shot_04.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_04_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_04_D8C07C79.wem</Path>
 						</File>
 						<File Id="365386010" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_Shot_03.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_03_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="911416862" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_Shot_01.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_01_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_01_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -552,19 +552,19 @@
 					<IncludedMemoryFiles>
 						<File Id="626899395" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_04.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_04_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_04_D8C07C79.wem</Path>
 						</File>
 						<File Id="679296252" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_03.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_03_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_03_D8C07C79.wem</Path>
 						</File>
 						<File Id="752266291" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_01.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_01_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_01_D8C07C79.wem</Path>
 						</File>
 						<File Id="874272289" Language="SFX">
 							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_02.wav</ShortName>
-							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_02_10C4C929.wem</Path>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_02_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -572,11 +572,11 @@
 					<IncludedMemoryFiles>
 						<File Id="323515511" Language="SFX">
 							<ShortName>UI\sfx_UI_Button_01.wav</ShortName>
-							<Path>SFX\UI\sfx_UI_Button_01_60EC7841.wem</Path>
+							<Path>SFX\UI\sfx_UI_Button_01_F6767551.wem</Path>
 						</File>
 						<File Id="466903571" Language="SFX">
 							<ShortName>UI\sfx_UI_Button_02.wav</ShortName>
-							<Path>SFX\UI\sfx_UI_Button_02_7D3983B6.wem</Path>
+							<Path>SFX\UI\sfx_UI_Button_02_C5ECA366.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -584,7 +584,7 @@
 					<IncludedMemoryFiles>
 						<File Id="722446796" Language="SFX">
 							<ShortName>Player\Wheels\sfx_Player_Wheels_MoveStart.wav</ShortName>
-							<Path>SFX\Player\Wheels\sfx_Player_Wheels_MoveStart_10C4C929.wem</Path>
+							<Path>SFX\Player\Wheels\sfx_Player_Wheels_MoveStart_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -592,7 +592,7 @@
 					<IncludedMemoryFiles>
 						<File Id="953252711" Language="SFX">
 							<ShortName>Player\Wheels\sfx_Player_Wheels_MoveStop.wav</ShortName>
-							<Path>SFX\Player\Wheels\sfx_Player_Wheels_MoveStop_10C4C929.wem</Path>
+							<Path>SFX\Player\Wheels\sfx_Player_Wheels_MoveStop_D8C07C79.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -603,7 +603,7 @@
 				<Trigger Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3936702324">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3344246493">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

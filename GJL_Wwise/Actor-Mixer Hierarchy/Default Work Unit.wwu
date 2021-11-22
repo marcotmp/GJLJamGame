@@ -3,6 +3,17 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}" PersistMode="Standalone">
 			<ChildrenList>
+				<ActorMixer Name="SFX" ID="{6AAA7EF4-B461-4C2A-9F1C-E3B2682A0237}" ShortID="641077867">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
 				<Folder Name="Player" ID="{F7FDB80F-85B0-492E-A4DC-1BD493A7527C}" ShortID="594972445">
 					<ChildrenList>
 						<ActorMixer Name="Helicopter" ID="{1EBC41C2-9F58-4D8C-AD00-CA8D0B0175F8}" ShortID="126628266">
@@ -32,7 +43,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+									<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Helicopter" ID="{9DA47300-053A-491E-866F-73112B1BDA82}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -283,7 +294,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>3</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -604,7 +615,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>0.01144</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -914,7 +925,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+									<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Tank" ID="{77490BE9-75C7-4ED5-95F6-22100EDE3F49}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -1457,7 +1468,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>3</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -1941,7 +1952,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+									<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Vehicles" ID="{B6C47084-7ACE-4AD7-B76B-48188460ACF7}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -2435,7 +2446,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+									<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Wheels" ID="{05A6DEEC-4883-402A-84D0-7B212AD7DCEB}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -2459,7 +2470,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2502,7 +2513,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2567,7 +2578,7 @@
 						<SwitchContainer Name="MoveVehicleSwitch_Test" ID="{5A8D7B1C-8DA6-449E-855C-3740752A8CB3}" ShortID="26426111">
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+									<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -2578,108 +2589,15 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="UI" ID="{88D72EEE-36C6-4B36-9A9D-78A99E05278C}" ShortID="748640081">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="2"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<RandomSequenceContainer Name="MenuButton" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" ShortID="870419213">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{7430EE5B-1499-4432-9CFF-C1FA459BE814}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="10"/>
-													<Property Name="Min" Type="Real64" Value="-10"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="MenuButton" ID="{92DEEB73-6B63-46E8-9421-6B09C7D68C02}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="sfx_UI_Button_01" ID="{2F50F9FF-C108-4569-B074-2CDB6EF66A7A}" ShortID="964462033">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_UI_Button_01" ID="{1461971D-4D6D-4C11-9FEB-8130C9E6958F}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.925510296242775"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.672379275048169"/>
-												<Property Name="TrimEnd" Type="Real64" Value="3.00593087668593"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>UI\sfx_UI_Button_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="323515511"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_UI_Button_01" ID="{1461971D-4D6D-4C11-9FEB-8130C9E6958F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_UI_Button_02" ID="{262235DE-2100-430D-84AD-EDD1CB18E80D}" ShortID="106386853">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_UI_Button_02" ID="{F203FBAD-1084-475D-898F-F61EE743A1B0}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.901779263005781"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.680289619460501"/>
-												<Property Name="TrimEnd" Type="Real64" Value="3.01384122109827"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>UI\sfx_UI_Button_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="466903571"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_UI_Button_02" ID="{F203FBAD-1084-475D-898F-F61EE743A1B0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-						</RandomSequenceContainer>
-					</ChildrenList>
-				</Folder>
 				<ActorMixer Name="Ambience" ID="{402746D3-DA7F-4457-8C53-57497552653C}" ShortID="493764366">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="27"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="OverrideConversion" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+							<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -2688,8 +2606,19 @@
 					<ChildrenList>
 						<BlendContainer Name="NoiseAmbience" ID="{95DBEC29-9B29-4CD4-AC80-CA787F2C7010}" ShortID="379978241">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3823,6 +3752,100 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
+				<Folder Name="UI" ID="{88D72EEE-36C6-4B36-9A9D-78A99E05278C}" ShortID="748640081">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="MenuButton" ID="{DA8F3B9F-D71F-4334-8A2B-CC7688EC70D4}" ShortID="870419213">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7430EE5B-1499-4432-9CFF-C1FA459BE814}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="MenuButton" ID="{92DEEB73-6B63-46E8-9421-6B09C7D68C02}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_UI_Button_01" ID="{2F50F9FF-C108-4569-B074-2CDB6EF66A7A}" ShortID="964462033">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_UI_Button_01" ID="{1461971D-4D6D-4C11-9FEB-8130C9E6958F}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.925510296242775"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.672379275048169"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.00593087668593"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI\sfx_UI_Button_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="323515511"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_UI_Button_01" ID="{1461971D-4D6D-4C11-9FEB-8130C9E6958F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_UI_Button_02" ID="{262235DE-2100-430D-84AD-EDD1CB18E80D}" ShortID="106386853">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_UI_Button_02" ID="{F203FBAD-1084-475D-898F-F61EE743A1B0}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.901779263005781"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.680289619460501"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.01384122109827"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>UI\sfx_UI_Button_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="466903571"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_UI_Button_02" ID="{F203FBAD-1084-475D-898F-F61EE743A1B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="InteractiveObjects" ID="{7FA2F141-2325-4A62-9AE5-BD490514477D}" ShortID="492593504">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="3"/>
@@ -3971,7 +3994,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+											<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="worldButton" ID="{2D00BF8F-F674-408A-BC84-F21A6B65F5DA}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -4227,7 +4250,7 @@
 											</Custom>
 										</Reference>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+											<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="worldGate" ID="{2F990160-2D6C-4BF7-97FF-56274F6128A7}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -4285,6 +4308,7 @@
 												<Value>2</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -4306,7 +4330,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+											<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="worldBox" ID="{F1B8A603-C577-43F1-9BC2-624A016256A6}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>
@@ -4418,7 +4442,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
+											<ObjectRef Name="SFX" ID="{8EC36C10-80B4-4881-9830-AFD3A676E9EB}" WorkUnitID="{7F165712-040A-4CB5-8341-ABE0218D8D68}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="worldElevator" ID="{1AB74679-19C3-4E44-A82E-D016F7E26F73}" WorkUnitID="{856839D0-A76B-4EB7-86E5-0A218494E866}"/>

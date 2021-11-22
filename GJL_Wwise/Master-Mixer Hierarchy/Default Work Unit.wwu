@@ -75,6 +75,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Bus Name="Stingers" ID="{6E8FD4F2-6142-468C-AE6F-D000703F2545}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ObjectLists/>
 										</Bus>
 									</ChildrenList>
@@ -95,7 +102,7 @@
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64">
 													<ValueList>
-														<Value>-13</Value>
+														<Value>-16</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -274,22 +281,17 @@
 															<PointList>
 																<Point>
 																	<XPos>0</XPos>
-																	<YPos>10</YPos>
+																	<YPos>17.38636</YPos>
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>5</XPos>
-																	<YPos>10</YPos>
-																	<Flags>0</Flags>
-																</Point>
-																<Point>
-																	<XPos>10.18039</XPos>
-																	<YPos>17.12139</YPos>
+																	<XPos>10.05152</XPos>
+																	<YPos>19.96231</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
 																	<XPos>100</XPos>
-																	<YPos>34.17724</YPos>
+																	<YPos>27.35906</YPos>
 																	<Flags>37</Flags>
 																</Point>
 															</PointList>

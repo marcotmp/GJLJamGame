@@ -231,7 +231,7 @@ PrefabInstance:
     - target: {fileID: 2444850563043837662, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: data.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: b50e4032c2499fc4f9bc9253cc1e4913, type: 2}
+      objectReference: {fileID: 11400000, guid: a074e74d10f94fe439903fc75ee2c534, type: 2}
     - target: {fileID: 5017229676494487442, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: stateGame.WwiseObjectReference
       value: 
