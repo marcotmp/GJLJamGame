@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="782826392" Language="SFX" Hash="1636640042">
+		<SoundBank Id="782826392" Language="SFX" Hash="2093321395">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
 			<ShortName>Default</ShortName>
 			<Path>Default.bnk</Path>
@@ -19,6 +19,7 @@
 				<Event Id="278617630" Name="play_Ambience" ObjectPath="\Events\Default Work Unit\Ambience\play_Ambience" DurationType="Unknown">
 					<ActionPostEvent>
 						<ActionPostEventEntry Id="1700644942" Name="play_BirdCalls" ObjectPath="\Events\Default Work Unit\Ambience\play_BirdCalls"/>
+						<ActionPostEventEntry Id="3483232275" Name="play_Restart" ObjectPath="\Events\Default Work Unit\UI\play_Restart"/>
 					</ActionPostEvent>
 				</Event>
 				<Event Id="1700644942" Name="play_BirdCalls" ObjectPath="\Events\Default Work Unit\Ambience\play_BirdCalls" DurationType="Infinite">
