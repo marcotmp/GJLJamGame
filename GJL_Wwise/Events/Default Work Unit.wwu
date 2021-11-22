@@ -893,6 +893,17 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{B4D84C96-5A89-4504-944C-D3F8A2EE7222}" ShortID="208121240">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BirdCalls" ID="{FDB0491C-F8C1-4DE3-AF74-E593B9A5D490}" WorkUnitID="{DE163427-3FD1-406A-8AD7-A1DA6724C84B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{914C12E0-BE35-4642-AF3F-B7D81028C3B5}" ShortID="35001997">
 									<PropertyList>
 										<Property Name="Delay" Type="Real64" Value="0.1"/>
