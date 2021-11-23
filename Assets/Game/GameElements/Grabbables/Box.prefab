@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4054946644784644797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.525, z: 0}
+  m_LocalPosition: {x: 0, y: -0.636, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4054946645411871040}
@@ -208,5 +208,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: {fileID: 4054946644784644786}
   rigidbody: {fileID: 4054946645411871043}
-  maxFallSpeed: 0
+  minSpeedToPlayHit: 0
   playerAudio: {fileID: 11400000, guid: 0c1a38f1f195aaf44a4815b4b6f24e65, type: 2}

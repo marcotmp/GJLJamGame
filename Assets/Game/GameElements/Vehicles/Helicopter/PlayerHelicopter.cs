@@ -58,6 +58,11 @@ public class PlayerHelicopter : MonoBehaviour, IVehicle
     private void FixedUpdate() 
     {
         fsm.FixedUpdate();
+
+        if (objectGrabbed != null)
+        {
+            groundDetector.transform.position = objectGrabbed.GetGrabOffset();
+        }
     }
 
     public void MountPlayer(PlayerController player)
