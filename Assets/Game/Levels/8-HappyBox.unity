@@ -541,6 +541,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1891474967}
     m_Modifications:
+    - target: {fileID: 8585822391393025877, guid: b8195052e9ebe814abe55f518b7679d8, type: 3}
+      propertyPath: m_ChunkCullingBounds.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585822391393025877, guid: b8195052e9ebe814abe55f518b7679d8, type: 3}
+      propertyPath: m_ChunkCullingBounds.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8585822391393025882, guid: b8195052e9ebe814abe55f518b7679d8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -620,11 +628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.777534
+      value: -6.8327613
       objectReference: {fileID: 0}
     - target: {fileID: 25049512183226557, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.223605
+      value: -2.960959
       objectReference: {fileID: 0}
     - target: {fileID: 25049513443985029, guid: fdc19bce90624414eb65965ecb16c494, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2996,7 +3004,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0813580f0d7a22a48b67239b44080895, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
