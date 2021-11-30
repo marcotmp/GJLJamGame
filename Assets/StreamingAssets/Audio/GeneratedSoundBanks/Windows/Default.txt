@@ -1,0 +1,187 @@
+Event	ID	Name			Wwise Object Path	Notes
+	43599987	play_UI_Button			\Default Work Unit\UI\play_UI_Button	
+	125457442	play_Tank_GetIn			\Default Work Unit\Tank\play_Tank_GetIn	
+	254585821	Play_sfx_IntObj_ElevatorStop			\Default Work Unit\Play_sfx_IntObj_ElevatorStop	
+	278617630	play_Ambience			\Default Work Unit\Ambience\play_Ambience	
+	542072273	play_Tank_Shot			\Default Work Unit\Tank\play_Tank_Shot	
+	749407591	play_ObjButton_On			\Default Work Unit\IntObjects\play_ObjButton_On	
+	1104479366	play_Heli_MoveStart			\Default Work Unit\Helicopter\play_Heli_MoveStart	
+	1119197339	play_Legs_Land			\Default Work Unit\Legs\play_Legs_Land	
+	1377008667	play_ObjElevatorStop			\Default Work Unit\IntObjects\play_ObjElevatorStop	
+	1700644942	play_BirdCalls			\Default Work Unit\Ambience\play_BirdCalls	
+	2120857990	play_Tank_MoveStart			\Default Work Unit\Tank\play_Tank_MoveStart	
+	2151885105	play_ObjBox_GroundHit			\Default Work Unit\IntObjects\play_ObjBox_GroundHit	
+	2168584773	play_Wheels_Stop			\Default Work Unit\Wheels\play_Wheels_Stop	
+	2212303852	play_Legs_Fstep			\Default Work Unit\Legs\play_Legs_Fstep	
+	2227320646	play_Heli_MoveStop			\Default Work Unit\Helicopter\play_Heli_MoveStop	
+	2306097013	play_Legs_GetIn			\Default Work Unit\Legs\play_Legs_GetIn	
+	2477713992	stop_Ambience			\Default Work Unit\Ambience\stop_Ambience	
+	2767646498	play_Heli_GetIn			\Default Work Unit\Helicopter\play_Heli_GetIn	
+	2837384057	stop_Music			\Default Work Unit\Music\stop_Music	
+	2904441870	play_Tank_ShotExplosion			\Default Work Unit\Tank\play_Tank_ShotExplosion	
+	2932040671	play_Music			\Default Work Unit\Music\play_Music	
+	3062351503	play_ObjGate_Open			\Default Work Unit\IntObjects\play_ObjGate_Open	
+	3225822683	play_ObjButton_Off			\Default Work Unit\IntObjects\play_ObjButton_Off	
+	3266534423	play_Heli_ReleaseObj			\Default Work Unit\Helicopter\play_Heli_ReleaseObj	
+	3387000831	play_Wheels_Start			\Default Work Unit\Wheels\play_Wheels_Start	
+	3400919206	play_Heli_GetOff			\Default Work Unit\Helicopter\play_Heli_GetOff	
+	3423526428	play_Legs_GetOut			\Default Work Unit\Legs\play_Legs_GetOut	
+	3483232275	play_Restart			\Default Work Unit\UI\play_Restart	
+	3508749844	play_Music_WinTrigger			\Default Work Unit\Music\play_Music_WinTrigger	
+	3903374634	play_Heli_GrabObj			\Default Work Unit\Helicopter\play_Heli_GrabObj	
+	3986544096	play_Legs_Jump			\Default Work Unit\Legs\play_Legs_Jump	
+	3990571105	play_ObjElevator_On			\Default Work Unit\IntObjects\play_ObjElevator_On	
+	4069393885	play_Tank_GetOut			\Default Work Unit\Tank\play_Tank_GetOut	
+	4276080198	play_Tank_MoveStop			\Default Work Unit\Tank\play_Tank_MoveStop	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	299921341	Modulator LFO (Custom)				
+	377419255	Modulator LFO (Custom)				
+	718203490	Modulator LFO (Custom)				
+	935222682	Modulator LFO (Custom)				
+	1042788020	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	94423895	Modulator Envelope (Custom)				
+	996277035	Modulator Envelope (Custom)				
+
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	674535	Modulator Time (Custom)				
+	279286816	Modulator Time (Custom)				
+	284410216	Modulator Time (Custom)				
+	531839910	Modulator Time (Custom)				
+	534977885	Modulator Time (Custom)				
+	541278615	Modulator Time (Custom)				
+	580520569	Modulator Time (Custom)				
+	804850581	Modulator Time (Custom)				
+	813771037	Modulator Time (Custom)				
+	865588387	Modulator Time (Custom)				
+	902924639	Modulator Time (Custom)				
+	933430496	Modulator Time (Custom)				
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	2682680661	music_Win			\Default Work Unit\music_Win	
+
+Effect plug-ins	ID	Name	Type				Notes
+	7191030	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	136714882	_500ms_Per_Hour	Wwise Stereo Delay			
+	225192973	Aliasing (Custom)	Wwise Tremolo			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	309684195	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NoiseAmbience\Noise2\Wwise Synth One	
+	351795614	Wwise Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NoiseAmbience\Noise1\Wwise Synth One	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	20589267	xmx_stingersWin_006_Block6_G_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_stingersWin_006_Block6_G_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\xmx_stingersWin_006_Block6_G_108_3-4\xmx_stingersWin_006_Block6_G_108_3-4		225152
+	24833817	sfx_Ambience_BirdCall_08	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_08_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_08		63289
+	43493368	sfx_PlayerHeli_ReleaseObj_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\ReleaseObject\sfx_PlayerHeli_ReleaseObj_03		19820
+	51583163	xmx_stingersWin_001_Block1_C_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_stingersWin_001_Block1_C_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\xmx_stingersWin_001_Block1_C_108_3-4\xmx_stingersWin_001_Block1_C_108_3-4		172248
+	65900392	xmx_Pluck1_002_Block2_D#_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck2\xmx_Pluck2_002_Block2_D#_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block2_D#_108_3-4\xmx_Pluck1_002_Block2_D#_108_3-4		1036469
+	79706559	sfx_IntObj_Button_On_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Button_On_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Button\ButtonOn\sfx_IntObj_Button_On_02		30720
+	86325805	sfx_Ambience_BirdCall_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_03		16632
+	89918659	xmx_Pluck1_007_Block7_E_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck2\xmx_Pluck2_007_Block7_E_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block7_E_108_3-4\xmx_Pluck1_007_Block7_E_108_3-4		862515
+	90339501	sfx_Ambience_BirdCall_10	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_10_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_10		7838
+	90575949	xmx_Sweet_002_Block2_D#_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_Sweet_002_Block2_D#_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block2_D#_108_3-4\xmx_Sweet_002_Block2_D#_108_3-4		380032
+	97949215	xmx_stingersWin_007_Block7_E_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_stingersWin_007_Block7_E_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\xmx_stingersWin_007_Block7_E_108_3-4\xmx_stingersWin_007_Block7_E_108_3-4		225181
+	100785976	sfx_Ambience_BirdCall_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_04		8333
+	103478363	xmx_Pluck1_002_Block2_D#_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_002_Block2_D#_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block2_D#_108_3-4\xmx_Pluck1_002_Block2_D#_108_3-4		973892
+	125347833	sfx_Ambience_BirdCall_06	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_06_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_06		72813
+	130816739	sfx_IntObj_Elevator	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\InteractiveObjects\sfx_IntObj_Elevator_0762CC47.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Elevator\sfx_IntObj_Elevator		194773
+	156946582	sfx_PlayerHeli_MoveStart	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_MoveStart_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\Movement\sfx_PlayerHeli_MoveStart		82145
+	163690339	sfx_PlayerHeli_ReleaseObj_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\ReleaseObject\sfx_PlayerHeli_ReleaseObj_02		19136
+	164231538	xmx_Pluck1_008_Block8_E_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_008_Block8_E_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block8_E_108_3-4\xmx_Pluck1_008_Block8_E_108_3-4		824420
+	168881918	sfx_Box_HitGround_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_Box_HitGround_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Box\GroundHits\sfx_Box_HitGround_04		15079
+	206534364	xmx_Sweet_003_Block4_D_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_Sweet_003_Block4_D_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block4_D_108_3-4\xmx_Sweet_003_Block4_D_108_3-4		352579
+	209361249	sfx_Ambience_BirdCall_05	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_05_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_05		12925
+	212909863	sfx_PlayerHeli_MovingLoop	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_MovingLoop_0762CC47.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\Movement\sfx_PlayerHeli_MovingLoop		183308
+	214130526	sfx_PlayerHeli_MoveStop	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_MoveStop_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\Movement\sfx_PlayerHeli_MoveStop		81450
+	219079756	xmx_stingersWin_003_Block3_G#_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_stingersWin_003_Block3_G#_108_3-4_0762CC47.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\xmx_stingersWin_003_Block3_G#_108_3-4\xmx_stingersWin_003_Block3_G#_108_3-4		92123
+	232610410	sfx_Ambience_BirdCall_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_01		17340
+	249040614	sfx_IntObj_Button_Off_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Button_Off_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Button\ButtonOff\sfx_IntObj_Button_Off_01		5870
+	250717664	sfx_PlayerTank_Shot_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_Shot_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Weapon\Shot\sfx_PlayerTank_Shot_02		22652
+	255387965	sfx_PlayerTank_MovingLoop	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MovingLoop_0762CC47.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\sfx_PlayerTank_MovingLoop		15221
+	258376170	sfx_PlayerStandard_Jump_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Jump_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Jump\sfx_PlayerStandard_Jump_03		15669
+	267697277	sfx_PlayerMecha_Fstep_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerMecha_Fstep_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Fstep\sfx_PlayerMecha_Fstep_03		8764
+	323515511	sfx_UI_Button_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_UI_Button_01_F6767551.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MenuButton\sfx_UI_Button_01		50564
+	326588327	sfx_PlayerTank_Shot_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_Shot_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Weapon\Shot\sfx_PlayerTank_Shot_04		20792
+	338881002	xmx_Pluck1_006_Block6_G_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck2\xmx_Pluck2_006_Block6_G_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block6_G_108_3-4\xmx_Pluck1_006_Block6_G_108_3-4		886879
+	351911994	xmx_stingersWin_005_Block5_A_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_stingersWin_005_Block5_A_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\xmx_stingersWin_005_Block5_A_108_3-4\xmx_stingersWin_005_Block5_A_108_3-4		222933
+	359968010	sfx_PlayerStandard_Landing_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Landing_02_1F9992B5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Landing\sfx_PlayerStandard_Landing_02		10287
+	360986520	xmx_Sweet_006_Block8_E_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_Sweet_006_Block8_E_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block7_E_108_3-4\xmx_Sweet_006_Block8_E_108_3-4		356348
+	365386010	sfx_PlayerTank_Shot_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_Shot_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Weapon\Shot\sfx_PlayerTank_Shot_03		21303
+	377045295	xmx_Sweet_005_Block6_G_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_Sweet_005_Block6_G_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block6_G_108_3-4\xmx_Sweet_005_Block6_G_108_3-4		348431
+	393191848	sfx_PlayerHeli_GetOn	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_GetOn_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\Movement\sfx_PlayerHeli_GetOn		108683
+	416652566	xmx_Sweet_004_Block5_A_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_Sweet_004_Block5_A_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block5_A_108_3-4\xmx_Sweet_004_Block5_A_108_3-4		340659
+	445659384	sfx_PlayerTank_MoveStop_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MoveStop_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\MoveStop\sfx_PlayerTank_MoveStop_02		30655
+	452707776	xmx_Pluck1_008_Block8_E_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck2\xmx_Pluck2_008_Block8_E_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block8_E_108_3-4\xmx_Pluck1_008_Block8_E_108_3-4		895264
+	456137676	sfx_Ambience_BirdCall_11	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_11_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_11		16019
+	466903571	sfx_UI_Button_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_UI_Button_02_C5ECA366.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\MenuButton\sfx_UI_Button_02		50381
+	490237738	sfx_PlayerTank_MoveStart_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MoveStart_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\MoveStart\sfx_PlayerTank_MoveStart_01		25963
+	494392079	xmx_stingersWin_008_Block8_E_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_stingersWin_008_Block8_E_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\xmx_stingersWin_008_Block8_E_108_3-4\xmx_stingersWin_008_Block8_E_108_3-4		221974
+	497458690	xmx_Pluck1_004_Block4_D_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck2\xmx_Pluck2_004_Block4_D_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block4_D_108_3-4\xmx_Pluck1_004_Block4_D_108_3-4		897236
+	502701934	sfx_Box_HitGround_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_Box_HitGround_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Box\GroundHits\sfx_Box_HitGround_01		17480
+	509691566	sfx_Ambience_BirdCall_09	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_09_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_09		12132
+	514882816	sfx_PlayerHeli_GrabObj_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\GrabObject\sfx_PlayerHeli_GrabObj_03		10049
+	520054179	sfx_PlayerTank_Idle	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_Idle_0762CC47.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\sfx_PlayerTank_Idle		51433
+	530404575	sfx_PlayerStandard_Jump_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Jump_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Jump\sfx_PlayerStandard_Jump_02		14808
+	536405860	sfx_PlayerTank_MoveStop_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MoveStop_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\MoveStop\sfx_PlayerTank_MoveStop_01		23889
+	541323340	xmx_Pluck1_007_Block7_E_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_007_Block7_E_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block7_E_108_3-4\xmx_Pluck1_007_Block7_E_108_3-4		820492
+	562103943	sfx_Box_HitGround_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_Box_HitGround_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Box\GroundHits\sfx_Box_HitGround_02		15006
+	572711547	sfx_PlayerHeli_Idle	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_Idle_0762CC47.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\Movement\sfx_PlayerHeli_Idle		49519
+	573316817	sfx_PlayerTank_MoveStart_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MoveStart_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\MoveStart\sfx_PlayerTank_MoveStart_03		39533
+	574590072	sfx_PlayerTank_MoveStop_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MoveStop_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\MoveStop\sfx_PlayerTank_MoveStop_03		36552
+	592913777	xmx_Pluck1_004_Block4_D_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_004_Block4_D_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block4_D_108_3-4\xmx_Pluck1_004_Block4_D_108_3-4		823996
+	595283166	sfx_PlayerHeli_ReleaseObj_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\ReleaseObject\sfx_PlayerHeli_ReleaseObj_01		21348
+	596215666	sfx_PlayerTank_MoveStop_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MoveStop_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\MoveStop\sfx_PlayerTank_MoveStop_04		36049
+	600400092	sfx_IntObj_Button_On_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Button_On_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Button\ButtonOn\sfx_IntObj_Button_On_04		41924
+	605893097	sfx_PlayerTank_MoveStart_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MoveStart_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\MoveStart\sfx_PlayerTank_MoveStart_04		40038
+	608534734	xmx_Pluck1_001_Block1_C_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck2\xmx_Pluck2_001_Block1_C_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block1_C_108_3-4\xmx_Pluck1_001_Block1_C_108_3-4		906389
+	626899395	sfx_PlayerTank_ShotExplosion_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Weapon\ShotExplosion\sfx_PlayerTank_ShotExplosion_04		38736
+	631946729	xmx_Pluck1_001_Block1_C_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_001_Block1_C_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block1_C_108_3-4\xmx_Pluck1_001_Block1_C_108_3-4		791406
+	649333679	sfx_IntObj_Button_Off_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Button_Off_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Button\ButtonOff\sfx_IntObj_Button_Off_02		5803
+	657877968	sfx_Mecha_GetOut	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_Mecha_GetOut_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\sfx_Mecha_GetOut		16266
+	663371379	sfx_PlayerMecha_Fstep_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerMecha_Fstep_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Fstep\sfx_PlayerMecha_Fstep_04		8513
+	679296252	sfx_PlayerTank_ShotExplosion_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Weapon\ShotExplosion\sfx_PlayerTank_ShotExplosion_03		41285
+	688867148	xmx_Sweet_001_Block1_C_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_Sweet_001_Block1_C_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block1_C_108_3-4\xmx_Sweet_001_Block1_C_108_3-4		377611
+	693681760	sfx_Ambience_BirdCall_07	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_07_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_07		55397
+	697613191	xmx_Pluck1_005_Block5_A_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck2\xmx_Pluck2_005_Block5_A_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block5_A_108_3-4\xmx_Pluck1_005_Block5_A_108_3-4		847246
+	701470162	sfx_PlayerStandard_Landing_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Landing_03_9A55E2B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Landing\sfx_PlayerStandard_Landing_03		8890
+	710978446	sfx_IntObj_Button_Off_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Button_Off_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Button\ButtonOff\sfx_IntObj_Button_Off_03		5953
+	722446796	sfx_Player_Wheels_MoveStart	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Wheels\sfx_Player_Wheels_MoveStart_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Wheels\sfx_Player_Wheels_MoveStart		4276
+	724895998	sfx_PlayerTank_GetIn	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_EngineStart_2E29B169.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\sfx_PlayerTank_GetIn		70308
+	741515843	sfx_PlayerHeli_GrabObj_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\GrabObject\sfx_PlayerHeli_GrabObj_01		10880
+	752266291	sfx_PlayerTank_ShotExplosion_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Weapon\ShotExplosion\sfx_PlayerTank_ShotExplosion_01		45385
+	760093289	sfx_PlayerMecha_Fstep_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerMecha_Fstep_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Fstep\sfx_PlayerMecha_Fstep_02		7811
+	763453536	sfx_PlayerTank_MoveStart_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_MoveStart_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\MoveStart\sfx_PlayerTank_MoveStart_02		33320
+	765895684	sfx_IntObj_Button_Off_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Button_Off_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Button\ButtonOff\sfx_IntObj_Button_Off_04		5507
+	773198581	sfx_Box_HitGround_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_Box_HitGround_03_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Box\GroundHits\sfx_Box_HitGround_03		16319
+	790748657	xmx_Pluck1_006_Block6_G_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_006_Block6_G_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block6_G_108_3-4\xmx_Pluck1_006_Block6_G_108_3-4		820336
+	806713107	sfx_IntObj_Button_On_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Button_On_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Button\ButtonOn\sfx_IntObj_Button_On_01		31364
+	813733210	sfx_PlayerTank_GetOut	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_GetOff_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Movement\sfx_PlayerTank_GetOut		35592
+	820845243	sfx_PlayerMecha_Fstep_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerMecha_Fstep_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Fstep\sfx_PlayerMecha_Fstep_01		8352
+	825458355	xmx_Pluck1_003_Block3_G#_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_003_Block3_G#_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block3_G#_108_3-4\xmx_Pluck1_003_Block3_G#_108_3-4		785683
+	828149298	sfx_Ambience_BirdCall_15	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_15_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_15		16132
+	828711625	sfx_IntObj_ElevatorStart	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\InteractiveObjects\sfx_IntObj_ElevatorStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Elevator\sfx_IntObj_ElevatorStart		176524
+	862130600	sfx_PlayerHeli_GetOff	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_GetOff_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\Movement\sfx_PlayerHeli_GetOff		62847
+	869221285	sfx_PlayerHeli_GrabObj_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Helicopter\GrabObject\sfx_PlayerHeli_GrabObj_02		11225
+	874272289	sfx_PlayerTank_ShotExplosion_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Weapon\ShotExplosion\sfx_PlayerTank_ShotExplosion_02		37997
+	900027245	sfx_Ambience_BirdCall_02	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_02_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_02		12493
+	901181080	sfx_IntObj_Gate	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Gate_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Gate\sfx_IntObj_Gate		40778
+	910074444	sfx_PlayerStandard_Landing_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Landing_04_611ACDFE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Landing\sfx_PlayerStandard_Landing_04		12153
+	911416862	sfx_PlayerTank_Shot_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Tank\sfx_PlayerTank_Shot_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Tank\Weapon\Shot\sfx_PlayerTank_Shot_01		25985
+	913880952	sfx_IntObj_ElevatorStop	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\InteractiveObjects\sfx_IntObj_ElevatorOff_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Elevator\sfx_IntObj_ElevatorStop		152732
+	948550609	sfx_IntObj_Button_On_03	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\UI\sfx_IntObj_Button_On_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\InteractiveObjects\Button\ButtonOn\sfx_IntObj_Button_On_03		31068
+	953252711	sfx_Player_Wheels_MoveStop	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Wheels\sfx_Player_Wheels_MoveStop_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Wheels\sfx_Player_Wheels_MoveStop		3912
+	964611847	sfx_Ambience_BirdCall_13	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_13_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_13		39530
+	971130199	xmx_stingersWin_004_Block4_D_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_stingersWin_004_Block4_D_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\xmx_stingersWin_004_Block4_D_108_3-4\xmx_stingersWin_004_Block4_D_108_3-4		223306
+	981527382	sfx_PlayerStandard_Landing_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Landing_01_AB66D32E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Landing\sfx_PlayerStandard_Landing_01		8836
+	982864765	sfx_PlayerStandard_Jump_04	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Jump_04_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Jump\sfx_PlayerStandard_Jump_04		14723
+	989223042	sfx_Mecha_GetOn	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_Mecha_GetOn_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\sfx_Mecha_GetOn		15189
+	989835661	sfx_Ambience_BirdCall_14	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_14_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_14		8527
+	999757944	xmx_Pluck1_003_Block3_G#_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck2\xmx_Pluck2_003_Block3_G#_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block3_G#_108_3-4\xmx_Pluck1_003_Block3_G#_108_3-4		852195
+	1001952129	xmx_Pluck1_005_Block5_A_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\Pluck1\xmx_Pluck1_005_Block5_A_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Block5_A_108_3-4\xmx_Pluck1_005_Block5_A_108_3-4		785128
+	1036054205	xmx_stingersWin_002_Block2_D#_108_3-4	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Music\xmx_stingersWin_002_Block2_D#_108_3-4_073B4D0C.wem		\Interactive Music Hierarchy\Default Work Unit\Stingers\xmx_stingersWin_002_Block2_D#_108_3-4\xmx_stingersWin_002_Block2_D#_108_3-4		223915
+	1048648187	sfx_PlayerStandard_Jump_01	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Jump_01_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Jump\sfx_PlayerStandard_Jump_01		15904
+	1058809833	sfx_Ambience_BirdCall_12	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_12_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\BirdCalls\sfx_Ambience_BirdCall_12		33607
+	1065181657	sfx_PlayerStandard_Jump_05	A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\SFX\Player\Mecha\sfx_PlayerStandard_Jump_05_D8C07C79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Mecha\Jump\sfx_PlayerStandard_Jump_05		15428
+

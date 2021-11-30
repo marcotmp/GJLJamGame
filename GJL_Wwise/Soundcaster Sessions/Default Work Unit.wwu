@@ -289,7 +289,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="inGame" ID="{CD024A78-BF1D-4793-B175-0751F1B01AA6}"/>
+						<CurrentStateRef Name="None" ID="{B7268FB0-2794-4F78-AF99-F2371474B98D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

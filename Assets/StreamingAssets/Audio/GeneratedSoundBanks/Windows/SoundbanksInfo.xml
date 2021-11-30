@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\</ProjectRoot>
+		<SourceFilesRoot>A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>A:\Projects\Game Jams\GJLJamGame\GJL_Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="782826392" Language="SFX" Hash="3134625868">
+			<ObjectPath>\SoundBanks\Default Work Unit\Default</ObjectPath>
+			<ShortName>Default</ShortName>
+			<Path>Default.bnk</Path>
+			<IncludedEvents>
+				<Event Id="278617630" Name="play_Ambience" ObjectPath="\Events\Default Work Unit\Ambience\play_Ambience" DurationType="Unknown">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="1700644942" Name="play_BirdCalls" ObjectPath="\Events\Default Work Unit\Ambience\play_BirdCalls"/>
+						<ActionPostEventEntry Id="3483232275" Name="play_Restart" ObjectPath="\Events\Default Work Unit\UI\play_Restart"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="1700644942" Name="play_BirdCalls" ObjectPath="\Events\Default Work Unit\Ambience\play_BirdCalls" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="24833817" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_08.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_08_D8C07C79.wem</Path>
+						</File>
+						<File Id="86325805" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_03.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="90339501" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_10.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_10_D8C07C79.wem</Path>
+						</File>
+						<File Id="100785976" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_04.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_04_D8C07C79.wem</Path>
+						</File>
+						<File Id="125347833" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_06.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_06_D8C07C79.wem</Path>
+						</File>
+						<File Id="209361249" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_05.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_05_D8C07C79.wem</Path>
+						</File>
+						<File Id="232610410" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_01.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_01_D8C07C79.wem</Path>
+						</File>
+						<File Id="456137676" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_11.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_11_D8C07C79.wem</Path>
+						</File>
+						<File Id="509691566" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_09.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_09_D8C07C79.wem</Path>
+						</File>
+						<File Id="693681760" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_07.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_07_D8C07C79.wem</Path>
+						</File>
+						<File Id="828149298" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_15.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_15_D8C07C79.wem</Path>
+						</File>
+						<File Id="900027245" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_02.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_02_D8C07C79.wem</Path>
+						</File>
+						<File Id="964611847" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_13.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_13_D8C07C79.wem</Path>
+						</File>
+						<File Id="989835661" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_14.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_14_D8C07C79.wem</Path>
+						</File>
+						<File Id="1058809833" Language="SFX">
+							<ShortName>Ambience\Bird Calls\sfx_Ambience_BirdCall_12.wav</ShortName>
+							<Path>SFX\Ambience\Bird Calls\sfx_Ambience_BirdCall_12_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2767646498" Name="play_Heli_GetIn" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GetIn" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="393191848" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GetOn.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GetOn_D8C07C79.wem</Path>
+						</File>
+						<File Id="572711547" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_Idle.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_Idle_0762CC47.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3400919206" Name="play_Heli_GetOff" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GetOff" DurationType="OneShot" DurationMin="3.295070" DurationMax="3.531569">
+					<IncludedMemoryFiles>
+						<File Id="862130600" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GetOff.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GetOff_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3903374634" Name="play_Heli_GrabObj" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_GrabObj" DurationType="OneShot" DurationMin="0.432287" DurationMax="0.474787">
+					<IncludedMemoryFiles>
+						<File Id="514882816" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_03.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="741515843" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_01.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_01_D8C07C79.wem</Path>
+						</File>
+						<File Id="869221285" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_GrabObj_02.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_GrabObj_02_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1104479366" Name="play_Heli_MoveStart" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_MoveStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="156946582" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_MoveStart.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MoveStart_D8C07C79.wem</Path>
+						</File>
+						<File Id="212909863" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_MovingLoop.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MovingLoop_0762CC47.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2227320646" Name="play_Heli_MoveStop" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_MoveStop" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="214130526" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_MoveStop.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_MoveStop_D8C07C79.wem</Path>
+						</File>
+						<File Id="572711547" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_Idle.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_Idle_0762CC47.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3266534423" Name="play_Heli_ReleaseObj" ObjectPath="\Events\Default Work Unit\Helicopter\play_Heli_ReleaseObj" DurationType="OneShot" DurationMin="0.962766" DurationMax="1.002210">
+					<IncludedMemoryFiles>
+						<File Id="43493368" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="163690339" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_02_D8C07C79.wem</Path>
+						</File>
+						<File Id="595283166" Language="SFX">
+							<ShortName>Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01.wav</ShortName>
+							<Path>SFX\Player\Helicopter\sfx_PlayerHeli_ReleaseObj_01_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2212303852" Name="play_Legs_Fstep" ObjectPath="\Events\Default Work Unit\Legs\play_Legs_Fstep" DurationType="OneShot" DurationMin="0.901601" DurationMax="1.116220">
+					<IncludedMemoryFiles>
+						<File Id="267697277" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_03.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="663371379" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_04.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_04_D8C07C79.wem</Path>
+						</File>
+						<File Id="760093289" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_02.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_02_D8C07C79.wem</Path>
+						</File>
+						<File Id="820845243" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerMecha_Fstep_01.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerMecha_Fstep_01_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2306097013" Name="play_Legs_GetIn" ObjectPath="\Events\Default Work Unit\Legs\play_Legs_GetIn" DurationType="OneShot" DurationMin="0.685612" DurationMax="0.693578">
+					<IncludedMemoryFiles>
+						<File Id="989223042" Language="SFX">
+							<ShortName>Player\Mecha\sfx_Mecha_GetOn.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_Mecha_GetOn_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3423526428" Name="play_Legs_GetOut" ObjectPath="\Events\Default Work Unit\Legs\play_Legs_GetOut" DurationType="OneShot" DurationMin="0.937413" DurationMax="0.948306">
+					<IncludedMemoryFiles>
+						<File Id="657877968" Language="SFX">
+							<ShortName>Player\Mecha\sfx_Mecha_GetOut.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_Mecha_GetOut_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3986544096" Name="play_Legs_Jump" ObjectPath="\Events\Default Work Unit\Legs\play_Legs_Jump" DurationType="OneShot" DurationMin="0.720866" DurationMax="0.747189">
+					<IncludedMemoryFiles>
+						<File Id="258376170" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_03.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="530404575" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_02.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_02_D8C07C79.wem</Path>
+						</File>
+						<File Id="982864765" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_04.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_04_D8C07C79.wem</Path>
+						</File>
+						<File Id="1048648187" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_01.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_01_D8C07C79.wem</Path>
+						</File>
+						<File Id="1065181657" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Jump_05.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Jump_05_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1119197339" Name="play_Legs_Land" ObjectPath="\Events\Default Work Unit\Legs\play_Legs_Land" DurationType="OneShot" DurationMin="0.392572" DurationMax="0.566538">
+					<IncludedMemoryFiles>
+						<File Id="359968010" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_02.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_02_1F9992B5.wem</Path>
+						</File>
+						<File Id="701470162" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_03.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_03_9A55E2B1.wem</Path>
+						</File>
+						<File Id="910074444" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_04.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_04_611ACDFE.wem</Path>
+						</File>
+						<File Id="981527382" Language="SFX">
+							<ShortName>Player\Mecha\sfx_PlayerStandard_Landing_01.wav</ShortName>
+							<Path>SFX\Player\Mecha\sfx_PlayerStandard_Landing_01_AB66D32E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2932040671" Name="play_Music" ObjectPath="\Events\Default Work Unit\Music\play_Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="20589267" Language="SFX">
+							<ShortName>Music\xmx_stingersWin_006_Block6_G_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_stingersWin_006_Block6_G_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="51583163" Language="SFX">
+							<ShortName>Music\xmx_stingersWin_001_Block1_C_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_stingersWin_001_Block1_C_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="65900392" Language="SFX">
+							<ShortName>Music\Pluck2\xmx_Pluck2_002_Block2_D#_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_002_Block2_D#_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="89918659" Language="SFX">
+							<ShortName>Music\Pluck2\xmx_Pluck2_007_Block7_E_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_007_Block7_E_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="90575949" Language="SFX">
+							<ShortName>Music\xmx_Sweet_002_Block2_D#_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_Sweet_002_Block2_D#_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="97949215" Language="SFX">
+							<ShortName>Music\xmx_stingersWin_007_Block7_E_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_stingersWin_007_Block7_E_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="103478363" Language="SFX">
+							<ShortName>Music\Pluck1\xmx_Pluck1_002_Block2_D#_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_002_Block2_D#_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="164231538" Language="SFX">
+							<ShortName>Music\Pluck1\xmx_Pluck1_008_Block8_E_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_008_Block8_E_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="206534364" Language="SFX">
+							<ShortName>Music\xmx_Sweet_003_Block4_D_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_Sweet_003_Block4_D_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="219079756" Language="SFX">
+							<ShortName>Music\xmx_stingersWin_003_Block3_G#_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_stingersWin_003_Block3_G#_108_3-4_0762CC47.wem</Path>
+						</File>
+						<File Id="338881002" Language="SFX">
+							<ShortName>Music\Pluck2\xmx_Pluck2_006_Block6_G_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_006_Block6_G_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="351911994" Language="SFX">
+							<ShortName>Music\xmx_stingersWin_005_Block5_A_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_stingersWin_005_Block5_A_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="360986520" Language="SFX">
+							<ShortName>Music\xmx_Sweet_006_Block8_E_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_Sweet_006_Block8_E_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="377045295" Language="SFX">
+							<ShortName>Music\xmx_Sweet_005_Block6_G_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_Sweet_005_Block6_G_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="416652566" Language="SFX">
+							<ShortName>Music\xmx_Sweet_004_Block5_A_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_Sweet_004_Block5_A_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="452707776" Language="SFX">
+							<ShortName>Music\Pluck2\xmx_Pluck2_008_Block8_E_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_008_Block8_E_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="494392079" Language="SFX">
+							<ShortName>Music\xmx_stingersWin_008_Block8_E_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_stingersWin_008_Block8_E_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="497458690" Language="SFX">
+							<ShortName>Music\Pluck2\xmx_Pluck2_004_Block4_D_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_004_Block4_D_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="541323340" Language="SFX">
+							<ShortName>Music\Pluck1\xmx_Pluck1_007_Block7_E_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_007_Block7_E_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="592913777" Language="SFX">
+							<ShortName>Music\Pluck1\xmx_Pluck1_004_Block4_D_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_004_Block4_D_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="608534734" Language="SFX">
+							<ShortName>Music\Pluck2\xmx_Pluck2_001_Block1_C_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_001_Block1_C_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="631946729" Language="SFX">
+							<ShortName>Music\Pluck1\xmx_Pluck1_001_Block1_C_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_001_Block1_C_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="688867148" Language="SFX">
+							<ShortName>Music\xmx_Sweet_001_Block1_C_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_Sweet_001_Block1_C_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="697613191" Language="SFX">
+							<ShortName>Music\Pluck2\xmx_Pluck2_005_Block5_A_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_005_Block5_A_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="790748657" Language="SFX">
+							<ShortName>Music\Pluck1\xmx_Pluck1_006_Block6_G_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_006_Block6_G_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="825458355" Language="SFX">
+							<ShortName>Music\Pluck1\xmx_Pluck1_003_Block3_G#_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_003_Block3_G#_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="971130199" Language="SFX">
+							<ShortName>Music\xmx_stingersWin_004_Block4_D_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_stingersWin_004_Block4_D_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="999757944" Language="SFX">
+							<ShortName>Music\Pluck2\xmx_Pluck2_003_Block3_G#_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck2\xmx_Pluck2_003_Block3_G#_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="1001952129" Language="SFX">
+							<ShortName>Music\Pluck1\xmx_Pluck1_005_Block5_A_108_3-4.wav</ShortName>
+							<Path>SFX\Music\Pluck1\xmx_Pluck1_005_Block5_A_108_3-4_073B4D0C.wem</Path>
+						</File>
+						<File Id="1036054205" Language="SFX">
+							<ShortName>Music\xmx_stingersWin_002_Block2_D#_108_3-4.wav</ShortName>
+							<Path>SFX\Music\xmx_stingersWin_002_Block2_D#_108_3-4_073B4D0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3508749844" Name="play_Music_WinTrigger" ObjectPath="\Events\Default Work Unit\Music\play_Music_WinTrigger" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
+					</ActionTrigger>
+				</Event>
+				<Event Id="2151885105" Name="play_ObjBox_GroundHit" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjBox_GroundHit" DurationType="OneShot" DurationMin="0.801803" DurationMax="0.971847">
+					<IncludedMemoryFiles>
+						<File Id="168881918" Language="SFX">
+							<ShortName>UI\sfx_Box_HitGround_04.wav</ShortName>
+							<Path>SFX\UI\sfx_Box_HitGround_04_D8C07C79.wem</Path>
+						</File>
+						<File Id="502701934" Language="SFX">
+							<ShortName>UI\sfx_Box_HitGround_01.wav</ShortName>
+							<Path>SFX\UI\sfx_Box_HitGround_01_D8C07C79.wem</Path>
+						</File>
+						<File Id="562103943" Language="SFX">
+							<ShortName>UI\sfx_Box_HitGround_02.wav</ShortName>
+							<Path>SFX\UI\sfx_Box_HitGround_02_D8C07C79.wem</Path>
+						</File>
+						<File Id="773198581" Language="SFX">
+							<ShortName>UI\sfx_Box_HitGround_03.wav</ShortName>
+							<Path>SFX\UI\sfx_Box_HitGround_03_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3225822683" Name="play_ObjButton_Off" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjButton_Off" DurationType="OneShot" DurationMin="0.201675" DurationMax="0.225140">
+					<IncludedMemoryFiles>
+						<File Id="249040614" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Button_Off_01.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Button_Off_01_D8C07C79.wem</Path>
+						</File>
+						<File Id="649333679" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Button_Off_02.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Button_Off_02_D8C07C79.wem</Path>
+						</File>
+						<File Id="710978446" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Button_Off_03.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Button_Off_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="765895684" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Button_Off_04.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Button_Off_04_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="749407591" Name="play_ObjButton_On" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjButton_On" DurationType="OneShot" DurationMin="0.158747" DurationMax="0.219284">
+					<IncludedMemoryFiles>
+						<File Id="79706559" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Button_On_02.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Button_On_02_10C4C929.wem</Path>
+						</File>
+						<File Id="600400092" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Button_On_04.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Button_On_04_10C4C929.wem</Path>
+						</File>
+						<File Id="806713107" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Button_On_01.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Button_On_01_10C4C929.wem</Path>
+						</File>
+						<File Id="948550609" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Button_On_03.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Button_On_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3990571105" Name="play_ObjElevator_On" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjElevator_On" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="130816739" Language="SFX">
+							<ShortName>InteractiveObjects\sfx_IntObj_Elevator.wav</ShortName>
+							<Path>SFX\InteractiveObjects\sfx_IntObj_Elevator_0762CC47.wem</Path>
+						</File>
+						<File Id="828711625" Language="SFX">
+							<ShortName>InteractiveObjects\sfx_IntObj_ElevatorStart.wav</ShortName>
+							<Path>SFX\InteractiveObjects\sfx_IntObj_ElevatorStart_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1377008667" Name="play_ObjElevatorStop" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjElevatorStop" DurationType="OneShot" DurationMin="0.795156" DurationMax="0.795156">
+					<IncludedMemoryFiles>
+						<File Id="913880952" Language="SFX">
+							<ShortName>InteractiveObjects\sfx_IntObj_ElevatorOff.wav</ShortName>
+							<Path>SFX\InteractiveObjects\sfx_IntObj_ElevatorOff_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3062351503" Name="play_ObjGate_Open" ObjectPath="\Events\Default Work Unit\IntObjects\play_ObjGate_Open" DurationType="OneShot" DurationMin="2.765466" DurationMax="2.790627">
+					<IncludedMemoryFiles>
+						<File Id="901181080" Language="SFX">
+							<ShortName>UI\sfx_IntObj_Gate.wav</ShortName>
+							<Path>SFX\UI\sfx_IntObj_Gate_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3483232275" Name="play_Restart" ObjectPath="\Events\Default Work Unit\UI\play_Restart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="254585821" Name="Play_sfx_IntObj_ElevatorStop" ObjectPath="\Events\Default Work Unit\Play_sfx_IntObj_ElevatorStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="125457442" Name="play_Tank_GetIn" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_GetIn" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="520054179" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Idle.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Idle_0762CC47.wem</Path>
+						</File>
+						<File Id="724895998" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_EngineStart.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_EngineStart_2E29B169.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4069393885" Name="play_Tank_GetOut" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_GetOut" DurationType="OneShot" DurationMin="2.089169" DurationMax="2.113444">
+					<IncludedMemoryFiles>
+						<File Id="813733210" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_GetOff.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_GetOff_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2120857990" Name="play_Tank_MoveStart" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_MoveStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="255387965" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MovingLoop.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MovingLoop_0762CC47.wem</Path>
+						</File>
+						<File Id="490237738" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_01.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_01_D8C07C79.wem</Path>
+						</File>
+						<File Id="573316817" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_03.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="605893097" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_04.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_04_D8C07C79.wem</Path>
+						</File>
+						<File Id="763453536" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStart_02.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStart_02_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4276080198" Name="play_Tank_MoveStop" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_MoveStop" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="445659384" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_02.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_02_D8C07C79.wem</Path>
+						</File>
+						<File Id="520054179" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Idle.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Idle_0762CC47.wem</Path>
+						</File>
+						<File Id="536405860" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_01.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_01_D8C07C79.wem</Path>
+						</File>
+						<File Id="574590072" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_03.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="596215666" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_MoveStop_04.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_MoveStop_04_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="542072273" Name="play_Tank_Shot" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_Shot" DurationType="OneShot" DurationMin="1.284966" DurationMax="1.607880">
+					<IncludedMemoryFiles>
+						<File Id="250717664" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Shot_02.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_02_D8C07C79.wem</Path>
+						</File>
+						<File Id="326588327" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Shot_04.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_04_D8C07C79.wem</Path>
+						</File>
+						<File Id="365386010" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Shot_03.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="911416862" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_Shot_01.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_Shot_01_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2904441870" Name="play_Tank_ShotExplosion" ObjectPath="\Events\Default Work Unit\Tank\play_Tank_ShotExplosion" DurationType="OneShot" DurationMin="1.912821" DurationMax="2.157720">
+					<IncludedMemoryFiles>
+						<File Id="626899395" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_04.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_04_D8C07C79.wem</Path>
+						</File>
+						<File Id="679296252" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_03.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_03_D8C07C79.wem</Path>
+						</File>
+						<File Id="752266291" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_01.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_01_D8C07C79.wem</Path>
+						</File>
+						<File Id="874272289" Language="SFX">
+							<ShortName>Player\Tank\sfx_PlayerTank_ShotExplosion_02.wav</ShortName>
+							<Path>SFX\Player\Tank\sfx_PlayerTank_ShotExplosion_02_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="43599987" Name="play_UI_Button" ObjectPath="\Events\Default Work Unit\UI\play_UI_Button" DurationType="OneShot" DurationMin="2.320111" DurationMax="2.347070">
+					<IncludedMemoryFiles>
+						<File Id="323515511" Language="SFX">
+							<ShortName>UI\sfx_UI_Button_01.wav</ShortName>
+							<Path>SFX\UI\sfx_UI_Button_01_F6767551.wem</Path>
+						</File>
+						<File Id="466903571" Language="SFX">
+							<ShortName>UI\sfx_UI_Button_02.wav</ShortName>
+							<Path>SFX\UI\sfx_UI_Button_02_C5ECA366.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3387000831" Name="play_Wheels_Start" ObjectPath="\Events\Default Work Unit\Wheels\play_Wheels_Start" DurationType="OneShot" DurationMin="0.172273" DurationMax="0.174275">
+					<IncludedMemoryFiles>
+						<File Id="722446796" Language="SFX">
+							<ShortName>Player\Wheels\sfx_Player_Wheels_MoveStart.wav</ShortName>
+							<Path>SFX\Player\Wheels\sfx_Player_Wheels_MoveStart_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2168584773" Name="play_Wheels_Stop" ObjectPath="\Events\Default Work Unit\Wheels\play_Wheels_Stop" DurationType="OneShot" DurationMin="0.167592" DurationMax="0.169539">
+					<IncludedMemoryFiles>
+						<File Id="953252711" Language="SFX">
+							<ShortName>Player\Wheels\sfx_Player_Wheels_MoveStop.wav</ShortName>
+							<Path>SFX\Player\Wheels\sfx_Player_Wheels_MoveStop_D8C07C79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2477713992" Name="stop_Ambience" ObjectPath="\Events\Default Work Unit\Ambience\stop_Ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2837384057" Name="stop_Music" ObjectPath="\Events\Default Work Unit\Music\stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<Triggers>
+				<Trigger Id="2682680661" Name="music_Win" ObjectPath="\Triggers\Default Work Unit\music_Win"/>
+			</Triggers>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3344246493">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1289870202" Name="Verb_Music" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Verb_Music"/>
+				<AuxBus Id="3657263530" Name="Verb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Verb"/>
+			</IncludedAuxBusses>
+			<StateGroups>
+				<StateGroup Id="583439429" Name="uiStatus" ObjectPath="\States\Default Work Unit\UI\uiStatus" GUID="{28CF1E5E-6CC9-445E-B4EB-1F7A237B6D5F}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\UI\uiStatus\None" GUID="{B7268FB0-2794-4F78-AF99-F2371474B98D}"/>
+						<State Id="984691642" Name="inGame" ObjectPath="\States\Default Work Unit\UI\uiStatus\inGame" GUID="{CD024A78-BF1D-4793-B175-0751F1B01AA6}"/>
+						<State Id="3374585465" Name="inMenu" ObjectPath="\States\Default Work Unit\UI\uiStatus\inMenu" GUID="{6564BE5A-86F7-4060-B069-2D6A8B4666A9}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

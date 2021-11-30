@@ -1,0 +1,67 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	583439429	uiStatus			\Default Work Unit\UI\uiStatus	
+
+State	ID	Name	State Group			Notes
+	748895195	None	uiStatus			
+	984691642	inGame	uiStatus			
+	3374585465	inMenu	uiStatus			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	1020747545	inMenu	uiStatus	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\2D\Ambience	
+	91106990	worldGate			\Default Work Unit\Master Audio Bus\3D\Objects\worldGate	
+	182777598	worldBox			\Default Work Unit\Master Audio Bus\3D\Objects\worldBox	
+	248423061	worldElevator			\Default Work Unit\Master Audio Bus\3D\Objects\worldElevator	
+	511093792	3D			\Default Work Unit\Master Audio Bus\3D	
+	527871411	2D			\Default Work Unit\Master Audio Bus\2D	
+	607152709	Wheels			\Default Work Unit\Master Audio Bus\3D\Vehicles\Wheels	
+	971393558	Vehicles			\Default Work Unit\Master Audio Bus\3D\Vehicles	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\2D\UI	
+	1695690031	Objects			\Default Work Unit\Master Audio Bus\3D\Objects	
+	2167849898	Helicopter			\Default Work Unit\Master Audio Bus\3D\Vehicles\Helicopter	
+	2192397196	MenuButton			\Default Work Unit\Master Audio Bus\2D\UI\MenuButton	
+	2711646615	BirdCalls			\Default Work Unit\Master Audio Bus\2D\Ambience\BirdCalls	
+	2940432316	Stingers			\Default Work Unit\Master Audio Bus\2D\Music\Stingers	
+	3125191939	Mecha			\Default Work Unit\Master Audio Bus\3D\Vehicles\Mecha	
+	3206747537	Tank			\Default Work Unit\Master Audio Bus\3D\Vehicles\Tank	
+	3674236275	worldButton			\Default Work Unit\Master Audio Bus\3D\Objects\worldButton	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\2D\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1289870202	Verb_Music			\Default Work Unit\Master Audio Bus\Verb_Music	
+	3657263530	Verb			\Default Work Unit\Master Audio Bus\Verb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	125996156	Large_Bright_Chamber1 (Custom)	Wwise Matrix Reverb			
+	329772487	Wwise Gain (Custom)	Wwise Gain			
+	418265525	Gentle_Program_Compressor_Minus_14dB_RMS	Wwise Compressor			
+	477315216	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	686450215	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	968013102	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
+	2998002419	Boost_3dB_10KHz	Wwise Parametric EQ			
+	3673681183	Large_Bright_Chamber1	Wwise Matrix Reverb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
